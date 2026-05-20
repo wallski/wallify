@@ -6,6 +6,7 @@
     <file alias="resources/qml/WelcomeScreen.qml">C:/Users/elias/Desktop/GITHUB/wallify/resources/qml/WelcomeScreen.qml</file>
     <file alias="resources/qml/OnboardingView.qml">C:/Users/elias/Desktop/GITHUB/wallify/resources/qml/OnboardingView.qml</file>
     <file alias="resources/qml/MainInterface.qml">C:/Users/elias/Desktop/GITHUB/wallify/resources/qml/MainInterface.qml</file>
+    <file alias="resources/qml/LibraryView.qml">C:/Users/elias/Desktop/GITHUB/wallify/resources/qml/LibraryView.qml</file>
     <file alias="resources/qml/DebugWindow.qml">C:/Users/elias/Desktop/GITHUB/wallify/resources/qml/DebugWindow.qml</file>
     <file alias="resources/qml/MigrationView.qml">C:/Users/elias/Desktop/GITHUB/wallify/resources/qml/MigrationView.qml</file>
     <file alias="resources/qml/Sidebar.qml">C:/Users/elias/Desktop/GITHUB/wallify/resources/qml/Sidebar.qml</file>

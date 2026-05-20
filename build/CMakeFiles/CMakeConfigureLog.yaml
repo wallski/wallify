@@ -34,6 +34,8 @@ events:
       - "C:/Program Files/CMake/share/cmake-4.3/Modules/"
     found: "C:/Program Files/CMake/share/cmake-4.3/Modules/CMakeCXXCompilerId.cpp.in"
     search_context:
+      CMAKE_PREFIX_PATH:
+        - "c:\\Users\\elias\\Desktop\\GITHUB\\wallify\\deps\\6.8.2\\msvc2022_64"
       ENV{PATH}:
         - "C:/Users/elias/.gemini/antigravity/bin"
         - "C:\\Users\\elias\\AppData\\Roaming\\Antigravity\\bin"
@@ -78,7 +80,7 @@ events:
       The output was:
       0
       MSBuild version 18.6.3+84d3e95b4 for .NET Framework
-      Build started 5/20/2026 12:19:53 PM.
+      Build started 5/20/2026 3:56:21 PM.
       
       Project "C:\\Users\\elias\\Desktop\\GITHUB\\wallify\\build\\CMakeFiles\\4.3.2\\CompilerIdCXX\\CompilerIdCXX.vcxproj" on node 1 (default targets).
       PrepareForBuild:
@@ -107,7 +109,7 @@ events:
           0 Warning(s)
           0 Error(s)
       
-      Time Elapsed 00:00:01.48
+      Time Elapsed 00:00:01.30
       
       
       Compilation of the CXX compiler identification source "CMakeCXXCompilerId.cpp" produced "CompilerIdCXX.exe"
@@ -171,6 +173,8 @@ events:
       - "C:/Program Files/Microsoft Visual Studio/18/Community/VC/Tools/MSVC/14.51.36231/bin/Hostx64/x64/link.com"
     found: "C:/Program Files/Microsoft Visual Studio/18/Community/VC/Tools/MSVC/14.51.36231/bin/Hostx64/x64/link.exe"
     search_context:
+      CMAKE_PREFIX_PATH:
+        - "c:\\Users\\elias\\Desktop\\GITHUB\\wallify\\deps\\6.8.2\\msvc2022_64"
       ENV{PATH}:
         - "C:/Users/elias/.gemini/antigravity/bin"
         - "C:\\Users\\elias\\AppData\\Roaming\\Antigravity\\bin"
@@ -336,6 +340,8 @@ events:
       - "C:/Users/elias/.dotnet/tools/lld-link"
     found: false
     search_context:
+      CMAKE_PREFIX_PATH:
+        - "c:\\Users\\elias\\Desktop\\GITHUB\\wallify\\deps\\6.8.2\\msvc2022_64"
       ENV{PATH}:
         - "C:/Users/elias/.gemini/antigravity/bin"
         - "C:\\Users\\elias\\AppData\\Roaming\\Antigravity\\bin"
@@ -416,6 +422,8 @@ events:
       - "C:/Program Files/Microsoft Visual Studio/18/Community/VC/Tools/MSVC/14.51.36231/bin/Hostx64/x64/link.com"
     found: "C:/Program Files/Microsoft Visual Studio/18/Community/VC/Tools/MSVC/14.51.36231/bin/Hostx64/x64/link.exe"
     search_context:
+      CMAKE_PREFIX_PATH:
+        - "c:\\Users\\elias\\Desktop\\GITHUB\\wallify\\deps\\6.8.2\\msvc2022_64"
       ENV{PATH}:
         - "C:/Users/elias/.gemini/antigravity/bin"
         - "C:\\Users\\elias\\AppData\\Roaming\\Antigravity\\bin"
@@ -579,6 +587,8 @@ events:
       - "C:/Users/elias/.dotnet/tools/mt"
     found: false
     search_context:
+      CMAKE_PREFIX_PATH:
+        - "c:\\Users\\elias\\Desktop\\GITHUB\\wallify\\deps\\6.8.2\\msvc2022_64"
       ENV{PATH}:
         - "C:/Users/elias/.gemini/antigravity/bin"
         - "C:\\Users\\elias\\AppData\\Roaming\\Antigravity\\bin"
@@ -659,6 +669,8 @@ events:
       - "C:/Program Files/Microsoft Visual Studio/18/Community/VC/Tools/MSVC/14.51.36231/bin/Hostx64/x64/lib.com"
     found: "C:/Program Files/Microsoft Visual Studio/18/Community/VC/Tools/MSVC/14.51.36231/bin/Hostx64/x64/lib.exe"
     search_context:
+      CMAKE_PREFIX_PATH:
+        - "c:\\Users\\elias\\Desktop\\GITHUB\\wallify\\deps\\6.8.2\\msvc2022_64"
       ENV{PATH}:
         - "C:/Users/elias/.gemini/antigravity/bin"
         - "C:\\Users\\elias\\AppData\\Roaming\\Antigravity\\bin"
@@ -710,6 +722,9 @@ events:
     names:
       - "rc"
     candidate_directories:
+      - "c:/Users/elias/Desktop/GITHUB/wallify/deps/6.8.2/msvc2022_64/bin/"
+      - "c:/Users/elias/Desktop/GITHUB/wallify/deps/6.8.2/msvc2022_64/sbin/"
+      - "c:/Users/elias/Desktop/GITHUB/wallify/deps/6.8.2/msvc2022_64/"
       - "C:/Users/elias/.gemini/antigravity/bin/"
       - "C:/Users/elias/AppData/Roaming/Antigravity/bin/"
       - "C:/Program Files/Eclipse Adoptium/jdk-25.0.2.10-hotspot/bin/"
@@ -750,6 +765,15 @@ events:
       - "C:/Program Files (x86)/wallify/sbin/"
       - "C:/Program Files (x86)/wallify/"
     searched_directories:
+      - "c:/Users/elias/Desktop/GITHUB/wallify/deps/6.8.2/msvc2022_64/bin/rc.com"
+      - "c:/Users/elias/Desktop/GITHUB/wallify/deps/6.8.2/msvc2022_64/bin/rc.exe"
+      - "c:/Users/elias/Desktop/GITHUB/wallify/deps/6.8.2/msvc2022_64/bin/rc"
+      - "c:/Users/elias/Desktop/GITHUB/wallify/deps/6.8.2/msvc2022_64/sbin/rc.com"
+      - "c:/Users/elias/Desktop/GITHUB/wallify/deps/6.8.2/msvc2022_64/sbin/rc.exe"
+      - "c:/Users/elias/Desktop/GITHUB/wallify/deps/6.8.2/msvc2022_64/sbin/rc"
+      - "c:/Users/elias/Desktop/GITHUB/wallify/deps/6.8.2/msvc2022_64/rc.com"
+      - "c:/Users/elias/Desktop/GITHUB/wallify/deps/6.8.2/msvc2022_64/rc.exe"
+      - "c:/Users/elias/Desktop/GITHUB/wallify/deps/6.8.2/msvc2022_64/rc"
       - "C:/Users/elias/.gemini/antigravity/bin/rc.com"
       - "C:/Users/elias/.gemini/antigravity/bin/rc.exe"
       - "C:/Users/elias/.gemini/antigravity/bin/rc"
@@ -869,6 +893,8 @@ events:
       - "C:/Program Files (x86)/wallify/rc"
     found: false
     search_context:
+      CMAKE_PREFIX_PATH:
+        - "c:\\Users\\elias\\Desktop\\GITHUB\\wallify\\deps\\6.8.2\\msvc2022_64"
       ENV{PATH}:
         - "C:/Users/elias/.gemini/antigravity/bin"
         - "C:\\Users\\elias\\AppData\\Roaming\\Antigravity\\bin"
@@ -912,8 +938,8 @@ events:
     checks:
       - "Detecting CXX compiler ABI info"
     directories:
-      source: "C:/Users/elias/Desktop/GITHUB/wallify/build/CMakeFiles/CMakeScratch/TryCompile-2yad0z"
-      binary: "C:/Users/elias/Desktop/GITHUB/wallify/build/CMakeFiles/CMakeScratch/TryCompile-2yad0z"
+      source: "C:/Users/elias/Desktop/GITHUB/wallify/build/CMakeFiles/CMakeScratch/TryCompile-887jta"
+      binary: "C:/Users/elias/Desktop/GITHUB/wallify/build/CMakeFiles/CMakeScratch/TryCompile-887jta"
     cmakeVariables:
       CMAKE_CXX_FLAGS: "/DWIN32 /D_WINDOWS /GR /EHsc"
       CMAKE_CXX_FLAGS_DEBUG: "/Zi /Ob0 /Od /RTC1"
@@ -924,39 +950,39 @@ events:
       variable: "CMAKE_CXX_ABI_COMPILED"
       cached: true
       stdout: |
-        Change Dir: 'C:/Users/elias/Desktop/GITHUB/wallify/build/CMakeFiles/CMakeScratch/TryCompile-2yad0z'
+        Change Dir: 'C:/Users/elias/Desktop/GITHUB/wallify/build/CMakeFiles/CMakeScratch/TryCompile-887jta'
         
-        Run Build Command(s): "C:/Program Files/Microsoft Visual Studio/18/Community/MSBuild/Current/Bin/amd64/MSBuild.exe" cmTC_fa1bc.vcxproj /p:Configuration=Debug /p:Platform=x64 /p:VisualStudioVersion=18.0 /v:n
+        Run Build Command(s): "C:/Program Files/Microsoft Visual Studio/18/Community/MSBuild/Current/Bin/amd64/MSBuild.exe" cmTC_de543.vcxproj /p:Configuration=Debug /p:Platform=x64 /p:VisualStudioVersion=18.0 /v:n
         MSBuild version 18.6.3+84d3e95b4 for .NET Framework
-        Build started 5/20/2026 12:19:56 PM.
+        Build started 5/20/2026 3:56:22 PM.
         
-        Project "C:\\Users\\elias\\Desktop\\GITHUB\\wallify\\build\\CMakeFiles\\CMakeScratch\\TryCompile-2yad0z\\cmTC_fa1bc.vcxproj" on node 1 (default targets).
+        Project "C:\\Users\\elias\\Desktop\\GITHUB\\wallify\\build\\CMakeFiles\\CMakeScratch\\TryCompile-887jta\\cmTC_de543.vcxproj" on node 1 (default targets).
         PrepareForBuild:
           Structured output is enabled. The formatting of compiler diagnostics will reflect the error hierarchy. See https://aka.ms/cpp/structured-output for more details.
-          Creating directory "C:\\Users\\elias\\Desktop\\GITHUB\\wallify\\build\\CMakeFiles\\CMakeScratch\\TryCompile-2yad0z\\Debug\\".
-          Creating directory "cmTC_fa1bc.dir\\Debug\\cmTC_fa1bc.tlog\\".
+          Creating directory "C:\\Users\\elias\\Desktop\\GITHUB\\wallify\\build\\CMakeFiles\\CMakeScratch\\TryCompile-887jta\\Debug\\".
+          Creating directory "cmTC_de543.dir\\Debug\\cmTC_de543.tlog\\".
         InitializeBuildStatus:
-          Creating "cmTC_fa1bc.dir\\Debug\\cmTC_fa1bc.tlog\\unsuccessfulbuild" because "AlwaysCreate" was specified.
-          Touching "cmTC_fa1bc.dir\\Debug\\cmTC_fa1bc.tlog\\unsuccessfulbuild".
+          Creating "cmTC_de543.dir\\Debug\\cmTC_de543.tlog\\unsuccessfulbuild" because "AlwaysCreate" was specified.
+          Touching "cmTC_de543.dir\\Debug\\cmTC_de543.tlog\\unsuccessfulbuild".
         ClCompile:
-          C:\\Program Files\\Microsoft Visual Studio\\18\\Community\\VC\\Tools\\MSVC\\14.51.36231\\bin\\HostX64\\x64\\CL.exe /c /Zi /W1 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D _MBCS /D "CMAKE_INTDIR=\\"Debug\\"" /EHsc /RTC1 /MDd /GR /Fo"cmTC_fa1bc.dir\\Debug\\\\" /Fd"cmTC_fa1bc.dir\\Debug\\vc145.pdb" /external:W1 /TP /errorReport:queue "C:\\Program Files\\CMake\\share\\cmake-4.3\\Modules\\CMakeCXXCompilerABI.cpp"
+          C:\\Program Files\\Microsoft Visual Studio\\18\\Community\\VC\\Tools\\MSVC\\14.51.36231\\bin\\HostX64\\x64\\CL.exe /c /Zi /W1 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D _MBCS /D "CMAKE_INTDIR=\\"Debug\\"" /EHsc /RTC1 /MDd /GR /Fo"cmTC_de543.dir\\Debug\\\\" /Fd"cmTC_de543.dir\\Debug\\vc145.pdb" /external:W1 /TP /errorReport:queue "C:\\Program Files\\CMake\\share\\cmake-4.3\\Modules\\CMakeCXXCompilerABI.cpp"
           Microsoft (R) C/C++ Optimizing Compiler Version 19.51.36243 for x64
           Copyright (C) Microsoft Corporation.  All rights reserved.
-          cl /c /Zi /W1 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D _MBCS /D "CMAKE_INTDIR=\\"Debug\\"" /EHsc /RTC1 /MDd /GR /Fo"cmTC_fa1bc.dir\\Debug\\\\" /Fd"cmTC_fa1bc.dir\\Debug\\vc145.pdb" /external:W1 /TP /errorReport:queue "C:\\Program Files\\CMake\\share\\cmake-4.3\\Modules\\CMakeCXXCompilerABI.cpp"
+          cl /c /Zi /W1 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D _MBCS /D "CMAKE_INTDIR=\\"Debug\\"" /EHsc /RTC1 /MDd /GR /Fo"cmTC_de543.dir\\Debug\\\\" /Fd"cmTC_de543.dir\\Debug\\vc145.pdb" /external:W1 /TP /errorReport:queue "C:\\Program Files\\CMake\\share\\cmake-4.3\\Modules\\CMakeCXXCompilerABI.cpp"
           CMakeCXXCompilerABI.cpp
         Link:
-          C:\\Program Files\\Microsoft Visual Studio\\18\\Community\\VC\\Tools\\MSVC\\14.51.36231\\bin\\HostX64\\x64\\link.exe /OUT:"C:\\Users\\elias\\Desktop\\GITHUB\\wallify\\build\\CMakeFiles\\CMakeScratch\\TryCompile-2yad0z\\Debug\\cmTC_fa1bc.exe" /INCREMENTAL /ILK:"cmTC_fa1bc.dir\\Debug\\cmTC_fa1bc.ilk" /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"C:/Users/elias/Desktop/GITHUB/wallify/build/CMakeFiles/CMakeScratch/TryCompile-2yad0z/Debug/cmTC_fa1bc.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /IMPLIB:"C:/Users/elias/Desktop/GITHUB/wallify/build/CMakeFiles/CMakeScratch/TryCompile-2yad0z/Debug/cmTC_fa1bc.lib" /MACHINE:X64  /machine:x64 cmTC_fa1bc.dir\\Debug\\CMakeCXXCompilerABI.obj
-          cmTC_fa1bc.vcxproj -> C:\\Users\\elias\\Desktop\\GITHUB\\wallify\\build\\CMakeFiles\\CMakeScratch\\TryCompile-2yad0z\\Debug\\cmTC_fa1bc.exe
+          C:\\Program Files\\Microsoft Visual Studio\\18\\Community\\VC\\Tools\\MSVC\\14.51.36231\\bin\\HostX64\\x64\\link.exe /OUT:"C:\\Users\\elias\\Desktop\\GITHUB\\wallify\\build\\CMakeFiles\\CMakeScratch\\TryCompile-887jta\\Debug\\cmTC_de543.exe" /INCREMENTAL /ILK:"cmTC_de543.dir\\Debug\\cmTC_de543.ilk" /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"C:/Users/elias/Desktop/GITHUB/wallify/build/CMakeFiles/CMakeScratch/TryCompile-887jta/Debug/cmTC_de543.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /IMPLIB:"C:/Users/elias/Desktop/GITHUB/wallify/build/CMakeFiles/CMakeScratch/TryCompile-887jta/Debug/cmTC_de543.lib" /MACHINE:X64  /machine:x64 cmTC_de543.dir\\Debug\\CMakeCXXCompilerABI.obj
+          cmTC_de543.vcxproj -> C:\\Users\\elias\\Desktop\\GITHUB\\wallify\\build\\CMakeFiles\\CMakeScratch\\TryCompile-887jta\\Debug\\cmTC_de543.exe
         FinalizeBuildStatus:
-          Deleting file "cmTC_fa1bc.dir\\Debug\\cmTC_fa1bc.tlog\\unsuccessfulbuild".
-          Touching "cmTC_fa1bc.dir\\Debug\\cmTC_fa1bc.tlog\\cmTC_fa1bc.lastbuildstate".
-        Done Building Project "C:\\Users\\elias\\Desktop\\GITHUB\\wallify\\build\\CMakeFiles\\CMakeScratch\\TryCompile-2yad0z\\cmTC_fa1bc.vcxproj" (default targets).
+          Deleting file "cmTC_de543.dir\\Debug\\cmTC_de543.tlog\\unsuccessfulbuild".
+          Touching "cmTC_de543.dir\\Debug\\cmTC_de543.tlog\\cmTC_de543.lastbuildstate".
+        Done Building Project "C:\\Users\\elias\\Desktop\\GITHUB\\wallify\\build\\CMakeFiles\\CMakeScratch\\TryCompile-887jta\\cmTC_de543.vcxproj" (default targets).
         
         Build succeeded.
             0 Warning(s)
             0 Error(s)
         
-        Time Elapsed 00:00:01.50
+        Time Elapsed 00:00:00.87
         
       exitCode: 0
   -
@@ -1003,8 +1029,8 @@ events:
     checks:
       - "Performing Test CMAKE_HAVE_LIBC_PTHREAD"
     directories:
-      source: "C:/Users/elias/Desktop/GITHUB/wallify/build/CMakeFiles/CMakeScratch/TryCompile-o0zi7i"
-      binary: "C:/Users/elias/Desktop/GITHUB/wallify/build/CMakeFiles/CMakeScratch/TryCompile-o0zi7i"
+      source: "C:/Users/elias/Desktop/GITHUB/wallify/build/CMakeFiles/CMakeScratch/TryCompile-3ljrlk"
+      binary: "C:/Users/elias/Desktop/GITHUB/wallify/build/CMakeFiles/CMakeScratch/TryCompile-3ljrlk"
     cmakeVariables:
       CMAKE_CXX_FLAGS: "/DWIN32 /D_WINDOWS /GR /EHsc"
       CMAKE_CXX_FLAGS_DEBUG: "/Zi /Ob0 /Od /RTC1"
@@ -1015,47 +1041,47 @@ events:
       variable: "CMAKE_HAVE_LIBC_PTHREAD"
       cached: true
       stdout: |
-        Change Dir: 'C:/Users/elias/Desktop/GITHUB/wallify/build/CMakeFiles/CMakeScratch/TryCompile-o0zi7i'
+        Change Dir: 'C:/Users/elias/Desktop/GITHUB/wallify/build/CMakeFiles/CMakeScratch/TryCompile-3ljrlk'
         
-        Run Build Command(s): "C:/Program Files/Microsoft Visual Studio/18/Community/MSBuild/Current/Bin/amd64/MSBuild.exe" cmTC_1be20.vcxproj /p:Configuration=Debug /p:Platform=x64 /p:VisualStudioVersion=18.0 /v:n
+        Run Build Command(s): "C:/Program Files/Microsoft Visual Studio/18/Community/MSBuild/Current/Bin/amd64/MSBuild.exe" cmTC_141aa.vcxproj /p:Configuration=Debug /p:Platform=x64 /p:VisualStudioVersion=18.0 /v:n
         MSBuild version 18.6.3+84d3e95b4 for .NET Framework
-        Build started 5/20/2026 12:19:58 PM.
+        Build started 5/20/2026 3:56:24 PM.
         
-        Project "C:\\Users\\elias\\Desktop\\GITHUB\\wallify\\build\\CMakeFiles\\CMakeScratch\\TryCompile-o0zi7i\\cmTC_1be20.vcxproj" on node 1 (default targets).
+        Project "C:\\Users\\elias\\Desktop\\GITHUB\\wallify\\build\\CMakeFiles\\CMakeScratch\\TryCompile-3ljrlk\\cmTC_141aa.vcxproj" on node 1 (default targets).
         PrepareForBuild:
           Structured output is enabled. The formatting of compiler diagnostics will reflect the error hierarchy. See https://aka.ms/cpp/structured-output for more details.
-          Creating directory "C:\\Users\\elias\\Desktop\\GITHUB\\wallify\\build\\CMakeFiles\\CMakeScratch\\TryCompile-o0zi7i\\Debug\\".
-          Creating directory "cmTC_1be20.dir\\Debug\\cmTC_1be20.tlog\\".
+          Creating directory "C:\\Users\\elias\\Desktop\\GITHUB\\wallify\\build\\CMakeFiles\\CMakeScratch\\TryCompile-3ljrlk\\Debug\\".
+          Creating directory "cmTC_141aa.dir\\Debug\\cmTC_141aa.tlog\\".
         InitializeBuildStatus:
-          Creating "cmTC_1be20.dir\\Debug\\cmTC_1be20.tlog\\unsuccessfulbuild" because "AlwaysCreate" was specified.
-          Touching "cmTC_1be20.dir\\Debug\\cmTC_1be20.tlog\\unsuccessfulbuild".
+          Creating "cmTC_141aa.dir\\Debug\\cmTC_141aa.tlog\\unsuccessfulbuild" because "AlwaysCreate" was specified.
+          Touching "cmTC_141aa.dir\\Debug\\cmTC_141aa.tlog\\unsuccessfulbuild".
         ComputeStdModulesCompileInputs:
           Reading library manifest file 'C:\\Program Files\\Microsoft Visual Studio\\18\\Community\\VC\\Tools\\MSVC\\14.51.36231\\modules\\modules.json' which provides data for library 'microsoft/STL'.
           Adding module source 'C:\\Program Files\\Microsoft Visual Studio\\18\\Community\\VC\\Tools\\MSVC\\14.51.36231\\modules\\std.ixx' from library 'microsoft/STL' to be built with this project.
           Adding module source 'C:\\Program Files\\Microsoft Visual Studio\\18\\Community\\VC\\Tools\\MSVC\\14.51.36231\\modules\\std.compat.ixx' from library 'microsoft/STL' to be built with this project.
         MakeDirsForCl:
-          Creating directory "C:\\Users\\elias\\Desktop\\GITHUB\\wallify\\build\\CMakeFiles\\CMakeScratch\\TryCompile-o0zi7i\\cmTC_1be20.dir\\Debug\\microsoft\\STL".
+          Creating directory "C:\\Users\\elias\\Desktop\\GITHUB\\wallify\\build\\CMakeFiles\\CMakeScratch\\TryCompile-3ljrlk\\cmTC_141aa.dir\\Debug\\microsoft\\STL".
         SetModuleDependencies:
-          Creating directory "cmTC_1be20.dir\\Debug\\cmTC_1be20_MD.tlog\\".
+          Creating directory "cmTC_141aa.dir\\Debug\\cmTC_141aa_MD.tlog\\".
         ClCompile:
-          C:\\Program Files\\Microsoft Visual Studio\\18\\Community\\VC\\Tools\\MSVC\\14.51.36231\\bin\\HostX64\\x64\\CL.exe /c /Zi /W1 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D CMAKE_HAVE_LIBC_PTHREAD /D _MBCS /D "CMAKE_INTDIR=\\"Debug\\"" /EHsc /RTC1 /MDd /GR /std:c++20 /Fo"cmTC_1be20.dir\\Debug\\\\" /Fd"cmTC_1be20.dir\\Debug\\vc145.pdb" /external:W1 /TP /errorReport:queue "C:\\Users\\elias\\Desktop\\GITHUB\\wallify\\build\\CMakeFiles\\CMakeScratch\\TryCompile-o0zi7i\\src.cxx"
+          C:\\Program Files\\Microsoft Visual Studio\\18\\Community\\VC\\Tools\\MSVC\\14.51.36231\\bin\\HostX64\\x64\\CL.exe /c /Zi /W1 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D CMAKE_HAVE_LIBC_PTHREAD /D _MBCS /D "CMAKE_INTDIR=\\"Debug\\"" /EHsc /RTC1 /MDd /GR /std:c++20 /Fo"cmTC_141aa.dir\\Debug\\\\" /Fd"cmTC_141aa.dir\\Debug\\vc145.pdb" /external:W1 /TP /errorReport:queue "C:\\Users\\elias\\Desktop\\GITHUB\\wallify\\build\\CMakeFiles\\CMakeScratch\\TryCompile-3ljrlk\\src.cxx"
           Microsoft (R) C/C++ Optimizing Compiler Version 19.51.36243 for x64
           Copyright (C) Microsoft Corporation.  All rights reserved.
-          cl /c /Zi /W1 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D CMAKE_HAVE_LIBC_PTHREAD /D _MBCS /D "CMAKE_INTDIR=\\"Debug\\"" /EHsc /RTC1 /MDd /GR /std:c++20 /Fo"cmTC_1be20.dir\\Debug\\\\" /Fd"cmTC_1be20.dir\\Debug\\vc145.pdb" /external:W1 /TP /errorReport:queue "C:\\Users\\elias\\Desktop\\GITHUB\\wallify\\build\\CMakeFiles\\CMakeScratch\\TryCompile-o0zi7i\\src.cxx"
+          cl /c /Zi /W1 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D CMAKE_HAVE_LIBC_PTHREAD /D _MBCS /D "CMAKE_INTDIR=\\"Debug\\"" /EHsc /RTC1 /MDd /GR /std:c++20 /Fo"cmTC_141aa.dir\\Debug\\\\" /Fd"cmTC_141aa.dir\\Debug\\vc145.pdb" /external:W1 /TP /errorReport:queue "C:\\Users\\elias\\Desktop\\GITHUB\\wallify\\build\\CMakeFiles\\CMakeScratch\\TryCompile-3ljrlk\\src.cxx"
           src.cxx
-        C:\\Users\\elias\\Desktop\\GITHUB\\wallify\\build\\CMakeFiles\\CMakeScratch\\TryCompile-o0zi7i\\src.cxx(1,10): error C1083: Cannot open include file: 'pthread.h': No such file or directory [C:\\Users\\elias\\Desktop\\GITHUB\\wallify\\build\\CMakeFiles\\CMakeScratch\\TryCompile-o0zi7i\\cmTC_1be20.vcxproj]
-        Done Building Project "C:\\Users\\elias\\Desktop\\GITHUB\\wallify\\build\\CMakeFiles\\CMakeScratch\\TryCompile-o0zi7i\\cmTC_1be20.vcxproj" (default targets) -- FAILED.
+        C:\\Users\\elias\\Desktop\\GITHUB\\wallify\\build\\CMakeFiles\\CMakeScratch\\TryCompile-3ljrlk\\src.cxx(1,10): error C1083: Cannot open include file: 'pthread.h': No such file or directory [C:\\Users\\elias\\Desktop\\GITHUB\\wallify\\build\\CMakeFiles\\CMakeScratch\\TryCompile-3ljrlk\\cmTC_141aa.vcxproj]
+        Done Building Project "C:\\Users\\elias\\Desktop\\GITHUB\\wallify\\build\\CMakeFiles\\CMakeScratch\\TryCompile-3ljrlk\\cmTC_141aa.vcxproj" (default targets) -- FAILED.
         
         Build FAILED.
         
-        "C:\\Users\\elias\\Desktop\\GITHUB\\wallify\\build\\CMakeFiles\\CMakeScratch\\TryCompile-o0zi7i\\cmTC_1be20.vcxproj" (default target) (1) ->
+        "C:\\Users\\elias\\Desktop\\GITHUB\\wallify\\build\\CMakeFiles\\CMakeScratch\\TryCompile-3ljrlk\\cmTC_141aa.vcxproj" (default target) (1) ->
         (ClCompile target) -> 
-          C:\\Users\\elias\\Desktop\\GITHUB\\wallify\\build\\CMakeFiles\\CMakeScratch\\TryCompile-o0zi7i\\src.cxx(1,10): error C1083: Cannot open include file: 'pthread.h': No such file or directory [C:\\Users\\elias\\Desktop\\GITHUB\\wallify\\build\\CMakeFiles\\CMakeScratch\\TryCompile-o0zi7i\\cmTC_1be20.vcxproj]
+          C:\\Users\\elias\\Desktop\\GITHUB\\wallify\\build\\CMakeFiles\\CMakeScratch\\TryCompile-3ljrlk\\src.cxx(1,10): error C1083: Cannot open include file: 'pthread.h': No such file or directory [C:\\Users\\elias\\Desktop\\GITHUB\\wallify\\build\\CMakeFiles\\CMakeScratch\\TryCompile-3ljrlk\\cmTC_141aa.vcxproj]
         
             0 Warning(s)
             1 Error(s)
         
-        Time Elapsed 00:00:00.89
+        Time Elapsed 00:00:00.64
         
       exitCode: 1
   -
@@ -1073,8 +1099,8 @@ events:
     checks:
       - "Looking for pthread_create in pthreads"
     directories:
-      source: "C:/Users/elias/Desktop/GITHUB/wallify/build/CMakeFiles/CMakeScratch/TryCompile-aqcwnh"
-      binary: "C:/Users/elias/Desktop/GITHUB/wallify/build/CMakeFiles/CMakeScratch/TryCompile-aqcwnh"
+      source: "C:/Users/elias/Desktop/GITHUB/wallify/build/CMakeFiles/CMakeScratch/TryCompile-qoa057"
+      binary: "C:/Users/elias/Desktop/GITHUB/wallify/build/CMakeFiles/CMakeScratch/TryCompile-qoa057"
     cmakeVariables:
       CMAKE_CXX_FLAGS: "/DWIN32 /D_WINDOWS /GR /EHsc"
       CMAKE_CXX_FLAGS_DEBUG: "/Zi /Ob0 /Od /RTC1"
@@ -1085,49 +1111,49 @@ events:
       variable: "CMAKE_HAVE_PTHREADS_CREATE"
       cached: true
       stdout: |
-        Change Dir: 'C:/Users/elias/Desktop/GITHUB/wallify/build/CMakeFiles/CMakeScratch/TryCompile-aqcwnh'
+        Change Dir: 'C:/Users/elias/Desktop/GITHUB/wallify/build/CMakeFiles/CMakeScratch/TryCompile-qoa057'
         
-        Run Build Command(s): "C:/Program Files/Microsoft Visual Studio/18/Community/MSBuild/Current/Bin/amd64/MSBuild.exe" cmTC_ec04f.vcxproj /p:Configuration=Debug /p:Platform=x64 /p:VisualStudioVersion=18.0 /v:n
+        Run Build Command(s): "C:/Program Files/Microsoft Visual Studio/18/Community/MSBuild/Current/Bin/amd64/MSBuild.exe" cmTC_5457a.vcxproj /p:Configuration=Debug /p:Platform=x64 /p:VisualStudioVersion=18.0 /v:n
         MSBuild version 18.6.3+84d3e95b4 for .NET Framework
-        Build started 5/20/2026 12:20:00 PM.
+        Build started 5/20/2026 3:56:25 PM.
         
-        Project "C:\\Users\\elias\\Desktop\\GITHUB\\wallify\\build\\CMakeFiles\\CMakeScratch\\TryCompile-aqcwnh\\cmTC_ec04f.vcxproj" on node 1 (default targets).
+        Project "C:\\Users\\elias\\Desktop\\GITHUB\\wallify\\build\\CMakeFiles\\CMakeScratch\\TryCompile-qoa057\\cmTC_5457a.vcxproj" on node 1 (default targets).
         PrepareForBuild:
           Structured output is enabled. The formatting of compiler diagnostics will reflect the error hierarchy. See https://aka.ms/cpp/structured-output for more details.
-          Creating directory "C:\\Users\\elias\\Desktop\\GITHUB\\wallify\\build\\CMakeFiles\\CMakeScratch\\TryCompile-aqcwnh\\Debug\\".
-          Creating directory "cmTC_ec04f.dir\\Debug\\cmTC_ec04f.tlog\\".
+          Creating directory "C:\\Users\\elias\\Desktop\\GITHUB\\wallify\\build\\CMakeFiles\\CMakeScratch\\TryCompile-qoa057\\Debug\\".
+          Creating directory "cmTC_5457a.dir\\Debug\\cmTC_5457a.tlog\\".
         InitializeBuildStatus:
-          Creating "cmTC_ec04f.dir\\Debug\\cmTC_ec04f.tlog\\unsuccessfulbuild" because "AlwaysCreate" was specified.
-          Touching "cmTC_ec04f.dir\\Debug\\cmTC_ec04f.tlog\\unsuccessfulbuild".
+          Creating "cmTC_5457a.dir\\Debug\\cmTC_5457a.tlog\\unsuccessfulbuild" because "AlwaysCreate" was specified.
+          Touching "cmTC_5457a.dir\\Debug\\cmTC_5457a.tlog\\unsuccessfulbuild".
         ComputeStdModulesCompileInputs:
           Reading library manifest file 'C:\\Program Files\\Microsoft Visual Studio\\18\\Community\\VC\\Tools\\MSVC\\14.51.36231\\modules\\modules.json' which provides data for library 'microsoft/STL'.
           Adding module source 'C:\\Program Files\\Microsoft Visual Studio\\18\\Community\\VC\\Tools\\MSVC\\14.51.36231\\modules\\std.ixx' from library 'microsoft/STL' to be built with this project.
           Adding module source 'C:\\Program Files\\Microsoft Visual Studio\\18\\Community\\VC\\Tools\\MSVC\\14.51.36231\\modules\\std.compat.ixx' from library 'microsoft/STL' to be built with this project.
         MakeDirsForCl:
-          Creating directory "C:\\Users\\elias\\Desktop\\GITHUB\\wallify\\build\\CMakeFiles\\CMakeScratch\\TryCompile-aqcwnh\\cmTC_ec04f.dir\\Debug\\microsoft\\STL".
+          Creating directory "C:\\Users\\elias\\Desktop\\GITHUB\\wallify\\build\\CMakeFiles\\CMakeScratch\\TryCompile-qoa057\\cmTC_5457a.dir\\Debug\\microsoft\\STL".
         SetModuleDependencies:
-          Creating directory "cmTC_ec04f.dir\\Debug\\cmTC_ec04f_MD.tlog\\".
+          Creating directory "cmTC_5457a.dir\\Debug\\cmTC_5457a_MD.tlog\\".
         ClCompile:
-          C:\\Program Files\\Microsoft Visual Studio\\18\\Community\\VC\\Tools\\MSVC\\14.51.36231\\bin\\HostX64\\x64\\CL.exe /c /Zi /W1 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D CHECK_FUNCTION_EXISTS=pthread_create /D _MBCS /D "CMAKE_INTDIR=\\"Debug\\"" /EHsc /RTC1 /MDd /GR /std:c++20 /Fo"cmTC_ec04f.dir\\Debug\\\\" /Fd"cmTC_ec04f.dir\\Debug\\vc145.pdb" /external:W1 /TP /errorReport:queue "C:\\Users\\elias\\Desktop\\GITHUB\\wallify\\build\\CMakeFiles\\CMakeScratch\\TryCompile-aqcwnh\\CheckFunctionExists.cxx"
+          C:\\Program Files\\Microsoft Visual Studio\\18\\Community\\VC\\Tools\\MSVC\\14.51.36231\\bin\\HostX64\\x64\\CL.exe /c /Zi /W1 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D CHECK_FUNCTION_EXISTS=pthread_create /D _MBCS /D "CMAKE_INTDIR=\\"Debug\\"" /EHsc /RTC1 /MDd /GR /std:c++20 /Fo"cmTC_5457a.dir\\Debug\\\\" /Fd"cmTC_5457a.dir\\Debug\\vc145.pdb" /external:W1 /TP /errorReport:queue "C:\\Users\\elias\\Desktop\\GITHUB\\wallify\\build\\CMakeFiles\\CMakeScratch\\TryCompile-qoa057\\CheckFunctionExists.cxx"
           Microsoft (R) C/C++ Optimizing Compiler Version 19.51.36243 for x64
           Copyright (C) Microsoft Corporation.  All rights reserved.
-          cl /c /Zi /W1 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D CHECK_FUNCTION_EXISTS=pthread_create /D _MBCS /D "CMAKE_INTDIR=\\"Debug\\"" /EHsc /RTC1 /MDd /GR /std:c++20 /Fo"cmTC_ec04f.dir\\Debug\\\\" /Fd"cmTC_ec04f.dir\\Debug\\vc145.pdb" /external:W1 /TP /errorReport:queue "C:\\Users\\elias\\Desktop\\GITHUB\\wallify\\build\\CMakeFiles\\CMakeScratch\\TryCompile-aqcwnh\\CheckFunctionExists.cxx"
+          cl /c /Zi /W1 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D CHECK_FUNCTION_EXISTS=pthread_create /D _MBCS /D "CMAKE_INTDIR=\\"Debug\\"" /EHsc /RTC1 /MDd /GR /std:c++20 /Fo"cmTC_5457a.dir\\Debug\\\\" /Fd"cmTC_5457a.dir\\Debug\\vc145.pdb" /external:W1 /TP /errorReport:queue "C:\\Users\\elias\\Desktop\\GITHUB\\wallify\\build\\CMakeFiles\\CMakeScratch\\TryCompile-qoa057\\CheckFunctionExists.cxx"
           CheckFunctionExists.cxx
         Link:
-          C:\\Program Files\\Microsoft Visual Studio\\18\\Community\\VC\\Tools\\MSVC\\14.51.36231\\bin\\HostX64\\x64\\link.exe /OUT:"C:\\Users\\elias\\Desktop\\GITHUB\\wallify\\build\\CMakeFiles\\CMakeScratch\\TryCompile-aqcwnh\\Debug\\cmTC_ec04f.exe" /INCREMENTAL /ILK:"cmTC_ec04f.dir\\Debug\\cmTC_ec04f.ilk" /NOLOGO pthreads.lib kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"C:/Users/elias/Desktop/GITHUB/wallify/build/CMakeFiles/CMakeScratch/TryCompile-aqcwnh/Debug/cmTC_ec04f.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /IMPLIB:"C:/Users/elias/Desktop/GITHUB/wallify/build/CMakeFiles/CMakeScratch/TryCompile-aqcwnh/Debug/cmTC_ec04f.lib" /MACHINE:X64  /machine:x64 cmTC_ec04f.dir\\Debug\\CheckFunctionExists.obj
-        LINK : fatal error LNK1104: cannot open file 'pthreads.lib' [C:\\Users\\elias\\Desktop\\GITHUB\\wallify\\build\\CMakeFiles\\CMakeScratch\\TryCompile-aqcwnh\\cmTC_ec04f.vcxproj]
-        Done Building Project "C:\\Users\\elias\\Desktop\\GITHUB\\wallify\\build\\CMakeFiles\\CMakeScratch\\TryCompile-aqcwnh\\cmTC_ec04f.vcxproj" (default targets) -- FAILED.
+          C:\\Program Files\\Microsoft Visual Studio\\18\\Community\\VC\\Tools\\MSVC\\14.51.36231\\bin\\HostX64\\x64\\link.exe /OUT:"C:\\Users\\elias\\Desktop\\GITHUB\\wallify\\build\\CMakeFiles\\CMakeScratch\\TryCompile-qoa057\\Debug\\cmTC_5457a.exe" /INCREMENTAL /ILK:"cmTC_5457a.dir\\Debug\\cmTC_5457a.ilk" /NOLOGO pthreads.lib kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"C:/Users/elias/Desktop/GITHUB/wallify/build/CMakeFiles/CMakeScratch/TryCompile-qoa057/Debug/cmTC_5457a.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /IMPLIB:"C:/Users/elias/Desktop/GITHUB/wallify/build/CMakeFiles/CMakeScratch/TryCompile-qoa057/Debug/cmTC_5457a.lib" /MACHINE:X64  /machine:x64 cmTC_5457a.dir\\Debug\\CheckFunctionExists.obj
+        LINK : fatal error LNK1104: cannot open file 'pthreads.lib' [C:\\Users\\elias\\Desktop\\GITHUB\\wallify\\build\\CMakeFiles\\CMakeScratch\\TryCompile-qoa057\\cmTC_5457a.vcxproj]
+        Done Building Project "C:\\Users\\elias\\Desktop\\GITHUB\\wallify\\build\\CMakeFiles\\CMakeScratch\\TryCompile-qoa057\\cmTC_5457a.vcxproj" (default targets) -- FAILED.
         
         Build FAILED.
         
-        "C:\\Users\\elias\\Desktop\\GITHUB\\wallify\\build\\CMakeFiles\\CMakeScratch\\TryCompile-aqcwnh\\cmTC_ec04f.vcxproj" (default target) (1) ->
+        "C:\\Users\\elias\\Desktop\\GITHUB\\wallify\\build\\CMakeFiles\\CMakeScratch\\TryCompile-qoa057\\cmTC_5457a.vcxproj" (default target) (1) ->
         (Link target) -> 
-          LINK : fatal error LNK1104: cannot open file 'pthreads.lib' [C:\\Users\\elias\\Desktop\\GITHUB\\wallify\\build\\CMakeFiles\\CMakeScratch\\TryCompile-aqcwnh\\cmTC_ec04f.vcxproj]
+          LINK : fatal error LNK1104: cannot open file 'pthreads.lib' [C:\\Users\\elias\\Desktop\\GITHUB\\wallify\\build\\CMakeFiles\\CMakeScratch\\TryCompile-qoa057\\cmTC_5457a.vcxproj]
         
             0 Warning(s)
             1 Error(s)
         
-        Time Elapsed 00:00:01.34
+        Time Elapsed 00:00:00.88
         
       exitCode: 1
   -
@@ -1145,8 +1171,8 @@ events:
     checks:
       - "Looking for pthread_create in pthread"
     directories:
-      source: "C:/Users/elias/Desktop/GITHUB/wallify/build/CMakeFiles/CMakeScratch/TryCompile-0nacqx"
-      binary: "C:/Users/elias/Desktop/GITHUB/wallify/build/CMakeFiles/CMakeScratch/TryCompile-0nacqx"
+      source: "C:/Users/elias/Desktop/GITHUB/wallify/build/CMakeFiles/CMakeScratch/TryCompile-w9wfjm"
+      binary: "C:/Users/elias/Desktop/GITHUB/wallify/build/CMakeFiles/CMakeScratch/TryCompile-w9wfjm"
     cmakeVariables:
       CMAKE_CXX_FLAGS: "/DWIN32 /D_WINDOWS /GR /EHsc"
       CMAKE_CXX_FLAGS_DEBUG: "/Zi /Ob0 /Od /RTC1"
@@ -1157,49 +1183,49 @@ events:
       variable: "CMAKE_HAVE_PTHREAD_CREATE"
       cached: true
       stdout: |
-        Change Dir: 'C:/Users/elias/Desktop/GITHUB/wallify/build/CMakeFiles/CMakeScratch/TryCompile-0nacqx'
+        Change Dir: 'C:/Users/elias/Desktop/GITHUB/wallify/build/CMakeFiles/CMakeScratch/TryCompile-w9wfjm'
         
-        Run Build Command(s): "C:/Program Files/Microsoft Visual Studio/18/Community/MSBuild/Current/Bin/amd64/MSBuild.exe" cmTC_3ee3f.vcxproj /p:Configuration=Debug /p:Platform=x64 /p:VisualStudioVersion=18.0 /v:n
+        Run Build Command(s): "C:/Program Files/Microsoft Visual Studio/18/Community/MSBuild/Current/Bin/amd64/MSBuild.exe" cmTC_b08ac.vcxproj /p:Configuration=Debug /p:Platform=x64 /p:VisualStudioVersion=18.0 /v:n
         MSBuild version 18.6.3+84d3e95b4 for .NET Framework
-        Build started 5/20/2026 12:20:02 PM.
+        Build started 5/20/2026 3:56:26 PM.
         
-        Project "C:\\Users\\elias\\Desktop\\GITHUB\\wallify\\build\\CMakeFiles\\CMakeScratch\\TryCompile-0nacqx\\cmTC_3ee3f.vcxproj" on node 1 (default targets).
+        Project "C:\\Users\\elias\\Desktop\\GITHUB\\wallify\\build\\CMakeFiles\\CMakeScratch\\TryCompile-w9wfjm\\cmTC_b08ac.vcxproj" on node 1 (default targets).
         PrepareForBuild:
           Structured output is enabled. The formatting of compiler diagnostics will reflect the error hierarchy. See https://aka.ms/cpp/structured-output for more details.
-          Creating directory "C:\\Users\\elias\\Desktop\\GITHUB\\wallify\\build\\CMakeFiles\\CMakeScratch\\TryCompile-0nacqx\\Debug\\".
-          Creating directory "cmTC_3ee3f.dir\\Debug\\cmTC_3ee3f.tlog\\".
+          Creating directory "C:\\Users\\elias\\Desktop\\GITHUB\\wallify\\build\\CMakeFiles\\CMakeScratch\\TryCompile-w9wfjm\\Debug\\".
+          Creating directory "cmTC_b08ac.dir\\Debug\\cmTC_b08ac.tlog\\".
         InitializeBuildStatus:
-          Creating "cmTC_3ee3f.dir\\Debug\\cmTC_3ee3f.tlog\\unsuccessfulbuild" because "AlwaysCreate" was specified.
-          Touching "cmTC_3ee3f.dir\\Debug\\cmTC_3ee3f.tlog\\unsuccessfulbuild".
+          Creating "cmTC_b08ac.dir\\Debug\\cmTC_b08ac.tlog\\unsuccessfulbuild" because "AlwaysCreate" was specified.
+          Touching "cmTC_b08ac.dir\\Debug\\cmTC_b08ac.tlog\\unsuccessfulbuild".
         ComputeStdModulesCompileInputs:
           Reading library manifest file 'C:\\Program Files\\Microsoft Visual Studio\\18\\Community\\VC\\Tools\\MSVC\\14.51.36231\\modules\\modules.json' which provides data for library 'microsoft/STL'.
           Adding module source 'C:\\Program Files\\Microsoft Visual Studio\\18\\Community\\VC\\Tools\\MSVC\\14.51.36231\\modules\\std.ixx' from library 'microsoft/STL' to be built with this project.
           Adding module source 'C:\\Program Files\\Microsoft Visual Studio\\18\\Community\\VC\\Tools\\MSVC\\14.51.36231\\modules\\std.compat.ixx' from library 'microsoft/STL' to be built with this project.
         MakeDirsForCl:
-          Creating directory "C:\\Users\\elias\\Desktop\\GITHUB\\wallify\\build\\CMakeFiles\\CMakeScratch\\TryCompile-0nacqx\\cmTC_3ee3f.dir\\Debug\\microsoft\\STL".
+          Creating directory "C:\\Users\\elias\\Desktop\\GITHUB\\wallify\\build\\CMakeFiles\\CMakeScratch\\TryCompile-w9wfjm\\cmTC_b08ac.dir\\Debug\\microsoft\\STL".
         SetModuleDependencies:
-          Creating directory "cmTC_3ee3f.dir\\Debug\\cmTC_3ee3f_MD.tlog\\".
+          Creating directory "cmTC_b08ac.dir\\Debug\\cmTC_b08ac_MD.tlog\\".
         ClCompile:
-          C:\\Program Files\\Microsoft Visual Studio\\18\\Community\\VC\\Tools\\MSVC\\14.51.36231\\bin\\HostX64\\x64\\CL.exe /c /Zi /W1 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D CHECK_FUNCTION_EXISTS=pthread_create /D _MBCS /D "CMAKE_INTDIR=\\"Debug\\"" /EHsc /RTC1 /MDd /GR /std:c++20 /Fo"cmTC_3ee3f.dir\\Debug\\\\" /Fd"cmTC_3ee3f.dir\\Debug\\vc145.pdb" /external:W1 /TP /errorReport:queue "C:\\Users\\elias\\Desktop\\GITHUB\\wallify\\build\\CMakeFiles\\CMakeScratch\\TryCompile-0nacqx\\CheckFunctionExists.cxx"
+          C:\\Program Files\\Microsoft Visual Studio\\18\\Community\\VC\\Tools\\MSVC\\14.51.36231\\bin\\HostX64\\x64\\CL.exe /c /Zi /W1 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D CHECK_FUNCTION_EXISTS=pthread_create /D _MBCS /D "CMAKE_INTDIR=\\"Debug\\"" /EHsc /RTC1 /MDd /GR /std:c++20 /Fo"cmTC_b08ac.dir\\Debug\\\\" /Fd"cmTC_b08ac.dir\\Debug\\vc145.pdb" /external:W1 /TP /errorReport:queue "C:\\Users\\elias\\Desktop\\GITHUB\\wallify\\build\\CMakeFiles\\CMakeScratch\\TryCompile-w9wfjm\\CheckFunctionExists.cxx"
           Microsoft (R) C/C++ Optimizing Compiler Version 19.51.36243 for x64
           Copyright (C) Microsoft Corporation.  All rights reserved.
-          cl /c /Zi /W1 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D CHECK_FUNCTION_EXISTS=pthread_create /D _MBCS /D "CMAKE_INTDIR=\\"Debug\\"" /EHsc /RTC1 /MDd /GR /std:c++20 /Fo"cmTC_3ee3f.dir\\Debug\\\\" /Fd"cmTC_3ee3f.dir\\Debug\\vc145.pdb" /external:W1 /TP /errorReport:queue "C:\\Users\\elias\\Desktop\\GITHUB\\wallify\\build\\CMakeFiles\\CMakeScratch\\TryCompile-0nacqx\\CheckFunctionExists.cxx"
+          cl /c /Zi /W1 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D CHECK_FUNCTION_EXISTS=pthread_create /D _MBCS /D "CMAKE_INTDIR=\\"Debug\\"" /EHsc /RTC1 /MDd /GR /std:c++20 /Fo"cmTC_b08ac.dir\\Debug\\\\" /Fd"cmTC_b08ac.dir\\Debug\\vc145.pdb" /external:W1 /TP /errorReport:queue "C:\\Users\\elias\\Desktop\\GITHUB\\wallify\\build\\CMakeFiles\\CMakeScratch\\TryCompile-w9wfjm\\CheckFunctionExists.cxx"
           CheckFunctionExists.cxx
         Link:
-          C:\\Program Files\\Microsoft Visual Studio\\18\\Community\\VC\\Tools\\MSVC\\14.51.36231\\bin\\HostX64\\x64\\link.exe /OUT:"C:\\Users\\elias\\Desktop\\GITHUB\\wallify\\build\\CMakeFiles\\CMakeScratch\\TryCompile-0nacqx\\Debug\\cmTC_3ee3f.exe" /INCREMENTAL /ILK:"cmTC_3ee3f.dir\\Debug\\cmTC_3ee3f.ilk" /NOLOGO pthread.lib kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"C:/Users/elias/Desktop/GITHUB/wallify/build/CMakeFiles/CMakeScratch/TryCompile-0nacqx/Debug/cmTC_3ee3f.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /IMPLIB:"C:/Users/elias/Desktop/GITHUB/wallify/build/CMakeFiles/CMakeScratch/TryCompile-0nacqx/Debug/cmTC_3ee3f.lib" /MACHINE:X64  /machine:x64 cmTC_3ee3f.dir\\Debug\\CheckFunctionExists.obj
-        LINK : fatal error LNK1104: cannot open file 'pthread.lib' [C:\\Users\\elias\\Desktop\\GITHUB\\wallify\\build\\CMakeFiles\\CMakeScratch\\TryCompile-0nacqx\\cmTC_3ee3f.vcxproj]
-        Done Building Project "C:\\Users\\elias\\Desktop\\GITHUB\\wallify\\build\\CMakeFiles\\CMakeScratch\\TryCompile-0nacqx\\cmTC_3ee3f.vcxproj" (default targets) -- FAILED.
+          C:\\Program Files\\Microsoft Visual Studio\\18\\Community\\VC\\Tools\\MSVC\\14.51.36231\\bin\\HostX64\\x64\\link.exe /OUT:"C:\\Users\\elias\\Desktop\\GITHUB\\wallify\\build\\CMakeFiles\\CMakeScratch\\TryCompile-w9wfjm\\Debug\\cmTC_b08ac.exe" /INCREMENTAL /ILK:"cmTC_b08ac.dir\\Debug\\cmTC_b08ac.ilk" /NOLOGO pthread.lib kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"C:/Users/elias/Desktop/GITHUB/wallify/build/CMakeFiles/CMakeScratch/TryCompile-w9wfjm/Debug/cmTC_b08ac.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /IMPLIB:"C:/Users/elias/Desktop/GITHUB/wallify/build/CMakeFiles/CMakeScratch/TryCompile-w9wfjm/Debug/cmTC_b08ac.lib" /MACHINE:X64  /machine:x64 cmTC_b08ac.dir\\Debug\\CheckFunctionExists.obj
+        LINK : fatal error LNK1104: cannot open file 'pthread.lib' [C:\\Users\\elias\\Desktop\\GITHUB\\wallify\\build\\CMakeFiles\\CMakeScratch\\TryCompile-w9wfjm\\cmTC_b08ac.vcxproj]
+        Done Building Project "C:\\Users\\elias\\Desktop\\GITHUB\\wallify\\build\\CMakeFiles\\CMakeScratch\\TryCompile-w9wfjm\\cmTC_b08ac.vcxproj" (default targets) -- FAILED.
         
         Build FAILED.
         
-        "C:\\Users\\elias\\Desktop\\GITHUB\\wallify\\build\\CMakeFiles\\CMakeScratch\\TryCompile-0nacqx\\cmTC_3ee3f.vcxproj" (default target) (1) ->
+        "C:\\Users\\elias\\Desktop\\GITHUB\\wallify\\build\\CMakeFiles\\CMakeScratch\\TryCompile-w9wfjm\\cmTC_b08ac.vcxproj" (default target) (1) ->
         (Link target) -> 
-          LINK : fatal error LNK1104: cannot open file 'pthread.lib' [C:\\Users\\elias\\Desktop\\GITHUB\\wallify\\build\\CMakeFiles\\CMakeScratch\\TryCompile-0nacqx\\cmTC_3ee3f.vcxproj]
+          LINK : fatal error LNK1104: cannot open file 'pthread.lib' [C:\\Users\\elias\\Desktop\\GITHUB\\wallify\\build\\CMakeFiles\\CMakeScratch\\TryCompile-w9wfjm\\cmTC_b08ac.vcxproj]
         
             0 Warning(s)
             1 Error(s)
         
-        Time Elapsed 00:00:01.19
+        Time Elapsed 00:00:00.71
         
       exitCode: 1
   -
@@ -1218,8 +1244,8 @@ events:
     checks:
       - "Performing Test HAVE_STDATOMIC"
     directories:
-      source: "C:/Users/elias/Desktop/GITHUB/wallify/build/CMakeFiles/CMakeScratch/TryCompile-37hyy1"
-      binary: "C:/Users/elias/Desktop/GITHUB/wallify/build/CMakeFiles/CMakeScratch/TryCompile-37hyy1"
+      source: "C:/Users/elias/Desktop/GITHUB/wallify/build/CMakeFiles/CMakeScratch/TryCompile-0pyt2d"
+      binary: "C:/Users/elias/Desktop/GITHUB/wallify/build/CMakeFiles/CMakeScratch/TryCompile-0pyt2d"
     cmakeVariables:
       CMAKE_CXX_FLAGS: "/DWIN32 /D_WINDOWS /GR /EHsc"
       CMAKE_CXX_FLAGS_DEBUG: "/Zi /Ob0 /Od /RTC1"
@@ -1230,47 +1256,47 @@ events:
       variable: "HAVE_STDATOMIC"
       cached: true
       stdout: |
-        Change Dir: 'C:/Users/elias/Desktop/GITHUB/wallify/build/CMakeFiles/CMakeScratch/TryCompile-37hyy1'
+        Change Dir: 'C:/Users/elias/Desktop/GITHUB/wallify/build/CMakeFiles/CMakeScratch/TryCompile-0pyt2d'
         
-        Run Build Command(s): "C:/Program Files/Microsoft Visual Studio/18/Community/MSBuild/Current/Bin/amd64/MSBuild.exe" cmTC_04cf9.vcxproj /p:Configuration=Debug /p:Platform=x64 /p:VisualStudioVersion=18.0 /v:n
+        Run Build Command(s): "C:/Program Files/Microsoft Visual Studio/18/Community/MSBuild/Current/Bin/amd64/MSBuild.exe" cmTC_f2999.vcxproj /p:Configuration=Debug /p:Platform=x64 /p:VisualStudioVersion=18.0 /v:n
         MSBuild version 18.6.3+84d3e95b4 for .NET Framework
-        Build started 5/20/2026 12:20:03 PM.
+        Build started 5/20/2026 3:56:27 PM.
         
-        Project "C:\\Users\\elias\\Desktop\\GITHUB\\wallify\\build\\CMakeFiles\\CMakeScratch\\TryCompile-37hyy1\\cmTC_04cf9.vcxproj" on node 1 (default targets).
+        Project "C:\\Users\\elias\\Desktop\\GITHUB\\wallify\\build\\CMakeFiles\\CMakeScratch\\TryCompile-0pyt2d\\cmTC_f2999.vcxproj" on node 1 (default targets).
         PrepareForBuild:
           Structured output is enabled. The formatting of compiler diagnostics will reflect the error hierarchy. See https://aka.ms/cpp/structured-output for more details.
-          Creating directory "C:\\Users\\elias\\Desktop\\GITHUB\\wallify\\build\\CMakeFiles\\CMakeScratch\\TryCompile-37hyy1\\Debug\\".
-          Creating directory "cmTC_04cf9.dir\\Debug\\cmTC_04cf9.tlog\\".
+          Creating directory "C:\\Users\\elias\\Desktop\\GITHUB\\wallify\\build\\CMakeFiles\\CMakeScratch\\TryCompile-0pyt2d\\Debug\\".
+          Creating directory "cmTC_f2999.dir\\Debug\\cmTC_f2999.tlog\\".
         InitializeBuildStatus:
-          Creating "cmTC_04cf9.dir\\Debug\\cmTC_04cf9.tlog\\unsuccessfulbuild" because "AlwaysCreate" was specified.
-          Touching "cmTC_04cf9.dir\\Debug\\cmTC_04cf9.tlog\\unsuccessfulbuild".
+          Creating "cmTC_f2999.dir\\Debug\\cmTC_f2999.tlog\\unsuccessfulbuild" because "AlwaysCreate" was specified.
+          Touching "cmTC_f2999.dir\\Debug\\cmTC_f2999.tlog\\unsuccessfulbuild".
         ComputeStdModulesCompileInputs:
           Reading library manifest file 'C:\\Program Files\\Microsoft Visual Studio\\18\\Community\\VC\\Tools\\MSVC\\14.51.36231\\modules\\modules.json' which provides data for library 'microsoft/STL'.
           Adding module source 'C:\\Program Files\\Microsoft Visual Studio\\18\\Community\\VC\\Tools\\MSVC\\14.51.36231\\modules\\std.ixx' from library 'microsoft/STL' to be built with this project.
           Adding module source 'C:\\Program Files\\Microsoft Visual Studio\\18\\Community\\VC\\Tools\\MSVC\\14.51.36231\\modules\\std.compat.ixx' from library 'microsoft/STL' to be built with this project.
         MakeDirsForCl:
-          Creating directory "C:\\Users\\elias\\Desktop\\GITHUB\\wallify\\build\\CMakeFiles\\CMakeScratch\\TryCompile-37hyy1\\cmTC_04cf9.dir\\Debug\\microsoft\\STL".
+          Creating directory "C:\\Users\\elias\\Desktop\\GITHUB\\wallify\\build\\CMakeFiles\\CMakeScratch\\TryCompile-0pyt2d\\cmTC_f2999.dir\\Debug\\microsoft\\STL".
         SetModuleDependencies:
-          Creating directory "cmTC_04cf9.dir\\Debug\\cmTC_04cf9_MD.tlog\\".
+          Creating directory "cmTC_f2999.dir\\Debug\\cmTC_f2999_MD.tlog\\".
         ClCompile:
-          C:\\Program Files\\Microsoft Visual Studio\\18\\Community\\VC\\Tools\\MSVC\\14.51.36231\\bin\\HostX64\\x64\\CL.exe /c /Zi /W1 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D HAVE_STDATOMIC /D _MBCS /D "CMAKE_INTDIR=\\"Debug\\"" /EHsc /RTC1 /MDd /GR /std:c++20 /Fo"cmTC_04cf9.dir\\Debug\\\\" /Fd"cmTC_04cf9.dir\\Debug\\vc145.pdb" /external:W1 /TP /errorReport:queue "C:\\Users\\elias\\Desktop\\GITHUB\\wallify\\build\\CMakeFiles\\CMakeScratch\\TryCompile-37hyy1\\src.cxx"
+          C:\\Program Files\\Microsoft Visual Studio\\18\\Community\\VC\\Tools\\MSVC\\14.51.36231\\bin\\HostX64\\x64\\CL.exe /c /Zi /W1 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D HAVE_STDATOMIC /D _MBCS /D "CMAKE_INTDIR=\\"Debug\\"" /EHsc /RTC1 /MDd /GR /std:c++20 /Fo"cmTC_f2999.dir\\Debug\\\\" /Fd"cmTC_f2999.dir\\Debug\\vc145.pdb" /external:W1 /TP /errorReport:queue "C:\\Users\\elias\\Desktop\\GITHUB\\wallify\\build\\CMakeFiles\\CMakeScratch\\TryCompile-0pyt2d\\src.cxx"
           Microsoft (R) C/C++ Optimizing Compiler Version 19.51.36243 for x64
           Copyright (C) Microsoft Corporation.  All rights reserved.
-          cl /c /Zi /W1 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D HAVE_STDATOMIC /D _MBCS /D "CMAKE_INTDIR=\\"Debug\\"" /EHsc /RTC1 /MDd /GR /std:c++20 /Fo"cmTC_04cf9.dir\\Debug\\\\" /Fd"cmTC_04cf9.dir\\Debug\\vc145.pdb" /external:W1 /TP /errorReport:queue "C:\\Users\\elias\\Desktop\\GITHUB\\wallify\\build\\CMakeFiles\\CMakeScratch\\TryCompile-37hyy1\\src.cxx"
+          cl /c /Zi /W1 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D HAVE_STDATOMIC /D _MBCS /D "CMAKE_INTDIR=\\"Debug\\"" /EHsc /RTC1 /MDd /GR /std:c++20 /Fo"cmTC_f2999.dir\\Debug\\\\" /Fd"cmTC_f2999.dir\\Debug\\vc145.pdb" /external:W1 /TP /errorReport:queue "C:\\Users\\elias\\Desktop\\GITHUB\\wallify\\build\\CMakeFiles\\CMakeScratch\\TryCompile-0pyt2d\\src.cxx"
           src.cxx
         Link:
-          C:\\Program Files\\Microsoft Visual Studio\\18\\Community\\VC\\Tools\\MSVC\\14.51.36231\\bin\\HostX64\\x64\\link.exe /OUT:"C:\\Users\\elias\\Desktop\\GITHUB\\wallify\\build\\CMakeFiles\\CMakeScratch\\TryCompile-37hyy1\\Debug\\cmTC_04cf9.exe" /INCREMENTAL /ILK:"cmTC_04cf9.dir\\Debug\\cmTC_04cf9.ilk" /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"C:/Users/elias/Desktop/GITHUB/wallify/build/CMakeFiles/CMakeScratch/TryCompile-37hyy1/Debug/cmTC_04cf9.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /IMPLIB:"C:/Users/elias/Desktop/GITHUB/wallify/build/CMakeFiles/CMakeScratch/TryCompile-37hyy1/Debug/cmTC_04cf9.lib" /MACHINE:X64  /machine:x64 cmTC_04cf9.dir\\Debug\\src.obj
-          cmTC_04cf9.vcxproj -> C:\\Users\\elias\\Desktop\\GITHUB\\wallify\\build\\CMakeFiles\\CMakeScratch\\TryCompile-37hyy1\\Debug\\cmTC_04cf9.exe
+          C:\\Program Files\\Microsoft Visual Studio\\18\\Community\\VC\\Tools\\MSVC\\14.51.36231\\bin\\HostX64\\x64\\link.exe /OUT:"C:\\Users\\elias\\Desktop\\GITHUB\\wallify\\build\\CMakeFiles\\CMakeScratch\\TryCompile-0pyt2d\\Debug\\cmTC_f2999.exe" /INCREMENTAL /ILK:"cmTC_f2999.dir\\Debug\\cmTC_f2999.ilk" /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"C:/Users/elias/Desktop/GITHUB/wallify/build/CMakeFiles/CMakeScratch/TryCompile-0pyt2d/Debug/cmTC_f2999.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /IMPLIB:"C:/Users/elias/Desktop/GITHUB/wallify/build/CMakeFiles/CMakeScratch/TryCompile-0pyt2d/Debug/cmTC_f2999.lib" /MACHINE:X64  /machine:x64 cmTC_f2999.dir\\Debug\\src.obj
+          cmTC_f2999.vcxproj -> C:\\Users\\elias\\Desktop\\GITHUB\\wallify\\build\\CMakeFiles\\CMakeScratch\\TryCompile-0pyt2d\\Debug\\cmTC_f2999.exe
         FinalizeBuildStatus:
-          Deleting file "cmTC_04cf9.dir\\Debug\\cmTC_04cf9.tlog\\unsuccessfulbuild".
-          Touching "cmTC_04cf9.dir\\Debug\\cmTC_04cf9.tlog\\cmTC_04cf9.lastbuildstate".
-        Done Building Project "C:\\Users\\elias\\Desktop\\GITHUB\\wallify\\build\\CMakeFiles\\CMakeScratch\\TryCompile-37hyy1\\cmTC_04cf9.vcxproj" (default targets).
+          Deleting file "cmTC_f2999.dir\\Debug\\cmTC_f2999.tlog\\unsuccessfulbuild".
+          Touching "cmTC_f2999.dir\\Debug\\cmTC_f2999.tlog\\cmTC_f2999.lastbuildstate".
+        Done Building Project "C:\\Users\\elias\\Desktop\\GITHUB\\wallify\\build\\CMakeFiles\\CMakeScratch\\TryCompile-0pyt2d\\cmTC_f2999.vcxproj" (default targets).
         
         Build succeeded.
             0 Warning(s)
             0 Error(s)
         
-        Time Elapsed 00:00:01.77
+        Time Elapsed 00:00:01.12
         
       exitCode: 0
   -
@@ -1348,27 +1374,27 @@ events:
         mode: "cps"
         reason: "no_exist"
       -
-        path: "C:/Users/elias/Desktop/GITHUB/wallify/deps/6.8.2/msvc2022_64/Qt6CoreToolsConfig.cmake"
+        path: "c:/Users/elias/Desktop/GITHUB/wallify/deps/6.8.2/msvc2022_64/Qt6CoreToolsConfig.cmake"
         mode: "config"
         reason: "no_exist"
       -
-        path: "C:/Users/elias/Desktop/GITHUB/wallify/deps/6.8.2/msvc2022_64/qt6coretools-config.cmake"
+        path: "c:/Users/elias/Desktop/GITHUB/wallify/deps/6.8.2/msvc2022_64/qt6coretools-config.cmake"
         mode: "config"
         reason: "no_exist"
       -
-        path: "C:/Users/elias/Desktop/GITHUB/wallify/deps/6.8.2/msvc2022_64/lib/cps/Qt6CoreTools.cps"
+        path: "c:/Users/elias/Desktop/GITHUB/wallify/deps/6.8.2/msvc2022_64/lib/cps/Qt6CoreTools.cps"
         mode: "cps"
         reason: "no_exist"
       -
-        path: "C:/Users/elias/Desktop/GITHUB/wallify/deps/6.8.2/msvc2022_64/lib/cps/qt6coretools.cps"
+        path: "c:/Users/elias/Desktop/GITHUB/wallify/deps/6.8.2/msvc2022_64/lib/cps/qt6coretools.cps"
         mode: "cps"
         reason: "no_exist"
       -
-        path: "C:/Users/elias/Desktop/GITHUB/wallify/deps/6.8.2/msvc2022_64/share/cps/Qt6CoreTools.cps"
+        path: "c:/Users/elias/Desktop/GITHUB/wallify/deps/6.8.2/msvc2022_64/share/cps/Qt6CoreTools.cps"
         mode: "cps"
         reason: "no_exist"
       -
-        path: "C:/Users/elias/Desktop/GITHUB/wallify/deps/6.8.2/msvc2022_64/share/cps/qt6coretools.cps"
+        path: "c:/Users/elias/Desktop/GITHUB/wallify/deps/6.8.2/msvc2022_64/share/cps/qt6coretools.cps"
         mode: "cps"
         reason: "no_exist"
     found:
@@ -1377,7 +1403,7 @@ events:
       version: "6.8.2"
     search_context:
       CMAKE_PREFIX_PATH:
-        - "C:/Users/elias/Desktop/GITHUB/wallify/deps/6.8.2/msvc2022_64"
+        - "c:\\Users\\elias\\Desktop\\GITHUB\\wallify\\deps\\6.8.2\\msvc2022_64"
       ENV{PATH}:
         - "C:/Users/elias/.gemini/antigravity/bin"
         - "C:\\Users\\elias\\AppData\\Roaming\\Antigravity\\bin"
@@ -1555,7 +1581,7 @@ events:
       version: "6.8.2"
     search_context:
       CMAKE_PREFIX_PATH:
-        - "C:/Users/elias/Desktop/GITHUB/wallify/deps/6.8.2/msvc2022_64"
+        - "c:\\Users\\elias\\Desktop\\GITHUB\\wallify\\deps\\6.8.2\\msvc2022_64"
       ENV{PATH}:
         - "C:/Users/elias/.gemini/antigravity/bin"
         - "C:\\Users\\elias\\AppData\\Roaming\\Antigravity\\bin"
@@ -1733,7 +1759,7 @@ events:
       version: "6.8.2"
     search_context:
       CMAKE_PREFIX_PATH:
-        - "C:/Users/elias/Desktop/GITHUB/wallify/deps/6.8.2/msvc2022_64"
+        - "c:\\Users\\elias\\Desktop\\GITHUB\\wallify\\deps\\6.8.2\\msvc2022_64"
       ENV{PATH}:
         - "C:/Users/elias/.gemini/antigravity/bin"
         - "C:\\Users\\elias\\AppData\\Roaming\\Antigravity\\bin"
@@ -1790,9 +1816,9 @@ events:
     names:
       - "windeployqt"
     candidate_directories:
-      - "C:/Users/elias/Desktop/GITHUB/wallify/deps/6.8.2/msvc2022_64/bin/"
-      - "C:/Users/elias/Desktop/GITHUB/wallify/deps/6.8.2/msvc2022_64/sbin/"
-      - "C:/Users/elias/Desktop/GITHUB/wallify/deps/6.8.2/msvc2022_64/"
+      - "c:/Users/elias/Desktop/GITHUB/wallify/deps/6.8.2/msvc2022_64/bin/"
+      - "c:/Users/elias/Desktop/GITHUB/wallify/deps/6.8.2/msvc2022_64/sbin/"
+      - "c:/Users/elias/Desktop/GITHUB/wallify/deps/6.8.2/msvc2022_64/"
       - "C:/Users/elias/Desktop/GITHUB/wallify/deps/6.8.2/msvc2022_64/bin/"
       - "C:/Users/elias/.gemini/antigravity/bin/"
       - "C:/Users/elias/AppData/Roaming/Antigravity/bin/"
@@ -1834,11 +1860,11 @@ events:
       - "C:/Program Files (x86)/wallify/sbin/"
       - "C:/Program Files (x86)/wallify/"
     searched_directories:
-      - "C:/Users/elias/Desktop/GITHUB/wallify/deps/6.8.2/msvc2022_64/bin/windeployqt.com"
+      - "c:/Users/elias/Desktop/GITHUB/wallify/deps/6.8.2/msvc2022_64/bin/windeployqt.com"
     found: "C:/Users/elias/Desktop/GITHUB/wallify/deps/6.8.2/msvc2022_64/bin/windeployqt.exe"
     search_context:
       CMAKE_PREFIX_PATH:
-        - "C:/Users/elias/Desktop/GITHUB/wallify/deps/6.8.2/msvc2022_64"
+        - "c:\\Users\\elias\\Desktop\\GITHUB\\wallify\\deps\\6.8.2\\msvc2022_64"
       ENV{PATH}:
         - "C:/Users/elias/.gemini/antigravity/bin"
         - "C:\\Users\\elias\\AppData\\Roaming\\Antigravity\\bin"
@@ -1963,7 +1989,7 @@ events:
       version: "6.8.2"
     search_context:
       CMAKE_PREFIX_PATH:
-        - "C:/Users/elias/Desktop/GITHUB/wallify/deps/6.8.2/msvc2022_64"
+        - "c:\\Users\\elias\\Desktop\\GITHUB\\wallify\\deps\\6.8.2\\msvc2022_64"
       ENV{PATH}:
         - "C:/Users/elias/.gemini/antigravity/bin"
         - "C:\\Users\\elias\\AppData\\Roaming\\Antigravity\\bin"
@@ -2022,8 +2048,8 @@ events:
     names:
       - "vulkan/vulkan.h"
     candidate_directories:
-      - "C:/Users/elias/Desktop/GITHUB/wallify/deps/6.8.2/msvc2022_64/include/"
-      - "C:/Users/elias/Desktop/GITHUB/wallify/deps/6.8.2/msvc2022_64/"
+      - "c:/Users/elias/Desktop/GITHUB/wallify/deps/6.8.2/msvc2022_64/include/"
+      - "c:/Users/elias/Desktop/GITHUB/wallify/deps/6.8.2/msvc2022_64/"
       - "C:/Users/elias/.gemini/antigravity/bin/"
       - "C:/Users/elias/AppData/Roaming/Antigravity/bin/"
       - "C:/Program Files/Eclipse Adoptium/jdk-25.0.2.10-hotspot/bin/"
@@ -2060,8 +2086,8 @@ events:
       - "C:/Program Files (x86)/wallify/include/"
       - "C:/Program Files (x86)/wallify/"
     searched_directories:
-      - "C:/Users/elias/Desktop/GITHUB/wallify/deps/6.8.2/msvc2022_64/include/vulkan/vulkan.h"
-      - "C:/Users/elias/Desktop/GITHUB/wallify/deps/6.8.2/msvc2022_64/vulkan/vulkan.h"
+      - "c:/Users/elias/Desktop/GITHUB/wallify/deps/6.8.2/msvc2022_64/include/vulkan/vulkan.h"
+      - "c:/Users/elias/Desktop/GITHUB/wallify/deps/6.8.2/msvc2022_64/vulkan/vulkan.h"
       - "C:/Users/elias/.gemini/antigravity/bin/vulkan/vulkan.h"
       - "C:/Users/elias/AppData/Roaming/Antigravity/bin/vulkan/vulkan.h"
       - "C:/Program Files/Eclipse Adoptium/jdk-25.0.2.10-hotspot/bin/vulkan/vulkan.h"
@@ -2100,7 +2126,7 @@ events:
     found: false
     search_context:
       CMAKE_PREFIX_PATH:
-        - "C:/Users/elias/Desktop/GITHUB/wallify/deps/6.8.2/msvc2022_64"
+        - "c:\\Users\\elias\\Desktop\\GITHUB\\wallify\\deps\\6.8.2\\msvc2022_64"
       ENV{PATH}:
         - "C:/Users/elias/.gemini/antigravity/bin"
         - "C:\\Users\\elias\\AppData\\Roaming\\Antigravity\\bin"
@@ -2159,8 +2185,8 @@ events:
     names:
       - "vulkan-1"
     candidate_directories:
-      - "C:/Users/elias/Desktop/GITHUB/wallify/deps/6.8.2/msvc2022_64/lib/"
-      - "C:/Users/elias/Desktop/GITHUB/wallify/deps/6.8.2/msvc2022_64/"
+      - "c:/Users/elias/Desktop/GITHUB/wallify/deps/6.8.2/msvc2022_64/lib/"
+      - "c:/Users/elias/Desktop/GITHUB/wallify/deps/6.8.2/msvc2022_64/"
       - "C:/Users/elias/.gemini/antigravity/bin/"
       - "C:/Users/elias/AppData/Roaming/Antigravity/bin/"
       - "C:/Program Files/Eclipse Adoptium/jdk-25.0.2.10-hotspot/bin/"
@@ -2199,8 +2225,8 @@ events:
       - "C:/Program Files (x86)/wallify/bin/"
       - "/bin/"
     searched_directories:
-      - "C:/Users/elias/Desktop/GITHUB/wallify/deps/6.8.2/msvc2022_64/lib/"
-      - "C:/Users/elias/Desktop/GITHUB/wallify/deps/6.8.2/msvc2022_64/"
+      - "c:/Users/elias/Desktop/GITHUB/wallify/deps/6.8.2/msvc2022_64/lib/"
+      - "c:/Users/elias/Desktop/GITHUB/wallify/deps/6.8.2/msvc2022_64/"
       - "C:/Users/elias/.gemini/antigravity/bin/"
       - "C:/Users/elias/AppData/Roaming/Antigravity/bin/"
       - "C:/Program Files/Eclipse Adoptium/jdk-25.0.2.10-hotspot/bin/"
@@ -2241,7 +2267,7 @@ events:
     found: false
     search_context:
       CMAKE_PREFIX_PATH:
-        - "C:/Users/elias/Desktop/GITHUB/wallify/deps/6.8.2/msvc2022_64"
+        - "c:\\Users\\elias\\Desktop\\GITHUB\\wallify\\deps\\6.8.2\\msvc2022_64"
       ENV{PATH}:
         - "C:/Users/elias/.gemini/antigravity/bin"
         - "C:\\Users\\elias\\AppData\\Roaming\\Antigravity\\bin"
@@ -2304,9 +2330,9 @@ events:
     names:
       - "glslc"
     candidate_directories:
-      - "C:/Users/elias/Desktop/GITHUB/wallify/deps/6.8.2/msvc2022_64/bin/"
-      - "C:/Users/elias/Desktop/GITHUB/wallify/deps/6.8.2/msvc2022_64/sbin/"
-      - "C:/Users/elias/Desktop/GITHUB/wallify/deps/6.8.2/msvc2022_64/"
+      - "c:/Users/elias/Desktop/GITHUB/wallify/deps/6.8.2/msvc2022_64/bin/"
+      - "c:/Users/elias/Desktop/GITHUB/wallify/deps/6.8.2/msvc2022_64/sbin/"
+      - "c:/Users/elias/Desktop/GITHUB/wallify/deps/6.8.2/msvc2022_64/"
       - "C:/Users/elias/.gemini/antigravity/bin/"
       - "C:/Users/elias/AppData/Roaming/Antigravity/bin/"
       - "C:/Program Files/Eclipse Adoptium/jdk-25.0.2.10-hotspot/bin/"
@@ -2347,15 +2373,15 @@ events:
       - "C:/Program Files (x86)/wallify/sbin/"
       - "C:/Program Files (x86)/wallify/"
     searched_directories:
-      - "C:/Users/elias/Desktop/GITHUB/wallify/deps/6.8.2/msvc2022_64/bin/glslc.com"
-      - "C:/Users/elias/Desktop/GITHUB/wallify/deps/6.8.2/msvc2022_64/bin/glslc.exe"
-      - "C:/Users/elias/Desktop/GITHUB/wallify/deps/6.8.2/msvc2022_64/bin/glslc"
-      - "C:/Users/elias/Desktop/GITHUB/wallify/deps/6.8.2/msvc2022_64/sbin/glslc.com"
-      - "C:/Users/elias/Desktop/GITHUB/wallify/deps/6.8.2/msvc2022_64/sbin/glslc.exe"
-      - "C:/Users/elias/Desktop/GITHUB/wallify/deps/6.8.2/msvc2022_64/sbin/glslc"
-      - "C:/Users/elias/Desktop/GITHUB/wallify/deps/6.8.2/msvc2022_64/glslc.com"
-      - "C:/Users/elias/Desktop/GITHUB/wallify/deps/6.8.2/msvc2022_64/glslc.exe"
-      - "C:/Users/elias/Desktop/GITHUB/wallify/deps/6.8.2/msvc2022_64/glslc"
+      - "c:/Users/elias/Desktop/GITHUB/wallify/deps/6.8.2/msvc2022_64/bin/glslc.com"
+      - "c:/Users/elias/Desktop/GITHUB/wallify/deps/6.8.2/msvc2022_64/bin/glslc.exe"
+      - "c:/Users/elias/Desktop/GITHUB/wallify/deps/6.8.2/msvc2022_64/bin/glslc"
+      - "c:/Users/elias/Desktop/GITHUB/wallify/deps/6.8.2/msvc2022_64/sbin/glslc.com"
+      - "c:/Users/elias/Desktop/GITHUB/wallify/deps/6.8.2/msvc2022_64/sbin/glslc.exe"
+      - "c:/Users/elias/Desktop/GITHUB/wallify/deps/6.8.2/msvc2022_64/sbin/glslc"
+      - "c:/Users/elias/Desktop/GITHUB/wallify/deps/6.8.2/msvc2022_64/glslc.com"
+      - "c:/Users/elias/Desktop/GITHUB/wallify/deps/6.8.2/msvc2022_64/glslc.exe"
+      - "c:/Users/elias/Desktop/GITHUB/wallify/deps/6.8.2/msvc2022_64/glslc"
       - "C:/Users/elias/.gemini/antigravity/bin/glslc.com"
       - "C:/Users/elias/.gemini/antigravity/bin/glslc.exe"
       - "C:/Users/elias/.gemini/antigravity/bin/glslc"
@@ -2476,7 +2502,7 @@ events:
     found: false
     search_context:
       CMAKE_PREFIX_PATH:
-        - "C:/Users/elias/Desktop/GITHUB/wallify/deps/6.8.2/msvc2022_64"
+        - "c:\\Users\\elias\\Desktop\\GITHUB\\wallify\\deps\\6.8.2\\msvc2022_64"
       ENV{PATH}:
         - "C:/Users/elias/.gemini/antigravity/bin"
         - "C:\\Users\\elias\\AppData\\Roaming\\Antigravity\\bin"
@@ -2535,9 +2561,9 @@ events:
     names:
       - "glslangValidator"
     candidate_directories:
-      - "C:/Users/elias/Desktop/GITHUB/wallify/deps/6.8.2/msvc2022_64/bin/"
-      - "C:/Users/elias/Desktop/GITHUB/wallify/deps/6.8.2/msvc2022_64/sbin/"
-      - "C:/Users/elias/Desktop/GITHUB/wallify/deps/6.8.2/msvc2022_64/"
+      - "c:/Users/elias/Desktop/GITHUB/wallify/deps/6.8.2/msvc2022_64/bin/"
+      - "c:/Users/elias/Desktop/GITHUB/wallify/deps/6.8.2/msvc2022_64/sbin/"
+      - "c:/Users/elias/Desktop/GITHUB/wallify/deps/6.8.2/msvc2022_64/"
       - "C:/Users/elias/.gemini/antigravity/bin/"
       - "C:/Users/elias/AppData/Roaming/Antigravity/bin/"
       - "C:/Program Files/Eclipse Adoptium/jdk-25.0.2.10-hotspot/bin/"
@@ -2578,15 +2604,15 @@ events:
       - "C:/Program Files (x86)/wallify/sbin/"
       - "C:/Program Files (x86)/wallify/"
     searched_directories:
-      - "C:/Users/elias/Desktop/GITHUB/wallify/deps/6.8.2/msvc2022_64/bin/glslangValidator.com"
-      - "C:/Users/elias/Desktop/GITHUB/wallify/deps/6.8.2/msvc2022_64/bin/glslangValidator.exe"
-      - "C:/Users/elias/Desktop/GITHUB/wallify/deps/6.8.2/msvc2022_64/bin/glslangValidator"
-      - "C:/Users/elias/Desktop/GITHUB/wallify/deps/6.8.2/msvc2022_64/sbin/glslangValidator.com"
-      - "C:/Users/elias/Desktop/GITHUB/wallify/deps/6.8.2/msvc2022_64/sbin/glslangValidator.exe"
-      - "C:/Users/elias/Desktop/GITHUB/wallify/deps/6.8.2/msvc2022_64/sbin/glslangValidator"
-      - "C:/Users/elias/Desktop/GITHUB/wallify/deps/6.8.2/msvc2022_64/glslangValidator.com"
-      - "C:/Users/elias/Desktop/GITHUB/wallify/deps/6.8.2/msvc2022_64/glslangValidator.exe"
-      - "C:/Users/elias/Desktop/GITHUB/wallify/deps/6.8.2/msvc2022_64/glslangValidator"
+      - "c:/Users/elias/Desktop/GITHUB/wallify/deps/6.8.2/msvc2022_64/bin/glslangValidator.com"
+      - "c:/Users/elias/Desktop/GITHUB/wallify/deps/6.8.2/msvc2022_64/bin/glslangValidator.exe"
+      - "c:/Users/elias/Desktop/GITHUB/wallify/deps/6.8.2/msvc2022_64/bin/glslangValidator"
+      - "c:/Users/elias/Desktop/GITHUB/wallify/deps/6.8.2/msvc2022_64/sbin/glslangValidator.com"
+      - "c:/Users/elias/Desktop/GITHUB/wallify/deps/6.8.2/msvc2022_64/sbin/glslangValidator.exe"
+      - "c:/Users/elias/Desktop/GITHUB/wallify/deps/6.8.2/msvc2022_64/sbin/glslangValidator"
+      - "c:/Users/elias/Desktop/GITHUB/wallify/deps/6.8.2/msvc2022_64/glslangValidator.com"
+      - "c:/Users/elias/Desktop/GITHUB/wallify/deps/6.8.2/msvc2022_64/glslangValidator.exe"
+      - "c:/Users/elias/Desktop/GITHUB/wallify/deps/6.8.2/msvc2022_64/glslangValidator"
       - "C:/Users/elias/.gemini/antigravity/bin/glslangValidator.com"
       - "C:/Users/elias/.gemini/antigravity/bin/glslangValidator.exe"
       - "C:/Users/elias/.gemini/antigravity/bin/glslangValidator"
@@ -2707,7 +2733,7 @@ events:
     found: false
     search_context:
       CMAKE_PREFIX_PATH:
-        - "C:/Users/elias/Desktop/GITHUB/wallify/deps/6.8.2/msvc2022_64"
+        - "c:\\Users\\elias\\Desktop\\GITHUB\\wallify\\deps\\6.8.2\\msvc2022_64"
       ENV{PATH}:
         - "C:/Users/elias/.gemini/antigravity/bin"
         - "C:\\Users\\elias\\AppData\\Roaming\\Antigravity\\bin"
@@ -2817,27 +2843,27 @@ events:
         mode: "cps"
         reason: "no_exist"
       -
-        path: "C:/Users/elias/Desktop/GITHUB/wallify/deps/6.8.2/msvc2022_64/Qt6GuiToolsConfig.cmake"
+        path: "c:/Users/elias/Desktop/GITHUB/wallify/deps/6.8.2/msvc2022_64/Qt6GuiToolsConfig.cmake"
         mode: "config"
         reason: "no_exist"
       -
-        path: "C:/Users/elias/Desktop/GITHUB/wallify/deps/6.8.2/msvc2022_64/qt6guitools-config.cmake"
+        path: "c:/Users/elias/Desktop/GITHUB/wallify/deps/6.8.2/msvc2022_64/qt6guitools-config.cmake"
         mode: "config"
         reason: "no_exist"
       -
-        path: "C:/Users/elias/Desktop/GITHUB/wallify/deps/6.8.2/msvc2022_64/lib/cps/Qt6GuiTools.cps"
+        path: "c:/Users/elias/Desktop/GITHUB/wallify/deps/6.8.2/msvc2022_64/lib/cps/Qt6GuiTools.cps"
         mode: "cps"
         reason: "no_exist"
       -
-        path: "C:/Users/elias/Desktop/GITHUB/wallify/deps/6.8.2/msvc2022_64/lib/cps/qt6guitools.cps"
+        path: "c:/Users/elias/Desktop/GITHUB/wallify/deps/6.8.2/msvc2022_64/lib/cps/qt6guitools.cps"
         mode: "cps"
         reason: "no_exist"
       -
-        path: "C:/Users/elias/Desktop/GITHUB/wallify/deps/6.8.2/msvc2022_64/share/cps/Qt6GuiTools.cps"
+        path: "c:/Users/elias/Desktop/GITHUB/wallify/deps/6.8.2/msvc2022_64/share/cps/Qt6GuiTools.cps"
         mode: "cps"
         reason: "no_exist"
       -
-        path: "C:/Users/elias/Desktop/GITHUB/wallify/deps/6.8.2/msvc2022_64/share/cps/qt6guitools.cps"
+        path: "c:/Users/elias/Desktop/GITHUB/wallify/deps/6.8.2/msvc2022_64/share/cps/qt6guitools.cps"
         mode: "cps"
         reason: "no_exist"
     found:
@@ -2846,7 +2872,7 @@ events:
       version: "6.8.2"
     search_context:
       CMAKE_PREFIX_PATH:
-        - "C:/Users/elias/Desktop/GITHUB/wallify/deps/6.8.2/msvc2022_64"
+        - "c:\\Users\\elias\\Desktop\\GITHUB\\wallify\\deps\\6.8.2\\msvc2022_64"
       ENV{PATH}:
         - "C:/Users/elias/.gemini/antigravity/bin"
         - "C:\\Users\\elias\\AppData\\Roaming\\Antigravity\\bin"
@@ -2971,7 +2997,7 @@ events:
       version: "6.8.2"
     search_context:
       CMAKE_PREFIX_PATH:
-        - "C:/Users/elias/Desktop/GITHUB/wallify/deps/6.8.2/msvc2022_64"
+        - "c:\\Users\\elias\\Desktop\\GITHUB\\wallify\\deps\\6.8.2\\msvc2022_64"
       ENV{PATH}:
         - "C:/Users/elias/.gemini/antigravity/bin"
         - "C:\\Users\\elias\\AppData\\Roaming\\Antigravity\\bin"
@@ -3081,27 +3107,27 @@ events:
         mode: "cps"
         reason: "no_exist"
       -
-        path: "C:/Users/elias/Desktop/GITHUB/wallify/deps/6.8.2/msvc2022_64/Qt6QmlToolsConfig.cmake"
+        path: "c:/Users/elias/Desktop/GITHUB/wallify/deps/6.8.2/msvc2022_64/Qt6QmlToolsConfig.cmake"
         mode: "config"
         reason: "no_exist"
       -
-        path: "C:/Users/elias/Desktop/GITHUB/wallify/deps/6.8.2/msvc2022_64/qt6qmltools-config.cmake"
+        path: "c:/Users/elias/Desktop/GITHUB/wallify/deps/6.8.2/msvc2022_64/qt6qmltools-config.cmake"
         mode: "config"
         reason: "no_exist"
       -
-        path: "C:/Users/elias/Desktop/GITHUB/wallify/deps/6.8.2/msvc2022_64/lib/cps/Qt6QmlTools.cps"
+        path: "c:/Users/elias/Desktop/GITHUB/wallify/deps/6.8.2/msvc2022_64/lib/cps/Qt6QmlTools.cps"
         mode: "cps"
         reason: "no_exist"
       -
-        path: "C:/Users/elias/Desktop/GITHUB/wallify/deps/6.8.2/msvc2022_64/lib/cps/qt6qmltools.cps"
+        path: "c:/Users/elias/Desktop/GITHUB/wallify/deps/6.8.2/msvc2022_64/lib/cps/qt6qmltools.cps"
         mode: "cps"
         reason: "no_exist"
       -
-        path: "C:/Users/elias/Desktop/GITHUB/wallify/deps/6.8.2/msvc2022_64/share/cps/Qt6QmlTools.cps"
+        path: "c:/Users/elias/Desktop/GITHUB/wallify/deps/6.8.2/msvc2022_64/share/cps/Qt6QmlTools.cps"
         mode: "cps"
         reason: "no_exist"
       -
-        path: "C:/Users/elias/Desktop/GITHUB/wallify/deps/6.8.2/msvc2022_64/share/cps/qt6qmltools.cps"
+        path: "c:/Users/elias/Desktop/GITHUB/wallify/deps/6.8.2/msvc2022_64/share/cps/qt6qmltools.cps"
         mode: "cps"
         reason: "no_exist"
     found:
@@ -3110,7 +3136,7 @@ events:
       version: "6.8.2"
     search_context:
       CMAKE_PREFIX_PATH:
-        - "C:/Users/elias/Desktop/GITHUB/wallify/deps/6.8.2/msvc2022_64"
+        - "c:\\Users\\elias\\Desktop\\GITHUB\\wallify\\deps\\6.8.2\\msvc2022_64"
       ENV{PATH}:
         - "C:/Users/elias/.gemini/antigravity/bin"
         - "C:\\Users\\elias\\AppData\\Roaming\\Antigravity\\bin"
@@ -3235,7 +3261,7 @@ events:
       version: "6.8.2"
     search_context:
       CMAKE_PREFIX_PATH:
-        - "C:/Users/elias/Desktop/GITHUB/wallify/deps/6.8.2/msvc2022_64"
+        - "c:\\Users\\elias\\Desktop\\GITHUB\\wallify\\deps\\6.8.2\\msvc2022_64"
       ENV{PATH}:
         - "C:/Users/elias/.gemini/antigravity/bin"
         - "C:\\Users\\elias\\AppData\\Roaming\\Antigravity\\bin"
@@ -3360,7 +3386,7 @@ events:
       version: "6.8.2"
     search_context:
       CMAKE_PREFIX_PATH:
-        - "C:/Users/elias/Desktop/GITHUB/wallify/deps/6.8.2/msvc2022_64"
+        - "c:\\Users\\elias\\Desktop\\GITHUB\\wallify\\deps\\6.8.2\\msvc2022_64"
       ENV{PATH}:
         - "C:/Users/elias/.gemini/antigravity/bin"
         - "C:\\Users\\elias\\AppData\\Roaming\\Antigravity\\bin"
@@ -3466,27 +3492,27 @@ events:
         mode: "cps"
         reason: "no_exist"
       -
-        path: "C:/Users/elias/Desktop/GITHUB/wallify/deps/6.8.2/msvc2022_64/Qt6QmlCompilerPlusPrivateToolsConfig.cmake"
+        path: "c:/Users/elias/Desktop/GITHUB/wallify/deps/6.8.2/msvc2022_64/Qt6QmlCompilerPlusPrivateToolsConfig.cmake"
         mode: "config"
         reason: "no_exist"
       -
-        path: "C:/Users/elias/Desktop/GITHUB/wallify/deps/6.8.2/msvc2022_64/qt6qmlcompilerplusprivatetools-config.cmake"
+        path: "c:/Users/elias/Desktop/GITHUB/wallify/deps/6.8.2/msvc2022_64/qt6qmlcompilerplusprivatetools-config.cmake"
         mode: "config"
         reason: "no_exist"
       -
-        path: "C:/Users/elias/Desktop/GITHUB/wallify/deps/6.8.2/msvc2022_64/lib/cps/Qt6QmlCompilerPlusPrivateTools.cps"
+        path: "c:/Users/elias/Desktop/GITHUB/wallify/deps/6.8.2/msvc2022_64/lib/cps/Qt6QmlCompilerPlusPrivateTools.cps"
         mode: "cps"
         reason: "no_exist"
       -
-        path: "C:/Users/elias/Desktop/GITHUB/wallify/deps/6.8.2/msvc2022_64/lib/cps/qt6qmlcompilerplusprivatetools.cps"
+        path: "c:/Users/elias/Desktop/GITHUB/wallify/deps/6.8.2/msvc2022_64/lib/cps/qt6qmlcompilerplusprivatetools.cps"
         mode: "cps"
         reason: "no_exist"
       -
-        path: "C:/Users/elias/Desktop/GITHUB/wallify/deps/6.8.2/msvc2022_64/share/cps/Qt6QmlCompilerPlusPrivateTools.cps"
+        path: "c:/Users/elias/Desktop/GITHUB/wallify/deps/6.8.2/msvc2022_64/share/cps/Qt6QmlCompilerPlusPrivateTools.cps"
         mode: "cps"
         reason: "no_exist"
       -
-        path: "C:/Users/elias/Desktop/GITHUB/wallify/deps/6.8.2/msvc2022_64/share/cps/qt6qmlcompilerplusprivatetools.cps"
+        path: "c:/Users/elias/Desktop/GITHUB/wallify/deps/6.8.2/msvc2022_64/share/cps/qt6qmlcompilerplusprivatetools.cps"
         mode: "cps"
         reason: "no_exist"
       -
@@ -4172,7 +4198,7 @@ events:
     found: null
     search_context:
       CMAKE_PREFIX_PATH:
-        - "C:/Users/elias/Desktop/GITHUB/wallify/deps/6.8.2/msvc2022_64"
+        - "c:\\Users\\elias\\Desktop\\GITHUB\\wallify\\deps\\6.8.2\\msvc2022_64"
       ENV{PATH}:
         - "C:/Users/elias/.gemini/antigravity/bin"
         - "C:\\Users\\elias\\AppData\\Roaming\\Antigravity\\bin"
@@ -4309,7 +4335,7 @@ events:
       version: "6.8.2"
     search_context:
       CMAKE_PREFIX_PATH:
-        - "C:/Users/elias/Desktop/GITHUB/wallify/deps/6.8.2/msvc2022_64"
+        - "c:\\Users\\elias\\Desktop\\GITHUB\\wallify\\deps\\6.8.2\\msvc2022_64"
       ENV{PATH}:
         - "C:/Users/elias/.gemini/antigravity/bin"
         - "C:\\Users\\elias\\AppData\\Roaming\\Antigravity\\bin"
@@ -4494,7 +4520,7 @@ events:
       version: "6.8.2"
     search_context:
       CMAKE_PREFIX_PATH:
-        - "C:/Users/elias/Desktop/GITHUB/wallify/deps/6.8.2/msvc2022_64"
+        - "c:\\Users\\elias\\Desktop\\GITHUB\\wallify\\deps\\6.8.2\\msvc2022_64"
       ENV{PATH}:
         - "C:/Users/elias/.gemini/antigravity/bin"
         - "C:\\Users\\elias\\AppData\\Roaming\\Antigravity\\bin"
@@ -4621,7 +4647,7 @@ events:
       version: "6.8.2"
     search_context:
       CMAKE_PREFIX_PATH:
-        - "C:/Users/elias/Desktop/GITHUB/wallify/deps/6.8.2/msvc2022_64"
+        - "c:\\Users\\elias\\Desktop\\GITHUB\\wallify\\deps\\6.8.2\\msvc2022_64"
       ENV{PATH}:
         - "C:/Users/elias/.gemini/antigravity/bin"
         - "C:\\Users\\elias\\AppData\\Roaming\\Antigravity\\bin"
@@ -4874,7 +4900,7 @@ events:
       version: "6.8.2"
     search_context:
       CMAKE_PREFIX_PATH:
-        - "C:/Users/elias/Desktop/GITHUB/wallify/deps/6.8.2/msvc2022_64"
+        - "c:\\Users\\elias\\Desktop\\GITHUB\\wallify\\deps\\6.8.2\\msvc2022_64"
       ENV{PATH}:
         - "C:/Users/elias/.gemini/antigravity/bin"
         - "C:\\Users\\elias\\AppData\\Roaming\\Antigravity\\bin"
@@ -4984,27 +5010,27 @@ events:
         mode: "cps"
         reason: "no_exist"
       -
-        path: "C:/Users/elias/Desktop/GITHUB/wallify/deps/6.8.2/msvc2022_64/Qt6QuickToolsConfig.cmake"
+        path: "c:/Users/elias/Desktop/GITHUB/wallify/deps/6.8.2/msvc2022_64/Qt6QuickToolsConfig.cmake"
         mode: "config"
         reason: "no_exist"
       -
-        path: "C:/Users/elias/Desktop/GITHUB/wallify/deps/6.8.2/msvc2022_64/qt6quicktools-config.cmake"
+        path: "c:/Users/elias/Desktop/GITHUB/wallify/deps/6.8.2/msvc2022_64/qt6quicktools-config.cmake"
         mode: "config"
         reason: "no_exist"
       -
-        path: "C:/Users/elias/Desktop/GITHUB/wallify/deps/6.8.2/msvc2022_64/lib/cps/Qt6QuickTools.cps"
+        path: "c:/Users/elias/Desktop/GITHUB/wallify/deps/6.8.2/msvc2022_64/lib/cps/Qt6QuickTools.cps"
         mode: "cps"
         reason: "no_exist"
       -
-        path: "C:/Users/elias/Desktop/GITHUB/wallify/deps/6.8.2/msvc2022_64/lib/cps/qt6quicktools.cps"
+        path: "c:/Users/elias/Desktop/GITHUB/wallify/deps/6.8.2/msvc2022_64/lib/cps/qt6quicktools.cps"
         mode: "cps"
         reason: "no_exist"
       -
-        path: "C:/Users/elias/Desktop/GITHUB/wallify/deps/6.8.2/msvc2022_64/share/cps/Qt6QuickTools.cps"
+        path: "c:/Users/elias/Desktop/GITHUB/wallify/deps/6.8.2/msvc2022_64/share/cps/Qt6QuickTools.cps"
         mode: "cps"
         reason: "no_exist"
       -
-        path: "C:/Users/elias/Desktop/GITHUB/wallify/deps/6.8.2/msvc2022_64/share/cps/qt6quicktools.cps"
+        path: "c:/Users/elias/Desktop/GITHUB/wallify/deps/6.8.2/msvc2022_64/share/cps/qt6quicktools.cps"
         mode: "cps"
         reason: "no_exist"
     found:
@@ -5013,7 +5039,7 @@ events:
       version: "6.8.2"
     search_context:
       CMAKE_PREFIX_PATH:
-        - "C:/Users/elias/Desktop/GITHUB/wallify/deps/6.8.2/msvc2022_64"
+        - "c:\\Users\\elias\\Desktop\\GITHUB\\wallify\\deps\\6.8.2\\msvc2022_64"
       ENV{PATH}:
         - "C:/Users/elias/.gemini/antigravity/bin"
         - "C:\\Users\\elias\\AppData\\Roaming\\Antigravity\\bin"
@@ -5143,7 +5169,7 @@ events:
       version: "6.8.2"
     search_context:
       CMAKE_PREFIX_PATH:
-        - "C:/Users/elias/Desktop/GITHUB/wallify/deps/6.8.2/msvc2022_64"
+        - "c:\\Users\\elias\\Desktop\\GITHUB\\wallify\\deps\\6.8.2\\msvc2022_64"
       ENV{PATH}:
         - "C:/Users/elias/.gemini/antigravity/bin"
         - "C:\\Users\\elias\\AppData\\Roaming\\Antigravity\\bin"
@@ -5273,7 +5299,7 @@ events:
       version: "6.8.2"
     search_context:
       CMAKE_PREFIX_PATH:
-        - "C:/Users/elias/Desktop/GITHUB/wallify/deps/6.8.2/msvc2022_64"
+        - "c:\\Users\\elias\\Desktop\\GITHUB\\wallify\\deps\\6.8.2\\msvc2022_64"
       ENV{PATH}:
         - "C:/Users/elias/.gemini/antigravity/bin"
         - "C:\\Users\\elias\\AppData\\Roaming\\Antigravity\\bin"
@@ -5398,7 +5424,7 @@ events:
       version: "6.8.2"
     search_context:
       CMAKE_PREFIX_PATH:
-        - "C:/Users/elias/Desktop/GITHUB/wallify/deps/6.8.2/msvc2022_64"
+        - "c:\\Users\\elias\\Desktop\\GITHUB\\wallify\\deps\\6.8.2\\msvc2022_64"
       ENV{PATH}:
         - "C:/Users/elias/.gemini/antigravity/bin"
         - "C:\\Users\\elias\\AppData\\Roaming\\Antigravity\\bin"
@@ -5531,7 +5557,7 @@ events:
       version: "6.8.2"
     search_context:
       CMAKE_PREFIX_PATH:
-        - "C:/Users/elias/Desktop/GITHUB/wallify/deps/6.8.2/msvc2022_64"
+        - "c:\\Users\\elias\\Desktop\\GITHUB\\wallify\\deps\\6.8.2\\msvc2022_64"
       ENV{PATH}:
         - "C:/Users/elias/.gemini/antigravity/bin"
         - "C:\\Users\\elias\\AppData\\Roaming\\Antigravity\\bin"
@@ -5888,7 +5914,148 @@ events:
       version: "6.8.2"
     search_context:
       CMAKE_PREFIX_PATH:
-        - "C:/Users/elias/Desktop/GITHUB/wallify/deps/6.8.2/msvc2022_64"
+        - "c:\\Users\\elias\\Desktop\\GITHUB\\wallify\\deps\\6.8.2\\msvc2022_64"
+      ENV{PATH}:
+        - "C:/Users/elias/.gemini/antigravity/bin"
+        - "C:\\Users\\elias\\AppData\\Roaming\\Antigravity\\bin"
+        - "C:\\Program Files\\Eclipse Adoptium\\jdk-25.0.2.10-hotspot\\bin"
+        - "C:\\WINDOWS\\system32"
+        - "C:\\WINDOWS"
+        - "C:\\WINDOWS\\System32\\Wbem"
+        - "C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\"
+        - "C:\\WINDOWS\\System32\\OpenSSH\\"
+        - "C:\\Program Files\\dotnet\\"
+        - "C:\\Program Files\\NVIDIA Corporation\\NVIDIA App\\NvDLISR"
+        - "C:\\Program Files\\Microsoft SQL Server\\170\\Tools\\Binn\\"
+        - "C:\\Program Files\\Microsoft SQL Server\\Client SDK\\ODBC\\170\\Tools\\Binn\\"
+        - "C:\\Program Files\\nodejs\\"
+        - "C:\\Program Files\\Git\\cmd"
+        - "C:\\Program Files\\Tailscale\\"
+        - "C:\\Program Files (x86)\\NVIDIA Corporation\\PhysX\\Common"
+        - "C:\\Program Files\\WireGuard\\"
+        - "C:\\Program Files\\CMake\\bin"
+        - "C:\\Program Files (x86)\\Windows Kits\\10\\Windows Performance Toolkit\\"
+        - "C:\\Users\\elias\\.cargo\\bin"
+        - "C:\\Users\\elias\\AppData\\Local\\Microsoft\\WindowsApps"
+        - "C:\\Users\\elias\\AppData\\Local\\GitHubDesktop\\bin"
+        - "C:\\Users\\elias\\AppData\\Roaming\\npm"
+        - "C:\\adb"
+        - "C:\\adb\\platform-tools-latest-windows\\platform-tools"
+        - "C:\\Users\\elias\\AppData\\Local\\Python\\bin"
+        - "C:\\Users\\elias\\.dotnet\\tools"
+      CMAKE_INSTALL_PREFIX: "C:/Program Files (x86)/wallify"
+      CMAKE_SYSTEM_PREFIX_PATH:
+        - "C:/Program Files"
+        - "C:/Program Files (x86)"
+        - "C:/Program Files/CMake"
+        - "C:/Program Files (x86)/wallify"
+  -
+    kind: "find_package-v1"
+    backtrace:
+      - "deps/6.8.2/msvc2022_64/lib/cmake/Qt6/Qt6Config.cmake:190 (find_package)"
+      - "CMakeLists.txt:13 (find_package)"
+    name: "Qt6Multimedia"
+    configs:
+      -
+        filename: "Qt6Multimedia.cps"
+        kind: "cps"
+      -
+        filename: "qt6multimedia.cps"
+        kind: "cps"
+      -
+        filename: "Qt6MultimediaConfig.cmake"
+        kind: "cmake"
+      -
+        filename: "qt6multimedia-config.cmake"
+        kind: "cmake"
+    version_request:
+      exact: false
+    settings:
+      required: "optional"
+      quiet: false
+      global: false
+      policy_scope: true
+      bypass_provider: false
+      names:
+        - "Qt6Multimedia"
+      search_paths:
+        - "C:/Users/elias/Desktop/GITHUB/wallify/deps/6.8.2/msvc2022_64/lib/cmake"
+      path_suffixes:
+        - ""
+      paths:
+        CMAKE_FIND_USE_CMAKE_PATH: false
+        CMAKE_FIND_USE_CMAKE_ENVIRONMENT_PATH: true
+        CMAKE_FIND_USE_SYSTEM_ENVIRONMENT_PATH: true
+        CMAKE_FIND_USE_CMAKE_SYSTEM_PATH: true
+        CMAKE_FIND_USE_INSTALL_PREFIX: true
+        CMAKE_FIND_USE_PACKAGE_ROOT_PATH: true
+        CMAKE_FIND_USE_CMAKE_PACKAGE_REGISTRY: true
+        CMAKE_FIND_USE_SYSTEM_PACKAGE_REGISTRY: true
+        CMAKE_FIND_ROOT_PATH_MODE: "BOTH"
+    candidates:
+      -
+        path: "C:/Users/elias/Desktop/GITHUB/wallify/build/CMakeFiles/pkgRedirects/Qt6MultimediaConfig.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "C:/Users/elias/Desktop/GITHUB/wallify/build/CMakeFiles/pkgRedirects/qt6multimedia-config.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "C:/Users/elias/Desktop/GITHUB/wallify/build/CMakeFiles/pkgRedirects/lib/cps/Qt6Multimedia.cps"
+        mode: "cps"
+        reason: "no_exist"
+      -
+        path: "C:/Users/elias/Desktop/GITHUB/wallify/build/CMakeFiles/pkgRedirects/lib/cps/qt6multimedia.cps"
+        mode: "cps"
+        reason: "no_exist"
+      -
+        path: "C:/Users/elias/Desktop/GITHUB/wallify/build/CMakeFiles/pkgRedirects/share/cps/Qt6Multimedia.cps"
+        mode: "cps"
+        reason: "no_exist"
+      -
+        path: "C:/Users/elias/Desktop/GITHUB/wallify/build/CMakeFiles/pkgRedirects/share/cps/qt6multimedia.cps"
+        mode: "cps"
+        reason: "no_exist"
+      -
+        path: "C:/Users/elias/Desktop/GITHUB/wallify/deps/6.8.2/msvc2022_64/lib/cmake/Qt6MultimediaConfig.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "C:/Users/elias/Desktop/GITHUB/wallify/deps/6.8.2/msvc2022_64/lib/cmake/qt6multimedia-config.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "C:/Users/elias/Desktop/GITHUB/wallify/deps/6.8.2/msvc2022_64/lib/cmake/Qt6MultimediaWidgets/Qt6MultimediaConfig.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "C:/Users/elias/Desktop/GITHUB/wallify/deps/6.8.2/msvc2022_64/lib/cmake/Qt6MultimediaWidgets/qt6multimedia-config.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "C:/Users/elias/Desktop/GITHUB/wallify/deps/6.8.2/msvc2022_64/lib/cmake/Qt6MultimediaTestLibPrivate/Qt6MultimediaConfig.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "C:/Users/elias/Desktop/GITHUB/wallify/deps/6.8.2/msvc2022_64/lib/cmake/Qt6MultimediaTestLibPrivate/qt6multimedia-config.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "C:/Users/elias/Desktop/GITHUB/wallify/deps/6.8.2/msvc2022_64/lib/cmake/Qt6MultimediaQuickPrivate/Qt6MultimediaConfig.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "C:/Users/elias/Desktop/GITHUB/wallify/deps/6.8.2/msvc2022_64/lib/cmake/Qt6MultimediaQuickPrivate/qt6multimedia-config.cmake"
+        mode: "config"
+        reason: "no_exist"
+    found:
+      path: "C:/Users/elias/Desktop/GITHUB/wallify/deps/6.8.2/msvc2022_64/lib/cmake/Qt6Multimedia/Qt6MultimediaConfig.cmake"
+      mode: "config"
+      version: "6.8.2"
+    search_context:
+      CMAKE_PREFIX_PATH:
+        - "c:\\Users\\elias\\Desktop\\GITHUB\\wallify\\deps\\6.8.2\\msvc2022_64"
       ENV{PATH}:
         - "C:/Users/elias/.gemini/antigravity/bin"
         - "C:\\Users\\elias\\AppData\\Roaming\\Antigravity\\bin"
@@ -5943,6 +6110,10 @@ events:
         found: false
       -
         name: "Quick"
+        required: true
+        found: false
+      -
+        name: "Multimedia"
         required: true
         found: false
     configs:
@@ -6006,891 +6177,891 @@ events:
         mode: "cps"
         reason: "no_exist"
       -
-        path: "C:/Users/elias/Desktop/GITHUB/wallify/deps/6.8.2/msvc2022_64/Qt6Config.cmake"
+        path: "c:/Users/elias/Desktop/GITHUB/wallify/deps/6.8.2/msvc2022_64/Qt6Config.cmake"
         mode: "config"
         reason: "no_exist"
       -
-        path: "C:/Users/elias/Desktop/GITHUB/wallify/deps/6.8.2/msvc2022_64/qt6-config.cmake"
+        path: "c:/Users/elias/Desktop/GITHUB/wallify/deps/6.8.2/msvc2022_64/qt6-config.cmake"
         mode: "config"
         reason: "no_exist"
       -
-        path: "C:/Users/elias/Desktop/GITHUB/wallify/deps/6.8.2/msvc2022_64/lib/cps/Qt6.cps"
+        path: "c:/Users/elias/Desktop/GITHUB/wallify/deps/6.8.2/msvc2022_64/lib/cps/Qt6.cps"
         mode: "cps"
         reason: "no_exist"
       -
-        path: "C:/Users/elias/Desktop/GITHUB/wallify/deps/6.8.2/msvc2022_64/lib/cps/qt6.cps"
+        path: "c:/Users/elias/Desktop/GITHUB/wallify/deps/6.8.2/msvc2022_64/lib/cps/qt6.cps"
         mode: "cps"
         reason: "no_exist"
       -
-        path: "C:/Users/elias/Desktop/GITHUB/wallify/deps/6.8.2/msvc2022_64/share/cps/Qt6.cps"
+        path: "c:/Users/elias/Desktop/GITHUB/wallify/deps/6.8.2/msvc2022_64/share/cps/Qt6.cps"
         mode: "cps"
         reason: "no_exist"
       -
-        path: "C:/Users/elias/Desktop/GITHUB/wallify/deps/6.8.2/msvc2022_64/share/cps/qt6.cps"
+        path: "c:/Users/elias/Desktop/GITHUB/wallify/deps/6.8.2/msvc2022_64/share/cps/qt6.cps"
         mode: "cps"
         reason: "no_exist"
       -
-        path: "C:/Users/elias/Desktop/GITHUB/wallify/deps/6.8.2/msvc2022_64/lib/cmake/Qt6ZlibPrivate/Qt6Config.cmake"
+        path: "c:/Users/elias/Desktop/GITHUB/wallify/deps/6.8.2/msvc2022_64/lib/cmake/Qt6ZlibPrivate/Qt6Config.cmake"
         mode: "config"
         reason: "no_exist"
       -
-        path: "C:/Users/elias/Desktop/GITHUB/wallify/deps/6.8.2/msvc2022_64/lib/cmake/Qt6ZlibPrivate/qt6-config.cmake"
+        path: "c:/Users/elias/Desktop/GITHUB/wallify/deps/6.8.2/msvc2022_64/lib/cmake/Qt6ZlibPrivate/qt6-config.cmake"
         mode: "config"
         reason: "no_exist"
       -
-        path: "C:/Users/elias/Desktop/GITHUB/wallify/deps/6.8.2/msvc2022_64/lib/cmake/Qt6Xml/Qt6Config.cmake"
+        path: "c:/Users/elias/Desktop/GITHUB/wallify/deps/6.8.2/msvc2022_64/lib/cmake/Qt6Xml/Qt6Config.cmake"
         mode: "config"
         reason: "no_exist"
       -
-        path: "C:/Users/elias/Desktop/GITHUB/wallify/deps/6.8.2/msvc2022_64/lib/cmake/Qt6Xml/qt6-config.cmake"
+        path: "c:/Users/elias/Desktop/GITHUB/wallify/deps/6.8.2/msvc2022_64/lib/cmake/Qt6Xml/qt6-config.cmake"
         mode: "config"
         reason: "no_exist"
       -
-        path: "C:/Users/elias/Desktop/GITHUB/wallify/deps/6.8.2/msvc2022_64/lib/cmake/Qt6WidgetsTools/Qt6Config.cmake"
+        path: "c:/Users/elias/Desktop/GITHUB/wallify/deps/6.8.2/msvc2022_64/lib/cmake/Qt6WidgetsTools/Qt6Config.cmake"
         mode: "config"
         reason: "no_exist"
       -
-        path: "C:/Users/elias/Desktop/GITHUB/wallify/deps/6.8.2/msvc2022_64/lib/cmake/Qt6WidgetsTools/qt6-config.cmake"
+        path: "c:/Users/elias/Desktop/GITHUB/wallify/deps/6.8.2/msvc2022_64/lib/cmake/Qt6WidgetsTools/qt6-config.cmake"
         mode: "config"
         reason: "no_exist"
       -
-        path: "C:/Users/elias/Desktop/GITHUB/wallify/deps/6.8.2/msvc2022_64/lib/cmake/Qt6Widgets/Qt6Config.cmake"
+        path: "c:/Users/elias/Desktop/GITHUB/wallify/deps/6.8.2/msvc2022_64/lib/cmake/Qt6Widgets/Qt6Config.cmake"
         mode: "config"
         reason: "no_exist"
       -
-        path: "C:/Users/elias/Desktop/GITHUB/wallify/deps/6.8.2/msvc2022_64/lib/cmake/Qt6Widgets/qt6-config.cmake"
+        path: "c:/Users/elias/Desktop/GITHUB/wallify/deps/6.8.2/msvc2022_64/lib/cmake/Qt6Widgets/qt6-config.cmake"
         mode: "config"
         reason: "no_exist"
       -
-        path: "C:/Users/elias/Desktop/GITHUB/wallify/deps/6.8.2/msvc2022_64/lib/cmake/Qt6UiTools/Qt6Config.cmake"
+        path: "c:/Users/elias/Desktop/GITHUB/wallify/deps/6.8.2/msvc2022_64/lib/cmake/Qt6UiTools/Qt6Config.cmake"
         mode: "config"
         reason: "no_exist"
       -
-        path: "C:/Users/elias/Desktop/GITHUB/wallify/deps/6.8.2/msvc2022_64/lib/cmake/Qt6UiTools/qt6-config.cmake"
+        path: "c:/Users/elias/Desktop/GITHUB/wallify/deps/6.8.2/msvc2022_64/lib/cmake/Qt6UiTools/qt6-config.cmake"
         mode: "config"
         reason: "no_exist"
       -
-        path: "C:/Users/elias/Desktop/GITHUB/wallify/deps/6.8.2/msvc2022_64/lib/cmake/Qt6UiPlugin/Qt6Config.cmake"
+        path: "c:/Users/elias/Desktop/GITHUB/wallify/deps/6.8.2/msvc2022_64/lib/cmake/Qt6UiPlugin/Qt6Config.cmake"
         mode: "config"
         reason: "no_exist"
       -
-        path: "C:/Users/elias/Desktop/GITHUB/wallify/deps/6.8.2/msvc2022_64/lib/cmake/Qt6UiPlugin/qt6-config.cmake"
+        path: "c:/Users/elias/Desktop/GITHUB/wallify/deps/6.8.2/msvc2022_64/lib/cmake/Qt6UiPlugin/qt6-config.cmake"
         mode: "config"
         reason: "no_exist"
       -
-        path: "C:/Users/elias/Desktop/GITHUB/wallify/deps/6.8.2/msvc2022_64/lib/cmake/Qt6ToolsTools/Qt6Config.cmake"
+        path: "c:/Users/elias/Desktop/GITHUB/wallify/deps/6.8.2/msvc2022_64/lib/cmake/Qt6ToolsTools/Qt6Config.cmake"
         mode: "config"
         reason: "no_exist"
       -
-        path: "C:/Users/elias/Desktop/GITHUB/wallify/deps/6.8.2/msvc2022_64/lib/cmake/Qt6ToolsTools/qt6-config.cmake"
+        path: "c:/Users/elias/Desktop/GITHUB/wallify/deps/6.8.2/msvc2022_64/lib/cmake/Qt6ToolsTools/qt6-config.cmake"
         mode: "config"
         reason: "no_exist"
       -
-        path: "C:/Users/elias/Desktop/GITHUB/wallify/deps/6.8.2/msvc2022_64/lib/cmake/Qt6Tools/Qt6Config.cmake"
+        path: "c:/Users/elias/Desktop/GITHUB/wallify/deps/6.8.2/msvc2022_64/lib/cmake/Qt6Tools/Qt6Config.cmake"
         mode: "config"
         reason: "no_exist"
       -
-        path: "C:/Users/elias/Desktop/GITHUB/wallify/deps/6.8.2/msvc2022_64/lib/cmake/Qt6Tools/qt6-config.cmake"
+        path: "c:/Users/elias/Desktop/GITHUB/wallify/deps/6.8.2/msvc2022_64/lib/cmake/Qt6Tools/qt6-config.cmake"
         mode: "config"
         reason: "no_exist"
       -
-        path: "C:/Users/elias/Desktop/GITHUB/wallify/deps/6.8.2/msvc2022_64/lib/cmake/Qt6Test/Qt6Config.cmake"
+        path: "c:/Users/elias/Desktop/GITHUB/wallify/deps/6.8.2/msvc2022_64/lib/cmake/Qt6Test/Qt6Config.cmake"
         mode: "config"
         reason: "no_exist"
       -
-        path: "C:/Users/elias/Desktop/GITHUB/wallify/deps/6.8.2/msvc2022_64/lib/cmake/Qt6Test/qt6-config.cmake"
+        path: "c:/Users/elias/Desktop/GITHUB/wallify/deps/6.8.2/msvc2022_64/lib/cmake/Qt6Test/qt6-config.cmake"
         mode: "config"
         reason: "no_exist"
       -
-        path: "C:/Users/elias/Desktop/GITHUB/wallify/deps/6.8.2/msvc2022_64/lib/cmake/Qt6SvgWidgets/Qt6Config.cmake"
+        path: "c:/Users/elias/Desktop/GITHUB/wallify/deps/6.8.2/msvc2022_64/lib/cmake/Qt6SvgWidgets/Qt6Config.cmake"
         mode: "config"
         reason: "no_exist"
       -
-        path: "C:/Users/elias/Desktop/GITHUB/wallify/deps/6.8.2/msvc2022_64/lib/cmake/Qt6SvgWidgets/qt6-config.cmake"
+        path: "c:/Users/elias/Desktop/GITHUB/wallify/deps/6.8.2/msvc2022_64/lib/cmake/Qt6SvgWidgets/qt6-config.cmake"
         mode: "config"
         reason: "no_exist"
       -
-        path: "C:/Users/elias/Desktop/GITHUB/wallify/deps/6.8.2/msvc2022_64/lib/cmake/Qt6Svg/Qt6Config.cmake"
+        path: "c:/Users/elias/Desktop/GITHUB/wallify/deps/6.8.2/msvc2022_64/lib/cmake/Qt6Svg/Qt6Config.cmake"
         mode: "config"
         reason: "no_exist"
       -
-        path: "C:/Users/elias/Desktop/GITHUB/wallify/deps/6.8.2/msvc2022_64/lib/cmake/Qt6Svg/qt6-config.cmake"
+        path: "c:/Users/elias/Desktop/GITHUB/wallify/deps/6.8.2/msvc2022_64/lib/cmake/Qt6Svg/qt6-config.cmake"
         mode: "config"
         reason: "no_exist"
       -
-        path: "C:/Users/elias/Desktop/GITHUB/wallify/deps/6.8.2/msvc2022_64/lib/cmake/Qt6Sql/Qt6Config.cmake"
+        path: "c:/Users/elias/Desktop/GITHUB/wallify/deps/6.8.2/msvc2022_64/lib/cmake/Qt6Sql/Qt6Config.cmake"
         mode: "config"
         reason: "no_exist"
       -
-        path: "C:/Users/elias/Desktop/GITHUB/wallify/deps/6.8.2/msvc2022_64/lib/cmake/Qt6Sql/qt6-config.cmake"
+        path: "c:/Users/elias/Desktop/GITHUB/wallify/deps/6.8.2/msvc2022_64/lib/cmake/Qt6Sql/qt6-config.cmake"
         mode: "config"
         reason: "no_exist"
       -
-        path: "C:/Users/elias/Desktop/GITHUB/wallify/deps/6.8.2/msvc2022_64/lib/cmake/Qt6SpatialAudio/Qt6Config.cmake"
+        path: "c:/Users/elias/Desktop/GITHUB/wallify/deps/6.8.2/msvc2022_64/lib/cmake/Qt6SpatialAudio/Qt6Config.cmake"
         mode: "config"
         reason: "no_exist"
       -
-        path: "C:/Users/elias/Desktop/GITHUB/wallify/deps/6.8.2/msvc2022_64/lib/cmake/Qt6SpatialAudio/qt6-config.cmake"
+        path: "c:/Users/elias/Desktop/GITHUB/wallify/deps/6.8.2/msvc2022_64/lib/cmake/Qt6SpatialAudio/qt6-config.cmake"
         mode: "config"
         reason: "no_exist"
       -
-        path: "C:/Users/elias/Desktop/GITHUB/wallify/deps/6.8.2/msvc2022_64/lib/cmake/Qt6QuickWidgets/Qt6Config.cmake"
+        path: "c:/Users/elias/Desktop/GITHUB/wallify/deps/6.8.2/msvc2022_64/lib/cmake/Qt6QuickWidgets/Qt6Config.cmake"
         mode: "config"
         reason: "no_exist"
       -
-        path: "C:/Users/elias/Desktop/GITHUB/wallify/deps/6.8.2/msvc2022_64/lib/cmake/Qt6QuickWidgets/qt6-config.cmake"
+        path: "c:/Users/elias/Desktop/GITHUB/wallify/deps/6.8.2/msvc2022_64/lib/cmake/Qt6QuickWidgets/qt6-config.cmake"
         mode: "config"
         reason: "no_exist"
       -
-        path: "C:/Users/elias/Desktop/GITHUB/wallify/deps/6.8.2/msvc2022_64/lib/cmake/Qt6QuickVectorImageGeneratorPrivate/Qt6Config.cmake"
+        path: "c:/Users/elias/Desktop/GITHUB/wallify/deps/6.8.2/msvc2022_64/lib/cmake/Qt6QuickVectorImageGeneratorPrivate/Qt6Config.cmake"
         mode: "config"
         reason: "no_exist"
       -
-        path: "C:/Users/elias/Desktop/GITHUB/wallify/deps/6.8.2/msvc2022_64/lib/cmake/Qt6QuickVectorImageGeneratorPrivate/qt6-config.cmake"
+        path: "c:/Users/elias/Desktop/GITHUB/wallify/deps/6.8.2/msvc2022_64/lib/cmake/Qt6QuickVectorImageGeneratorPrivate/qt6-config.cmake"
         mode: "config"
         reason: "no_exist"
       -
-        path: "C:/Users/elias/Desktop/GITHUB/wallify/deps/6.8.2/msvc2022_64/lib/cmake/Qt6QuickVectorImage/Qt6Config.cmake"
+        path: "c:/Users/elias/Desktop/GITHUB/wallify/deps/6.8.2/msvc2022_64/lib/cmake/Qt6QuickVectorImage/Qt6Config.cmake"
         mode: "config"
         reason: "no_exist"
       -
-        path: "C:/Users/elias/Desktop/GITHUB/wallify/deps/6.8.2/msvc2022_64/lib/cmake/Qt6QuickVectorImage/qt6-config.cmake"
+        path: "c:/Users/elias/Desktop/GITHUB/wallify/deps/6.8.2/msvc2022_64/lib/cmake/Qt6QuickVectorImage/qt6-config.cmake"
         mode: "config"
         reason: "no_exist"
       -
-        path: "C:/Users/elias/Desktop/GITHUB/wallify/deps/6.8.2/msvc2022_64/lib/cmake/Qt6QuickTools/Qt6Config.cmake"
+        path: "c:/Users/elias/Desktop/GITHUB/wallify/deps/6.8.2/msvc2022_64/lib/cmake/Qt6QuickTools/Qt6Config.cmake"
         mode: "config"
         reason: "no_exist"
       -
-        path: "C:/Users/elias/Desktop/GITHUB/wallify/deps/6.8.2/msvc2022_64/lib/cmake/Qt6QuickTools/qt6-config.cmake"
+        path: "c:/Users/elias/Desktop/GITHUB/wallify/deps/6.8.2/msvc2022_64/lib/cmake/Qt6QuickTools/qt6-config.cmake"
         mode: "config"
         reason: "no_exist"
       -
-        path: "C:/Users/elias/Desktop/GITHUB/wallify/deps/6.8.2/msvc2022_64/lib/cmake/Qt6QuickTestUtilsPrivate/Qt6Config.cmake"
+        path: "c:/Users/elias/Desktop/GITHUB/wallify/deps/6.8.2/msvc2022_64/lib/cmake/Qt6QuickTestUtilsPrivate/Qt6Config.cmake"
         mode: "config"
         reason: "no_exist"
       -
-        path: "C:/Users/elias/Desktop/GITHUB/wallify/deps/6.8.2/msvc2022_64/lib/cmake/Qt6QuickTestUtilsPrivate/qt6-config.cmake"
+        path: "c:/Users/elias/Desktop/GITHUB/wallify/deps/6.8.2/msvc2022_64/lib/cmake/Qt6QuickTestUtilsPrivate/qt6-config.cmake"
         mode: "config"
         reason: "no_exist"
       -
-        path: "C:/Users/elias/Desktop/GITHUB/wallify/deps/6.8.2/msvc2022_64/lib/cmake/Qt6QuickTest/Qt6Config.cmake"
+        path: "c:/Users/elias/Desktop/GITHUB/wallify/deps/6.8.2/msvc2022_64/lib/cmake/Qt6QuickTest/Qt6Config.cmake"
         mode: "config"
         reason: "no_exist"
       -
-        path: "C:/Users/elias/Desktop/GITHUB/wallify/deps/6.8.2/msvc2022_64/lib/cmake/Qt6QuickTest/qt6-config.cmake"
+        path: "c:/Users/elias/Desktop/GITHUB/wallify/deps/6.8.2/msvc2022_64/lib/cmake/Qt6QuickTest/qt6-config.cmake"
         mode: "config"
         reason: "no_exist"
       -
-        path: "C:/Users/elias/Desktop/GITHUB/wallify/deps/6.8.2/msvc2022_64/lib/cmake/Qt6QuickTemplates2/Qt6Config.cmake"
+        path: "c:/Users/elias/Desktop/GITHUB/wallify/deps/6.8.2/msvc2022_64/lib/cmake/Qt6QuickTemplates2/Qt6Config.cmake"
         mode: "config"
         reason: "no_exist"
       -
-        path: "C:/Users/elias/Desktop/GITHUB/wallify/deps/6.8.2/msvc2022_64/lib/cmake/Qt6QuickTemplates2/qt6-config.cmake"
+        path: "c:/Users/elias/Desktop/GITHUB/wallify/deps/6.8.2/msvc2022_64/lib/cmake/Qt6QuickTemplates2/qt6-config.cmake"
         mode: "config"
         reason: "no_exist"
       -
-        path: "C:/Users/elias/Desktop/GITHUB/wallify/deps/6.8.2/msvc2022_64/lib/cmake/Qt6QuickShapesPrivate/Qt6Config.cmake"
+        path: "c:/Users/elias/Desktop/GITHUB/wallify/deps/6.8.2/msvc2022_64/lib/cmake/Qt6QuickShapesPrivate/Qt6Config.cmake"
         mode: "config"
         reason: "no_exist"
       -
-        path: "C:/Users/elias/Desktop/GITHUB/wallify/deps/6.8.2/msvc2022_64/lib/cmake/Qt6QuickShapesPrivate/qt6-config.cmake"
+        path: "c:/Users/elias/Desktop/GITHUB/wallify/deps/6.8.2/msvc2022_64/lib/cmake/Qt6QuickShapesPrivate/qt6-config.cmake"
         mode: "config"
         reason: "no_exist"
       -
-        path: "C:/Users/elias/Desktop/GITHUB/wallify/deps/6.8.2/msvc2022_64/lib/cmake/Qt6QuickParticlesPrivate/Qt6Config.cmake"
+        path: "c:/Users/elias/Desktop/GITHUB/wallify/deps/6.8.2/msvc2022_64/lib/cmake/Qt6QuickParticlesPrivate/Qt6Config.cmake"
         mode: "config"
         reason: "no_exist"
       -
-        path: "C:/Users/elias/Desktop/GITHUB/wallify/deps/6.8.2/msvc2022_64/lib/cmake/Qt6QuickParticlesPrivate/qt6-config.cmake"
+        path: "c:/Users/elias/Desktop/GITHUB/wallify/deps/6.8.2/msvc2022_64/lib/cmake/Qt6QuickParticlesPrivate/qt6-config.cmake"
         mode: "config"
         reason: "no_exist"
       -
-        path: "C:/Users/elias/Desktop/GITHUB/wallify/deps/6.8.2/msvc2022_64/lib/cmake/Qt6QuickLayouts/Qt6Config.cmake"
+        path: "c:/Users/elias/Desktop/GITHUB/wallify/deps/6.8.2/msvc2022_64/lib/cmake/Qt6QuickLayouts/Qt6Config.cmake"
         mode: "config"
         reason: "no_exist"
       -
-        path: "C:/Users/elias/Desktop/GITHUB/wallify/deps/6.8.2/msvc2022_64/lib/cmake/Qt6QuickLayouts/qt6-config.cmake"
+        path: "c:/Users/elias/Desktop/GITHUB/wallify/deps/6.8.2/msvc2022_64/lib/cmake/Qt6QuickLayouts/qt6-config.cmake"
         mode: "config"
         reason: "no_exist"
       -
-        path: "C:/Users/elias/Desktop/GITHUB/wallify/deps/6.8.2/msvc2022_64/lib/cmake/Qt6QuickEffectsPrivate/Qt6Config.cmake"
+        path: "c:/Users/elias/Desktop/GITHUB/wallify/deps/6.8.2/msvc2022_64/lib/cmake/Qt6QuickEffectsPrivate/Qt6Config.cmake"
         mode: "config"
         reason: "no_exist"
       -
-        path: "C:/Users/elias/Desktop/GITHUB/wallify/deps/6.8.2/msvc2022_64/lib/cmake/Qt6QuickEffectsPrivate/qt6-config.cmake"
+        path: "c:/Users/elias/Desktop/GITHUB/wallify/deps/6.8.2/msvc2022_64/lib/cmake/Qt6QuickEffectsPrivate/qt6-config.cmake"
         mode: "config"
         reason: "no_exist"
       -
-        path: "C:/Users/elias/Desktop/GITHUB/wallify/deps/6.8.2/msvc2022_64/lib/cmake/Qt6QuickDialogs2Utils/Qt6Config.cmake"
+        path: "c:/Users/elias/Desktop/GITHUB/wallify/deps/6.8.2/msvc2022_64/lib/cmake/Qt6QuickDialogs2Utils/Qt6Config.cmake"
         mode: "config"
         reason: "no_exist"
       -
-        path: "C:/Users/elias/Desktop/GITHUB/wallify/deps/6.8.2/msvc2022_64/lib/cmake/Qt6QuickDialogs2Utils/qt6-config.cmake"
+        path: "c:/Users/elias/Desktop/GITHUB/wallify/deps/6.8.2/msvc2022_64/lib/cmake/Qt6QuickDialogs2Utils/qt6-config.cmake"
         mode: "config"
         reason: "no_exist"
       -
-        path: "C:/Users/elias/Desktop/GITHUB/wallify/deps/6.8.2/msvc2022_64/lib/cmake/Qt6QuickDialogs2QuickImpl/Qt6Config.cmake"
+        path: "c:/Users/elias/Desktop/GITHUB/wallify/deps/6.8.2/msvc2022_64/lib/cmake/Qt6QuickDialogs2QuickImpl/Qt6Config.cmake"
         mode: "config"
         reason: "no_exist"
       -
-        path: "C:/Users/elias/Desktop/GITHUB/wallify/deps/6.8.2/msvc2022_64/lib/cmake/Qt6QuickDialogs2QuickImpl/qt6-config.cmake"
+        path: "c:/Users/elias/Desktop/GITHUB/wallify/deps/6.8.2/msvc2022_64/lib/cmake/Qt6QuickDialogs2QuickImpl/qt6-config.cmake"
         mode: "config"
         reason: "no_exist"
       -
-        path: "C:/Users/elias/Desktop/GITHUB/wallify/deps/6.8.2/msvc2022_64/lib/cmake/Qt6QuickDialogs2/Qt6Config.cmake"
+        path: "c:/Users/elias/Desktop/GITHUB/wallify/deps/6.8.2/msvc2022_64/lib/cmake/Qt6QuickDialogs2/Qt6Config.cmake"
         mode: "config"
         reason: "no_exist"
       -
-        path: "C:/Users/elias/Desktop/GITHUB/wallify/deps/6.8.2/msvc2022_64/lib/cmake/Qt6QuickDialogs2/qt6-config.cmake"
+        path: "c:/Users/elias/Desktop/GITHUB/wallify/deps/6.8.2/msvc2022_64/lib/cmake/Qt6QuickDialogs2/qt6-config.cmake"
         mode: "config"
         reason: "no_exist"
       -
-        path: "C:/Users/elias/Desktop/GITHUB/wallify/deps/6.8.2/msvc2022_64/lib/cmake/Qt6QuickControlsTestUtilsPrivate/Qt6Config.cmake"
+        path: "c:/Users/elias/Desktop/GITHUB/wallify/deps/6.8.2/msvc2022_64/lib/cmake/Qt6QuickControlsTestUtilsPrivate/Qt6Config.cmake"
         mode: "config"
         reason: "no_exist"
       -
-        path: "C:/Users/elias/Desktop/GITHUB/wallify/deps/6.8.2/msvc2022_64/lib/cmake/Qt6QuickControlsTestUtilsPrivate/qt6-config.cmake"
+        path: "c:/Users/elias/Desktop/GITHUB/wallify/deps/6.8.2/msvc2022_64/lib/cmake/Qt6QuickControlsTestUtilsPrivate/qt6-config.cmake"
         mode: "config"
         reason: "no_exist"
       -
-        path: "C:/Users/elias/Desktop/GITHUB/wallify/deps/6.8.2/msvc2022_64/lib/cmake/Qt6QuickControls2WindowsStyleImpl/Qt6Config.cmake"
+        path: "c:/Users/elias/Desktop/GITHUB/wallify/deps/6.8.2/msvc2022_64/lib/cmake/Qt6QuickControls2WindowsStyleImpl/Qt6Config.cmake"
         mode: "config"
         reason: "no_exist"
       -
-        path: "C:/Users/elias/Desktop/GITHUB/wallify/deps/6.8.2/msvc2022_64/lib/cmake/Qt6QuickControls2WindowsStyleImpl/qt6-config.cmake"
+        path: "c:/Users/elias/Desktop/GITHUB/wallify/deps/6.8.2/msvc2022_64/lib/cmake/Qt6QuickControls2WindowsStyleImpl/qt6-config.cmake"
         mode: "config"
         reason: "no_exist"
       -
-        path: "C:/Users/elias/Desktop/GITHUB/wallify/deps/6.8.2/msvc2022_64/lib/cmake/Qt6QuickControls2UniversalStyleImpl/Qt6Config.cmake"
+        path: "c:/Users/elias/Desktop/GITHUB/wallify/deps/6.8.2/msvc2022_64/lib/cmake/Qt6QuickControls2UniversalStyleImpl/Qt6Config.cmake"
         mode: "config"
         reason: "no_exist"
       -
-        path: "C:/Users/elias/Desktop/GITHUB/wallify/deps/6.8.2/msvc2022_64/lib/cmake/Qt6QuickControls2UniversalStyleImpl/qt6-config.cmake"
+        path: "c:/Users/elias/Desktop/GITHUB/wallify/deps/6.8.2/msvc2022_64/lib/cmake/Qt6QuickControls2UniversalStyleImpl/qt6-config.cmake"
         mode: "config"
         reason: "no_exist"
       -
-        path: "C:/Users/elias/Desktop/GITHUB/wallify/deps/6.8.2/msvc2022_64/lib/cmake/Qt6QuickControls2Universal/Qt6Config.cmake"
+        path: "c:/Users/elias/Desktop/GITHUB/wallify/deps/6.8.2/msvc2022_64/lib/cmake/Qt6QuickControls2Universal/Qt6Config.cmake"
         mode: "config"
         reason: "no_exist"
       -
-        path: "C:/Users/elias/Desktop/GITHUB/wallify/deps/6.8.2/msvc2022_64/lib/cmake/Qt6QuickControls2Universal/qt6-config.cmake"
+        path: "c:/Users/elias/Desktop/GITHUB/wallify/deps/6.8.2/msvc2022_64/lib/cmake/Qt6QuickControls2Universal/qt6-config.cmake"
         mode: "config"
         reason: "no_exist"
       -
-        path: "C:/Users/elias/Desktop/GITHUB/wallify/deps/6.8.2/msvc2022_64/lib/cmake/Qt6QuickControls2MaterialStyleImpl/Qt6Config.cmake"
+        path: "c:/Users/elias/Desktop/GITHUB/wallify/deps/6.8.2/msvc2022_64/lib/cmake/Qt6QuickControls2MaterialStyleImpl/Qt6Config.cmake"
         mode: "config"
         reason: "no_exist"
       -
-        path: "C:/Users/elias/Desktop/GITHUB/wallify/deps/6.8.2/msvc2022_64/lib/cmake/Qt6QuickControls2MaterialStyleImpl/qt6-config.cmake"
+        path: "c:/Users/elias/Desktop/GITHUB/wallify/deps/6.8.2/msvc2022_64/lib/cmake/Qt6QuickControls2MaterialStyleImpl/qt6-config.cmake"
         mode: "config"
         reason: "no_exist"
       -
-        path: "C:/Users/elias/Desktop/GITHUB/wallify/deps/6.8.2/msvc2022_64/lib/cmake/Qt6QuickControls2Material/Qt6Config.cmake"
+        path: "c:/Users/elias/Desktop/GITHUB/wallify/deps/6.8.2/msvc2022_64/lib/cmake/Qt6QuickControls2Material/Qt6Config.cmake"
         mode: "config"
         reason: "no_exist"
       -
-        path: "C:/Users/elias/Desktop/GITHUB/wallify/deps/6.8.2/msvc2022_64/lib/cmake/Qt6QuickControls2Material/qt6-config.cmake"
+        path: "c:/Users/elias/Desktop/GITHUB/wallify/deps/6.8.2/msvc2022_64/lib/cmake/Qt6QuickControls2Material/qt6-config.cmake"
         mode: "config"
         reason: "no_exist"
       -
-        path: "C:/Users/elias/Desktop/GITHUB/wallify/deps/6.8.2/msvc2022_64/lib/cmake/Qt6QuickControls2Impl/Qt6Config.cmake"
+        path: "c:/Users/elias/Desktop/GITHUB/wallify/deps/6.8.2/msvc2022_64/lib/cmake/Qt6QuickControls2Impl/Qt6Config.cmake"
         mode: "config"
         reason: "no_exist"
       -
-        path: "C:/Users/elias/Desktop/GITHUB/wallify/deps/6.8.2/msvc2022_64/lib/cmake/Qt6QuickControls2Impl/qt6-config.cmake"
+        path: "c:/Users/elias/Desktop/GITHUB/wallify/deps/6.8.2/msvc2022_64/lib/cmake/Qt6QuickControls2Impl/qt6-config.cmake"
         mode: "config"
         reason: "no_exist"
       -
-        path: "C:/Users/elias/Desktop/GITHUB/wallify/deps/6.8.2/msvc2022_64/lib/cmake/Qt6QuickControls2ImagineStyleImpl/Qt6Config.cmake"
+        path: "c:/Users/elias/Desktop/GITHUB/wallify/deps/6.8.2/msvc2022_64/lib/cmake/Qt6QuickControls2ImagineStyleImpl/Qt6Config.cmake"
         mode: "config"
         reason: "no_exist"
       -
-        path: "C:/Users/elias/Desktop/GITHUB/wallify/deps/6.8.2/msvc2022_64/lib/cmake/Qt6QuickControls2ImagineStyleImpl/qt6-config.cmake"
+        path: "c:/Users/elias/Desktop/GITHUB/wallify/deps/6.8.2/msvc2022_64/lib/cmake/Qt6QuickControls2ImagineStyleImpl/qt6-config.cmake"
         mode: "config"
         reason: "no_exist"
       -
-        path: "C:/Users/elias/Desktop/GITHUB/wallify/deps/6.8.2/msvc2022_64/lib/cmake/Qt6QuickControls2Imagine/Qt6Config.cmake"
+        path: "c:/Users/elias/Desktop/GITHUB/wallify/deps/6.8.2/msvc2022_64/lib/cmake/Qt6QuickControls2Imagine/Qt6Config.cmake"
         mode: "config"
         reason: "no_exist"
       -
-        path: "C:/Users/elias/Desktop/GITHUB/wallify/deps/6.8.2/msvc2022_64/lib/cmake/Qt6QuickControls2Imagine/qt6-config.cmake"
+        path: "c:/Users/elias/Desktop/GITHUB/wallify/deps/6.8.2/msvc2022_64/lib/cmake/Qt6QuickControls2Imagine/qt6-config.cmake"
         mode: "config"
         reason: "no_exist"
       -
-        path: "C:/Users/elias/Desktop/GITHUB/wallify/deps/6.8.2/msvc2022_64/lib/cmake/Qt6QuickControls2FusionStyleImpl/Qt6Config.cmake"
+        path: "c:/Users/elias/Desktop/GITHUB/wallify/deps/6.8.2/msvc2022_64/lib/cmake/Qt6QuickControls2FusionStyleImpl/Qt6Config.cmake"
         mode: "config"
         reason: "no_exist"
       -
-        path: "C:/Users/elias/Desktop/GITHUB/wallify/deps/6.8.2/msvc2022_64/lib/cmake/Qt6QuickControls2FusionStyleImpl/qt6-config.cmake"
+        path: "c:/Users/elias/Desktop/GITHUB/wallify/deps/6.8.2/msvc2022_64/lib/cmake/Qt6QuickControls2FusionStyleImpl/qt6-config.cmake"
         mode: "config"
         reason: "no_exist"
       -
-        path: "C:/Users/elias/Desktop/GITHUB/wallify/deps/6.8.2/msvc2022_64/lib/cmake/Qt6QuickControls2Fusion/Qt6Config.cmake"
+        path: "c:/Users/elias/Desktop/GITHUB/wallify/deps/6.8.2/msvc2022_64/lib/cmake/Qt6QuickControls2Fusion/Qt6Config.cmake"
         mode: "config"
         reason: "no_exist"
       -
-        path: "C:/Users/elias/Desktop/GITHUB/wallify/deps/6.8.2/msvc2022_64/lib/cmake/Qt6QuickControls2Fusion/qt6-config.cmake"
+        path: "c:/Users/elias/Desktop/GITHUB/wallify/deps/6.8.2/msvc2022_64/lib/cmake/Qt6QuickControls2Fusion/qt6-config.cmake"
         mode: "config"
         reason: "no_exist"
       -
-        path: "C:/Users/elias/Desktop/GITHUB/wallify/deps/6.8.2/msvc2022_64/lib/cmake/Qt6QuickControls2FluentWinUI3StyleImpl/Qt6Config.cmake"
+        path: "c:/Users/elias/Desktop/GITHUB/wallify/deps/6.8.2/msvc2022_64/lib/cmake/Qt6QuickControls2FluentWinUI3StyleImpl/Qt6Config.cmake"
         mode: "config"
         reason: "no_exist"
       -
-        path: "C:/Users/elias/Desktop/GITHUB/wallify/deps/6.8.2/msvc2022_64/lib/cmake/Qt6QuickControls2FluentWinUI3StyleImpl/qt6-config.cmake"
+        path: "c:/Users/elias/Desktop/GITHUB/wallify/deps/6.8.2/msvc2022_64/lib/cmake/Qt6QuickControls2FluentWinUI3StyleImpl/qt6-config.cmake"
         mode: "config"
         reason: "no_exist"
       -
-        path: "C:/Users/elias/Desktop/GITHUB/wallify/deps/6.8.2/msvc2022_64/lib/cmake/Qt6QuickControls2BasicStyleImpl/Qt6Config.cmake"
+        path: "c:/Users/elias/Desktop/GITHUB/wallify/deps/6.8.2/msvc2022_64/lib/cmake/Qt6QuickControls2BasicStyleImpl/Qt6Config.cmake"
         mode: "config"
         reason: "no_exist"
       -
-        path: "C:/Users/elias/Desktop/GITHUB/wallify/deps/6.8.2/msvc2022_64/lib/cmake/Qt6QuickControls2BasicStyleImpl/qt6-config.cmake"
+        path: "c:/Users/elias/Desktop/GITHUB/wallify/deps/6.8.2/msvc2022_64/lib/cmake/Qt6QuickControls2BasicStyleImpl/qt6-config.cmake"
         mode: "config"
         reason: "no_exist"
       -
-        path: "C:/Users/elias/Desktop/GITHUB/wallify/deps/6.8.2/msvc2022_64/lib/cmake/Qt6QuickControls2Basic/Qt6Config.cmake"
+        path: "c:/Users/elias/Desktop/GITHUB/wallify/deps/6.8.2/msvc2022_64/lib/cmake/Qt6QuickControls2Basic/Qt6Config.cmake"
         mode: "config"
         reason: "no_exist"
       -
-        path: "C:/Users/elias/Desktop/GITHUB/wallify/deps/6.8.2/msvc2022_64/lib/cmake/Qt6QuickControls2Basic/qt6-config.cmake"
+        path: "c:/Users/elias/Desktop/GITHUB/wallify/deps/6.8.2/msvc2022_64/lib/cmake/Qt6QuickControls2Basic/qt6-config.cmake"
         mode: "config"
         reason: "no_exist"
       -
-        path: "C:/Users/elias/Desktop/GITHUB/wallify/deps/6.8.2/msvc2022_64/lib/cmake/Qt6QuickControls2/Qt6Config.cmake"
+        path: "c:/Users/elias/Desktop/GITHUB/wallify/deps/6.8.2/msvc2022_64/lib/cmake/Qt6QuickControls2/Qt6Config.cmake"
         mode: "config"
         reason: "no_exist"
       -
-        path: "C:/Users/elias/Desktop/GITHUB/wallify/deps/6.8.2/msvc2022_64/lib/cmake/Qt6QuickControls2/qt6-config.cmake"
+        path: "c:/Users/elias/Desktop/GITHUB/wallify/deps/6.8.2/msvc2022_64/lib/cmake/Qt6QuickControls2/qt6-config.cmake"
         mode: "config"
         reason: "no_exist"
       -
-        path: "C:/Users/elias/Desktop/GITHUB/wallify/deps/6.8.2/msvc2022_64/lib/cmake/Qt6Quick3DSpatialAudioPrivate/Qt6Config.cmake"
+        path: "c:/Users/elias/Desktop/GITHUB/wallify/deps/6.8.2/msvc2022_64/lib/cmake/Qt6Quick3DSpatialAudioPrivate/Qt6Config.cmake"
         mode: "config"
         reason: "no_exist"
       -
-        path: "C:/Users/elias/Desktop/GITHUB/wallify/deps/6.8.2/msvc2022_64/lib/cmake/Qt6Quick3DSpatialAudioPrivate/qt6-config.cmake"
+        path: "c:/Users/elias/Desktop/GITHUB/wallify/deps/6.8.2/msvc2022_64/lib/cmake/Qt6Quick3DSpatialAudioPrivate/qt6-config.cmake"
         mode: "config"
         reason: "no_exist"
       -
-        path: "C:/Users/elias/Desktop/GITHUB/wallify/deps/6.8.2/msvc2022_64/lib/cmake/Qt6Quick/Qt6Config.cmake"
+        path: "c:/Users/elias/Desktop/GITHUB/wallify/deps/6.8.2/msvc2022_64/lib/cmake/Qt6Quick/Qt6Config.cmake"
         mode: "config"
         reason: "no_exist"
       -
-        path: "C:/Users/elias/Desktop/GITHUB/wallify/deps/6.8.2/msvc2022_64/lib/cmake/Qt6Quick/qt6-config.cmake"
+        path: "c:/Users/elias/Desktop/GITHUB/wallify/deps/6.8.2/msvc2022_64/lib/cmake/Qt6Quick/qt6-config.cmake"
         mode: "config"
         reason: "no_exist"
       -
-        path: "C:/Users/elias/Desktop/GITHUB/wallify/deps/6.8.2/msvc2022_64/lib/cmake/Qt6QmlXmlListModel/Qt6Config.cmake"
+        path: "c:/Users/elias/Desktop/GITHUB/wallify/deps/6.8.2/msvc2022_64/lib/cmake/Qt6QmlXmlListModel/Qt6Config.cmake"
         mode: "config"
         reason: "no_exist"
       -
-        path: "C:/Users/elias/Desktop/GITHUB/wallify/deps/6.8.2/msvc2022_64/lib/cmake/Qt6QmlXmlListModel/qt6-config.cmake"
+        path: "c:/Users/elias/Desktop/GITHUB/wallify/deps/6.8.2/msvc2022_64/lib/cmake/Qt6QmlXmlListModel/qt6-config.cmake"
         mode: "config"
         reason: "no_exist"
       -
-        path: "C:/Users/elias/Desktop/GITHUB/wallify/deps/6.8.2/msvc2022_64/lib/cmake/Qt6QmlWorkerScript/Qt6Config.cmake"
+        path: "c:/Users/elias/Desktop/GITHUB/wallify/deps/6.8.2/msvc2022_64/lib/cmake/Qt6QmlWorkerScript/Qt6Config.cmake"
         mode: "config"
         reason: "no_exist"
       -
-        path: "C:/Users/elias/Desktop/GITHUB/wallify/deps/6.8.2/msvc2022_64/lib/cmake/Qt6QmlWorkerScript/qt6-config.cmake"
+        path: "c:/Users/elias/Desktop/GITHUB/wallify/deps/6.8.2/msvc2022_64/lib/cmake/Qt6QmlWorkerScript/qt6-config.cmake"
         mode: "config"
         reason: "no_exist"
       -
-        path: "C:/Users/elias/Desktop/GITHUB/wallify/deps/6.8.2/msvc2022_64/lib/cmake/Qt6QmlTypeRegistrarPrivate/Qt6Config.cmake"
+        path: "c:/Users/elias/Desktop/GITHUB/wallify/deps/6.8.2/msvc2022_64/lib/cmake/Qt6QmlTypeRegistrarPrivate/Qt6Config.cmake"
         mode: "config"
         reason: "no_exist"
       -
-        path: "C:/Users/elias/Desktop/GITHUB/wallify/deps/6.8.2/msvc2022_64/lib/cmake/Qt6QmlTypeRegistrarPrivate/qt6-config.cmake"
+        path: "c:/Users/elias/Desktop/GITHUB/wallify/deps/6.8.2/msvc2022_64/lib/cmake/Qt6QmlTypeRegistrarPrivate/qt6-config.cmake"
         mode: "config"
         reason: "no_exist"
       -
-        path: "C:/Users/elias/Desktop/GITHUB/wallify/deps/6.8.2/msvc2022_64/lib/cmake/Qt6QmlTools/Qt6Config.cmake"
+        path: "c:/Users/elias/Desktop/GITHUB/wallify/deps/6.8.2/msvc2022_64/lib/cmake/Qt6QmlTools/Qt6Config.cmake"
         mode: "config"
         reason: "no_exist"
       -
-        path: "C:/Users/elias/Desktop/GITHUB/wallify/deps/6.8.2/msvc2022_64/lib/cmake/Qt6QmlTools/qt6-config.cmake"
+        path: "c:/Users/elias/Desktop/GITHUB/wallify/deps/6.8.2/msvc2022_64/lib/cmake/Qt6QmlTools/qt6-config.cmake"
         mode: "config"
         reason: "no_exist"
       -
-        path: "C:/Users/elias/Desktop/GITHUB/wallify/deps/6.8.2/msvc2022_64/lib/cmake/Qt6QmlToolingSettingsPrivate/Qt6Config.cmake"
+        path: "c:/Users/elias/Desktop/GITHUB/wallify/deps/6.8.2/msvc2022_64/lib/cmake/Qt6QmlToolingSettingsPrivate/Qt6Config.cmake"
         mode: "config"
         reason: "no_exist"
       -
-        path: "C:/Users/elias/Desktop/GITHUB/wallify/deps/6.8.2/msvc2022_64/lib/cmake/Qt6QmlToolingSettingsPrivate/qt6-config.cmake"
+        path: "c:/Users/elias/Desktop/GITHUB/wallify/deps/6.8.2/msvc2022_64/lib/cmake/Qt6QmlToolingSettingsPrivate/qt6-config.cmake"
         mode: "config"
         reason: "no_exist"
       -
-        path: "C:/Users/elias/Desktop/GITHUB/wallify/deps/6.8.2/msvc2022_64/lib/cmake/Qt6QmlNetwork/Qt6Config.cmake"
+        path: "c:/Users/elias/Desktop/GITHUB/wallify/deps/6.8.2/msvc2022_64/lib/cmake/Qt6QmlNetwork/Qt6Config.cmake"
         mode: "config"
         reason: "no_exist"
       -
-        path: "C:/Users/elias/Desktop/GITHUB/wallify/deps/6.8.2/msvc2022_64/lib/cmake/Qt6QmlNetwork/qt6-config.cmake"
+        path: "c:/Users/elias/Desktop/GITHUB/wallify/deps/6.8.2/msvc2022_64/lib/cmake/Qt6QmlNetwork/qt6-config.cmake"
         mode: "config"
         reason: "no_exist"
       -
-        path: "C:/Users/elias/Desktop/GITHUB/wallify/deps/6.8.2/msvc2022_64/lib/cmake/Qt6QmlModels/Qt6Config.cmake"
+        path: "c:/Users/elias/Desktop/GITHUB/wallify/deps/6.8.2/msvc2022_64/lib/cmake/Qt6QmlModels/Qt6Config.cmake"
         mode: "config"
         reason: "no_exist"
       -
-        path: "C:/Users/elias/Desktop/GITHUB/wallify/deps/6.8.2/msvc2022_64/lib/cmake/Qt6QmlModels/qt6-config.cmake"
+        path: "c:/Users/elias/Desktop/GITHUB/wallify/deps/6.8.2/msvc2022_64/lib/cmake/Qt6QmlModels/qt6-config.cmake"
         mode: "config"
         reason: "no_exist"
       -
-        path: "C:/Users/elias/Desktop/GITHUB/wallify/deps/6.8.2/msvc2022_64/lib/cmake/Qt6QmlMeta/Qt6Config.cmake"
+        path: "c:/Users/elias/Desktop/GITHUB/wallify/deps/6.8.2/msvc2022_64/lib/cmake/Qt6QmlMeta/Qt6Config.cmake"
         mode: "config"
         reason: "no_exist"
       -
-        path: "C:/Users/elias/Desktop/GITHUB/wallify/deps/6.8.2/msvc2022_64/lib/cmake/Qt6QmlMeta/qt6-config.cmake"
+        path: "c:/Users/elias/Desktop/GITHUB/wallify/deps/6.8.2/msvc2022_64/lib/cmake/Qt6QmlMeta/qt6-config.cmake"
         mode: "config"
         reason: "no_exist"
       -
-        path: "C:/Users/elias/Desktop/GITHUB/wallify/deps/6.8.2/msvc2022_64/lib/cmake/Qt6QmlLocalStorage/Qt6Config.cmake"
+        path: "c:/Users/elias/Desktop/GITHUB/wallify/deps/6.8.2/msvc2022_64/lib/cmake/Qt6QmlLocalStorage/Qt6Config.cmake"
         mode: "config"
         reason: "no_exist"
       -
-        path: "C:/Users/elias/Desktop/GITHUB/wallify/deps/6.8.2/msvc2022_64/lib/cmake/Qt6QmlLocalStorage/qt6-config.cmake"
+        path: "c:/Users/elias/Desktop/GITHUB/wallify/deps/6.8.2/msvc2022_64/lib/cmake/Qt6QmlLocalStorage/qt6-config.cmake"
         mode: "config"
         reason: "no_exist"
       -
-        path: "C:/Users/elias/Desktop/GITHUB/wallify/deps/6.8.2/msvc2022_64/lib/cmake/Qt6QmlLSPrivate/Qt6Config.cmake"
+        path: "c:/Users/elias/Desktop/GITHUB/wallify/deps/6.8.2/msvc2022_64/lib/cmake/Qt6QmlLSPrivate/Qt6Config.cmake"
         mode: "config"
         reason: "no_exist"
       -
-        path: "C:/Users/elias/Desktop/GITHUB/wallify/deps/6.8.2/msvc2022_64/lib/cmake/Qt6QmlLSPrivate/qt6-config.cmake"
+        path: "c:/Users/elias/Desktop/GITHUB/wallify/deps/6.8.2/msvc2022_64/lib/cmake/Qt6QmlLSPrivate/qt6-config.cmake"
         mode: "config"
         reason: "no_exist"
       -
-        path: "C:/Users/elias/Desktop/GITHUB/wallify/deps/6.8.2/msvc2022_64/lib/cmake/Qt6QmlIntegration/Qt6Config.cmake"
+        path: "c:/Users/elias/Desktop/GITHUB/wallify/deps/6.8.2/msvc2022_64/lib/cmake/Qt6QmlIntegration/Qt6Config.cmake"
         mode: "config"
         reason: "no_exist"
       -
-        path: "C:/Users/elias/Desktop/GITHUB/wallify/deps/6.8.2/msvc2022_64/lib/cmake/Qt6QmlIntegration/qt6-config.cmake"
+        path: "c:/Users/elias/Desktop/GITHUB/wallify/deps/6.8.2/msvc2022_64/lib/cmake/Qt6QmlIntegration/qt6-config.cmake"
         mode: "config"
         reason: "no_exist"
       -
-        path: "C:/Users/elias/Desktop/GITHUB/wallify/deps/6.8.2/msvc2022_64/lib/cmake/Qt6QmlImportScanner/Qt6Config.cmake"
+        path: "c:/Users/elias/Desktop/GITHUB/wallify/deps/6.8.2/msvc2022_64/lib/cmake/Qt6QmlImportScanner/Qt6Config.cmake"
         mode: "config"
         reason: "no_exist"
       -
-        path: "C:/Users/elias/Desktop/GITHUB/wallify/deps/6.8.2/msvc2022_64/lib/cmake/Qt6QmlImportScanner/qt6-config.cmake"
+        path: "c:/Users/elias/Desktop/GITHUB/wallify/deps/6.8.2/msvc2022_64/lib/cmake/Qt6QmlImportScanner/qt6-config.cmake"
         mode: "config"
         reason: "no_exist"
       -
-        path: "C:/Users/elias/Desktop/GITHUB/wallify/deps/6.8.2/msvc2022_64/lib/cmake/Qt6QmlDomPrivate/Qt6Config.cmake"
+        path: "c:/Users/elias/Desktop/GITHUB/wallify/deps/6.8.2/msvc2022_64/lib/cmake/Qt6QmlDomPrivate/Qt6Config.cmake"
         mode: "config"
         reason: "no_exist"
       -
-        path: "C:/Users/elias/Desktop/GITHUB/wallify/deps/6.8.2/msvc2022_64/lib/cmake/Qt6QmlDomPrivate/qt6-config.cmake"
+        path: "c:/Users/elias/Desktop/GITHUB/wallify/deps/6.8.2/msvc2022_64/lib/cmake/Qt6QmlDomPrivate/qt6-config.cmake"
         mode: "config"
         reason: "no_exist"
       -
-        path: "C:/Users/elias/Desktop/GITHUB/wallify/deps/6.8.2/msvc2022_64/lib/cmake/Qt6QmlDebugPrivate/Qt6Config.cmake"
+        path: "c:/Users/elias/Desktop/GITHUB/wallify/deps/6.8.2/msvc2022_64/lib/cmake/Qt6QmlDebugPrivate/Qt6Config.cmake"
         mode: "config"
         reason: "no_exist"
       -
-        path: "C:/Users/elias/Desktop/GITHUB/wallify/deps/6.8.2/msvc2022_64/lib/cmake/Qt6QmlDebugPrivate/qt6-config.cmake"
+        path: "c:/Users/elias/Desktop/GITHUB/wallify/deps/6.8.2/msvc2022_64/lib/cmake/Qt6QmlDebugPrivate/qt6-config.cmake"
         mode: "config"
         reason: "no_exist"
       -
-        path: "C:/Users/elias/Desktop/GITHUB/wallify/deps/6.8.2/msvc2022_64/lib/cmake/Qt6QmlCore/Qt6Config.cmake"
+        path: "c:/Users/elias/Desktop/GITHUB/wallify/deps/6.8.2/msvc2022_64/lib/cmake/Qt6QmlCore/Qt6Config.cmake"
         mode: "config"
         reason: "no_exist"
       -
-        path: "C:/Users/elias/Desktop/GITHUB/wallify/deps/6.8.2/msvc2022_64/lib/cmake/Qt6QmlCore/qt6-config.cmake"
+        path: "c:/Users/elias/Desktop/GITHUB/wallify/deps/6.8.2/msvc2022_64/lib/cmake/Qt6QmlCore/qt6-config.cmake"
         mode: "config"
         reason: "no_exist"
       -
-        path: "C:/Users/elias/Desktop/GITHUB/wallify/deps/6.8.2/msvc2022_64/lib/cmake/Qt6QmlCompiler/Qt6Config.cmake"
+        path: "c:/Users/elias/Desktop/GITHUB/wallify/deps/6.8.2/msvc2022_64/lib/cmake/Qt6QmlCompiler/Qt6Config.cmake"
         mode: "config"
         reason: "no_exist"
       -
-        path: "C:/Users/elias/Desktop/GITHUB/wallify/deps/6.8.2/msvc2022_64/lib/cmake/Qt6QmlCompiler/qt6-config.cmake"
+        path: "c:/Users/elias/Desktop/GITHUB/wallify/deps/6.8.2/msvc2022_64/lib/cmake/Qt6QmlCompiler/qt6-config.cmake"
         mode: "config"
         reason: "no_exist"
       -
-        path: "C:/Users/elias/Desktop/GITHUB/wallify/deps/6.8.2/msvc2022_64/lib/cmake/Qt6QmlAssetDownloader/Qt6Config.cmake"
+        path: "c:/Users/elias/Desktop/GITHUB/wallify/deps/6.8.2/msvc2022_64/lib/cmake/Qt6QmlAssetDownloader/Qt6Config.cmake"
         mode: "config"
         reason: "no_exist"
       -
-        path: "C:/Users/elias/Desktop/GITHUB/wallify/deps/6.8.2/msvc2022_64/lib/cmake/Qt6QmlAssetDownloader/qt6-config.cmake"
+        path: "c:/Users/elias/Desktop/GITHUB/wallify/deps/6.8.2/msvc2022_64/lib/cmake/Qt6QmlAssetDownloader/qt6-config.cmake"
         mode: "config"
         reason: "no_exist"
       -
-        path: "C:/Users/elias/Desktop/GITHUB/wallify/deps/6.8.2/msvc2022_64/lib/cmake/Qt6Qml/Qt6Config.cmake"
+        path: "c:/Users/elias/Desktop/GITHUB/wallify/deps/6.8.2/msvc2022_64/lib/cmake/Qt6Qml/Qt6Config.cmake"
         mode: "config"
         reason: "no_exist"
       -
-        path: "C:/Users/elias/Desktop/GITHUB/wallify/deps/6.8.2/msvc2022_64/lib/cmake/Qt6Qml/qt6-config.cmake"
+        path: "c:/Users/elias/Desktop/GITHUB/wallify/deps/6.8.2/msvc2022_64/lib/cmake/Qt6Qml/qt6-config.cmake"
         mode: "config"
         reason: "no_exist"
       -
-        path: "C:/Users/elias/Desktop/GITHUB/wallify/deps/6.8.2/msvc2022_64/lib/cmake/Qt6QDocCatchPrivate/Qt6Config.cmake"
+        path: "c:/Users/elias/Desktop/GITHUB/wallify/deps/6.8.2/msvc2022_64/lib/cmake/Qt6QDocCatchPrivate/Qt6Config.cmake"
         mode: "config"
         reason: "no_exist"
       -
-        path: "C:/Users/elias/Desktop/GITHUB/wallify/deps/6.8.2/msvc2022_64/lib/cmake/Qt6QDocCatchPrivate/qt6-config.cmake"
+        path: "c:/Users/elias/Desktop/GITHUB/wallify/deps/6.8.2/msvc2022_64/lib/cmake/Qt6QDocCatchPrivate/qt6-config.cmake"
         mode: "config"
         reason: "no_exist"
       -
-        path: "C:/Users/elias/Desktop/GITHUB/wallify/deps/6.8.2/msvc2022_64/lib/cmake/Qt6QDocCatchGeneratorsPrivate/Qt6Config.cmake"
+        path: "c:/Users/elias/Desktop/GITHUB/wallify/deps/6.8.2/msvc2022_64/lib/cmake/Qt6QDocCatchGeneratorsPrivate/Qt6Config.cmake"
         mode: "config"
         reason: "no_exist"
       -
-        path: "C:/Users/elias/Desktop/GITHUB/wallify/deps/6.8.2/msvc2022_64/lib/cmake/Qt6QDocCatchGeneratorsPrivate/qt6-config.cmake"
+        path: "c:/Users/elias/Desktop/GITHUB/wallify/deps/6.8.2/msvc2022_64/lib/cmake/Qt6QDocCatchGeneratorsPrivate/qt6-config.cmake"
         mode: "config"
         reason: "no_exist"
       -
-        path: "C:/Users/elias/Desktop/GITHUB/wallify/deps/6.8.2/msvc2022_64/lib/cmake/Qt6QDocCatchConversionsPrivate/Qt6Config.cmake"
+        path: "c:/Users/elias/Desktop/GITHUB/wallify/deps/6.8.2/msvc2022_64/lib/cmake/Qt6QDocCatchConversionsPrivate/Qt6Config.cmake"
         mode: "config"
         reason: "no_exist"
       -
-        path: "C:/Users/elias/Desktop/GITHUB/wallify/deps/6.8.2/msvc2022_64/lib/cmake/Qt6QDocCatchConversionsPrivate/qt6-config.cmake"
+        path: "c:/Users/elias/Desktop/GITHUB/wallify/deps/6.8.2/msvc2022_64/lib/cmake/Qt6QDocCatchConversionsPrivate/qt6-config.cmake"
         mode: "config"
         reason: "no_exist"
       -
-        path: "C:/Users/elias/Desktop/GITHUB/wallify/deps/6.8.2/msvc2022_64/lib/cmake/Qt6PrintSupport/Qt6Config.cmake"
+        path: "c:/Users/elias/Desktop/GITHUB/wallify/deps/6.8.2/msvc2022_64/lib/cmake/Qt6PrintSupport/Qt6Config.cmake"
         mode: "config"
         reason: "no_exist"
       -
-        path: "C:/Users/elias/Desktop/GITHUB/wallify/deps/6.8.2/msvc2022_64/lib/cmake/Qt6PrintSupport/qt6-config.cmake"
+        path: "c:/Users/elias/Desktop/GITHUB/wallify/deps/6.8.2/msvc2022_64/lib/cmake/Qt6PrintSupport/qt6-config.cmake"
         mode: "config"
         reason: "no_exist"
       -
-        path: "C:/Users/elias/Desktop/GITHUB/wallify/deps/6.8.2/msvc2022_64/lib/cmake/Qt6PngPrivate/Qt6Config.cmake"
+        path: "c:/Users/elias/Desktop/GITHUB/wallify/deps/6.8.2/msvc2022_64/lib/cmake/Qt6PngPrivate/Qt6Config.cmake"
         mode: "config"
         reason: "no_exist"
       -
-        path: "C:/Users/elias/Desktop/GITHUB/wallify/deps/6.8.2/msvc2022_64/lib/cmake/Qt6PngPrivate/qt6-config.cmake"
+        path: "c:/Users/elias/Desktop/GITHUB/wallify/deps/6.8.2/msvc2022_64/lib/cmake/Qt6PngPrivate/qt6-config.cmake"
         mode: "config"
         reason: "no_exist"
       -
-        path: "C:/Users/elias/Desktop/GITHUB/wallify/deps/6.8.2/msvc2022_64/lib/cmake/Qt6PacketProtocolPrivate/Qt6Config.cmake"
+        path: "c:/Users/elias/Desktop/GITHUB/wallify/deps/6.8.2/msvc2022_64/lib/cmake/Qt6PacketProtocolPrivate/Qt6Config.cmake"
         mode: "config"
         reason: "no_exist"
       -
-        path: "C:/Users/elias/Desktop/GITHUB/wallify/deps/6.8.2/msvc2022_64/lib/cmake/Qt6PacketProtocolPrivate/qt6-config.cmake"
+        path: "c:/Users/elias/Desktop/GITHUB/wallify/deps/6.8.2/msvc2022_64/lib/cmake/Qt6PacketProtocolPrivate/qt6-config.cmake"
         mode: "config"
         reason: "no_exist"
       -
-        path: "C:/Users/elias/Desktop/GITHUB/wallify/deps/6.8.2/msvc2022_64/lib/cmake/Qt6OpenGLWidgets/Qt6Config.cmake"
+        path: "c:/Users/elias/Desktop/GITHUB/wallify/deps/6.8.2/msvc2022_64/lib/cmake/Qt6OpenGLWidgets/Qt6Config.cmake"
         mode: "config"
         reason: "no_exist"
       -
-        path: "C:/Users/elias/Desktop/GITHUB/wallify/deps/6.8.2/msvc2022_64/lib/cmake/Qt6OpenGLWidgets/qt6-config.cmake"
+        path: "c:/Users/elias/Desktop/GITHUB/wallify/deps/6.8.2/msvc2022_64/lib/cmake/Qt6OpenGLWidgets/qt6-config.cmake"
         mode: "config"
         reason: "no_exist"
       -
-        path: "C:/Users/elias/Desktop/GITHUB/wallify/deps/6.8.2/msvc2022_64/lib/cmake/Qt6OpenGL/Qt6Config.cmake"
+        path: "c:/Users/elias/Desktop/GITHUB/wallify/deps/6.8.2/msvc2022_64/lib/cmake/Qt6OpenGL/Qt6Config.cmake"
         mode: "config"
         reason: "no_exist"
       -
-        path: "C:/Users/elias/Desktop/GITHUB/wallify/deps/6.8.2/msvc2022_64/lib/cmake/Qt6OpenGL/qt6-config.cmake"
+        path: "c:/Users/elias/Desktop/GITHUB/wallify/deps/6.8.2/msvc2022_64/lib/cmake/Qt6OpenGL/qt6-config.cmake"
         mode: "config"
         reason: "no_exist"
       -
-        path: "C:/Users/elias/Desktop/GITHUB/wallify/deps/6.8.2/msvc2022_64/lib/cmake/Qt6Network/Qt6Config.cmake"
+        path: "c:/Users/elias/Desktop/GITHUB/wallify/deps/6.8.2/msvc2022_64/lib/cmake/Qt6Network/Qt6Config.cmake"
         mode: "config"
         reason: "no_exist"
       -
-        path: "C:/Users/elias/Desktop/GITHUB/wallify/deps/6.8.2/msvc2022_64/lib/cmake/Qt6Network/qt6-config.cmake"
+        path: "c:/Users/elias/Desktop/GITHUB/wallify/deps/6.8.2/msvc2022_64/lib/cmake/Qt6Network/qt6-config.cmake"
         mode: "config"
         reason: "no_exist"
       -
-        path: "C:/Users/elias/Desktop/GITHUB/wallify/deps/6.8.2/msvc2022_64/lib/cmake/Qt6MultimediaWidgets/Qt6Config.cmake"
+        path: "c:/Users/elias/Desktop/GITHUB/wallify/deps/6.8.2/msvc2022_64/lib/cmake/Qt6MultimediaWidgets/Qt6Config.cmake"
         mode: "config"
         reason: "no_exist"
       -
-        path: "C:/Users/elias/Desktop/GITHUB/wallify/deps/6.8.2/msvc2022_64/lib/cmake/Qt6MultimediaWidgets/qt6-config.cmake"
+        path: "c:/Users/elias/Desktop/GITHUB/wallify/deps/6.8.2/msvc2022_64/lib/cmake/Qt6MultimediaWidgets/qt6-config.cmake"
         mode: "config"
         reason: "no_exist"
       -
-        path: "C:/Users/elias/Desktop/GITHUB/wallify/deps/6.8.2/msvc2022_64/lib/cmake/Qt6MultimediaTestLibPrivate/Qt6Config.cmake"
+        path: "c:/Users/elias/Desktop/GITHUB/wallify/deps/6.8.2/msvc2022_64/lib/cmake/Qt6MultimediaTestLibPrivate/Qt6Config.cmake"
         mode: "config"
         reason: "no_exist"
       -
-        path: "C:/Users/elias/Desktop/GITHUB/wallify/deps/6.8.2/msvc2022_64/lib/cmake/Qt6MultimediaTestLibPrivate/qt6-config.cmake"
+        path: "c:/Users/elias/Desktop/GITHUB/wallify/deps/6.8.2/msvc2022_64/lib/cmake/Qt6MultimediaTestLibPrivate/qt6-config.cmake"
         mode: "config"
         reason: "no_exist"
       -
-        path: "C:/Users/elias/Desktop/GITHUB/wallify/deps/6.8.2/msvc2022_64/lib/cmake/Qt6MultimediaQuickPrivate/Qt6Config.cmake"
+        path: "c:/Users/elias/Desktop/GITHUB/wallify/deps/6.8.2/msvc2022_64/lib/cmake/Qt6MultimediaQuickPrivate/Qt6Config.cmake"
         mode: "config"
         reason: "no_exist"
       -
-        path: "C:/Users/elias/Desktop/GITHUB/wallify/deps/6.8.2/msvc2022_64/lib/cmake/Qt6MultimediaQuickPrivate/qt6-config.cmake"
+        path: "c:/Users/elias/Desktop/GITHUB/wallify/deps/6.8.2/msvc2022_64/lib/cmake/Qt6MultimediaQuickPrivate/qt6-config.cmake"
         mode: "config"
         reason: "no_exist"
       -
-        path: "C:/Users/elias/Desktop/GITHUB/wallify/deps/6.8.2/msvc2022_64/lib/cmake/Qt6Multimedia/Qt6Config.cmake"
+        path: "c:/Users/elias/Desktop/GITHUB/wallify/deps/6.8.2/msvc2022_64/lib/cmake/Qt6Multimedia/Qt6Config.cmake"
         mode: "config"
         reason: "no_exist"
       -
-        path: "C:/Users/elias/Desktop/GITHUB/wallify/deps/6.8.2/msvc2022_64/lib/cmake/Qt6Multimedia/qt6-config.cmake"
+        path: "c:/Users/elias/Desktop/GITHUB/wallify/deps/6.8.2/msvc2022_64/lib/cmake/Qt6Multimedia/qt6-config.cmake"
         mode: "config"
         reason: "no_exist"
       -
-        path: "C:/Users/elias/Desktop/GITHUB/wallify/deps/6.8.2/msvc2022_64/lib/cmake/Qt6LinguistTools/Qt6Config.cmake"
+        path: "c:/Users/elias/Desktop/GITHUB/wallify/deps/6.8.2/msvc2022_64/lib/cmake/Qt6LinguistTools/Qt6Config.cmake"
         mode: "config"
         reason: "no_exist"
       -
-        path: "C:/Users/elias/Desktop/GITHUB/wallify/deps/6.8.2/msvc2022_64/lib/cmake/Qt6LinguistTools/qt6-config.cmake"
+        path: "c:/Users/elias/Desktop/GITHUB/wallify/deps/6.8.2/msvc2022_64/lib/cmake/Qt6LinguistTools/qt6-config.cmake"
         mode: "config"
         reason: "no_exist"
       -
-        path: "C:/Users/elias/Desktop/GITHUB/wallify/deps/6.8.2/msvc2022_64/lib/cmake/Qt6Linguist/Qt6Config.cmake"
+        path: "c:/Users/elias/Desktop/GITHUB/wallify/deps/6.8.2/msvc2022_64/lib/cmake/Qt6Linguist/Qt6Config.cmake"
         mode: "config"
         reason: "no_exist"
       -
-        path: "C:/Users/elias/Desktop/GITHUB/wallify/deps/6.8.2/msvc2022_64/lib/cmake/Qt6Linguist/qt6-config.cmake"
+        path: "c:/Users/elias/Desktop/GITHUB/wallify/deps/6.8.2/msvc2022_64/lib/cmake/Qt6Linguist/qt6-config.cmake"
         mode: "config"
         reason: "no_exist"
       -
-        path: "C:/Users/elias/Desktop/GITHUB/wallify/deps/6.8.2/msvc2022_64/lib/cmake/Qt6LabsWavefrontMesh/Qt6Config.cmake"
+        path: "c:/Users/elias/Desktop/GITHUB/wallify/deps/6.8.2/msvc2022_64/lib/cmake/Qt6LabsWavefrontMesh/Qt6Config.cmake"
         mode: "config"
         reason: "no_exist"
       -
-        path: "C:/Users/elias/Desktop/GITHUB/wallify/deps/6.8.2/msvc2022_64/lib/cmake/Qt6LabsWavefrontMesh/qt6-config.cmake"
+        path: "c:/Users/elias/Desktop/GITHUB/wallify/deps/6.8.2/msvc2022_64/lib/cmake/Qt6LabsWavefrontMesh/qt6-config.cmake"
         mode: "config"
         reason: "no_exist"
       -
-        path: "C:/Users/elias/Desktop/GITHUB/wallify/deps/6.8.2/msvc2022_64/lib/cmake/Qt6LabsSharedImage/Qt6Config.cmake"
+        path: "c:/Users/elias/Desktop/GITHUB/wallify/deps/6.8.2/msvc2022_64/lib/cmake/Qt6LabsSharedImage/Qt6Config.cmake"
         mode: "config"
         reason: "no_exist"
       -
-        path: "C:/Users/elias/Desktop/GITHUB/wallify/deps/6.8.2/msvc2022_64/lib/cmake/Qt6LabsSharedImage/qt6-config.cmake"
+        path: "c:/Users/elias/Desktop/GITHUB/wallify/deps/6.8.2/msvc2022_64/lib/cmake/Qt6LabsSharedImage/qt6-config.cmake"
         mode: "config"
         reason: "no_exist"
       -
-        path: "C:/Users/elias/Desktop/GITHUB/wallify/deps/6.8.2/msvc2022_64/lib/cmake/Qt6LabsSettings/Qt6Config.cmake"
+        path: "c:/Users/elias/Desktop/GITHUB/wallify/deps/6.8.2/msvc2022_64/lib/cmake/Qt6LabsSettings/Qt6Config.cmake"
         mode: "config"
         reason: "no_exist"
       -
-        path: "C:/Users/elias/Desktop/GITHUB/wallify/deps/6.8.2/msvc2022_64/lib/cmake/Qt6LabsSettings/qt6-config.cmake"
+        path: "c:/Users/elias/Desktop/GITHUB/wallify/deps/6.8.2/msvc2022_64/lib/cmake/Qt6LabsSettings/qt6-config.cmake"
         mode: "config"
         reason: "no_exist"
       -
-        path: "C:/Users/elias/Desktop/GITHUB/wallify/deps/6.8.2/msvc2022_64/lib/cmake/Qt6LabsQmlModels/Qt6Config.cmake"
+        path: "c:/Users/elias/Desktop/GITHUB/wallify/deps/6.8.2/msvc2022_64/lib/cmake/Qt6LabsQmlModels/Qt6Config.cmake"
         mode: "config"
         reason: "no_exist"
       -
-        path: "C:/Users/elias/Desktop/GITHUB/wallify/deps/6.8.2/msvc2022_64/lib/cmake/Qt6LabsQmlModels/qt6-config.cmake"
+        path: "c:/Users/elias/Desktop/GITHUB/wallify/deps/6.8.2/msvc2022_64/lib/cmake/Qt6LabsQmlModels/qt6-config.cmake"
         mode: "config"
         reason: "no_exist"
       -
-        path: "C:/Users/elias/Desktop/GITHUB/wallify/deps/6.8.2/msvc2022_64/lib/cmake/Qt6LabsPlatform/Qt6Config.cmake"
+        path: "c:/Users/elias/Desktop/GITHUB/wallify/deps/6.8.2/msvc2022_64/lib/cmake/Qt6LabsPlatform/Qt6Config.cmake"
         mode: "config"
         reason: "no_exist"
       -
-        path: "C:/Users/elias/Desktop/GITHUB/wallify/deps/6.8.2/msvc2022_64/lib/cmake/Qt6LabsPlatform/qt6-config.cmake"
+        path: "c:/Users/elias/Desktop/GITHUB/wallify/deps/6.8.2/msvc2022_64/lib/cmake/Qt6LabsPlatform/qt6-config.cmake"
         mode: "config"
         reason: "no_exist"
       -
-        path: "C:/Users/elias/Desktop/GITHUB/wallify/deps/6.8.2/msvc2022_64/lib/cmake/Qt6LabsFolderListModel/Qt6Config.cmake"
+        path: "c:/Users/elias/Desktop/GITHUB/wallify/deps/6.8.2/msvc2022_64/lib/cmake/Qt6LabsFolderListModel/Qt6Config.cmake"
         mode: "config"
         reason: "no_exist"
       -
-        path: "C:/Users/elias/Desktop/GITHUB/wallify/deps/6.8.2/msvc2022_64/lib/cmake/Qt6LabsFolderListModel/qt6-config.cmake"
+        path: "c:/Users/elias/Desktop/GITHUB/wallify/deps/6.8.2/msvc2022_64/lib/cmake/Qt6LabsFolderListModel/qt6-config.cmake"
         mode: "config"
         reason: "no_exist"
       -
-        path: "C:/Users/elias/Desktop/GITHUB/wallify/deps/6.8.2/msvc2022_64/lib/cmake/Qt6LabsAnimation/Qt6Config.cmake"
+        path: "c:/Users/elias/Desktop/GITHUB/wallify/deps/6.8.2/msvc2022_64/lib/cmake/Qt6LabsAnimation/Qt6Config.cmake"
         mode: "config"
         reason: "no_exist"
       -
-        path: "C:/Users/elias/Desktop/GITHUB/wallify/deps/6.8.2/msvc2022_64/lib/cmake/Qt6LabsAnimation/qt6-config.cmake"
+        path: "c:/Users/elias/Desktop/GITHUB/wallify/deps/6.8.2/msvc2022_64/lib/cmake/Qt6LabsAnimation/qt6-config.cmake"
         mode: "config"
         reason: "no_exist"
       -
-        path: "C:/Users/elias/Desktop/GITHUB/wallify/deps/6.8.2/msvc2022_64/lib/cmake/Qt6JpegPrivate/Qt6Config.cmake"
+        path: "c:/Users/elias/Desktop/GITHUB/wallify/deps/6.8.2/msvc2022_64/lib/cmake/Qt6JpegPrivate/Qt6Config.cmake"
         mode: "config"
         reason: "no_exist"
       -
-        path: "C:/Users/elias/Desktop/GITHUB/wallify/deps/6.8.2/msvc2022_64/lib/cmake/Qt6JpegPrivate/qt6-config.cmake"
+        path: "c:/Users/elias/Desktop/GITHUB/wallify/deps/6.8.2/msvc2022_64/lib/cmake/Qt6JpegPrivate/qt6-config.cmake"
         mode: "config"
         reason: "no_exist"
       -
-        path: "C:/Users/elias/Desktop/GITHUB/wallify/deps/6.8.2/msvc2022_64/lib/cmake/Qt6HostInfo/Qt6Config.cmake"
+        path: "c:/Users/elias/Desktop/GITHUB/wallify/deps/6.8.2/msvc2022_64/lib/cmake/Qt6HostInfo/Qt6Config.cmake"
         mode: "config"
         reason: "no_exist"
       -
-        path: "C:/Users/elias/Desktop/GITHUB/wallify/deps/6.8.2/msvc2022_64/lib/cmake/Qt6HostInfo/qt6-config.cmake"
+        path: "c:/Users/elias/Desktop/GITHUB/wallify/deps/6.8.2/msvc2022_64/lib/cmake/Qt6HostInfo/qt6-config.cmake"
         mode: "config"
         reason: "no_exist"
       -
-        path: "C:/Users/elias/Desktop/GITHUB/wallify/deps/6.8.2/msvc2022_64/lib/cmake/Qt6Help/Qt6Config.cmake"
+        path: "c:/Users/elias/Desktop/GITHUB/wallify/deps/6.8.2/msvc2022_64/lib/cmake/Qt6Help/Qt6Config.cmake"
         mode: "config"
         reason: "no_exist"
       -
-        path: "C:/Users/elias/Desktop/GITHUB/wallify/deps/6.8.2/msvc2022_64/lib/cmake/Qt6Help/qt6-config.cmake"
+        path: "c:/Users/elias/Desktop/GITHUB/wallify/deps/6.8.2/msvc2022_64/lib/cmake/Qt6Help/qt6-config.cmake"
         mode: "config"
         reason: "no_exist"
       -
-        path: "C:/Users/elias/Desktop/GITHUB/wallify/deps/6.8.2/msvc2022_64/lib/cmake/Qt6HarfbuzzPrivate/Qt6Config.cmake"
+        path: "c:/Users/elias/Desktop/GITHUB/wallify/deps/6.8.2/msvc2022_64/lib/cmake/Qt6HarfbuzzPrivate/Qt6Config.cmake"
         mode: "config"
         reason: "no_exist"
       -
-        path: "C:/Users/elias/Desktop/GITHUB/wallify/deps/6.8.2/msvc2022_64/lib/cmake/Qt6HarfbuzzPrivate/qt6-config.cmake"
+        path: "c:/Users/elias/Desktop/GITHUB/wallify/deps/6.8.2/msvc2022_64/lib/cmake/Qt6HarfbuzzPrivate/qt6-config.cmake"
         mode: "config"
         reason: "no_exist"
       -
-        path: "C:/Users/elias/Desktop/GITHUB/wallify/deps/6.8.2/msvc2022_64/lib/cmake/Qt6GuiTools/Qt6Config.cmake"
+        path: "c:/Users/elias/Desktop/GITHUB/wallify/deps/6.8.2/msvc2022_64/lib/cmake/Qt6GuiTools/Qt6Config.cmake"
         mode: "config"
         reason: "no_exist"
       -
-        path: "C:/Users/elias/Desktop/GITHUB/wallify/deps/6.8.2/msvc2022_64/lib/cmake/Qt6GuiTools/qt6-config.cmake"
+        path: "c:/Users/elias/Desktop/GITHUB/wallify/deps/6.8.2/msvc2022_64/lib/cmake/Qt6GuiTools/qt6-config.cmake"
         mode: "config"
         reason: "no_exist"
       -
-        path: "C:/Users/elias/Desktop/GITHUB/wallify/deps/6.8.2/msvc2022_64/lib/cmake/Qt6Gui/Qt6Config.cmake"
+        path: "c:/Users/elias/Desktop/GITHUB/wallify/deps/6.8.2/msvc2022_64/lib/cmake/Qt6Gui/Qt6Config.cmake"
         mode: "config"
         reason: "no_exist"
       -
-        path: "C:/Users/elias/Desktop/GITHUB/wallify/deps/6.8.2/msvc2022_64/lib/cmake/Qt6Gui/qt6-config.cmake"
+        path: "c:/Users/elias/Desktop/GITHUB/wallify/deps/6.8.2/msvc2022_64/lib/cmake/Qt6Gui/qt6-config.cmake"
         mode: "config"
         reason: "no_exist"
       -
-        path: "C:/Users/elias/Desktop/GITHUB/wallify/deps/6.8.2/msvc2022_64/lib/cmake/Qt6FreetypePrivate/Qt6Config.cmake"
+        path: "c:/Users/elias/Desktop/GITHUB/wallify/deps/6.8.2/msvc2022_64/lib/cmake/Qt6FreetypePrivate/Qt6Config.cmake"
         mode: "config"
         reason: "no_exist"
       -
-        path: "C:/Users/elias/Desktop/GITHUB/wallify/deps/6.8.2/msvc2022_64/lib/cmake/Qt6FreetypePrivate/qt6-config.cmake"
+        path: "c:/Users/elias/Desktop/GITHUB/wallify/deps/6.8.2/msvc2022_64/lib/cmake/Qt6FreetypePrivate/qt6-config.cmake"
         mode: "config"
         reason: "no_exist"
       -
-        path: "C:/Users/elias/Desktop/GITHUB/wallify/deps/6.8.2/msvc2022_64/lib/cmake/Qt6FbSupportPrivate/Qt6Config.cmake"
+        path: "c:/Users/elias/Desktop/GITHUB/wallify/deps/6.8.2/msvc2022_64/lib/cmake/Qt6FbSupportPrivate/Qt6Config.cmake"
         mode: "config"
         reason: "no_exist"
       -
-        path: "C:/Users/elias/Desktop/GITHUB/wallify/deps/6.8.2/msvc2022_64/lib/cmake/Qt6FbSupportPrivate/qt6-config.cmake"
+        path: "c:/Users/elias/Desktop/GITHUB/wallify/deps/6.8.2/msvc2022_64/lib/cmake/Qt6FbSupportPrivate/qt6-config.cmake"
         mode: "config"
         reason: "no_exist"
       -
-        path: "C:/Users/elias/Desktop/GITHUB/wallify/deps/6.8.2/msvc2022_64/lib/cmake/Qt6ExamplesAssetDownloaderPrivate/Qt6Config.cmake"
+        path: "c:/Users/elias/Desktop/GITHUB/wallify/deps/6.8.2/msvc2022_64/lib/cmake/Qt6ExamplesAssetDownloaderPrivate/Qt6Config.cmake"
         mode: "config"
         reason: "no_exist"
       -
-        path: "C:/Users/elias/Desktop/GITHUB/wallify/deps/6.8.2/msvc2022_64/lib/cmake/Qt6ExamplesAssetDownloaderPrivate/qt6-config.cmake"
+        path: "c:/Users/elias/Desktop/GITHUB/wallify/deps/6.8.2/msvc2022_64/lib/cmake/Qt6ExamplesAssetDownloaderPrivate/qt6-config.cmake"
         mode: "config"
         reason: "no_exist"
       -
-        path: "C:/Users/elias/Desktop/GITHUB/wallify/deps/6.8.2/msvc2022_64/lib/cmake/Qt6ExampleIconsPrivate/Qt6Config.cmake"
+        path: "c:/Users/elias/Desktop/GITHUB/wallify/deps/6.8.2/msvc2022_64/lib/cmake/Qt6ExampleIconsPrivate/Qt6Config.cmake"
         mode: "config"
         reason: "no_exist"
       -
-        path: "C:/Users/elias/Desktop/GITHUB/wallify/deps/6.8.2/msvc2022_64/lib/cmake/Qt6ExampleIconsPrivate/qt6-config.cmake"
+        path: "c:/Users/elias/Desktop/GITHUB/wallify/deps/6.8.2/msvc2022_64/lib/cmake/Qt6ExampleIconsPrivate/qt6-config.cmake"
         mode: "config"
         reason: "no_exist"
       -
-        path: "C:/Users/elias/Desktop/GITHUB/wallify/deps/6.8.2/msvc2022_64/lib/cmake/Qt6EntryPointPrivate/Qt6Config.cmake"
+        path: "c:/Users/elias/Desktop/GITHUB/wallify/deps/6.8.2/msvc2022_64/lib/cmake/Qt6EntryPointPrivate/Qt6Config.cmake"
         mode: "config"
         reason: "no_exist"
       -
-        path: "C:/Users/elias/Desktop/GITHUB/wallify/deps/6.8.2/msvc2022_64/lib/cmake/Qt6EntryPointPrivate/qt6-config.cmake"
+        path: "c:/Users/elias/Desktop/GITHUB/wallify/deps/6.8.2/msvc2022_64/lib/cmake/Qt6EntryPointPrivate/qt6-config.cmake"
         mode: "config"
         reason: "no_exist"
       -
-        path: "C:/Users/elias/Desktop/GITHUB/wallify/deps/6.8.2/msvc2022_64/lib/cmake/Qt6DeviceDiscoverySupportPrivate/Qt6Config.cmake"
+        path: "c:/Users/elias/Desktop/GITHUB/wallify/deps/6.8.2/msvc2022_64/lib/cmake/Qt6DeviceDiscoverySupportPrivate/Qt6Config.cmake"
         mode: "config"
         reason: "no_exist"
       -
-        path: "C:/Users/elias/Desktop/GITHUB/wallify/deps/6.8.2/msvc2022_64/lib/cmake/Qt6DeviceDiscoverySupportPrivate/qt6-config.cmake"
+        path: "c:/Users/elias/Desktop/GITHUB/wallify/deps/6.8.2/msvc2022_64/lib/cmake/Qt6DeviceDiscoverySupportPrivate/qt6-config.cmake"
         mode: "config"
         reason: "no_exist"
       -
-        path: "C:/Users/elias/Desktop/GITHUB/wallify/deps/6.8.2/msvc2022_64/lib/cmake/Qt6DesignerComponentsPrivate/Qt6Config.cmake"
+        path: "c:/Users/elias/Desktop/GITHUB/wallify/deps/6.8.2/msvc2022_64/lib/cmake/Qt6DesignerComponentsPrivate/Qt6Config.cmake"
         mode: "config"
         reason: "no_exist"
       -
-        path: "C:/Users/elias/Desktop/GITHUB/wallify/deps/6.8.2/msvc2022_64/lib/cmake/Qt6DesignerComponentsPrivate/qt6-config.cmake"
+        path: "c:/Users/elias/Desktop/GITHUB/wallify/deps/6.8.2/msvc2022_64/lib/cmake/Qt6DesignerComponentsPrivate/qt6-config.cmake"
         mode: "config"
         reason: "no_exist"
       -
-        path: "C:/Users/elias/Desktop/GITHUB/wallify/deps/6.8.2/msvc2022_64/lib/cmake/Qt6Designer/Qt6Config.cmake"
+        path: "c:/Users/elias/Desktop/GITHUB/wallify/deps/6.8.2/msvc2022_64/lib/cmake/Qt6Designer/Qt6Config.cmake"
         mode: "config"
         reason: "no_exist"
       -
-        path: "C:/Users/elias/Desktop/GITHUB/wallify/deps/6.8.2/msvc2022_64/lib/cmake/Qt6Designer/qt6-config.cmake"
+        path: "c:/Users/elias/Desktop/GITHUB/wallify/deps/6.8.2/msvc2022_64/lib/cmake/Qt6Designer/qt6-config.cmake"
         mode: "config"
         reason: "no_exist"
       -
-        path: "C:/Users/elias/Desktop/GITHUB/wallify/deps/6.8.2/msvc2022_64/lib/cmake/Qt6DBusTools/Qt6Config.cmake"
+        path: "c:/Users/elias/Desktop/GITHUB/wallify/deps/6.8.2/msvc2022_64/lib/cmake/Qt6DBusTools/Qt6Config.cmake"
         mode: "config"
         reason: "no_exist"
       -
-        path: "C:/Users/elias/Desktop/GITHUB/wallify/deps/6.8.2/msvc2022_64/lib/cmake/Qt6DBusTools/qt6-config.cmake"
+        path: "c:/Users/elias/Desktop/GITHUB/wallify/deps/6.8.2/msvc2022_64/lib/cmake/Qt6DBusTools/qt6-config.cmake"
         mode: "config"
         reason: "no_exist"
       -
-        path: "C:/Users/elias/Desktop/GITHUB/wallify/deps/6.8.2/msvc2022_64/lib/cmake/Qt6DBus/Qt6Config.cmake"
+        path: "c:/Users/elias/Desktop/GITHUB/wallify/deps/6.8.2/msvc2022_64/lib/cmake/Qt6DBus/Qt6Config.cmake"
         mode: "config"
         reason: "no_exist"
       -
-        path: "C:/Users/elias/Desktop/GITHUB/wallify/deps/6.8.2/msvc2022_64/lib/cmake/Qt6DBus/qt6-config.cmake"
+        path: "c:/Users/elias/Desktop/GITHUB/wallify/deps/6.8.2/msvc2022_64/lib/cmake/Qt6DBus/qt6-config.cmake"
         mode: "config"
         reason: "no_exist"
       -
-        path: "C:/Users/elias/Desktop/GITHUB/wallify/deps/6.8.2/msvc2022_64/lib/cmake/Qt6CoreTools/Qt6Config.cmake"
+        path: "c:/Users/elias/Desktop/GITHUB/wallify/deps/6.8.2/msvc2022_64/lib/cmake/Qt6CoreTools/Qt6Config.cmake"
         mode: "config"
         reason: "no_exist"
       -
-        path: "C:/Users/elias/Desktop/GITHUB/wallify/deps/6.8.2/msvc2022_64/lib/cmake/Qt6CoreTools/qt6-config.cmake"
+        path: "c:/Users/elias/Desktop/GITHUB/wallify/deps/6.8.2/msvc2022_64/lib/cmake/Qt6CoreTools/qt6-config.cmake"
         mode: "config"
         reason: "no_exist"
       -
-        path: "C:/Users/elias/Desktop/GITHUB/wallify/deps/6.8.2/msvc2022_64/lib/cmake/Qt6Core/Qt6Config.cmake"
+        path: "c:/Users/elias/Desktop/GITHUB/wallify/deps/6.8.2/msvc2022_64/lib/cmake/Qt6Core/Qt6Config.cmake"
         mode: "config"
         reason: "no_exist"
       -
-        path: "C:/Users/elias/Desktop/GITHUB/wallify/deps/6.8.2/msvc2022_64/lib/cmake/Qt6Core/qt6-config.cmake"
+        path: "c:/Users/elias/Desktop/GITHUB/wallify/deps/6.8.2/msvc2022_64/lib/cmake/Qt6Core/qt6-config.cmake"
         mode: "config"
         reason: "no_exist"
       -
-        path: "C:/Users/elias/Desktop/GITHUB/wallify/deps/6.8.2/msvc2022_64/lib/cmake/Qt6Concurrent/Qt6Config.cmake"
+        path: "c:/Users/elias/Desktop/GITHUB/wallify/deps/6.8.2/msvc2022_64/lib/cmake/Qt6Concurrent/Qt6Config.cmake"
         mode: "config"
         reason: "no_exist"
       -
-        path: "C:/Users/elias/Desktop/GITHUB/wallify/deps/6.8.2/msvc2022_64/lib/cmake/Qt6Concurrent/qt6-config.cmake"
+        path: "c:/Users/elias/Desktop/GITHUB/wallify/deps/6.8.2/msvc2022_64/lib/cmake/Qt6Concurrent/qt6-config.cmake"
         mode: "config"
         reason: "no_exist"
       -
-        path: "C:/Users/elias/Desktop/GITHUB/wallify/deps/6.8.2/msvc2022_64/lib/cmake/Qt6BundledResonanceAudio/Qt6Config.cmake"
+        path: "c:/Users/elias/Desktop/GITHUB/wallify/deps/6.8.2/msvc2022_64/lib/cmake/Qt6BundledResonanceAudio/Qt6Config.cmake"
         mode: "config"
         reason: "no_exist"
       -
-        path: "C:/Users/elias/Desktop/GITHUB/wallify/deps/6.8.2/msvc2022_64/lib/cmake/Qt6BundledResonanceAudio/qt6-config.cmake"
+        path: "c:/Users/elias/Desktop/GITHUB/wallify/deps/6.8.2/msvc2022_64/lib/cmake/Qt6BundledResonanceAudio/qt6-config.cmake"
         mode: "config"
         reason: "no_exist"
       -
-        path: "C:/Users/elias/Desktop/GITHUB/wallify/deps/6.8.2/msvc2022_64/lib/cmake/Qt6BundledLibpng/Qt6Config.cmake"
+        path: "c:/Users/elias/Desktop/GITHUB/wallify/deps/6.8.2/msvc2022_64/lib/cmake/Qt6BundledLibpng/Qt6Config.cmake"
         mode: "config"
         reason: "no_exist"
       -
-        path: "C:/Users/elias/Desktop/GITHUB/wallify/deps/6.8.2/msvc2022_64/lib/cmake/Qt6BundledLibpng/qt6-config.cmake"
+        path: "c:/Users/elias/Desktop/GITHUB/wallify/deps/6.8.2/msvc2022_64/lib/cmake/Qt6BundledLibpng/qt6-config.cmake"
         mode: "config"
         reason: "no_exist"
       -
-        path: "C:/Users/elias/Desktop/GITHUB/wallify/deps/6.8.2/msvc2022_64/lib/cmake/Qt6BundledLibjpeg/Qt6Config.cmake"
+        path: "c:/Users/elias/Desktop/GITHUB/wallify/deps/6.8.2/msvc2022_64/lib/cmake/Qt6BundledLibjpeg/Qt6Config.cmake"
         mode: "config"
         reason: "no_exist"
       -
-        path: "C:/Users/elias/Desktop/GITHUB/wallify/deps/6.8.2/msvc2022_64/lib/cmake/Qt6BundledLibjpeg/qt6-config.cmake"
+        path: "c:/Users/elias/Desktop/GITHUB/wallify/deps/6.8.2/msvc2022_64/lib/cmake/Qt6BundledLibjpeg/qt6-config.cmake"
         mode: "config"
         reason: "no_exist"
       -
-        path: "C:/Users/elias/Desktop/GITHUB/wallify/deps/6.8.2/msvc2022_64/lib/cmake/Qt6BundledFreetype/Qt6Config.cmake"
+        path: "c:/Users/elias/Desktop/GITHUB/wallify/deps/6.8.2/msvc2022_64/lib/cmake/Qt6BundledFreetype/Qt6Config.cmake"
         mode: "config"
         reason: "no_exist"
       -
-        path: "C:/Users/elias/Desktop/GITHUB/wallify/deps/6.8.2/msvc2022_64/lib/cmake/Qt6BundledFreetype/qt6-config.cmake"
+        path: "c:/Users/elias/Desktop/GITHUB/wallify/deps/6.8.2/msvc2022_64/lib/cmake/Qt6BundledFreetype/qt6-config.cmake"
         mode: "config"
         reason: "no_exist"
       -
-        path: "C:/Users/elias/Desktop/GITHUB/wallify/deps/6.8.2/msvc2022_64/lib/cmake/Qt6BuildInternals/Qt6Config.cmake"
+        path: "c:/Users/elias/Desktop/GITHUB/wallify/deps/6.8.2/msvc2022_64/lib/cmake/Qt6BuildInternals/Qt6Config.cmake"
         mode: "config"
         reason: "no_exist"
       -
-        path: "C:/Users/elias/Desktop/GITHUB/wallify/deps/6.8.2/msvc2022_64/lib/cmake/Qt6BuildInternals/qt6-config.cmake"
+        path: "c:/Users/elias/Desktop/GITHUB/wallify/deps/6.8.2/msvc2022_64/lib/cmake/Qt6BuildInternals/qt6-config.cmake"
         mode: "config"
         reason: "no_exist"
     found:
@@ -6899,7 +7070,7 @@ events:
       version: "6.8.2"
     search_context:
       CMAKE_PREFIX_PATH:
-        - "C:/Users/elias/Desktop/GITHUB/wallify/deps/6.8.2/msvc2022_64"
+        - "c:\\Users\\elias\\Desktop\\GITHUB\\wallify\\deps\\6.8.2\\msvc2022_64"
       ENV{PATH}:
         - "C:/Users/elias/.gemini/antigravity/bin"
         - "C:\\Users\\elias\\AppData\\Roaming\\Antigravity\\bin"

@@ -70,9 +70,12 @@ void AppSettings::setShowDebugWindow(bool show)
 
 void AppSettings::factoryReset()
 {
-    // Delete spotdl.exe
     QString appDataDir = QStandardPaths::writableLocation(QStandardPaths::AppDataLocation);
+    
+    // Delete spotdl.exe, ffmpeg.exe and playlists.json
     QFile::remove(appDataDir + "/spotdl.exe");
+    QFile::remove(appDataDir + "/ffmpeg.exe");
+    QFile::remove(appDataDir + "/playlists.json");
     
     // Delete ffmpeg folder
     QDir(QDir::homePath() + "/.spotdl").removeRecursively();

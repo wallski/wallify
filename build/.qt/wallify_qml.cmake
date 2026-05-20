@@ -14,6 +14,8 @@ set(src_and_dest_list
     "C:/Users/elias/Desktop/GITHUB/wallify/build/Wallify/resources/qml/OnboardingView.qml"
     "C:/Users/elias/Desktop/GITHUB/wallify/resources/qml/MainInterface.qml"
     "C:/Users/elias/Desktop/GITHUB/wallify/build/Wallify/resources/qml/MainInterface.qml"
+    "C:/Users/elias/Desktop/GITHUB/wallify/resources/qml/LibraryView.qml"
+    "C:/Users/elias/Desktop/GITHUB/wallify/build/Wallify/resources/qml/LibraryView.qml"
     "C:/Users/elias/Desktop/GITHUB/wallify/resources/qml/DebugWindow.qml"
     "C:/Users/elias/Desktop/GITHUB/wallify/build/Wallify/resources/qml/DebugWindow.qml"
     "C:/Users/elias/Desktop/GITHUB/wallify/resources/qml/MigrationView.qml"

@@ -1,10 +1,12 @@
 #include "SpotifyMigrator.h"
+#include "LocalLibrary.h"
 #include <QDebug>
 #include <QRegularExpression>
 #include <QSettings>
+#include <QDirIterator>
 
-SpotifyMigrator::SpotifyMigrator(QObject *parent)
-    : QObject(parent), m_isWorking(false), m_progress(0), m_state(Idle)
+SpotifyMigrator::SpotifyMigrator(LocalLibrary *library, QObject *parent)
+    : QObject(parent), m_library(library), m_isWorking(false), m_progress(0), m_state(Idle)
 {
     m_process = new QProcess(this);
     connect(m_process, &QProcess::readyReadStandardOutput, this, &SpotifyMigrator::processOutput);
@@ -26,6 +28,19 @@ SpotifyMigrator::SpotifyMigrator(QObject *parent)
 QString SpotifyMigrator::statusText() const { return m_statusText; }
 bool SpotifyMigrator::isWorking() const { return m_isWorking; }
 int SpotifyMigrator::progress() const { return m_progress; }
+QString SpotifyMigrator::logs() const { return m_logs; }
+
+void SpotifyMigrator::clearLogs()
+{
+    m_logs.clear();
+    emit logsChanged();
+}
+
+void SpotifyMigrator::appendLog(const QString &message)
+{
+    m_logs += message + "\n";
+    emit logsChanged();
+}
 
 void SpotifyMigrator::setStatus(const QString &text)
 {
@@ -55,7 +70,11 @@ void SpotifyMigrator::startMigration(const QString &url)
 {
     if (m_isWorking) return;
     
+    clearLogs();
     m_currentUrl = url;
+    m_detectedPlaylistName.clear();
+    m_filesBefore = scanFiles();
+    
     setWorking(true);
     setProgress(0);
 
@@ -76,14 +95,21 @@ void SpotifyMigrator::prepareEnvironmentAndRun(const QString &url)
     QString spotdlFfmpegNoExt = QDir::homePath() + "/.spotdl/ffmpeg";
     
     if (!QFile::exists(m_appDataDir + "/ffmpeg.exe") && !QFile::exists(QDir::currentPath() + "/ffmpeg.exe") && !QFile::exists(spotdlFfmpeg) && !QFile::exists(spotdlFfmpegNoExt)) {
-        setStatus("Setting up FFmpeg audio encoder...");
+        setStatus("Setting up FFmpeg audio encoder... (this might take a while)");
         m_state = DownloadingFFmpeg;
         m_process->setWorkingDirectory(m_appDataDir);
         m_process->start(m_spotdlPath, {"--download-ffmpeg"});
         return;
     }
 
-    setStatus("Migrating playlist...");
+    QString statusType = "playlist";
+    if (url.contains("/track/", Qt::CaseInsensitive)) {
+        statusType = "track";
+    } else if (url.contains("/album/", Qt::CaseInsensitive)) {
+        statusType = "album";
+    }
+
+    setStatus("Migrating " + statusType + "...");
     m_state = Migrating;
     m_process->setWorkingDirectory(m_musicDir);
     m_process->start(m_spotdlPath, {url});
@@ -98,6 +124,7 @@ void SpotifyMigrator::processOutput()
     if (text.isEmpty()) return;
     
     // Print everything to the internal log list
+    appendLog(text);
     emit logMessage(text);
     qDebug().noquote() << "[spotDL Output]:" << text;
     
@@ -110,6 +137,23 @@ void SpotifyMigrator::processOutput()
         // spotdl output looks like: 
         // 100%|████████████| 1/1 [00:00<00:00, 298.54it/s]
         
+        // Parse playlist or album name from console output
+        if (text.contains("playlist '")) {
+            int idx = text.indexOf("playlist '");
+            int start = idx + 10;
+            int end = text.indexOf("'", start);
+            if (end != -1) {
+                m_detectedPlaylistName = text.mid(start, end - start);
+            }
+        } else if (text.contains("album '")) {
+            int idx = text.indexOf("album '");
+            int start = idx + 7;
+            int end = text.indexOf("'", start);
+            if (end != -1) {
+                m_detectedPlaylistName = text.mid(start, end - start);
+            }
+        }
+
         QRegularExpression progressRe("(\\d+)%");
         QRegularExpressionMatch match = progressRe.match(text);
         if (match.hasMatch()) {
@@ -155,6 +199,34 @@ void SpotifyMigrator::processFinished(int exitCode, QProcess::ExitStatus exitSta
         setStatus("Migration Complete! Check Your Library.");
         setWorking(false);
         m_state = Idle;
+        
+        // Scan directory for new files
+        m_library->scan();
+        
+        QStringList filesAfter = scanFiles();
+        QStringList newFiles;
+        for (const QString &file : filesAfter) {
+            if (!m_filesBefore.contains(file)) {
+                newFiles.append(file);
+            }
+        }
+        
+        // Only create a playlist if the URL represents a playlist or album
+        bool isPlaylistOrAlbum = m_currentUrl.contains("/playlist/", Qt::CaseInsensitive) || 
+                                 m_currentUrl.contains("/album/", Qt::CaseInsensitive);
+        
+        if (isPlaylistOrAlbum && !newFiles.isEmpty()) {
+            QString plName = m_detectedPlaylistName;
+            if (plName.isEmpty()) {
+                if (m_currentUrl.contains("/album/", Qt::CaseInsensitive)) {
+                    plName = "Imported Album";
+                } else {
+                    plName = "Imported Playlist";
+                }
+            }
+            m_library->createPlaylistFromMigration(plName, newFiles);
+        }
+        
         emit migrationCompleted();
     }
 }
@@ -168,4 +240,14 @@ void SpotifyMigrator::answerFfmpegOverwrite(bool overwrite)
             m_process->write("N\n");
         }
     }
+}
+
+QStringList SpotifyMigrator::scanFiles()
+{
+    QStringList files;
+    QDirIterator it(m_musicDir, QStringList() << "*.mp3", QDir::Files, QDirIterator::Subdirectories);
+    while (it.hasNext()) {
+        files.append(it.next());
+    }
+    return files;
 }

@@ -5,6 +5,9 @@
 #include <QFontDatabase>
 #include "SpotifyMigrator.h"
 #include "AppSettings.h"
+#include "LocalLibrary.h"
+#include "AudioPlayer.h"
+#include "CoverImageProvider.h"
 
 int main(int argc, char *argv[])
 {
@@ -22,15 +25,19 @@ int main(int argc, char *argv[])
     }
 
     QQmlApplicationEngine engine;
-    
-    // Load global fonts safely
-    QFontDatabase::addApplicationFont(":/resources/fonts/BebasNeue-Regular.ttf");
-    QFontDatabase::addApplicationFont(":/resources/fonts/Roboto-Regular.ttf");
 
     AppSettings appSettings;
     engine.rootContext()->setContextProperty("appSettings", &appSettings);
 
-    SpotifyMigrator migrator;
+    LocalLibrary* library = new LocalLibrary(&app);
+    engine.rootContext()->setContextProperty("localLibrary", library);
+
+    AudioPlayer* player = new AudioPlayer(library, &app);
+    engine.rootContext()->setContextProperty("audioPlayer", player);
+
+    engine.addImageProvider("covers", new CoverImageProvider(library));
+
+    SpotifyMigrator migrator(library);
     engine.rootContext()->setContextProperty("spotifyMigrator", &migrator);
 
     const QUrl url(u"qrc:/Wallify/resources/qml/Main.qml"_qs);

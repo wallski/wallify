@@ -33,7 +33,7 @@ Rectangle {
                 anchors.verticalCenter: parent.verticalCenter
                 anchors.left: parent.left
                 anchors.leftMargin: 10
-                text: "Local Library"
+                text: "Library"
                 color: sidebar.currentIndex === 0 ? "#bd93f9" : "#e2e2e2"
                 font.family: "Roboto"
                 font.pixelSize: 14

@@ -2,7 +2,7 @@
     "classes": [
         {
             "className": "SpotifyMigrator",
-            "lineNumber": 9,
+            "lineNumber": 11,
             "methods": [
                 {
                     "access": "public",
@@ -12,7 +12,7 @@
                             "type": "QString"
                         }
                     ],
-                    "index": 9,
+                    "index": 10,
                     "name": "startMigration",
                     "returnType": "void"
                 },
@@ -24,8 +24,14 @@
                             "type": "bool"
                         }
                     ],
-                    "index": 10,
+                    "index": 11,
                     "name": "answerFfmpegOverwrite",
+                    "returnType": "void"
+                },
+                {
+                    "access": "public",
+                    "index": 12,
+                    "name": "clearLogs",
                     "returnType": "void"
                 }
             ],
@@ -71,6 +77,20 @@
                     "scriptable": true,
                     "stored": true,
                     "type": "int",
+                    "user": false
+                },
+                {
+                    "constant": false,
+                    "designable": true,
+                    "final": false,
+                    "index": 3,
+                    "name": "logs",
+                    "notify": "logsChanged",
+                    "read": "logs",
+                    "required": false,
+                    "scriptable": true,
+                    "stored": true,
+                    "type": "QString",
                     "user": false
                 }
             ],
@@ -129,12 +149,18 @@
                     "index": 6,
                     "name": "ffmpegOverwriteRequested",
                     "returnType": "void"
+                },
+                {
+                    "access": "public",
+                    "index": 7,
+                    "name": "logsChanged",
+                    "returnType": "void"
                 }
             ],
             "slots": [
                 {
                     "access": "private",
-                    "index": 7,
+                    "index": 8,
                     "name": "processOutput",
                     "returnType": "void"
                 },
@@ -150,7 +176,7 @@
                             "type": "QProcess::ExitStatus"
                         }
                     ],
-                    "index": 8,
+                    "index": 9,
                     "name": "processFinished",
                     "returnType": "void"
                 }

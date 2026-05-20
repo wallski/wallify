@@ -53,17 +53,14 @@ Window {
                     wrapMode: TextEdit.Wrap
                     textFormat: TextEdit.PlainText
                     background: null
+                    text: spotifyMigrator.logs
+                    
+                    onTextChanged: {
+                        // Auto scroll to bottom
+                        scrollView.ScrollBar.vertical.position = 1.0 - scrollView.ScrollBar.vertical.size
+                    }
                 }
             }
-        }
-    }
-    
-    Connections {
-        target: spotifyMigrator
-        function onLogMessage(message) {
-            logArea.append(message)
-            // Auto scroll to bottom
-            scrollView.ScrollBar.vertical.position = 1.0 - scrollView.ScrollBar.vertical.size
         }
     }
 }

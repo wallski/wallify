@@ -13,6 +13,12 @@
     <ClCompile Include="C:\Users\elias\Desktop\GITHUB\wallify\src\AppSettings.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="C:\Users\elias\Desktop\GITHUB\wallify\src\LocalLibrary.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\elias\Desktop\GITHUB\wallify\src\AudioPlayer.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
     <ClCompile Include="C:\Users\elias\Desktop\GITHUB\wallify\build\wallify_qmltyperegistrations.cpp">
       <Filter>Source Files\Generated</Filter>
     </ClCompile>
@@ -38,6 +44,9 @@
       <Filter>Source Files\Generated</Filter>
     </ClCompile>
     <ClCompile Include="C:\Users\elias\Desktop\GITHUB\wallify\build\.rcc\qmlcache\wallify_resources\qml\MainInterface_qml.cpp">
+      <Filter>Source Files\Generated</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\elias\Desktop\GITHUB\wallify\build\.rcc\qmlcache\wallify_resources\qml\LibraryView_qml.cpp">
       <Filter>Source Files\Generated</Filter>
     </ClCompile>
     <ClCompile Include="C:\Users\elias\Desktop\GITHUB\wallify\build\.rcc\qmlcache\wallify_resources\qml\DebugWindow_qml.cpp">
@@ -73,6 +82,12 @@
       <Filter>Header Files</Filter>
     </ClInclude>
     <ClInclude Include="C:\Users\elias\Desktop\GITHUB\wallify\src\AppSettings.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\elias\Desktop\GITHUB\wallify\src\LocalLibrary.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\elias\Desktop\GITHUB\wallify\src\AudioPlayer.h">
       <Filter>Header Files</Filter>
     </ClInclude>
     <ClInclude Include="C:\Users\elias\Desktop\GITHUB\wallify\build\ddf_wallify.h">
@@ -121,6 +136,9 @@
     <CustomBuild Include="C:\Users\elias\Desktop\GITHUB\wallify\build\CMakeFiles\5b8f065dd6434f0c89c869b2c9e913ca\MainInterface_qml.cpp.rule">
       <Filter>CMake Rules</Filter>
     </CustomBuild>
+    <CustomBuild Include="C:\Users\elias\Desktop\GITHUB\wallify\build\CMakeFiles\5b8f065dd6434f0c89c869b2c9e913ca\LibraryView_qml.cpp.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
     <CustomBuild Include="C:\Users\elias\Desktop\GITHUB\wallify\build\CMakeFiles\5b8f065dd6434f0c89c869b2c9e913ca\DebugWindow_qml.cpp.rule">
       <Filter>CMake Rules</Filter>
     </CustomBuild>
@@ -163,6 +181,9 @@
     <None Include="C:\Users\elias\Desktop\GITHUB\wallify\resources\qml\MainInterface.qml">
       <Filter>Source Files</Filter>
     </None>
+    <None Include="C:\Users\elias\Desktop\GITHUB\wallify\resources\qml\LibraryView.qml">
+      <Filter>Source Files</Filter>
+    </None>
     <None Include="C:\Users\elias\Desktop\GITHUB\wallify\resources\qml\DebugWindow.qml">
       <Filter>Source Files</Filter>
     </None>
@@ -203,6 +224,9 @@
       <Filter>Source Files\Generated</Filter>
     </None>
     <None Include="C:\Users\elias\Desktop\GITHUB\wallify\deps\6.8.2\msvc2022_64\metatypes\qt6opengl_metatypes.json">
+      <Filter>Source Files\Generated</Filter>
+    </None>
+    <None Include="C:\Users\elias\Desktop\GITHUB\wallify\deps\6.8.2\msvc2022_64\metatypes\qt6multimedia_metatypes.json">
       <Filter>Source Files\Generated</Filter>
     </None>
   </ItemGroup>

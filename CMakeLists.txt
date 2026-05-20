@@ -10,7 +10,7 @@ if(NOT DEFINED CMAKE_PREFIX_PATH)
     set(CMAKE_PREFIX_PATH "${CMAKE_CURRENT_SOURCE_DIR}/deps/6.8.2/msvc2022_64" CACHE PATH "Path to Qt" FORCE)
 endif()
 
-find_package(Qt6 REQUIRED COMPONENTS Core Gui Qml Quick)
+find_package(Qt6 REQUIRED COMPONENTS Core Gui Qml Quick Multimedia)
 
 qt_standard_project_setup()
 
@@ -21,6 +21,10 @@ qt_add_executable(wallify
     src/SpotifyMigrator.h
     src/AppSettings.cpp
     src/AppSettings.h
+    src/LocalLibrary.cpp
+    src/LocalLibrary.h
+    src/AudioPlayer.cpp
+    src/AudioPlayer.h
 )
 
 # Create a QML module to embed QML files and resources
@@ -35,6 +39,7 @@ qt_add_qml_module(wallify
         resources/qml/WelcomeScreen.qml
         resources/qml/OnboardingView.qml
         resources/qml/MainInterface.qml
+        resources/qml/LibraryView.qml
         resources/qml/DebugWindow.qml
         resources/qml/MigrationView.qml
         resources/qml/Sidebar.qml
@@ -51,6 +56,7 @@ target_link_libraries(wallify
     Qt6::Gui
     Qt6::Qml
     Qt6::Quick
+    Qt6::Multimedia
 )
 
 set_target_properties(wallify PROPERTIES

@@ -1,42 +1,65 @@
 # Wallify
 
-## Overview
-Wallify is a cross‑platform desktop music player built with Qt and C++. It provides a clean, modern interface for browsing and playing your local music library. The application supports automatic detection of playlists and albums, and it can import songs from external sources such as Spotify, YouTube, and SoundCloud.
+A native desktop music player built with Qt6 and C++. Fast and lightweight for playing your local music library.
 
-## Features
-- Elegant, responsive UI built with QML
-- Full‑screen and windowed modes
-- Automatic playlist detection and creation
-- Migration tool that can import tracks and playlists from multiple services
-- Local library management with automatic scanning and metadata handling
-- Configurable settings for themes, audio output, and shortcuts
+## What it does
 
-## Prerequisites
-- Windows 10/11 (64‑bit) or Linux with Qt 6 runtime
-- CMake ≥ 3.20
-- A C++ compiler compatible with C++17 (MSVC 2022, GCC 9+, Clang 10+)
-- Qt 6.5+ libraries (installed via the included `deps` directory or system packages)
+- Plays MP3, WAV, OGG from your local folders
+- Scans your music directory and builds a library with metadata (title, artist, album, cover art)
+- Playlist management: create, rename, delete, add/remove tracks
+- Spotify migration: import playlists and tracks via spotdl
+- Queue system with shuffle and repeat modes
+- Custom dark UI built with QML
 
-## Building from Source
-```bash
-# Clone the repository
+## Stack
+
+- C++20
+- Qt 6.8 (Core, Gui, QML, Quick, Multimedia)
+- CMake
+- Custom ID3v2 parser (no external tag library dependency)
+
+## Building (Windows)
+
+### Prerequisites
+
+- Windows 10/11 (64-bit)
+- Visual Studio 2022 or newer with C++ workload
+- Python 3.12+ (for the dependency installer)
+- CMake 3.20+
+
+### Steps
+
+```powershell
+# Clone
 git clone https://github.com/wallski/wallify.git
 cd wallify
 
-# Initialize submodules (Qt dependencies)
-git submodule update --init --recursive
+# Install Qt 6.8.2, FFmpeg, and spotdl into deps/
+.\install_deps.ps1
 
-# Configure the build directory
-cmake -S . -B build -G "Visual Studio 17 2022" -A x64
+# Build
+mkdir build
+cd build
+cmake .. -G "Visual Studio 18 2026" -A x64
+cmake --build . --config Release
 
-# Build the project
-cmake --build build --config Release
+# Deploy Qt dependencies and run
+cd Release
+..\..\deps\6.8.2\msvc2022_64\bin\windeployqt.exe wallify.exe --qmldir ..\..\resources\qml
+.\wallify.exe
 ```
-The executable will be located at `build/Release/wallify.exe` (Windows) or `build/wallify` (Linux).
 
-## Running the Application
-Simply launch the built binary. The first run will prompt you to select a directory for your music library. Wallify will scan the folder and populate the library view.
+The executable is at `build/Release/wallify.exe` after building.
+
+### Note on Visual Studio version
+
+If you have VS 2022, use `"Visual Studio 17 2022"`. If you have VS 2026, use `"Visual Studio 18 2026"`. CMake will error if the generator doesn't match your installed version.
+
+## First Run
+
+On launch, Wallify asks for a music library folder. Point it to wherever your MP3s live. It will scan recursively and build the library automatically.
 
 
 ## License
-This project is licensed under the MIT License. See the `LICENSE` file for details.
+
+MIT

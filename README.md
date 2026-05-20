@@ -37,21 +37,6 @@ The executable will be located at `build/Release/wallify.exe` (Windows) or `buil
 ## Running the Application
 Simply launch the built binary. The first run will prompt you to select a directory for your music library. Wallify will scan the folder and populate the library view.
 
-## Usage
-1. **Library Navigation** – Use the sidebar to browse Artists, Albums, and Playlists.
-2. **Playback Controls** – Standard play/pause, next/previous, and seek.
-3. **Migration** – Open the **Migration** tab, paste a URL from Spotify, YouTube, or SoundCloud, and click **MIGRATE NOW**. Detected playlists are imported automatically.
-4. **Settings** – Access the Settings dialog from the sidebar to adjust theme, audio output device, and shortcut keys.
-
-## Contributing
-Contributions are welcome! Please follow these steps:
-1. Fork the repository and create a new feature branch.
-2. Ensure code style matches the existing project (Qt naming conventions, clang‑format).
-3. Add or update unit tests for new functionality.
-4. Submit a pull request with a clear description of changes.
 
 ## License
 This project is licensed under the MIT License. See the `LICENSE` file for details.
-
-## Contact
-For bug reports or feature requests, please open an issue on the GitHub repository.

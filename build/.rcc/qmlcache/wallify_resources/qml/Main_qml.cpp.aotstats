@@ -6,82 +6,98 @@
                     {
                         "codegenSuccessfull": true,
                         "column": 12,
-                        "durationMicroseconds": 561,
+                        "durationMicroseconds": 992,
                         "errorMessage": "",
                         "functionName": "flags",
                         "line": 14
                     },
                     {
+                        "codegenSuccessfull": false,
+                        "column": 17,
+                        "durationMicroseconds": 221,
+                        "errorMessage": "Cannot access value for name appSettings",
+                        "functionName": "target",
+                        "line": 19
+                    },
+                    {
+                        "codegenSuccessfull": false,
+                        "column": 9,
+                        "durationMicroseconds": 616,
+                        "errorMessage": "Cannot generate efficient code for call to untyped JavaScript function",
+                        "functionName": "onFactoryResetRequested",
+                        "line": 20
+                    },
+                    {
                         "codegenSuccessfull": true,
                         "column": 23,
-                        "durationMicroseconds": 172,
+                        "durationMicroseconds": 115,
                         "errorMessage": "",
                         "functionName": "fill",
-                        "line": 19
+                        "line": 26
                     },
                     {
                         "codegenSuccessfull": true,
                         "column": 21,
-                        "durationMicroseconds": 93,
+                        "durationMicroseconds": 135,
                         "errorMessage": "",
                         "functionName": "window",
-                        "line": 24
-                    },
-                    {
-                        "codegenSuccessfull": false,
-                        "column": 26,
-                        "durationMicroseconds": 638,
-                        "errorMessage": "Cannot access value for name appSettings",
-                        "functionName": "initialItem",
                         "line": 31
                     },
                     {
                         "codegenSuccessfull": false,
+                        "column": 26,
+                        "durationMicroseconds": 644,
+                        "errorMessage": "Cannot access value for name appSettings",
+                        "functionName": "initialItem",
+                        "line": 38
+                    },
+                    {
+                        "codegenSuccessfull": false,
                         "column": 35,
-                        "durationMicroseconds": 44,
+                        "durationMicroseconds": 61,
                         "errorMessage": "Cannot access value for name stackView",
                         "functionName": "onGetStarted",
-                        "line": 36
+                        "line": 43
                     },
                     {
                         "codegenSuccessfull": false,
                         "column": 33,
-                        "durationMicroseconds": 33,
+                        "durationMicroseconds": 38,
                         "errorMessage": "Cannot access value for name stackView",
                         "functionName": "onFinished",
-                        "line": 45
+                        "line": 52
                     },
                     {
                         "codegenSuccessfull": true,
                         "column": 34,
-                        "durationMicroseconds": 111,
+                        "durationMicroseconds": 160,
                         "errorMessage": "",
                         "functionName": "type",
-                        "line": 62
+                        "line": 69
                     },
                     {
                         "codegenSuccessfull": true,
                         "column": 34,
-                        "durationMicroseconds": 124,
+                        "durationMicroseconds": 104,
                         "errorMessage": "",
                         "functionName": "type",
-                        "line": 71
+                        "line": 78
                     },
                     {
                         "codegenSuccessfull": true,
                         "column": 34,
-                        "durationMicroseconds": 215,
+                        "durationMicroseconds": 92,
                         "errorMessage": "",
                         "functionName": "type",
-                        "line": 80
+                        "line": 87
                     },
                     {
                         "codegenSuccessfull": true,
                         "column": 34,
-                        "durationMicroseconds": 150,
+                        "durationMicroseconds": 162,
                         "errorMessage": "",
                         "functionName": "type",
-                        "line": 89
+                        "line": 96
                     }
                 ],
                 "filepath": "C:/Users/elias/Desktop/GITHUB/wallify/resources/qml/Main.qml"

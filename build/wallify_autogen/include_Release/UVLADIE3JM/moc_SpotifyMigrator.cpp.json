@@ -12,8 +12,20 @@
                             "type": "QString"
                         }
                     ],
-                    "index": 7,
+                    "index": 9,
                     "name": "startMigration",
+                    "returnType": "void"
+                },
+                {
+                    "access": "public",
+                    "arguments": [
+                        {
+                            "name": "overwrite",
+                            "type": "bool"
+                        }
+                    ],
+                    "index": 10,
+                    "name": "answerFfmpegOverwrite",
                     "returnType": "void"
                 }
             ],
@@ -99,12 +111,30 @@
                     "index": 4,
                     "name": "migrationFailed",
                     "returnType": "void"
+                },
+                {
+                    "access": "public",
+                    "arguments": [
+                        {
+                            "name": "message",
+                            "type": "QString"
+                        }
+                    ],
+                    "index": 5,
+                    "name": "logMessage",
+                    "returnType": "void"
+                },
+                {
+                    "access": "public",
+                    "index": 6,
+                    "name": "ffmpegOverwriteRequested",
+                    "returnType": "void"
                 }
             ],
             "slots": [
                 {
                     "access": "private",
-                    "index": 5,
+                    "index": 7,
                     "name": "processOutput",
                     "returnType": "void"
                 },
@@ -120,7 +150,7 @@
                             "type": "QProcess::ExitStatus"
                         }
                     ],
-                    "index": 6,
+                    "index": 8,
                     "name": "processFinished",
                     "returnType": "void"
                 }

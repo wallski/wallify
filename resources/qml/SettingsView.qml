@@ -29,6 +29,98 @@ Item {
             Layout.alignment: Qt.AlignHCenter
         }
         
+        // Debug Settings
+        Rectangle {
+            Layout.fillWidth: true
+            height: 80
+            color: "#1e1e28"
+            radius: 8
+            border.color: "#2a2a35"
+            border.width: 1
+            
+            RowLayout {
+                anchors.fill: parent
+                anchors.margins: 20
+                
+                ColumnLayout {
+                    Layout.fillWidth: true
+                    spacing: 4
+                    
+                    Text {
+                        text: "Show Debug Console"
+                        color: "#e2e2e2"
+                        font.family: "Roboto"
+                        font.pixelSize: 16
+                        font.bold: true
+                    }
+                    
+                    Text {
+                        text: "Opens a CMD window to see backend logs during migration."
+                        color: "#89899f"
+                        font.family: "Roboto"
+                        font.pixelSize: 13
+                    }
+                }
+                
+                Switch {
+                    checked: appSettings.showDebugWindow
+                    onCheckedChanged: appSettings.showDebugWindow = checked
+                }
+            }
+        }
+        
+        // Reset Area
+        Rectangle {
+            Layout.fillWidth: true
+            height: 100
+            color: "#1e1e28"
+            radius: 8
+            border.color: "#2a2a35"
+            border.width: 1
+            
+            ColumnLayout {
+                anchors.centerIn: parent
+                spacing: 10
+                
+                Text {
+                    text: "Having issues? This will reset Wallify setup (does not delete your music)."
+                    color: "#89899f"
+                    font.family: "Roboto"
+                    font.pixelSize: 13
+                    Layout.alignment: Qt.AlignHCenter
+                }
+                
+                Rectangle {
+                    Layout.alignment: Qt.AlignHCenter
+                    width: 200
+                    height: 40
+                    color: "#ff5555"
+                    radius: 8
+                    
+                    Text {
+                        anchors.centerIn: parent
+                        text: "RESET TO ONBOARDING"
+                        color: "#18181e"
+                        font.family: "Roboto"
+                        font.bold: true
+                        font.pixelSize: 14
+                    }
+                    
+                    MouseArea {
+                        anchors.fill: parent
+                        cursorShape: Qt.PointingHandCursor
+                        onClicked: {
+                            appSettings.factoryReset()
+                        }
+                    }
+                }
+            }
+        }
+        
+        Item {
+            Layout.fillHeight: true
+        }
+
         ColumnLayout {
             Layout.fillWidth: true
             spacing: 10

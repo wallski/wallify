@@ -35,6 +35,7 @@ qt_add_qml_module(wallify
         resources/qml/WelcomeScreen.qml
         resources/qml/OnboardingView.qml
         resources/qml/MainInterface.qml
+        resources/qml/DebugWindow.qml
         resources/qml/MigrationView.qml
         resources/qml/Sidebar.qml
         resources/qml/BottomPlayerBar.qml
@@ -52,9 +53,9 @@ target_link_libraries(wallify
     Qt6::Quick
 )
 
-# set_target_properties(wallify PROPERTIES
-#     WIN32_EXECUTABLE TRUE
-# )
+set_target_properties(wallify PROPERTIES
+    WIN32_EXECUTABLE TRUE
+)
 
 qt_import_qml_plugins(wallify)
 qt_finalize_executable(wallify)

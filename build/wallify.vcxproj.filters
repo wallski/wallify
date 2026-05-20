@@ -40,6 +40,9 @@
     <ClCompile Include="C:\Users\elias\Desktop\GITHUB\wallify\build\.rcc\qmlcache\wallify_resources\qml\MainInterface_qml.cpp">
       <Filter>Source Files\Generated</Filter>
     </ClCompile>
+    <ClCompile Include="C:\Users\elias\Desktop\GITHUB\wallify\build\.rcc\qmlcache\wallify_resources\qml\DebugWindow_qml.cpp">
+      <Filter>Source Files\Generated</Filter>
+    </ClCompile>
     <ClCompile Include="C:\Users\elias\Desktop\GITHUB\wallify\build\.rcc\qmlcache\wallify_resources\qml\MigrationView_qml.cpp">
       <Filter>Source Files\Generated</Filter>
     </ClCompile>
@@ -118,6 +121,9 @@
     <CustomBuild Include="C:\Users\elias\Desktop\GITHUB\wallify\build\CMakeFiles\5b8f065dd6434f0c89c869b2c9e913ca\MainInterface_qml.cpp.rule">
       <Filter>CMake Rules</Filter>
     </CustomBuild>
+    <CustomBuild Include="C:\Users\elias\Desktop\GITHUB\wallify\build\CMakeFiles\5b8f065dd6434f0c89c869b2c9e913ca\DebugWindow_qml.cpp.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
     <CustomBuild Include="C:\Users\elias\Desktop\GITHUB\wallify\build\CMakeFiles\5b8f065dd6434f0c89c869b2c9e913ca\MigrationView_qml.cpp.rule">
       <Filter>CMake Rules</Filter>
     </CustomBuild>
@@ -155,6 +161,9 @@
       <Filter>Source Files</Filter>
     </None>
     <None Include="C:\Users\elias\Desktop\GITHUB\wallify\resources\qml\MainInterface.qml">
+      <Filter>Source Files</Filter>
+    </None>
+    <None Include="C:\Users\elias\Desktop\GITHUB\wallify\resources\qml\DebugWindow.qml">
       <Filter>Source Files</Filter>
     </None>
     <None Include="C:\Users\elias\Desktop\GITHUB\wallify\resources\qml\MigrationView.qml">

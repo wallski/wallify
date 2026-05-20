@@ -7,6 +7,7 @@ WindowControlButton 1.0 resources/qml/WindowControlButton.qml
 WelcomeScreen 1.0 resources/qml/WelcomeScreen.qml
 OnboardingView 1.0 resources/qml/OnboardingView.qml
 MainInterface 1.0 resources/qml/MainInterface.qml
+DebugWindow 1.0 resources/qml/DebugWindow.qml
 MigrationView 1.0 resources/qml/MigrationView.qml
 Sidebar 1.0 resources/qml/Sidebar.qml
 BottomPlayerBar 1.0 resources/qml/BottomPlayerBar.qml

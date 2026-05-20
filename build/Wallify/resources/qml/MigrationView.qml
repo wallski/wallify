@@ -5,6 +5,111 @@ import QtQuick.Layouts
 Item {
     id: migrationView
     
+    Connections {
+        target: spotifyMigrator
+        function onFfmpegOverwriteRequested() {
+            ffmpegPopup.open()
+        }
+    }
+    
+    Popup {
+        id: ffmpegPopup
+        anchors.centerIn: parent
+        width: 400
+        height: 200
+        modal: true
+        focus: true
+        closePolicy: Popup.NoAutoClose
+        
+        background: Rectangle {
+            color: "#1e1e28"
+            radius: 8
+            border.color: "#2a2a35"
+            border.width: 1
+        }
+        
+        ColumnLayout {
+            anchors.fill: parent
+            anchors.margins: 20
+            spacing: 15
+            
+            Text {
+                text: "FFmpeg is already installed"
+                color: "#e2e2e2"
+                font.family: "Roboto"
+                font.pixelSize: 18
+                font.bold: true
+                Layout.alignment: Qt.AlignHCenter
+            }
+            
+            Text {
+                text: "Do you want to overwrite it with a fresh download? (Recommended if you are having issues)"
+                color: "#89899f"
+                font.family: "Roboto"
+                font.pixelSize: 14
+                wrapMode: Text.WordWrap
+                Layout.fillWidth: true
+                Layout.alignment: Qt.AlignHCenter
+                horizontalAlignment: Text.AlignHCenter
+            }
+            
+            Item { Layout.fillHeight: true }
+            
+            RowLayout {
+                Layout.fillWidth: true
+                spacing: 15
+                
+                Rectangle {
+                    Layout.fillWidth: true
+                    height: 40
+                    color: "#2a2a35"
+                    radius: 8
+                    
+                    Text {
+                        anchors.centerIn: parent
+                        text: "NO (Keep Existing)"
+                        color: "#e2e2e2"
+                        font.family: "Roboto"
+                        font.bold: true
+                    }
+                    
+                    MouseArea {
+                        anchors.fill: parent
+                        cursorShape: Qt.PointingHandCursor
+                        onClicked: {
+                            spotifyMigrator.answerFfmpegOverwrite(false)
+                            ffmpegPopup.close()
+                        }
+                    }
+                }
+                
+                Rectangle {
+                    Layout.fillWidth: true
+                    height: 40
+                    color: "#bd93f9"
+                    radius: 8
+                    
+                    Text {
+                        anchors.centerIn: parent
+                        text: "YES (Overwrite)"
+                        color: "#18181e"
+                        font.family: "Roboto"
+                        font.bold: true
+                    }
+                    
+                    MouseArea {
+                        anchors.fill: parent
+                        cursorShape: Qt.PointingHandCursor
+                        onClicked: {
+                            spotifyMigrator.answerFfmpegOverwrite(true)
+                            ffmpegPopup.close()
+                        }
+                    }
+                }
+            }
+        }
+    }
+    
     ColumnLayout {
         anchors.centerIn: parent
         width: parent.width * 0.6

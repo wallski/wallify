@@ -15,6 +15,13 @@ ApplicationWindow {
 
     color: "#0f0f13" 
 
+    Connections {
+        target: appSettings
+        function onFactoryResetRequested() {
+            stackView.replace(null, welcomeScreenComp)
+        }
+    }
+
     ColumnLayout {
         anchors.fill: parent
         spacing: 0
@@ -90,5 +97,9 @@ ApplicationWindow {
                 }
             }
         }
+    }
+    
+    DebugWindow {
+        id: debugWindowItem
     }
 }

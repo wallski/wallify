@@ -6,7 +6,7 @@
                     {
                         "codegenSuccessfull": true,
                         "column": 23,
-                        "durationMicroseconds": 285,
+                        "durationMicroseconds": 557,
                         "errorMessage": "",
                         "functionName": "fill",
                         "line": 8
@@ -14,7 +14,7 @@
                     {
                         "codegenSuccessfull": true,
                         "column": 31,
-                        "durationMicroseconds": 170,
+                        "durationMicroseconds": 284,
                         "errorMessage": "",
                         "functionName": "currentIndex",
                         "line": 19
@@ -22,7 +22,7 @@
                     {
                         "codegenSuccessfull": true,
                         "column": 32,
-                        "durationMicroseconds": 350,
+                        "durationMicroseconds": 200,
                         "errorMessage": "",
                         "functionName": "onShowLibrary",
                         "line": 20
@@ -30,7 +30,7 @@
                     {
                         "codegenSuccessfull": true,
                         "column": 34,
-                        "durationMicroseconds": 159,
+                        "durationMicroseconds": 145,
                         "errorMessage": "",
                         "functionName": "onShowMigration",
                         "line": 21
@@ -38,7 +38,7 @@
                     {
                         "codegenSuccessfull": true,
                         "column": 33,
-                        "durationMicroseconds": 195,
+                        "durationMicroseconds": 127,
                         "errorMessage": "",
                         "functionName": "onShowSettings",
                         "line": 22
@@ -46,7 +46,7 @@
                     {
                         "codegenSuccessfull": true,
                         "column": 43,
-                        "durationMicroseconds": 123,
+                        "durationMicroseconds": 88,
                         "errorMessage": "",
                         "functionName": "centerIn",
                         "line": 34

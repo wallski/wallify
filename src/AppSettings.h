@@ -19,10 +19,18 @@ public:
     
     bool isFirstRun() const;
     Q_INVOKABLE void setIsFirstRun(bool firstRun);
+    
+    Q_PROPERTY(bool showDebugWindow READ showDebugWindow WRITE setShowDebugWindow NOTIFY showDebugWindowChanged)
+    bool showDebugWindow() const;
+    Q_INVOKABLE void setShowDebugWindow(bool show);
+    
+    Q_INVOKABLE void factoryReset();
 
 signals:
     void libraryPathChanged();
     void isFirstRunChanged();
+    void showDebugWindowChanged();
+    void factoryResetRequested();
 
 private:
     QSettings m_settings;

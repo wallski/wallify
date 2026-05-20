@@ -71,7 +71,11 @@ void SpotifyMigrator::prepareEnvironmentAndRun(const QString &url)
         return;
     }
 
-    if (!QFile::exists(m_appDataDir + "/ffmpeg.exe") && !QFile::exists(QDir::currentPath() + "/ffmpeg.exe")) {
+    // SpotDL downloads ffmpeg to ~/.spotdl/ffmpeg.exe or ~/.spotdl/ffmpeg
+    QString spotdlFfmpeg = QDir::homePath() + "/.spotdl/ffmpeg.exe";
+    QString spotdlFfmpegNoExt = QDir::homePath() + "/.spotdl/ffmpeg";
+    
+    if (!QFile::exists(m_appDataDir + "/ffmpeg.exe") && !QFile::exists(QDir::currentPath() + "/ffmpeg.exe") && !QFile::exists(spotdlFfmpeg) && !QFile::exists(spotdlFfmpegNoExt)) {
         setStatus("Setting up FFmpeg audio encoder...");
         m_state = DownloadingFFmpeg;
         m_process->setWorkingDirectory(m_appDataDir);
@@ -93,15 +97,20 @@ void SpotifyMigrator::processOutput()
     
     if (text.isEmpty()) return;
     
-    // Print everything to the console window so we can see what spotdl is actually doing
+    // Print everything to the internal log list
+    emit logMessage(text);
     qDebug().noquote() << "[spotDL Output]:" << text;
+    
+    // If it ever asks for confirmation, emit a signal for QML instead of blindly answering No
+    if (text.contains("(y/N)", Qt::CaseInsensitive)) {
+        emit ffmpegOverwriteRequested();
+    }
     
     if (m_state == Migrating) {
         // spotdl output looks like: 
-        // 100%|████████████████████████████████████████| 1/1 [00:00<00:00, 298.54it/s]
-        // Downloaded "Song Name"
+        // 100%|████████████| 1/1 [00:00<00:00, 298.54it/s]
         
-        QRegularExpression progressRe("(\\\\d+)%");
+        QRegularExpression progressRe("(\\d+)%");
         QRegularExpressionMatch match = progressRe.match(text);
         if (match.hasMatch()) {
             setProgress(match.captured(1).toInt());
@@ -147,5 +156,16 @@ void SpotifyMigrator::processFinished(int exitCode, QProcess::ExitStatus exitSta
         setWorking(false);
         m_state = Idle;
         emit migrationCompleted();
+    }
+}
+
+void SpotifyMigrator::answerFfmpegOverwrite(bool overwrite)
+{
+    if (m_process && m_process->state() == QProcess::Running) {
+        if (overwrite) {
+            m_process->write("Y\n");
+        } else {
+            m_process->write("N\n");
+        }
     }
 }

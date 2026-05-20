@@ -41,10 +41,16 @@ static constexpr auto qt_meta_stringdata_ZN11AppSettingsE = QtMocHelpers::string
     "libraryPathChanged",
     "",
     "isFirstRunChanged",
+    "showDebugWindowChanged",
+    "factoryResetRequested",
     "setIsFirstRun",
     "firstRun",
+    "setShowDebugWindow",
+    "show",
+    "factoryReset",
     "libraryPath",
-    "isFirstRun"
+    "isFirstRun",
+    "showDebugWindow"
 );
 #else  // !QT_MOC_HAS_STRINGDATA
 #error "qtmochelpers.h not found or too old."
@@ -56,30 +62,39 @@ Q_CONSTINIT static const uint qt_meta_data_ZN11AppSettingsE[] = {
       12,       // revision
        0,       // classname
        0,    0, // classinfo
-       3,   14, // methods
-       2,   37, // properties
+       7,   14, // methods
+       3,   67, // properties
        0,    0, // enums/sets
        0,    0, // constructors
        0,       // flags
-       2,       // signalCount
+       4,       // signalCount
 
  // signals: name, argc, parameters, tag, flags, initial metatype offsets
-       1,    0,   32,    2, 0x06,    3 /* Public */,
-       3,    0,   33,    2, 0x06,    4 /* Public */,
+       1,    0,   56,    2, 0x06,    4 /* Public */,
+       3,    0,   57,    2, 0x06,    5 /* Public */,
+       4,    0,   58,    2, 0x06,    6 /* Public */,
+       5,    0,   59,    2, 0x06,    7 /* Public */,
 
  // methods: name, argc, parameters, tag, flags, initial metatype offsets
-       4,    1,   34,    2, 0x02,    5 /* Public */,
+       6,    1,   60,    2, 0x02,    8 /* Public */,
+       8,    1,   63,    2, 0x02,   10 /* Public */,
+      10,    0,   66,    2, 0x02,   12 /* Public */,
 
  // signals: parameters
     QMetaType::Void,
     QMetaType::Void,
+    QMetaType::Void,
+    QMetaType::Void,
 
  // methods: parameters
-    QMetaType::Void, QMetaType::Bool,    5,
+    QMetaType::Void, QMetaType::Bool,    7,
+    QMetaType::Void, QMetaType::Bool,    9,
+    QMetaType::Void,
 
  // properties: name, type, flags, notifyId, revision
-       6, QMetaType::QString, 0x00015103, uint(0), 0,
-       7, QMetaType::Bool, 0x00015103, uint(1), 0,
+      11, QMetaType::QString, 0x00015103, uint(0), 0,
+      12, QMetaType::Bool, 0x00015103, uint(1), 0,
+      13, QMetaType::Bool, 0x00015103, uint(2), 0,
 
        0        // eod
 };
@@ -95,15 +110,26 @@ Q_CONSTINIT const QMetaObject AppSettings::staticMetaObject = { {
         QtPrivate::TypeAndForceComplete<QString, std::true_type>,
         // property 'isFirstRun'
         QtPrivate::TypeAndForceComplete<bool, std::true_type>,
+        // property 'showDebugWindow'
+        QtPrivate::TypeAndForceComplete<bool, std::true_type>,
         // Q_OBJECT / Q_GADGET
         QtPrivate::TypeAndForceComplete<AppSettings, std::true_type>,
         // method 'libraryPathChanged'
         QtPrivate::TypeAndForceComplete<void, std::false_type>,
         // method 'isFirstRunChanged'
         QtPrivate::TypeAndForceComplete<void, std::false_type>,
+        // method 'showDebugWindowChanged'
+        QtPrivate::TypeAndForceComplete<void, std::false_type>,
+        // method 'factoryResetRequested'
+        QtPrivate::TypeAndForceComplete<void, std::false_type>,
         // method 'setIsFirstRun'
         QtPrivate::TypeAndForceComplete<void, std::false_type>,
-        QtPrivate::TypeAndForceComplete<bool, std::false_type>
+        QtPrivate::TypeAndForceComplete<bool, std::false_type>,
+        // method 'setShowDebugWindow'
+        QtPrivate::TypeAndForceComplete<void, std::false_type>,
+        QtPrivate::TypeAndForceComplete<bool, std::false_type>,
+        // method 'factoryReset'
+        QtPrivate::TypeAndForceComplete<void, std::false_type>
     >,
     nullptr
 } };
@@ -115,7 +141,11 @@ void AppSettings::qt_static_metacall(QObject *_o, QMetaObject::Call _c, int _id,
         switch (_id) {
         case 0: _t->libraryPathChanged(); break;
         case 1: _t->isFirstRunChanged(); break;
-        case 2: _t->setIsFirstRun((*reinterpret_cast< std::add_pointer_t<bool>>(_a[1]))); break;
+        case 2: _t->showDebugWindowChanged(); break;
+        case 3: _t->factoryResetRequested(); break;
+        case 4: _t->setIsFirstRun((*reinterpret_cast< std::add_pointer_t<bool>>(_a[1]))); break;
+        case 5: _t->setShowDebugWindow((*reinterpret_cast< std::add_pointer_t<bool>>(_a[1]))); break;
+        case 6: _t->factoryReset(); break;
         default: ;
         }
     }
@@ -135,12 +165,27 @@ void AppSettings::qt_static_metacall(QObject *_o, QMetaObject::Call _c, int _id,
                 return;
             }
         }
+        {
+            using _q_method_type = void (AppSettings::*)();
+            if (_q_method_type _q_method = &AppSettings::showDebugWindowChanged; *reinterpret_cast<_q_method_type *>(_a[1]) == _q_method) {
+                *result = 2;
+                return;
+            }
+        }
+        {
+            using _q_method_type = void (AppSettings::*)();
+            if (_q_method_type _q_method = &AppSettings::factoryResetRequested; *reinterpret_cast<_q_method_type *>(_a[1]) == _q_method) {
+                *result = 3;
+                return;
+            }
+        }
     }
     if (_c == QMetaObject::ReadProperty) {
         void *_v = _a[0];
         switch (_id) {
         case 0: *reinterpret_cast< QString*>(_v) = _t->libraryPath(); break;
         case 1: *reinterpret_cast< bool*>(_v) = _t->isFirstRun(); break;
+        case 2: *reinterpret_cast< bool*>(_v) = _t->showDebugWindow(); break;
         default: break;
         }
     }
@@ -149,6 +194,7 @@ void AppSettings::qt_static_metacall(QObject *_o, QMetaObject::Call _c, int _id,
         switch (_id) {
         case 0: _t->setLibraryPath(*reinterpret_cast< QString*>(_v)); break;
         case 1: _t->setIsFirstRun(*reinterpret_cast< bool*>(_v)); break;
+        case 2: _t->setShowDebugWindow(*reinterpret_cast< bool*>(_v)); break;
         default: break;
         }
     }
@@ -173,20 +219,20 @@ int AppSettings::qt_metacall(QMetaObject::Call _c, int _id, void **_a)
     if (_id < 0)
         return _id;
     if (_c == QMetaObject::InvokeMetaMethod) {
-        if (_id < 3)
+        if (_id < 7)
             qt_static_metacall(this, _c, _id, _a);
-        _id -= 3;
+        _id -= 7;
     }
     if (_c == QMetaObject::RegisterMethodArgumentMetaType) {
-        if (_id < 3)
+        if (_id < 7)
             *reinterpret_cast<QMetaType *>(_a[0]) = QMetaType();
-        _id -= 3;
+        _id -= 7;
     }
     if (_c == QMetaObject::ReadProperty || _c == QMetaObject::WriteProperty
             || _c == QMetaObject::ResetProperty || _c == QMetaObject::BindableProperty
             || _c == QMetaObject::RegisterPropertyMetaType) {
         qt_static_metacall(this, _c, _id, _a);
-        _id -= 2;
+        _id -= 3;
     }
     return _id;
 }
@@ -201,5 +247,17 @@ void AppSettings::libraryPathChanged()
 void AppSettings::isFirstRunChanged()
 {
     QMetaObject::activate(this, &staticMetaObject, 1, nullptr);
+}
+
+// SIGNAL 2
+void AppSettings::showDebugWindowChanged()
+{
+    QMetaObject::activate(this, &staticMetaObject, 2, nullptr);
+}
+
+// SIGNAL 3
+void AppSettings::factoryResetRequested()
+{
+    QMetaObject::activate(this, &staticMetaObject, 3, nullptr);
 }
 QT_WARNING_POP

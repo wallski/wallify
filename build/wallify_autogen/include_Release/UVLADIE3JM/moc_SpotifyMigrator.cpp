@@ -45,6 +45,9 @@ static constexpr auto qt_meta_stringdata_ZN15SpotifyMigratorE = QtMocHelpers::st
     "migrationCompleted",
     "migrationFailed",
     "error",
+    "logMessage",
+    "message",
+    "ffmpegOverwriteRequested",
     "processOutput",
     "processFinished",
     "exitCode",
@@ -52,6 +55,8 @@ static constexpr auto qt_meta_stringdata_ZN15SpotifyMigratorE = QtMocHelpers::st
     "exitStatus",
     "startMigration",
     "url",
+    "answerFfmpegOverwrite",
+    "overwrite",
     "statusText",
     "isWorking",
     "progress"
@@ -66,26 +71,29 @@ Q_CONSTINIT static const uint qt_meta_data_ZN15SpotifyMigratorE[] = {
       12,       // revision
        0,       // classname
        0,    0, // classinfo
-       8,   14, // methods
-       3,   78, // properties
+      11,   14, // methods
+       3,  103, // properties
        0,    0, // enums/sets
        0,    0, // constructors
        0,       // flags
-       5,       // signalCount
+       7,       // signalCount
 
  // signals: name, argc, parameters, tag, flags, initial metatype offsets
-       1,    0,   62,    2, 0x06,    4 /* Public */,
-       3,    0,   63,    2, 0x06,    5 /* Public */,
-       4,    0,   64,    2, 0x06,    6 /* Public */,
-       5,    0,   65,    2, 0x06,    7 /* Public */,
-       6,    1,   66,    2, 0x06,    8 /* Public */,
+       1,    0,   80,    2, 0x06,    4 /* Public */,
+       3,    0,   81,    2, 0x06,    5 /* Public */,
+       4,    0,   82,    2, 0x06,    6 /* Public */,
+       5,    0,   83,    2, 0x06,    7 /* Public */,
+       6,    1,   84,    2, 0x06,    8 /* Public */,
+       8,    1,   87,    2, 0x06,   10 /* Public */,
+      10,    0,   90,    2, 0x06,   12 /* Public */,
 
  // slots: name, argc, parameters, tag, flags, initial metatype offsets
-       8,    0,   69,    2, 0x08,   10 /* Private */,
-       9,    2,   70,    2, 0x08,   11 /* Private */,
+      11,    0,   91,    2, 0x08,   13 /* Private */,
+      12,    2,   92,    2, 0x08,   14 /* Private */,
 
  // methods: name, argc, parameters, tag, flags, initial metatype offsets
-      13,    1,   75,    2, 0x02,   14 /* Public */,
+      16,    1,   97,    2, 0x02,   17 /* Public */,
+      18,    1,  100,    2, 0x02,   19 /* Public */,
 
  // signals: parameters
     QMetaType::Void,
@@ -93,18 +101,21 @@ Q_CONSTINIT static const uint qt_meta_data_ZN15SpotifyMigratorE[] = {
     QMetaType::Void,
     QMetaType::Void,
     QMetaType::Void, QMetaType::QString,    7,
+    QMetaType::Void, QMetaType::QString,    9,
+    QMetaType::Void,
 
  // slots: parameters
     QMetaType::Void,
-    QMetaType::Void, QMetaType::Int, 0x80000000 | 11,   10,   12,
+    QMetaType::Void, QMetaType::Int, 0x80000000 | 14,   13,   15,
 
  // methods: parameters
-    QMetaType::Void, QMetaType::QString,   14,
+    QMetaType::Void, QMetaType::QString,   17,
+    QMetaType::Void, QMetaType::Bool,   19,
 
  // properties: name, type, flags, notifyId, revision
-      15, QMetaType::QString, 0x00015001, uint(0), 0,
-      16, QMetaType::Bool, 0x00015001, uint(1), 0,
-      17, QMetaType::Int, 0x00015001, uint(2), 0,
+      20, QMetaType::QString, 0x00015001, uint(0), 0,
+      21, QMetaType::Bool, 0x00015001, uint(1), 0,
+      22, QMetaType::Int, 0x00015001, uint(2), 0,
 
        0        // eod
 };
@@ -135,6 +146,11 @@ Q_CONSTINIT const QMetaObject SpotifyMigrator::staticMetaObject = { {
         // method 'migrationFailed'
         QtPrivate::TypeAndForceComplete<void, std::false_type>,
         QtPrivate::TypeAndForceComplete<const QString &, std::false_type>,
+        // method 'logMessage'
+        QtPrivate::TypeAndForceComplete<void, std::false_type>,
+        QtPrivate::TypeAndForceComplete<const QString &, std::false_type>,
+        // method 'ffmpegOverwriteRequested'
+        QtPrivate::TypeAndForceComplete<void, std::false_type>,
         // method 'processOutput'
         QtPrivate::TypeAndForceComplete<void, std::false_type>,
         // method 'processFinished'
@@ -143,7 +159,10 @@ Q_CONSTINIT const QMetaObject SpotifyMigrator::staticMetaObject = { {
         QtPrivate::TypeAndForceComplete<QProcess::ExitStatus, std::false_type>,
         // method 'startMigration'
         QtPrivate::TypeAndForceComplete<void, std::false_type>,
-        QtPrivate::TypeAndForceComplete<const QString &, std::false_type>
+        QtPrivate::TypeAndForceComplete<const QString &, std::false_type>,
+        // method 'answerFfmpegOverwrite'
+        QtPrivate::TypeAndForceComplete<void, std::false_type>,
+        QtPrivate::TypeAndForceComplete<bool, std::false_type>
     >,
     nullptr
 } };
@@ -158,9 +177,12 @@ void SpotifyMigrator::qt_static_metacall(QObject *_o, QMetaObject::Call _c, int 
         case 2: _t->progressChanged(); break;
         case 3: _t->migrationCompleted(); break;
         case 4: _t->migrationFailed((*reinterpret_cast< std::add_pointer_t<QString>>(_a[1]))); break;
-        case 5: _t->processOutput(); break;
-        case 6: _t->processFinished((*reinterpret_cast< std::add_pointer_t<int>>(_a[1])),(*reinterpret_cast< std::add_pointer_t<QProcess::ExitStatus>>(_a[2]))); break;
-        case 7: _t->startMigration((*reinterpret_cast< std::add_pointer_t<QString>>(_a[1]))); break;
+        case 5: _t->logMessage((*reinterpret_cast< std::add_pointer_t<QString>>(_a[1]))); break;
+        case 6: _t->ffmpegOverwriteRequested(); break;
+        case 7: _t->processOutput(); break;
+        case 8: _t->processFinished((*reinterpret_cast< std::add_pointer_t<int>>(_a[1])),(*reinterpret_cast< std::add_pointer_t<QProcess::ExitStatus>>(_a[2]))); break;
+        case 9: _t->startMigration((*reinterpret_cast< std::add_pointer_t<QString>>(_a[1]))); break;
+        case 10: _t->answerFfmpegOverwrite((*reinterpret_cast< std::add_pointer_t<bool>>(_a[1]))); break;
         default: ;
         }
     }
@@ -201,6 +223,20 @@ void SpotifyMigrator::qt_static_metacall(QObject *_o, QMetaObject::Call _c, int 
                 return;
             }
         }
+        {
+            using _q_method_type = void (SpotifyMigrator::*)(const QString & );
+            if (_q_method_type _q_method = &SpotifyMigrator::logMessage; *reinterpret_cast<_q_method_type *>(_a[1]) == _q_method) {
+                *result = 5;
+                return;
+            }
+        }
+        {
+            using _q_method_type = void (SpotifyMigrator::*)();
+            if (_q_method_type _q_method = &SpotifyMigrator::ffmpegOverwriteRequested; *reinterpret_cast<_q_method_type *>(_a[1]) == _q_method) {
+                *result = 6;
+                return;
+            }
+        }
     }
     if (_c == QMetaObject::ReadProperty) {
         void *_v = _a[0];
@@ -232,14 +268,14 @@ int SpotifyMigrator::qt_metacall(QMetaObject::Call _c, int _id, void **_a)
     if (_id < 0)
         return _id;
     if (_c == QMetaObject::InvokeMetaMethod) {
-        if (_id < 8)
+        if (_id < 11)
             qt_static_metacall(this, _c, _id, _a);
-        _id -= 8;
+        _id -= 11;
     }
     if (_c == QMetaObject::RegisterMethodArgumentMetaType) {
-        if (_id < 8)
+        if (_id < 11)
             *reinterpret_cast<QMetaType *>(_a[0]) = QMetaType();
-        _id -= 8;
+        _id -= 11;
     }
     if (_c == QMetaObject::ReadProperty || _c == QMetaObject::WriteProperty
             || _c == QMetaObject::ResetProperty || _c == QMetaObject::BindableProperty
@@ -279,5 +315,18 @@ void SpotifyMigrator::migrationFailed(const QString & _t1)
 {
     void *_a[] = { nullptr, const_cast<void*>(reinterpret_cast<const void*>(std::addressof(_t1))) };
     QMetaObject::activate(this, &staticMetaObject, 4, _a);
+}
+
+// SIGNAL 5
+void SpotifyMigrator::logMessage(const QString & _t1)
+{
+    void *_a[] = { nullptr, const_cast<void*>(reinterpret_cast<const void*>(std::addressof(_t1))) };
+    QMetaObject::activate(this, &staticMetaObject, 5, _a);
+}
+
+// SIGNAL 6
+void SpotifyMigrator::ffmpegOverwriteRequested()
+{
+    QMetaObject::activate(this, &staticMetaObject, 6, nullptr);
 }
 QT_WARNING_POP

@@ -47,6 +47,13 @@ namespace _0x5f_Wallify_resources_qml_MainInterface_qml {
         reinterpret_cast<const QV4::CompiledData::Unit*>(&qmlData), &aotBuiltFunctions[0], nullptr
     };
 }
+namespace _0x5f_Wallify_resources_qml_DebugWindow_qml { 
+    extern const unsigned char qmlData[];
+    extern const QQmlPrivate::AOTCompiledFunction aotBuiltFunctions[];
+    const QQmlPrivate::CachedQmlUnit unit = {
+        reinterpret_cast<const QV4::CompiledData::Unit*>(&qmlData), &aotBuiltFunctions[0], nullptr
+    };
+}
 namespace _0x5f_Wallify_resources_qml_MigrationView_qml { 
     extern const unsigned char qmlData[];
     extern const QQmlPrivate::AOTCompiledFunction aotBuiltFunctions[];
@@ -95,6 +102,7 @@ Registry::Registry() {
     resourcePathToCachedUnit.insert(QStringLiteral("/Wallify/resources/qml/WelcomeScreen.qml"), &QmlCacheGeneratedCode::_0x5f_Wallify_resources_qml_WelcomeScreen_qml::unit);
     resourcePathToCachedUnit.insert(QStringLiteral("/Wallify/resources/qml/OnboardingView.qml"), &QmlCacheGeneratedCode::_0x5f_Wallify_resources_qml_OnboardingView_qml::unit);
     resourcePathToCachedUnit.insert(QStringLiteral("/Wallify/resources/qml/MainInterface.qml"), &QmlCacheGeneratedCode::_0x5f_Wallify_resources_qml_MainInterface_qml::unit);
+    resourcePathToCachedUnit.insert(QStringLiteral("/Wallify/resources/qml/DebugWindow.qml"), &QmlCacheGeneratedCode::_0x5f_Wallify_resources_qml_DebugWindow_qml::unit);
     resourcePathToCachedUnit.insert(QStringLiteral("/Wallify/resources/qml/MigrationView.qml"), &QmlCacheGeneratedCode::_0x5f_Wallify_resources_qml_MigrationView_qml::unit);
     resourcePathToCachedUnit.insert(QStringLiteral("/Wallify/resources/qml/Sidebar.qml"), &QmlCacheGeneratedCode::_0x5f_Wallify_resources_qml_Sidebar_qml::unit);
     resourcePathToCachedUnit.insert(QStringLiteral("/Wallify/resources/qml/BottomPlayerBar.qml"), &QmlCacheGeneratedCode::_0x5f_Wallify_resources_qml_BottomPlayerBar_qml::unit);

@@ -1,7 +1,8 @@
 #include <QGuiApplication>
 #include <QQmlApplicationEngine>
-#include <QFontDatabase>
+#include <QQmlApplicationEngine>
 #include <QQmlContext>
+#include <QFontDatabase>
 #include "SpotifyMigrator.h"
 #include "AppSettings.h"
 
@@ -22,6 +23,10 @@ int main(int argc, char *argv[])
 
     QQmlApplicationEngine engine;
     
+    // Load global fonts safely
+    QFontDatabase::addApplicationFont(":/resources/fonts/BebasNeue-Regular.ttf");
+    QFontDatabase::addApplicationFont(":/resources/fonts/Roboto-Regular.ttf");
+
     AppSettings appSettings;
     engine.rootContext()->setContextProperty("appSettings", &appSettings);
 

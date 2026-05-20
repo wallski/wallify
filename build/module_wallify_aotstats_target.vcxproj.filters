@@ -4,6 +4,9 @@
     <CustomBuild Include="C:\Users\elias\Desktop\GITHUB\wallify\build\CMakeFiles\5b8f065dd6434f0c89c869b2c9e913ca\BottomPlayerBar_qml.cpp.rule">
       <Filter>CMake Rules</Filter>
     </CustomBuild>
+    <CustomBuild Include="C:\Users\elias\Desktop\GITHUB\wallify\build\CMakeFiles\5b8f065dd6434f0c89c869b2c9e913ca\DebugWindow_qml.cpp.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
     <CustomBuild Include="C:\Users\elias\Desktop\GITHUB\wallify\build\CMakeFiles\5b8f065dd6434f0c89c869b2c9e913ca\MainInterface_qml.cpp.rule">
       <Filter>CMake Rules</Filter>
     </CustomBuild>

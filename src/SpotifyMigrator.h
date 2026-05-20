@@ -21,6 +21,7 @@ public:
     int progress() const;
 
     Q_INVOKABLE void startMigration(const QString &url);
+    Q_INVOKABLE void answerFfmpegOverwrite(bool overwrite);
 
 signals:
     void statusTextChanged();
@@ -28,6 +29,8 @@ signals:
     void progressChanged();
     void migrationCompleted();
     void migrationFailed(const QString &error);
+    void logMessage(const QString &message);
+    void ffmpegOverwriteRequested();
 
 private slots:
     void processOutput();

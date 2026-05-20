@@ -13,8 +13,26 @@
                                 "type": "bool"
                             }
                         ],
-                        "index": 2,
+                        "index": 4,
                         "name": "setIsFirstRun",
+                        "returnType": "void"
+                    },
+                    {
+                        "access": "public",
+                        "arguments": [
+                            {
+                                "name": "show",
+                                "type": "bool"
+                            }
+                        ],
+                        "index": 5,
+                        "name": "setShowDebugWindow",
+                        "returnType": "void"
+                    },
+                    {
+                        "access": "public",
+                        "index": 6,
+                        "name": "factoryReset",
                         "returnType": "void"
                     }
                 ],
@@ -49,6 +67,21 @@
                         "type": "bool",
                         "user": false,
                         "write": "setIsFirstRun"
+                    },
+                    {
+                        "constant": false,
+                        "designable": true,
+                        "final": false,
+                        "index": 2,
+                        "name": "showDebugWindow",
+                        "notify": "showDebugWindowChanged",
+                        "read": "showDebugWindow",
+                        "required": false,
+                        "scriptable": true,
+                        "stored": true,
+                        "type": "bool",
+                        "user": false,
+                        "write": "setShowDebugWindow"
                     }
                 ],
                 "qualifiedClassName": "AppSettings",
@@ -63,6 +96,18 @@
                         "access": "public",
                         "index": 1,
                         "name": "isFirstRunChanged",
+                        "returnType": "void"
+                    },
+                    {
+                        "access": "public",
+                        "index": 2,
+                        "name": "showDebugWindowChanged",
+                        "returnType": "void"
+                    },
+                    {
+                        "access": "public",
+                        "index": 3,
+                        "name": "factoryResetRequested",
                         "returnType": "void"
                     }
                 ],
@@ -91,8 +136,20 @@
                                 "type": "QString"
                             }
                         ],
-                        "index": 7,
+                        "index": 9,
                         "name": "startMigration",
+                        "returnType": "void"
+                    },
+                    {
+                        "access": "public",
+                        "arguments": [
+                            {
+                                "name": "overwrite",
+                                "type": "bool"
+                            }
+                        ],
+                        "index": 10,
+                        "name": "answerFfmpegOverwrite",
                         "returnType": "void"
                     }
                 ],
@@ -178,12 +235,30 @@
                         "index": 4,
                         "name": "migrationFailed",
                         "returnType": "void"
+                    },
+                    {
+                        "access": "public",
+                        "arguments": [
+                            {
+                                "name": "message",
+                                "type": "QString"
+                            }
+                        ],
+                        "index": 5,
+                        "name": "logMessage",
+                        "returnType": "void"
+                    },
+                    {
+                        "access": "public",
+                        "index": 6,
+                        "name": "ffmpegOverwriteRequested",
+                        "returnType": "void"
                     }
                 ],
                 "slots": [
                     {
                         "access": "private",
-                        "index": 5,
+                        "index": 7,
                         "name": "processOutput",
                         "returnType": "void"
                     },
@@ -199,7 +274,7 @@
                                 "type": "QProcess::ExitStatus"
                             }
                         ],
-                        "index": 6,
+                        "index": 8,
                         "name": "processFinished",
                         "returnType": "void"
                     }

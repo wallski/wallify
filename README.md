@@ -1,65 +1,180 @@
 # Wallify
 
-A native desktop music player built with Qt6 and C++. Fast and lightweight for playing your local music library.
+Wallify is a native desktop music player built with Qt6 and C++. It focuses on speed, low resource usage, and a clean local-first experience for managing and playing your music library.
 
-## What it does
+## Features
 
-- Plays MP3, WAV, OGG from your local folders
-- Scans your music directory and builds a library with metadata (title, artist, album, cover art)
-- Playlist management: create, rename, delete, add/remove tracks
-- Spotify migration: import playlists and tracks via spotdl
-- Queue system with shuffle and repeat modes
-- Custom dark UI built with QML
+### Library Management
+- Scan local music folders recursively
+- Automatic metadata extraction:
+  - Title
+  - Artist
+  - Album
+  - Cover art
+- Supports:
+  - MP3
+  - WAV
+  - OGG
 
-## Stack
+### Playlists & Queue
+- Create, rename, and delete playlists
+- Add or remove tracks from playlists
+- Queue system with:
+  - Shuffle
+  - Repeat modes
 
-- C++20
-- Qt 6.8 (Core, Gui, QML, Quick, Multimedia)
-- CMake
-- Custom ID3v2 parser (no external tag library dependency)
+### Spotify Migration
+- Import playlists and tracks using `spotdl`
+- Download and migrate Spotify libraries into your local collection
 
-## Building (Windows)
+### User Interface
+- Native desktop application
+- Custom dark-themed UI built with QML
+- Lightweight and responsive
 
-### Prerequisites
+---
+
+# Tech Stack
+
+- **Language:** C++20
+- **Framework:** Qt 6.8
+  - Core
+  - GUI
+  - QML
+  - Quick
+  - Multimedia
+- **Build System:** CMake
+- **Metadata Parsing:** Custom ID3v2 parser
+
+Wallify does not rely on external tag parsing libraries.
+
+---
+
+# Building (Windows)
+
+## Requirements
 
 - Windows 10/11 (64-bit)
 - Visual Studio 2022 or newer with C++ workload
-- Python 3.12+ (for the dependency installer)
+- Python 3.12+
 - CMake 3.20+
 
-### Steps
+---
+
+## Build Instructions
+
+### Clone the Repository
 
 ```powershell
-# Clone
 git clone https://github.com/wallski/wallify.git
 cd wallify
+```
 
-# Install Qt 6.8.2, FFmpeg, and spotdl into deps/
+### Install Dependencies
+
+Installs:
+- Qt 6.8.2
+- FFmpeg
+- spotdl
+
+```powershell
 .\install_deps.ps1
+```
 
-# Build
+### Build the Project
+
+```powershell
 mkdir build
 cd build
+
 cmake .. -G "Visual Studio 18 2026" -A x64
 cmake --build . --config Release
+```
 
-# Deploy Qt dependencies and run
+### Deploy Qt Dependencies
+
+```powershell
 cd Release
 ..\..\deps\6.8.2\msvc2022_64\bin\windeployqt.exe wallify.exe --qmldir ..\..\resources\qml
+```
+
+### Run
+
+```powershell
 .\wallify.exe
 ```
 
-The executable is at `build/Release/wallify.exe` after building.
+The executable will be located at:
 
-### Note on Visual Studio version
+```text
+build/Release/wallify.exe
+```
 
-If you have VS 2022, use `"Visual Studio 17 2022"`. If you have VS 2026, use `"Visual Studio 18 2026"`. CMake will error if the generator doesn't match your installed version.
+---
 
-## First Run
+# Visual Studio Version Notes
 
-On launch, Wallify asks for a music library folder. Point it to wherever your MP3s live. It will scan recursively and build the library automatically.
+Use the generator that matches your installed Visual Studio version.
 
+## Visual Studio 2022
 
-## License
+```powershell
+cmake .. -G "Visual Studio 17 2022" -A x64
+```
 
-MIT
+## Visual Studio 2026
+
+```powershell
+cmake .. -G "Visual Studio 18 2026" -A x64
+```
+
+If the generator does not match your installed version, CMake will fail during configuration.
+
+---
+
+# First Launch
+
+When Wallify starts for the first time, it will ask for a music library folder.
+
+Select the directory containing your music files and Wallify will automatically:
+- Scan folders recursively
+- Build the music library
+- Extract metadata and cover art
+
+---
+
+# Known Bugs
+
+- Downloaded songs lose the last character from the filename/title.
+- Migrating a playlist or album incorrectly adds every song from the default library into the newly created playlist.
+
+---
+
+# Planned Features
+
+## Migration
+- YouTube support
+- SoundCloud support
+- Rename the Spotify migration tab to `Migration`
+- Separate tabs for each migration service
+
+## Playback & Library
+- Rename songs from the right-click context menu
+- Sorting options:
+  - Name
+  - Album
+  - Custom order (date added)
+- "Play Playlist" button
+- Shuffle toggle for playlists
+
+## Integrations
+- Discord Rich Presence (RPC)
+
+## UI / Branding
+- Proper application icon and branding
+
+---
+
+# License
+
+Licensed under the MIT License.

@@ -3,5 +3,5 @@
     <Platform Name="x64" />
     <Platform Name="x86" />
   </Configurations>
-  <Project Path="wallify.vcxproj" />
+  <Project Path="wallify.vcxproj" Id="6742fb26-f1dd-4008-91c8-df201dc02152" />
 </Solution>

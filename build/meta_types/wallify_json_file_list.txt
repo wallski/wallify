@@ -1,0 +1,2 @@
+C:/Users/elias/Desktop/GITHUB/wallify/build/wallify_autogen/include_Release/UVLADIE3JM/moc_AppSettings.cpp.json
+C:/Users/elias/Desktop/GITHUB/wallify/build/wallify_autogen/include_Release/UVLADIE3JM/moc_SpotifyMigrator.cpp.json

@@ -1,0 +1,6 @@
+<RCC>
+  <qresource prefix="/Wallify">
+    <file alias="qmldir">C:/Users/elias/Desktop/GITHUB/wallify/build/Wallify/qmldir</file>
+  </qresource>
+</RCC>
+

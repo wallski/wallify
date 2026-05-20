@@ -1,0 +1,50 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="18.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <CustomBuild Include="C:\Users\elias\Desktop\GITHUB\wallify\build\CMakeFiles\5b8f065dd6434f0c89c869b2c9e913ca\BottomPlayerBar_qml.cpp.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\Users\elias\Desktop\GITHUB\wallify\build\CMakeFiles\5b8f065dd6434f0c89c869b2c9e913ca\MainInterface_qml.cpp.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\Users\elias\Desktop\GITHUB\wallify\build\CMakeFiles\5b8f065dd6434f0c89c869b2c9e913ca\Main_qml.cpp.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\Users\elias\Desktop\GITHUB\wallify\build\CMakeFiles\5b8f065dd6434f0c89c869b2c9e913ca\MigrationView_qml.cpp.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\Users\elias\Desktop\GITHUB\wallify\build\CMakeFiles\5b8f065dd6434f0c89c869b2c9e913ca\OnboardingView_qml.cpp.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\Users\elias\Desktop\GITHUB\wallify\build\CMakeFiles\5b8f065dd6434f0c89c869b2c9e913ca\SettingsView_qml.cpp.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\Users\elias\Desktop\GITHUB\wallify\build\CMakeFiles\5b8f065dd6434f0c89c869b2c9e913ca\Sidebar_qml.cpp.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\Users\elias\Desktop\GITHUB\wallify\build\CMakeFiles\5b8f065dd6434f0c89c869b2c9e913ca\TitleBar_qml.cpp.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\Users\elias\Desktop\GITHUB\wallify\build\CMakeFiles\5b8f065dd6434f0c89c869b2c9e913ca\WelcomeScreen_qml.cpp.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\Users\elias\Desktop\GITHUB\wallify\build\CMakeFiles\5b8f065dd6434f0c89c869b2c9e913ca\WindowControlButton_qml.cpp.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\Users\elias\Desktop\GITHUB\wallify\build\CMakeFiles\fbd36a2a1cef67c7499c0bedc3f893ac\module_wallify.aotstats.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\Users\elias\Desktop\GITHUB\wallify\build\CMakeFiles\c59da44b493f8ec1858789a0bb38b448\module_wallify_aotstats_target.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\Users\elias\Desktop\GITHUB\wallify\CMakeLists.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="C:\Users\elias\Desktop\GITHUB\wallify\build\CMakeFiles\module_wallify_aotstats_target" />
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="CMake Rules">
+      <UniqueIdentifier>{FE34F215-5EE8-329A-BF56-A7E9DAF7E5F6}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>

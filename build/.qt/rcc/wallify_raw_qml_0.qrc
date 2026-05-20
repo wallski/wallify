@@ -1,0 +1,17 @@
+<RCC>
+  <qresource prefix="/Wallify/">
+    <file alias="resources/qml/Main.qml">C:/Users/elias/Desktop/GITHUB/wallify/resources/qml/Main.qml</file>
+    <file alias="resources/qml/TitleBar.qml">C:/Users/elias/Desktop/GITHUB/wallify/resources/qml/TitleBar.qml</file>
+    <file alias="resources/qml/WindowControlButton.qml">C:/Users/elias/Desktop/GITHUB/wallify/resources/qml/WindowControlButton.qml</file>
+    <file alias="resources/qml/WelcomeScreen.qml">C:/Users/elias/Desktop/GITHUB/wallify/resources/qml/WelcomeScreen.qml</file>
+    <file alias="resources/qml/OnboardingView.qml">C:/Users/elias/Desktop/GITHUB/wallify/resources/qml/OnboardingView.qml</file>
+    <file alias="resources/qml/MainInterface.qml">C:/Users/elias/Desktop/GITHUB/wallify/resources/qml/MainInterface.qml</file>
+    <file alias="resources/qml/MigrationView.qml">C:/Users/elias/Desktop/GITHUB/wallify/resources/qml/MigrationView.qml</file>
+    <file alias="resources/qml/Sidebar.qml">C:/Users/elias/Desktop/GITHUB/wallify/resources/qml/Sidebar.qml</file>
+    <file alias="resources/qml/BottomPlayerBar.qml">C:/Users/elias/Desktop/GITHUB/wallify/resources/qml/BottomPlayerBar.qml</file>
+    <file alias="resources/qml/SettingsView.qml">C:/Users/elias/Desktop/GITHUB/wallify/resources/qml/SettingsView.qml</file>
+    <file alias="resources/fonts/Roboto-Regular.ttf">C:/Users/elias/Desktop/GITHUB/wallify/resources/fonts/Roboto-Regular.ttf</file>
+    <file alias="resources/fonts/BebasNeue-Regular.ttf">C:/Users/elias/Desktop/GITHUB/wallify/resources/fonts/BebasNeue-Regular.ttf</file>
+  </qresource>
+</RCC>
+

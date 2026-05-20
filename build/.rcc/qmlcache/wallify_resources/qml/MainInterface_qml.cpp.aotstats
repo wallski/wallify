@@ -1,0 +1,60 @@
+[
+    {
+        "moduleFiles": [
+            {
+                "entries": [
+                    {
+                        "codegenSuccessfull": true,
+                        "column": 23,
+                        "durationMicroseconds": 285,
+                        "errorMessage": "",
+                        "functionName": "fill",
+                        "line": 8
+                    },
+                    {
+                        "codegenSuccessfull": true,
+                        "column": 31,
+                        "durationMicroseconds": 170,
+                        "errorMessage": "",
+                        "functionName": "currentIndex",
+                        "line": 19
+                    },
+                    {
+                        "codegenSuccessfull": true,
+                        "column": 32,
+                        "durationMicroseconds": 350,
+                        "errorMessage": "",
+                        "functionName": "onShowLibrary",
+                        "line": 20
+                    },
+                    {
+                        "codegenSuccessfull": true,
+                        "column": 34,
+                        "durationMicroseconds": 159,
+                        "errorMessage": "",
+                        "functionName": "onShowMigration",
+                        "line": 21
+                    },
+                    {
+                        "codegenSuccessfull": true,
+                        "column": 33,
+                        "durationMicroseconds": 195,
+                        "errorMessage": "",
+                        "functionName": "onShowSettings",
+                        "line": 22
+                    },
+                    {
+                        "codegenSuccessfull": true,
+                        "column": 43,
+                        "durationMicroseconds": 123,
+                        "errorMessage": "",
+                        "functionName": "centerIn",
+                        "line": 34
+                    }
+                ],
+                "filepath": "C:/Users/elias/Desktop/GITHUB/wallify/resources/qml/MainInterface.qml"
+            }
+        ],
+        "moduleId": "Wallify(wallify)"
+    }
+]

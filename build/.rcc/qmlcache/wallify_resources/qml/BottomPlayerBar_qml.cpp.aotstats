@@ -14,7 +14,7 @@
                     {
                         "codegenSuccessfull": true,
                         "column": 16,
-                        "durationMicroseconds": 351,
+                        "durationMicroseconds": 370,
                         "errorMessage": "",
                         "functionName": "width",
                         "line": 19
@@ -22,7 +22,7 @@
                     {
                         "codegenSuccessfull": true,
                         "column": 22,
-                        "durationMicroseconds": 152,
+                        "durationMicroseconds": 170,
                         "errorMessage": "",
                         "functionName": "top",
                         "line": 22
@@ -30,7 +30,7 @@
                     {
                         "codegenSuccessfull": true,
                         "column": 23,
-                        "durationMicroseconds": 85,
+                        "durationMicroseconds": 92,
                         "errorMessage": "",
                         "functionName": "fill",
                         "line": 26
@@ -38,7 +38,7 @@
                     {
                         "codegenSuccessfull": false,
                         "column": 25,
-                        "durationMicroseconds": 577,
+                        "durationMicroseconds": 564,
                         "errorMessage": "Cannot access value for name audioPlayer",
                         "functionName": "source",
                         "line": 40
@@ -46,7 +46,7 @@
                     {
                         "codegenSuccessfull": true,
                         "column": 27,
-                        "durationMicroseconds": 131,
+                        "durationMicroseconds": 113,
                         "errorMessage": "",
                         "functionName": "fillMode",
                         "line": 41
@@ -54,7 +54,7 @@
                     {
                         "codegenSuccessfull": false,
                         "column": 26,
-                        "durationMicroseconds": 704,
+                        "durationMicroseconds": 422,
                         "errorMessage": "Cannot access value for name audioPlayer",
                         "functionName": "visible",
                         "line": 43
@@ -62,7 +62,7 @@
                     {
                         "codegenSuccessfull": true,
                         "column": 31,
-                        "durationMicroseconds": 169,
+                        "durationMicroseconds": 92,
                         "errorMessage": "",
                         "functionName": "fill",
                         "line": 39
@@ -70,7 +70,7 @@
                     {
                         "codegenSuccessfull": false,
                         "column": 26,
-                        "durationMicroseconds": 565,
+                        "durationMicroseconds": 339,
                         "errorMessage": "Cannot access value for name audioPlayer",
                         "functionName": "visible",
                         "line": 49
@@ -78,7 +78,7 @@
                     {
                         "codegenSuccessfull": true,
                         "column": 31,
-                        "durationMicroseconds": 163,
+                        "durationMicroseconds": 73,
                         "errorMessage": "",
                         "functionName": "fill",
                         "line": 47
@@ -86,7 +86,7 @@
                     {
                         "codegenSuccessfull": true,
                         "column": 39,
-                        "durationMicroseconds": 122,
+                        "durationMicroseconds": 67,
                         "errorMessage": "",
                         "functionName": "centerIn",
                         "line": 52
@@ -94,7 +94,7 @@
                     {
                         "codegenSuccessfull": false,
                         "column": 23,
-                        "durationMicroseconds": 925,
+                        "durationMicroseconds": 543,
                         "errorMessage": "Cannot access value for name audioPlayer",
                         "functionName": "text",
                         "line": 66
@@ -102,7 +102,7 @@
                     {
                         "codegenSuccessfull": true,
                         "column": 24,
-                        "durationMicroseconds": 197,
+                        "durationMicroseconds": 155,
                         "errorMessage": "",
                         "functionName": "elide",
                         "line": 71
@@ -110,7 +110,7 @@
                     {
                         "codegenSuccessfull": false,
                         "column": 23,
-                        "durationMicroseconds": 1165,
+                        "durationMicroseconds": 562,
                         "errorMessage": "Cannot access value for name audioPlayer",
                         "functionName": "text",
                         "line": 76
@@ -118,7 +118,7 @@
                     {
                         "codegenSuccessfull": true,
                         "column": 24,
-                        "durationMicroseconds": 183,
+                        "durationMicroseconds": 95,
                         "errorMessage": "",
                         "functionName": "elide",
                         "line": 80
@@ -126,7 +126,7 @@
                     {
                         "codegenSuccessfull": true,
                         "column": 31,
-                        "durationMicroseconds": 219,
+                        "durationMicroseconds": 98,
                         "errorMessage": "",
                         "functionName": "alignment",
                         "line": 88
@@ -134,7 +134,7 @@
                     {
                         "codegenSuccessfull": true,
                         "column": 35,
-                        "durationMicroseconds": 166,
+                        "durationMicroseconds": 88,
                         "errorMessage": "",
                         "functionName": "alignment",
                         "line": 93
@@ -142,7 +142,7 @@
                     {
                         "codegenSuccessfull": true,
                         "column": 28,
-                        "durationMicroseconds": 671,
+                        "durationMicroseconds": 404,
                         "errorMessage": "",
                         "functionName": "color",
                         "line": 97
@@ -150,7 +150,7 @@
                     {
                         "codegenSuccessfull": true,
                         "column": 38,
-                        "durationMicroseconds": 142,
+                        "durationMicroseconds": 127,
                         "errorMessage": "",
                         "functionName": "cursorShape",
                         "line": 105
@@ -158,7 +158,7 @@
                     {
                         "codegenSuccessfull": false,
                         "column": 36,
-                        "durationMicroseconds": 482,
+                        "durationMicroseconds": 486,
                         "errorMessage": "Cannot access value for name audioPlayer",
                         "functionName": "onClicked",
                         "line": 106
@@ -166,7 +166,7 @@
                     {
                         "codegenSuccessfull": true,
                         "column": 39,
-                        "durationMicroseconds": 105,
+                        "durationMicroseconds": 83,
                         "errorMessage": "",
                         "functionName": "fill",
                         "line": 103
@@ -174,7 +174,7 @@
                     {
                         "codegenSuccessfull": true,
                         "column": 28,
-                        "durationMicroseconds": 575,
+                        "durationMicroseconds": 324,
                         "errorMessage": "",
                         "functionName": "color",
                         "line": 114
@@ -182,7 +182,7 @@
                     {
                         "codegenSuccessfull": false,
                         "column": 31,
-                        "durationMicroseconds": 915,
+                        "durationMicroseconds": 573,
                         "errorMessage": "Cannot access value for name audioPlayer",
                         "functionName": "text",
                         "line": 121
@@ -190,7 +190,7 @@
                     {
                         "codegenSuccessfull": true,
                         "column": 43,
-                        "durationMicroseconds": 185,
+                        "durationMicroseconds": 102,
                         "errorMessage": "",
                         "functionName": "centerIn",
                         "line": 119
@@ -198,7 +198,7 @@
                     {
                         "codegenSuccessfull": false,
                         "column": 57,
-                        "durationMicroseconds": 857,
+                        "durationMicroseconds": 550,
                         "errorMessage": "Cannot access value for name audioPlayer",
                         "functionName": "horizontalCenterOffset",
                         "line": 120
@@ -206,7 +206,7 @@
                     {
                         "codegenSuccessfull": true,
                         "column": 38,
-                        "durationMicroseconds": 222,
+                        "durationMicroseconds": 141,
                         "errorMessage": "",
                         "functionName": "cursorShape",
                         "line": 132
@@ -214,7 +214,7 @@
                     {
                         "codegenSuccessfull": false,
                         "column": 36,
-                        "durationMicroseconds": 679,
+                        "durationMicroseconds": 458,
                         "errorMessage": "Cannot access value for name audioPlayer",
                         "functionName": "onClicked",
                         "line": 133
@@ -222,7 +222,7 @@
                     {
                         "codegenSuccessfull": true,
                         "column": 39,
-                        "durationMicroseconds": 146,
+                        "durationMicroseconds": 84,
                         "errorMessage": "",
                         "functionName": "fill",
                         "line": 130
@@ -230,7 +230,7 @@
                     {
                         "codegenSuccessfull": true,
                         "column": 28,
-                        "durationMicroseconds": 692,
+                        "durationMicroseconds": 347,
                         "errorMessage": "",
                         "functionName": "color",
                         "line": 145
@@ -238,7 +238,7 @@
                     {
                         "codegenSuccessfull": true,
                         "column": 38,
-                        "durationMicroseconds": 179,
+                        "durationMicroseconds": 114,
                         "errorMessage": "",
                         "functionName": "cursorShape",
                         "line": 153
@@ -246,7 +246,7 @@
                     {
                         "codegenSuccessfull": false,
                         "column": 36,
-                        "durationMicroseconds": 639,
+                        "durationMicroseconds": 426,
                         "errorMessage": "Cannot access value for name audioPlayer",
                         "functionName": "onClicked",
                         "line": 154
@@ -254,7 +254,7 @@
                     {
                         "codegenSuccessfull": true,
                         "column": 39,
-                        "durationMicroseconds": 89,
+                        "durationMicroseconds": 85,
                         "errorMessage": "",
                         "functionName": "fill",
                         "line": 151
@@ -262,7 +262,7 @@
                     {
                         "codegenSuccessfull": false,
                         "column": 27,
-                        "durationMicroseconds": 583,
+                        "durationMicroseconds": 541,
                         "errorMessage": "Cannot access value for name audioPlayer",
                         "functionName": "text",
                         "line": 160
@@ -270,7 +270,7 @@
                     {
                         "codegenSuccessfull": false,
                         "column": 28,
-                        "durationMicroseconds": 594,
+                        "durationMicroseconds": 512,
                         "errorMessage": "Cannot access value for name audioPlayer",
                         "functionName": "color",
                         "line": 161
@@ -278,7 +278,7 @@
                     {
                         "codegenSuccessfull": true,
                         "column": 39,
-                        "durationMicroseconds": 177,
+                        "durationMicroseconds": 113,
                         "errorMessage": "",
                         "functionName": "alignment",
                         "line": 164
@@ -286,7 +286,7 @@
                     {
                         "codegenSuccessfull": false,
                         "column": 34,
-                        "durationMicroseconds": 553,
+                        "durationMicroseconds": 332,
                         "errorMessage": "Cannot access value for name audioPlayer",
                         "functionName": "visible",
                         "line": 174
@@ -294,7 +294,7 @@
                     {
                         "codegenSuccessfull": true,
                         "column": 51,
-                        "durationMicroseconds": 247,
+                        "durationMicroseconds": 143,
                         "errorMessage": "",
                         "functionName": "horizontalCenter",
                         "line": 167
@@ -302,7 +302,7 @@
                     {
                         "codegenSuccessfull": true,
                         "column": 38,
-                        "durationMicroseconds": 280,
+                        "durationMicroseconds": 147,
                         "errorMessage": "",
                         "functionName": "top",
                         "line": 168
@@ -310,7 +310,7 @@
                     {
                         "codegenSuccessfull": true,
                         "column": 38,
-                        "durationMicroseconds": 216,
+                        "durationMicroseconds": 108,
                         "errorMessage": "",
                         "functionName": "cursorShape",
                         "line": 181
@@ -318,7 +318,7 @@
                     {
                         "codegenSuccessfull": false,
                         "column": 36,
-                        "durationMicroseconds": 720,
+                        "durationMicroseconds": 455,
                         "errorMessage": "Cannot access value for name audioPlayer",
                         "functionName": "onClicked",
                         "line": 182
@@ -326,7 +326,7 @@
                     {
                         "codegenSuccessfull": true,
                         "column": 39,
-                        "durationMicroseconds": 111,
+                        "durationMicroseconds": 78,
                         "errorMessage": "",
                         "functionName": "fill",
                         "line": 179
@@ -334,7 +334,7 @@
                     {
                         "codegenSuccessfull": true,
                         "column": 35,
-                        "durationMicroseconds": 139,
+                        "durationMicroseconds": 93,
                         "errorMessage": "",
                         "functionName": "alignment",
                         "line": 190
@@ -342,7 +342,7 @@
                     {
                         "codegenSuccessfull": false,
                         "column": 27,
-                        "durationMicroseconds": 694,
+                        "durationMicroseconds": 532,
                         "errorMessage": "Cannot access value for name audioPlayer",
                         "functionName": "text",
                         "line": 194
@@ -350,7 +350,7 @@
                     {
                         "codegenSuccessfull": false,
                         "column": 25,
-                        "durationMicroseconds": 699,
+                        "durationMicroseconds": 582,
                         "errorMessage": "Cannot access value for name audioPlayer",
                         "functionName": "to",
                         "line": 204
@@ -358,7 +358,7 @@
                     {
                         "codegenSuccessfull": false,
                         "column": 28,
-                        "durationMicroseconds": 716,
+                        "durationMicroseconds": 579,
                         "errorMessage": "Cannot access value for name audioPlayer",
                         "functionName": "value",
                         "line": 206
@@ -366,7 +366,7 @@
                     {
                         "codegenSuccessfull": false,
                         "column": 30,
-                        "durationMicroseconds": 572,
+                        "durationMicroseconds": 992,
                         "errorMessage": "Cannot access value for name audioPlayer",
                         "functionName": "onMoved",
                         "line": 207
@@ -374,7 +374,7 @@
                     {
                         "codegenSuccessfull": false,
                         "column": 39,
-                        "durationMicroseconds": 667,
+                        "durationMicroseconds": 689,
                         "errorMessage": "Cannot access value for name audioPlayer",
                         "functionName": "onPressedChanged",
                         "line": 210
@@ -382,7 +382,7 @@
                     {
                         "codegenSuccessfull": false,
                         "column": 33,
-                        "durationMicroseconds": 257,
+                        "durationMicroseconds": 86,
                         "errorMessage": "Cannot access value for name audioPlayer",
                         "functionName": "target",
                         "line": 217
@@ -390,7 +390,7 @@
                     {
                         "codegenSuccessfull": false,
                         "column": 25,
-                        "durationMicroseconds": 272,
+                        "durationMicroseconds": 140,
                         "errorMessage": "Cannot access value for name audioPlayer",
                         "functionName": "onPositionChanged",
                         "line": 218
@@ -398,7 +398,7 @@
                     {
                         "codegenSuccessfull": true,
                         "column": 28,
-                        "durationMicroseconds": 219,
+                        "durationMicroseconds": 119,
                         "errorMessage": "",
                         "functionName": "x",
                         "line": 226
@@ -406,7 +406,7 @@
                     {
                         "codegenSuccessfull": true,
                         "column": 28,
-                        "durationMicroseconds": 1237,
+                        "durationMicroseconds": 460,
                         "errorMessage": "",
                         "functionName": "y",
                         "line": 227
@@ -414,7 +414,7 @@
                     {
                         "codegenSuccessfull": true,
                         "column": 32,
-                        "durationMicroseconds": 211,
+                        "durationMicroseconds": 97,
                         "errorMessage": "",
                         "functionName": "width",
                         "line": 230
@@ -422,7 +422,7 @@
                     {
                         "codegenSuccessfull": true,
                         "column": 33,
-                        "durationMicroseconds": 144,
+                        "durationMicroseconds": 60,
                         "errorMessage": "",
                         "functionName": "height",
                         "line": 231
@@ -430,7 +430,7 @@
                     {
                         "codegenSuccessfull": true,
                         "column": 36,
-                        "durationMicroseconds": 426,
+                        "durationMicroseconds": 238,
                         "errorMessage": "",
                         "functionName": "width",
                         "line": 236
@@ -438,7 +438,7 @@
                     {
                         "codegenSuccessfull": true,
                         "column": 37,
-                        "durationMicroseconds": 202,
+                        "durationMicroseconds": 91,
                         "errorMessage": "",
                         "functionName": "height",
                         "line": 237
@@ -446,7 +446,7 @@
                     {
                         "codegenSuccessfull": true,
                         "column": 28,
-                        "durationMicroseconds": 670,
+                        "durationMicroseconds": 331,
                         "errorMessage": "",
                         "functionName": "x",
                         "line": 244
@@ -454,7 +454,7 @@
                     {
                         "codegenSuccessfull": true,
                         "column": 28,
-                        "durationMicroseconds": 938,
+                        "durationMicroseconds": 406,
                         "errorMessage": "",
                         "functionName": "y",
                         "line": 245
@@ -462,7 +462,7 @@
                     {
                         "codegenSuccessfull": true,
                         "column": 34,
-                        "durationMicroseconds": 558,
+                        "durationMicroseconds": 284,
                         "errorMessage": "",
                         "functionName": "visible",
                         "line": 250
@@ -470,7 +470,7 @@
                     {
                         "codegenSuccessfull": false,
                         "column": 27,
-                        "durationMicroseconds": 868,
+                        "durationMicroseconds": 729,
                         "errorMessage": "Cannot access value for name audioPlayer",
                         "functionName": "text",
                         "line": 255
@@ -478,7 +478,7 @@
                     {
                         "codegenSuccessfull": true,
                         "column": 31,
-                        "durationMicroseconds": 191,
+                        "durationMicroseconds": 122,
                         "errorMessage": "",
                         "functionName": "alignment",
                         "line": 268
@@ -486,7 +486,7 @@
                     {
                         "codegenSuccessfull": true,
                         "column": 23,
-                        "durationMicroseconds": 1827,
+                        "durationMicroseconds": 644,
                         "errorMessage": "",
                         "functionName": "text",
                         "line": 271
@@ -494,7 +494,7 @@
                     {
                         "codegenSuccessfull": false,
                         "column": 24,
-                        "durationMicroseconds": 865,
+                        "durationMicroseconds": 588,
                         "errorMessage": "Cannot access value for name audioPlayer",
                         "functionName": "value",
                         "line": 282
@@ -502,7 +502,7 @@
                     {
                         "codegenSuccessfull": false,
                         "column": 26,
-                        "durationMicroseconds": 811,
+                        "durationMicroseconds": 601,
                         "errorMessage": "Cannot access value for name audioPlayer",
                         "functionName": "onMoved",
                         "line": 283
@@ -510,7 +510,7 @@
                     {
                         "codegenSuccessfull": false,
                         "column": 35,
-                        "durationMicroseconds": 1001,
+                        "durationMicroseconds": 557,
                         "errorMessage": "Cannot access value for name audioPlayer",
                         "functionName": "onPressedChanged",
                         "line": 286
@@ -518,7 +518,7 @@
                     {
                         "codegenSuccessfull": false,
                         "column": 29,
-                        "durationMicroseconds": 158,
+                        "durationMicroseconds": 78,
                         "errorMessage": "Cannot access value for name audioPlayer",
                         "functionName": "target",
                         "line": 293
@@ -526,7 +526,7 @@
                     {
                         "codegenSuccessfull": false,
                         "column": 21,
-                        "durationMicroseconds": 224,
+                        "durationMicroseconds": 114,
                         "errorMessage": "Cannot access value for name audioPlayer",
                         "functionName": "onVolumeChanged",
                         "line": 294
@@ -534,7 +534,7 @@
                     {
                         "codegenSuccessfull": true,
                         "column": 24,
-                        "durationMicroseconds": 221,
+                        "durationMicroseconds": 106,
                         "errorMessage": "",
                         "functionName": "x",
                         "line": 302
@@ -542,7 +542,7 @@
                     {
                         "codegenSuccessfull": true,
                         "column": 24,
-                        "durationMicroseconds": 540,
+                        "durationMicroseconds": 361,
                         "errorMessage": "",
                         "functionName": "y",
                         "line": 303
@@ -550,7 +550,7 @@
                     {
                         "codegenSuccessfull": true,
                         "column": 28,
-                        "durationMicroseconds": 166,
+                        "durationMicroseconds": 91,
                         "errorMessage": "",
                         "functionName": "width",
                         "line": 306
@@ -558,7 +558,7 @@
                     {
                         "codegenSuccessfull": true,
                         "column": 29,
-                        "durationMicroseconds": 93,
+                        "durationMicroseconds": 61,
                         "errorMessage": "",
                         "functionName": "height",
                         "line": 307
@@ -566,7 +566,7 @@
                     {
                         "codegenSuccessfull": true,
                         "column": 32,
-                        "durationMicroseconds": 459,
+                        "durationMicroseconds": 179,
                         "errorMessage": "",
                         "functionName": "width",
                         "line": 312
@@ -574,7 +574,7 @@
                     {
                         "codegenSuccessfull": true,
                         "column": 33,
-                        "durationMicroseconds": 178,
+                        "durationMicroseconds": 88,
                         "errorMessage": "",
                         "functionName": "height",
                         "line": 313
@@ -582,7 +582,7 @@
                     {
                         "codegenSuccessfull": true,
                         "column": 24,
-                        "durationMicroseconds": 1030,
+                        "durationMicroseconds": 360,
                         "errorMessage": "",
                         "functionName": "x",
                         "line": 320
@@ -590,7 +590,7 @@
                     {
                         "codegenSuccessfull": true,
                         "column": 24,
-                        "durationMicroseconds": 755,
+                        "durationMicroseconds": 351,
                         "errorMessage": "",
                         "functionName": "y",
                         "line": 321
@@ -598,7 +598,7 @@
                     {
                         "codegenSuccessfull": true,
                         "column": 30,
-                        "durationMicroseconds": 400,
+                        "durationMicroseconds": 193,
                         "errorMessage": "",
                         "functionName": "visible",
                         "line": 326

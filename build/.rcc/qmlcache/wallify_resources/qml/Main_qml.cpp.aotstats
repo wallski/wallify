@@ -6,7 +6,7 @@
                     {
                         "codegenSuccessfull": true,
                         "column": 12,
-                        "durationMicroseconds": 771,
+                        "durationMicroseconds": 1244,
                         "errorMessage": "",
                         "functionName": "flags",
                         "line": 14
@@ -14,7 +14,7 @@
                     {
                         "codegenSuccessfull": false,
                         "column": 17,
-                        "durationMicroseconds": 133,
+                        "durationMicroseconds": 202,
                         "errorMessage": "Cannot access value for name appSettings",
                         "functionName": "target",
                         "line": 19
@@ -22,7 +22,7 @@
                     {
                         "codegenSuccessfull": false,
                         "column": 9,
-                        "durationMicroseconds": 1202,
+                        "durationMicroseconds": 461,
                         "errorMessage": "Cannot generate efficient code for call to untyped JavaScript function",
                         "functionName": "onFactoryResetRequested",
                         "line": 20
@@ -30,7 +30,7 @@
                     {
                         "codegenSuccessfull": true,
                         "column": 23,
-                        "durationMicroseconds": 166,
+                        "durationMicroseconds": 144,
                         "errorMessage": "",
                         "functionName": "fill",
                         "line": 26
@@ -38,7 +38,7 @@
                     {
                         "codegenSuccessfull": true,
                         "column": 21,
-                        "durationMicroseconds": 178,
+                        "durationMicroseconds": 110,
                         "errorMessage": "",
                         "functionName": "window",
                         "line": 31
@@ -46,7 +46,7 @@
                     {
                         "codegenSuccessfull": false,
                         "column": 26,
-                        "durationMicroseconds": 1213,
+                        "durationMicroseconds": 731,
                         "errorMessage": "Cannot access value for name appSettings",
                         "functionName": "initialItem",
                         "line": 38
@@ -54,7 +54,7 @@
                     {
                         "codegenSuccessfull": false,
                         "column": 35,
-                        "durationMicroseconds": 163,
+                        "durationMicroseconds": 70,
                         "errorMessage": "Cannot access value for name stackView",
                         "functionName": "onGetStarted",
                         "line": 43
@@ -62,7 +62,7 @@
                     {
                         "codegenSuccessfull": false,
                         "column": 33,
-                        "durationMicroseconds": 90,
+                        "durationMicroseconds": 43,
                         "errorMessage": "Cannot access value for name stackView",
                         "functionName": "onFinished",
                         "line": 52
@@ -70,7 +70,7 @@
                     {
                         "codegenSuccessfull": true,
                         "column": 34,
-                        "durationMicroseconds": 178,
+                        "durationMicroseconds": 138,
                         "errorMessage": "",
                         "functionName": "type",
                         "line": 69
@@ -78,7 +78,7 @@
                     {
                         "codegenSuccessfull": true,
                         "column": 34,
-                        "durationMicroseconds": 130,
+                        "durationMicroseconds": 103,
                         "errorMessage": "",
                         "functionName": "type",
                         "line": 78
@@ -86,7 +86,7 @@
                     {
                         "codegenSuccessfull": true,
                         "column": 34,
-                        "durationMicroseconds": 121,
+                        "durationMicroseconds": 99,
                         "errorMessage": "",
                         "functionName": "type",
                         "line": 87
@@ -94,7 +94,7 @@
                     {
                         "codegenSuccessfull": true,
                         "column": 34,
-                        "durationMicroseconds": 96,
+                        "durationMicroseconds": 95,
                         "errorMessage": "",
                         "functionName": "type",
                         "line": 96

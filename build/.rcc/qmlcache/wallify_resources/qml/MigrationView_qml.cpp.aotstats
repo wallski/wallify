@@ -6,7 +6,7 @@
                     {
                         "codegenSuccessfull": false,
                         "column": 17,
-                        "durationMicroseconds": 286,
+                        "durationMicroseconds": 332,
                         "errorMessage": "Cannot access value for name spotifyMigrator",
                         "functionName": "target",
                         "line": 9
@@ -14,7 +14,7 @@
                     {
                         "codegenSuccessfull": true,
                         "column": 9,
-                        "durationMicroseconds": 513,
+                        "durationMicroseconds": 469,
                         "errorMessage": "",
                         "functionName": "onFfmpegOverwriteRequested",
                         "line": 10
@@ -22,7 +22,7 @@
                     {
                         "codegenSuccessfull": true,
                         "column": 22,
-                        "durationMicroseconds": 275,
+                        "durationMicroseconds": 256,
                         "errorMessage": "",
                         "functionName": "closePolicy",
                         "line": 22
@@ -30,7 +30,7 @@
                     {
                         "codegenSuccessfull": true,
                         "column": 27,
-                        "durationMicroseconds": 116,
+                        "durationMicroseconds": 157,
                         "errorMessage": "",
                         "functionName": "centerIn",
                         "line": 17
@@ -38,7 +38,7 @@
                     {
                         "codegenSuccessfull": true,
                         "column": 27,
-                        "durationMicroseconds": 103,
+                        "durationMicroseconds": 138,
                         "errorMessage": "",
                         "functionName": "fill",
                         "line": 32
@@ -46,7 +46,7 @@
                     {
                         "codegenSuccessfull": true,
                         "column": 35,
-                        "durationMicroseconds": 145,
+                        "durationMicroseconds": 180,
                         "errorMessage": "",
                         "functionName": "alignment",
                         "line": 42
@@ -54,7 +54,7 @@
                     {
                         "codegenSuccessfull": true,
                         "column": 27,
-                        "durationMicroseconds": 439,
+                        "durationMicroseconds": 166,
                         "errorMessage": "",
                         "functionName": "wrapMode",
                         "line": 50
@@ -62,7 +62,7 @@
                     {
                         "codegenSuccessfull": true,
                         "column": 38,
-                        "durationMicroseconds": 263,
+                        "durationMicroseconds": 150,
                         "errorMessage": "",
                         "functionName": "horizontalAlignment",
                         "line": 53
@@ -70,7 +70,7 @@
                     {
                         "codegenSuccessfull": true,
                         "column": 35,
-                        "durationMicroseconds": 177,
+                        "durationMicroseconds": 253,
                         "errorMessage": "",
                         "functionName": "alignment",
                         "line": 52
@@ -78,7 +78,7 @@
                     {
                         "codegenSuccessfull": true,
                         "column": 43,
-                        "durationMicroseconds": 194,
+                        "durationMicroseconds": 136,
                         "errorMessage": "",
                         "functionName": "centerIn",
                         "line": 69
@@ -86,7 +86,7 @@
                     {
                         "codegenSuccessfull": true,
                         "column": 38,
-                        "durationMicroseconds": 201,
+                        "durationMicroseconds": 219,
                         "errorMessage": "",
                         "functionName": "cursorShape",
                         "line": 78
@@ -94,7 +94,7 @@
                     {
                         "codegenSuccessfull": false,
                         "column": 36,
-                        "durationMicroseconds": 685,
+                        "durationMicroseconds": 936,
                         "errorMessage": "Cannot access value for name spotifyMigrator",
                         "functionName": "onClicked",
                         "line": 79
@@ -102,7 +102,7 @@
                     {
                         "codegenSuccessfull": true,
                         "column": 39,
-                        "durationMicroseconds": 108,
+                        "durationMicroseconds": 152,
                         "errorMessage": "",
                         "functionName": "fill",
                         "line": 77
@@ -110,7 +110,7 @@
                     {
                         "codegenSuccessfull": true,
                         "column": 43,
-                        "durationMicroseconds": 75,
+                        "durationMicroseconds": 121,
                         "errorMessage": "",
                         "functionName": "centerIn",
                         "line": 93
@@ -118,7 +118,7 @@
                     {
                         "codegenSuccessfull": true,
                         "column": 38,
-                        "durationMicroseconds": 135,
+                        "durationMicroseconds": 200,
                         "errorMessage": "",
                         "functionName": "cursorShape",
                         "line": 102
@@ -126,7 +126,7 @@
                     {
                         "codegenSuccessfull": false,
                         "column": 36,
-                        "durationMicroseconds": 616,
+                        "durationMicroseconds": 739,
                         "errorMessage": "Cannot access value for name spotifyMigrator",
                         "functionName": "onClicked",
                         "line": 103
@@ -134,7 +134,7 @@
                     {
                         "codegenSuccessfull": true,
                         "column": 39,
-                        "durationMicroseconds": 97,
+                        "durationMicroseconds": 122,
                         "errorMessage": "",
                         "functionName": "fill",
                         "line": 101
@@ -142,7 +142,7 @@
                     {
                         "codegenSuccessfull": true,
                         "column": 16,
-                        "durationMicroseconds": 225,
+                        "durationMicroseconds": 242,
                         "errorMessage": "",
                         "functionName": "width",
                         "line": 115
@@ -150,7 +150,7 @@
                     {
                         "codegenSuccessfull": true,
                         "column": 27,
-                        "durationMicroseconds": 79,
+                        "durationMicroseconds": 123,
                         "errorMessage": "",
                         "functionName": "centerIn",
                         "line": 114
@@ -158,7 +158,7 @@
                     {
                         "codegenSuccessfull": true,
                         "column": 31,
-                        "durationMicroseconds": 102,
+                        "durationMicroseconds": 155,
                         "errorMessage": "",
                         "functionName": "alignment",
                         "line": 124
@@ -166,7 +166,7 @@
                     {
                         "codegenSuccessfull": true,
                         "column": 31,
-                        "durationMicroseconds": 110,
+                        "durationMicroseconds": 132,
                         "errorMessage": "",
                         "functionName": "alignment",
                         "line": 132
@@ -174,7 +174,7 @@
                     {
                         "codegenSuccessfull": true,
                         "column": 36,
-                        "durationMicroseconds": 97,
+                        "durationMicroseconds": 147,
                         "errorMessage": "",
                         "functionName": "verticalAlignment",
                         "line": 147
@@ -182,7 +182,7 @@
                     {
                         "codegenSuccessfull": true,
                         "column": 31,
-                        "durationMicroseconds": 90,
+                        "durationMicroseconds": 85,
                         "errorMessage": "",
                         "functionName": "fill",
                         "line": 145
@@ -190,7 +190,7 @@
                     {
                         "codegenSuccessfull": true,
                         "column": 30,
-                        "durationMicroseconds": 313,
+                        "durationMicroseconds": 297,
                         "errorMessage": "",
                         "functionName": "visible",
                         "line": 156
@@ -198,7 +198,7 @@
                     {
                         "codegenSuccessfull": true,
                         "column": 40,
-                        "durationMicroseconds": 128,
+                        "durationMicroseconds": 150,
                         "errorMessage": "",
                         "functionName": "verticalAlignment",
                         "line": 158
@@ -206,7 +206,7 @@
                     {
                         "codegenSuccessfull": true,
                         "column": 35,
-                        "durationMicroseconds": 74,
+                        "durationMicroseconds": 126,
                         "errorMessage": "",
                         "functionName": "fill",
                         "line": 157
@@ -214,7 +214,7 @@
                     {
                         "codegenSuccessfull": false,
                         "column": 20,
-                        "durationMicroseconds": 492,
+                        "durationMicroseconds": 834,
                         "errorMessage": "Cannot access value for name spotifyMigrator",
                         "functionName": "color",
                         "line": 170
@@ -222,7 +222,7 @@
                     {
                         "codegenSuccessfull": true,
                         "column": 31,
-                        "durationMicroseconds": 273,
+                        "durationMicroseconds": 225,
                         "errorMessage": "",
                         "functionName": "alignment",
                         "line": 166
@@ -230,7 +230,7 @@
                     {
                         "codegenSuccessfull": false,
                         "column": 23,
-                        "durationMicroseconds": 861,
+                        "durationMicroseconds": 1009,
                         "errorMessage": "Cannot access value for name spotifyMigrator",
                         "functionName": "text",
                         "line": 175
@@ -238,7 +238,7 @@
                     {
                         "codegenSuccessfull": true,
                         "column": 35,
-                        "durationMicroseconds": 147,
+                        "durationMicroseconds": 211,
                         "errorMessage": "",
                         "functionName": "centerIn",
                         "line": 174
@@ -246,7 +246,7 @@
                     {
                         "codegenSuccessfull": false,
                         "column": 31,
-                        "durationMicroseconds": 662,
+                        "durationMicroseconds": 836,
                         "errorMessage": "Cannot access value for name spotifyMigrator",
                         "functionName": "hoverEnabled",
                         "line": 185
@@ -254,7 +254,7 @@
                     {
                         "codegenSuccessfull": false,
                         "column": 30,
-                        "durationMicroseconds": 564,
+                        "durationMicroseconds": 794,
                         "errorMessage": "Cannot access value for name spotifyMigrator",
                         "functionName": "cursorShape",
                         "line": 186
@@ -262,7 +262,7 @@
                     {
                         "codegenSuccessfull": false,
                         "column": 28,
-                        "durationMicroseconds": 534,
+                        "durationMicroseconds": 713,
                         "errorMessage": "Cannot access value for name spotifyMigrator",
                         "functionName": "onClicked",
                         "line": 187
@@ -270,7 +270,7 @@
                     {
                         "codegenSuccessfull": true,
                         "column": 31,
-                        "durationMicroseconds": 150,
+                        "durationMicroseconds": 185,
                         "errorMessage": "",
                         "functionName": "fill",
                         "line": 184
@@ -278,7 +278,7 @@
                     {
                         "codegenSuccessfull": false,
                         "column": 22,
-                        "durationMicroseconds": 400,
+                        "durationMicroseconds": 589,
                         "errorMessage": "Cannot access value for name spotifyMigrator",
                         "functionName": "visible",
                         "line": 198
@@ -286,7 +286,7 @@
                     {
                         "codegenSuccessfull": false,
                         "column": 23,
-                        "durationMicroseconds": 671,
+                        "durationMicroseconds": 675,
                         "errorMessage": "Cannot access value for name spotifyMigrator",
                         "functionName": "text",
                         "line": 202
@@ -294,7 +294,7 @@
                     {
                         "codegenSuccessfull": true,
                         "column": 35,
-                        "durationMicroseconds": 122,
+                        "durationMicroseconds": 140,
                         "errorMessage": "",
                         "functionName": "alignment",
                         "line": 206
@@ -302,7 +302,7 @@
                     {
                         "codegenSuccessfull": false,
                         "column": 28,
-                        "durationMicroseconds": 459,
+                        "durationMicroseconds": 701,
                         "errorMessage": "Cannot access value for name spotifyMigrator",
                         "functionName": "width",
                         "line": 216
@@ -310,7 +310,7 @@
                     {
                         "codegenSuccessfull": true,
                         "column": 29,
-                        "durationMicroseconds": 165,
+                        "durationMicroseconds": 266,
                         "errorMessage": "",
                         "functionName": "height",
                         "line": 217

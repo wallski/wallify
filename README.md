@@ -43,11 +43,9 @@ cd build
 cmake .. -G "Visual Studio 18 2026" -A x64
 cmake --build . --config Release
 
-# Deploy Qt dependencies (required to run)
+# Deploy Qt dependencies and run
 cd Release
 ..\..\deps\6.8.2\msvc2022_64\bin\windeployqt.exe wallify.exe --qmldir ..\..\resources\qml
-
-# Run
 .\wallify.exe
 ```
 

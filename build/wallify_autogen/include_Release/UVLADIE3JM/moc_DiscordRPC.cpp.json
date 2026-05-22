@@ -1,0 +1,70 @@
+{
+    "classes": [
+        {
+            "className": "DiscordRPC",
+            "lineNumber": 12,
+            "methods": [
+                {
+                    "access": "public",
+                    "index": 0,
+                    "name": "initialize",
+                    "returnType": "void"
+                },
+                {
+                    "access": "public",
+                    "index": 1,
+                    "name": "shutdown",
+                    "returnType": "void"
+                },
+                {
+                    "access": "public",
+                    "arguments": [
+                        {
+                            "name": "state",
+                            "type": "QString"
+                        },
+                        {
+                            "name": "details",
+                            "type": "QString"
+                        },
+                        {
+                            "name": "largeImageKey",
+                            "type": "QString"
+                        },
+                        {
+                            "name": "largeImageText",
+                            "type": "QString"
+                        },
+                        {
+                            "name": "startTimestamp",
+                            "type": "qint64"
+                        },
+                        {
+                            "name": "endTimestamp",
+                            "type": "qint64"
+                        }
+                    ],
+                    "index": 2,
+                    "name": "updatePresence",
+                    "returnType": "void"
+                },
+                {
+                    "access": "public",
+                    "index": 3,
+                    "name": "clearPresence",
+                    "returnType": "void"
+                }
+            ],
+            "object": true,
+            "qualifiedClassName": "DiscordRPC",
+            "superClasses": [
+                {
+                    "access": "public",
+                    "name": "QObject"
+                }
+            ]
+        }
+    ],
+    "inputFile": "DiscordRPC.h",
+    "outputRevision": 68
+}

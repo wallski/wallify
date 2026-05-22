@@ -5,14 +5,14 @@
 #include <QSettings>
 #include <QDirIterator>
 
-SoundCloudMigrator::SoundCloudMigrator(LocalLibrary *library, QObject *parent)
+SoundCloudMigrator::SoundCloudMigrator(LocalLibrary* library, QObject* parent)
     : QObject(parent), m_library(library), m_isWorking(false), m_progress(0)
 {
     m_process = new QProcess(this);
     connect(m_process, &QProcess::readyReadStandardOutput, this, &SoundCloudMigrator::processOutput);
     connect(m_process, &QProcess::readyReadStandardError, this, &SoundCloudMigrator::processOutput);
     connect(m_process, QOverload<int, QProcess::ExitStatus>::of(&QProcess::finished),
-            this, &SoundCloudMigrator::processFinished);
+        this, &SoundCloudMigrator::processFinished);
 
     m_appDataDir = QStandardPaths::writableLocation(QStandardPaths::AppDataLocation);
     QDir().mkpath(m_appDataDir);
@@ -36,14 +36,13 @@ void SoundCloudMigrator::clearLogs()
     emit logsChanged();
 }
 
-void SoundCloudMigrator::appendLog(const QString &message)
+void SoundCloudMigrator::appendLog(const QString& message)
 {
-    m_logs += message + "
-";
+    m_logs += message + "\n";
     emit logsChanged();
 }
 
-void SoundCloudMigrator::setStatus(const QString &text)
+void SoundCloudMigrator::setStatus(const QString& text)
 {
     if (m_statusText != text) {
         m_statusText = text;
@@ -67,7 +66,7 @@ void SoundCloudMigrator::setProgress(int value)
     }
 }
 
-void SoundCloudMigrator::startMigration(const QString &url)
+void SoundCloudMigrator::startMigration(const QString& url)
 {
     if (m_isWorking) return;
 
@@ -82,11 +81,11 @@ void SoundCloudMigrator::startMigration(const QString &url)
     prepareEnvironmentAndRun(url);
 }
 
-void SoundCloudMigrator::prepareEnvironmentAndRun(const QString &url)
+void SoundCloudMigrator::prepareEnvironmentAndRun(const QString& url)
 {
     if (!QFile::exists(m_scDlPath)) {
         setStatus("Downloading scdl...");
-        m_process->start("curl.exe", {"-L", "https://github.com/flyingrub/scdl/releases/latest/download/scdl.exe", "-o", m_scDlPath});
+        m_process->start("curl.exe", QStringList() << "-L" << "https://github.com/flyingrub/scdl/releases/latest/download/scdl.exe" << "-o" << m_scDlPath);
         return;
     }
 
@@ -113,7 +112,7 @@ void SoundCloudMigrator::processOutput()
     emit logMessage(text);
     qDebug().noquote() << "[scdl Output]:" << text;
 
-    QRegularExpression progressRe("(\d+)%");
+    QRegularExpression progressRe("(\\d+)%");
     QRegularExpressionMatch match = progressRe.match(text);
     if (match.hasMatch()) {
         setProgress(match.captured(1).toInt());
@@ -124,7 +123,7 @@ void SoundCloudMigrator::processOutput()
     }
 
     if (text.contains("playlist")) {
-        QRegularExpression playlistRe("playlist\s+(.+)");
+        QRegularExpression playlistRe("playlist\\s+(.+)");
         QRegularExpressionMatch plMatch = playlistRe.match(text);
         if (plMatch.hasMatch()) {
             m_detectedPlaylistName = plMatch.captured(1).trimmed();
@@ -144,7 +143,8 @@ void SoundCloudMigrator::processFinished(int exitCode, QProcess::ExitStatus exit
     if (!QFile::exists(m_scDlPath)) {
         if (exitCode == 0 && QFile::exists(m_scDlPath)) {
             prepareEnvironmentAndRun(m_currentUrl);
-        } else {
+        }
+        else {
             setStatus("Failed to download scdl.");
             setWorking(false);
             emit migrationFailed("Failed to download scdl.");
@@ -160,7 +160,7 @@ void SoundCloudMigrator::processFinished(int exitCode, QProcess::ExitStatus exit
 
     QStringList filesAfter = scanFiles();
     QStringList newFiles;
-    for (const QString &file : filesAfter) {
+    for (const QString& file : filesAfter) {
         if (!m_filesBefore.contains(file)) {
             newFiles.append(file);
         }

@@ -1,0 +1,7 @@
+C:/Users/elias/Desktop/GITHUB/wallify/build/wallify_autogen/include_Release/UVLADIE3JM/moc_AppSettings.cpp.json
+C:/Users/elias/Desktop/GITHUB/wallify/build/wallify_autogen/include_Release/UVLADIE3JM/moc_AudioPlayer.cpp.json
+C:/Users/elias/Desktop/GITHUB/wallify/build/wallify_autogen/include_Release/UVLADIE3JM/moc_DiscordRPC.cpp.json
+C:/Users/elias/Desktop/GITHUB/wallify/build/wallify_autogen/include_Release/UVLADIE3JM/moc_LocalLibrary.cpp.json
+C:/Users/elias/Desktop/GITHUB/wallify/build/wallify_autogen/include_Release/UVLADIE3JM/moc_SoundCloudMigrator.cpp.json
+C:/Users/elias/Desktop/GITHUB/wallify/build/wallify_autogen/include_Release/UVLADIE3JM/moc_SpotifyMigrator.cpp.json
+C:/Users/elias/Desktop/GITHUB/wallify/build/wallify_autogen/include_Release/UVLADIE3JM/moc_YouTubeMigrator.cpp.json

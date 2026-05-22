@@ -5,14 +5,14 @@
 #include <QSettings>
 #include <QDirIterator>
 
-YouTubeMigrator::YouTubeMigrator(LocalLibrary *library, QObject *parent)
+YouTubeMigrator::YouTubeMigrator(LocalLibrary* library, QObject* parent)
     : QObject(parent), m_library(library), m_isWorking(false), m_progress(0)
 {
     m_process = new QProcess(this);
     connect(m_process, &QProcess::readyReadStandardOutput, this, &YouTubeMigrator::processOutput);
     connect(m_process, &QProcess::readyReadStandardError, this, &YouTubeMigrator::processOutput);
     connect(m_process, QOverload<int, QProcess::ExitStatus>::of(&QProcess::finished),
-            this, &YouTubeMigrator::processFinished);
+        this, &YouTubeMigrator::processFinished);
 
     m_appDataDir = QStandardPaths::writableLocation(QStandardPaths::AppDataLocation);
     QDir().mkpath(m_appDataDir);
@@ -36,14 +36,13 @@ void YouTubeMigrator::clearLogs()
     emit logsChanged();
 }
 
-void YouTubeMigrator::appendLog(const QString &message)
+void YouTubeMigrator::appendLog(const QString& message)
 {
-    m_logs += message + "
-";
+    m_logs += message + "\n";
     emit logsChanged();
 }
 
-void YouTubeMigrator::setStatus(const QString &text)
+void YouTubeMigrator::setStatus(const QString& text)
 {
     if (m_statusText != text) {
         m_statusText = text;
@@ -67,7 +66,7 @@ void YouTubeMigrator::setProgress(int value)
     }
 }
 
-void YouTubeMigrator::startMigration(const QString &url)
+void YouTubeMigrator::startMigration(const QString& url)
 {
     if (m_isWorking) return;
 
@@ -82,11 +81,11 @@ void YouTubeMigrator::startMigration(const QString &url)
     prepareEnvironmentAndRun(url);
 }
 
-void YouTubeMigrator::prepareEnvironmentAndRun(const QString &url)
+void YouTubeMigrator::prepareEnvironmentAndRun(const QString& url)
 {
     if (!QFile::exists(m_ytDlpPath)) {
         setStatus("Downloading yt-dlp...");
-        m_process->start("curl.exe", {"-L", "https://github.com/yt-dlp/yt-dlp/releases/latest/download/yt-dlp.exe", "-o", m_ytDlpPath});
+        m_process->start("curl.exe", QStringList() << "-L" << "https://github.com/yt-dlp/yt-dlp/releases/latest/download/yt-dlp.exe" << "-o" << m_ytDlpPath);
         return;
     }
 
@@ -114,7 +113,7 @@ void YouTubeMigrator::processOutput()
     emit logMessage(text);
     qDebug().noquote() << "[yt-dlp Output]:" << text;
 
-    QRegularExpression progressRe("\[download\]\s+(\d+\.\d+)%");
+    QRegularExpression progressRe("\\[download\\]\\s+(\\d+\\.\\d+)%");
     QRegularExpressionMatch match = progressRe.match(text);
     if (match.hasMatch()) {
         setProgress(static_cast<int>(match.captured(1).toDouble()));
@@ -128,7 +127,7 @@ void YouTubeMigrator::processOutput()
     }
 
     if (text.contains("playlist")) {
-        QRegularExpression playlistRe("playlist\s+(.+)");
+        QRegularExpression playlistRe("playlist\\s+(.+)");
         QRegularExpressionMatch plMatch = playlistRe.match(text);
         if (plMatch.hasMatch()) {
             m_detectedPlaylistName = plMatch.captured(1).trimmed();
@@ -148,7 +147,8 @@ void YouTubeMigrator::processFinished(int exitCode, QProcess::ExitStatus exitSta
     if (!QFile::exists(m_ytDlpPath)) {
         if (exitCode == 0 && QFile::exists(m_ytDlpPath)) {
             prepareEnvironmentAndRun(m_currentUrl);
-        } else {
+        }
+        else {
             setStatus("Failed to download yt-dlp.");
             setWorking(false);
             emit migrationFailed("Failed to download yt-dlp.");
@@ -164,7 +164,7 @@ void YouTubeMigrator::processFinished(int exitCode, QProcess::ExitStatus exitSta
 
     QStringList filesAfter = scanFiles();
     QStringList newFiles;
-    for (const QString &file : filesAfter) {
+    for (const QString& file : filesAfter) {
         if (!m_filesBefore.contains(file)) {
             newFiles.append(file);
         }

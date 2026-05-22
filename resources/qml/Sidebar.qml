@@ -4,31 +4,31 @@ import QtQuick.Layouts
 Rectangle {
     id: sidebar
     color: "#141419"
-    
+
     property int currentIndex: 1
-    
+
     signal showLibrary()
     signal showMigration()
     signal showSettings()
-    
+
     ColumnLayout {
         anchors.fill: parent
         anchors.margins: 20
         spacing: 15
-        
+
         Text {
             text: "Your Library"
             color: "#89899f"
             font.family: "Roboto"
             font.bold: true
         }
-        
+
         Rectangle {
             Layout.fillWidth: true
             height: 40
             color: "transparent"
             radius: 6
-            
+
             Text {
                 anchors.verticalCenter: parent.verticalCenter
                 anchors.left: parent.left
@@ -39,7 +39,7 @@ Rectangle {
                 font.pixelSize: 14
                 font.bold: sidebar.currentIndex === 0
             }
-            
+
             MouseArea {
                 anchors.fill: parent
                 cursorShape: Qt.PointingHandCursor
@@ -49,24 +49,24 @@ Rectangle {
                 onClicked: sidebar.showLibrary()
             }
         }
-        
+
         Rectangle {
             Layout.fillWidth: true
             height: 40
             color: "transparent"
             radius: 6
-            
+
             Text {
                 anchors.verticalCenter: parent.verticalCenter
                 anchors.left: parent.left
                 anchors.leftMargin: 10
-                text: "Spotify Migration"
+                text: "Migration"
                 color: sidebar.currentIndex === 1 ? "#bd93f9" : "#e2e2e2"
                 font.family: "Roboto"
                 font.pixelSize: 14
                 font.bold: sidebar.currentIndex === 1
             }
-            
+
             MouseArea {
                 anchors.fill: parent
                 cursorShape: Qt.PointingHandCursor
@@ -76,13 +76,13 @@ Rectangle {
                 onClicked: sidebar.showMigration()
             }
         }
-        
+
         Rectangle {
             Layout.fillWidth: true
             height: 40
             color: "transparent"
             radius: 6
-            
+
             Text {
                 anchors.verticalCenter: parent.verticalCenter
                 anchors.left: parent.left
@@ -93,7 +93,7 @@ Rectangle {
                 font.pixelSize: 14
                 font.bold: sidebar.currentIndex === 2
             }
-            
+
             MouseArea {
                 anchors.fill: parent
                 cursorShape: Qt.PointingHandCursor
@@ -103,7 +103,7 @@ Rectangle {
                 onClicked: sidebar.showSettings()
             }
         }
-        
+
         Item { Layout.fillHeight: true } 
     }
 }

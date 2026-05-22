@@ -2,11 +2,11 @@
     "classes": [
         {
             "className": "LocalLibrary",
-            "lineNumber": 27,
+            "lineNumber": 30,
             "methods": [
                 {
                     "access": "public",
-                    "index": 3,
+                    "index": 4,
                     "name": "scan",
                     "returnType": "void"
                 },
@@ -22,7 +22,7 @@
                             "type": "QString"
                         }
                     ],
-                    "index": 4,
+                    "index": 5,
                     "name": "createPlaylist",
                     "returnType": "void"
                 },
@@ -34,7 +34,7 @@
                             "type": "QString"
                         }
                     ],
-                    "index": 5,
+                    "index": 6,
                     "isCloned": true,
                     "name": "createPlaylist",
                     "returnType": "void"
@@ -47,7 +47,7 @@
                             "type": "QString"
                         }
                     ],
-                    "index": 6,
+                    "index": 7,
                     "name": "deletePlaylist",
                     "returnType": "void"
                 },
@@ -63,7 +63,7 @@
                             "type": "QString"
                         }
                     ],
-                    "index": 7,
+                    "index": 8,
                     "name": "renamePlaylist",
                     "returnType": "void"
                 },
@@ -79,7 +79,7 @@
                             "type": "QString"
                         }
                     ],
-                    "index": 8,
+                    "index": 9,
                     "name": "updatePlaylistCover",
                     "returnType": "void"
                 },
@@ -95,7 +95,7 @@
                             "type": "QString"
                         }
                     ],
-                    "index": 9,
+                    "index": 10,
                     "name": "addTrackToPlaylist",
                     "returnType": "void"
                 },
@@ -111,8 +111,36 @@
                             "type": "QString"
                         }
                     ],
-                    "index": 10,
+                    "index": 11,
                     "name": "removeTrackFromPlaylist",
+                    "returnType": "void"
+                },
+                {
+                    "access": "public",
+                    "arguments": [
+                        {
+                            "name": "filePath",
+                            "type": "QString"
+                        },
+                        {
+                            "name": "newTitle",
+                            "type": "QString"
+                        }
+                    ],
+                    "index": 12,
+                    "name": "renameTrack",
+                    "returnType": "void"
+                },
+                {
+                    "access": "public",
+                    "arguments": [
+                        {
+                            "name": "mode",
+                            "type": "int"
+                        }
+                    ],
+                    "index": 13,
+                    "name": "setSortMode",
                     "returnType": "void"
                 }
             ],
@@ -160,6 +188,21 @@
                     "stored": true,
                     "type": "QVariantList",
                     "user": false
+                },
+                {
+                    "constant": false,
+                    "designable": true,
+                    "final": false,
+                    "index": 3,
+                    "name": "sortMode",
+                    "notify": "sortModeChanged",
+                    "read": "sortMode",
+                    "required": false,
+                    "scriptable": true,
+                    "stored": true,
+                    "type": "int",
+                    "user": false,
+                    "write": "setSortMode"
                 }
             ],
             "qualifiedClassName": "LocalLibrary",
@@ -180,6 +223,12 @@
                     "access": "public",
                     "index": 2,
                     "name": "playlistsChanged",
+                    "returnType": "void"
+                },
+                {
+                    "access": "public",
+                    "index": 3,
+                    "name": "sortModeChanged",
                     "returnType": "void"
                 }
             ],

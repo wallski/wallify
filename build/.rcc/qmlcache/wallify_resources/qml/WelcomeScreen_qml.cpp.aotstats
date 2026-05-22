@@ -6,7 +6,7 @@
                     {
                         "codegenSuccessfull": true,
                         "column": 23,
-                        "durationMicroseconds": 288,
+                        "durationMicroseconds": 258,
                         "errorMessage": "",
                         "functionName": "fill",
                         "line": 10
@@ -14,7 +14,7 @@
                     {
                         "codegenSuccessfull": true,
                         "column": 31,
-                        "durationMicroseconds": 109,
+                        "durationMicroseconds": 80,
                         "errorMessage": "",
                         "functionName": "centerIn",
                         "line": 19
@@ -22,7 +22,7 @@
                     {
                         "codegenSuccessfull": true,
                         "column": 35,
-                        "durationMicroseconds": 181,
+                        "durationMicroseconds": 154,
                         "errorMessage": "",
                         "functionName": "alignment",
                         "line": 28
@@ -30,7 +30,7 @@
                     {
                         "codegenSuccessfull": true,
                         "column": 35,
-                        "durationMicroseconds": 114,
+                        "durationMicroseconds": 101,
                         "errorMessage": "",
                         "functionName": "alignment",
                         "line": 36
@@ -38,7 +38,7 @@
                     {
                         "codegenSuccessfull": true,
                         "column": 35,
-                        "durationMicroseconds": 154,
+                        "durationMicroseconds": 130,
                         "errorMessage": "",
                         "functionName": "alignment",
                         "line": 40
@@ -46,7 +46,7 @@
                     {
                         "codegenSuccessfull": true,
                         "column": 39,
-                        "durationMicroseconds": 77,
+                        "durationMicroseconds": 80,
                         "errorMessage": "",
                         "functionName": "centerIn",
                         "line": 48
@@ -54,7 +54,7 @@
                     {
                         "codegenSuccessfull": true,
                         "column": 34,
-                        "durationMicroseconds": 115,
+                        "durationMicroseconds": 164,
                         "errorMessage": "",
                         "functionName": "cursorShape",
                         "line": 60
@@ -62,7 +62,7 @@
                     {
                         "codegenSuccessfull": true,
                         "column": 32,
-                        "durationMicroseconds": 257,
+                        "durationMicroseconds": 196,
                         "errorMessage": "",
                         "functionName": "onClicked",
                         "line": 61
@@ -70,7 +70,7 @@
                     {
                         "codegenSuccessfull": true,
                         "column": 35,
-                        "durationMicroseconds": 167,
+                        "durationMicroseconds": 81,
                         "errorMessage": "",
                         "functionName": "fill",
                         "line": 58

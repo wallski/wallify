@@ -2,7 +2,7 @@
     "classes": [
         {
             "className": "AudioPlayer",
-            "lineNumber": 10,
+            "lineNumber": 11,
             "methods": [
                 {
                     "access": "public",
@@ -12,7 +12,7 @@
                             "type": "int"
                         }
                     ],
-                    "index": 10,
+                    "index": 12,
                     "name": "setPosition",
                     "returnType": "void"
                 },
@@ -24,25 +24,25 @@
                             "type": "double"
                         }
                     ],
-                    "index": 11,
+                    "index": 13,
                     "name": "setVolume",
                     "returnType": "void"
                 },
                 {
                     "access": "public",
-                    "index": 12,
+                    "index": 14,
                     "name": "play",
                     "returnType": "void"
                 },
                 {
                     "access": "public",
-                    "index": 13,
+                    "index": 15,
                     "name": "pause",
                     "returnType": "void"
                 },
                 {
                     "access": "public",
-                    "index": 14,
+                    "index": 16,
                     "name": "stop",
                     "returnType": "void"
                 },
@@ -54,7 +54,7 @@
                             "type": "QVariantMap"
                         }
                     ],
-                    "index": 15,
+                    "index": 17,
                     "name": "playTrack",
                     "returnType": "void"
                 },
@@ -70,19 +70,19 @@
                             "type": "QVariantList"
                         }
                     ],
-                    "index": 16,
+                    "index": 18,
                     "name": "playTrackFromPlaylist",
                     "returnType": "void"
                 },
                 {
                     "access": "public",
-                    "index": 17,
+                    "index": 19,
                     "name": "next",
                     "returnType": "void"
                 },
                 {
                     "access": "public",
-                    "index": 18,
+                    "index": 20,
                     "name": "previous",
                     "returnType": "void"
                 },
@@ -94,13 +94,13 @@
                             "type": "QVariantMap"
                         }
                     ],
-                    "index": 19,
+                    "index": 21,
                     "name": "addToQueue",
                     "returnType": "void"
                 },
                 {
                     "access": "public",
-                    "index": 20,
+                    "index": 22,
                     "name": "clearQueue",
                     "returnType": "void"
                 },
@@ -112,8 +112,36 @@
                             "type": "int"
                         }
                     ],
-                    "index": 21,
+                    "index": 23,
                     "name": "setLoopMode",
+                    "returnType": "void"
+                },
+                {
+                    "access": "public",
+                    "arguments": [
+                        {
+                            "name": "enabled",
+                            "type": "bool"
+                        }
+                    ],
+                    "index": 24,
+                    "name": "setShuffleEnabled",
+                    "returnType": "void"
+                },
+                {
+                    "access": "public",
+                    "arguments": [
+                        {
+                            "name": "tracks",
+                            "type": "QVariantList"
+                        },
+                        {
+                            "name": "shuffle",
+                            "type": "bool"
+                        }
+                    ],
+                    "index": 25,
+                    "name": "playPlaylist",
                     "returnType": "void"
                 }
             ],
@@ -219,6 +247,21 @@
                     "stored": true,
                     "type": "QVariantList",
                     "user": false
+                },
+                {
+                    "constant": false,
+                    "designable": true,
+                    "final": false,
+                    "index": 7,
+                    "name": "shuffleEnabled",
+                    "notify": "shuffleEnabledChanged",
+                    "read": "shuffleEnabled",
+                    "required": false,
+                    "scriptable": true,
+                    "stored": true,
+                    "type": "bool",
+                    "user": false,
+                    "write": "setShuffleEnabled"
                 }
             ],
             "qualifiedClassName": "AudioPlayer",
@@ -264,6 +307,24 @@
                     "index": 6,
                     "name": "playQueueChanged",
                     "returnType": "void"
+                },
+                {
+                    "access": "public",
+                    "index": 7,
+                    "name": "shuffleEnabledChanged",
+                    "returnType": "void"
+                },
+                {
+                    "access": "public",
+                    "arguments": [
+                        {
+                            "name": "track",
+                            "type": "QVariantMap"
+                        }
+                    ],
+                    "index": 8,
+                    "name": "trackChanged",
+                    "returnType": "void"
                 }
             ],
             "slots": [
@@ -275,7 +336,7 @@
                             "type": "qint64"
                         }
                     ],
-                    "index": 7,
+                    "index": 9,
                     "name": "handlePositionChanged",
                     "returnType": "void"
                 },
@@ -287,13 +348,13 @@
                             "type": "qint64"
                         }
                     ],
-                    "index": 8,
+                    "index": 10,
                     "name": "handleDurationChanged",
                     "returnType": "void"
                 },
                 {
                     "access": "private",
-                    "index": 9,
+                    "index": 11,
                     "name": "handlePlaybackStateChanged",
                     "returnType": "void"
                 }

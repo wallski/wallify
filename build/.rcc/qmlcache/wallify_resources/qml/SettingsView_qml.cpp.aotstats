@@ -6,7 +6,7 @@
                     {
                         "codegenSuccessfull": false,
                         "column": 24,
-                        "durationMicroseconds": 370,
+                        "durationMicroseconds": 304,
                         "errorMessage": "Cannot access value for name appSettings",
                         "functionName": "currentFolder",
                         "line": 12
@@ -14,7 +14,7 @@
                     {
                         "codegenSuccessfull": false,
                         "column": 21,
-                        "durationMicroseconds": 156,
+                        "durationMicroseconds": 146,
                         "errorMessage": "Cannot access value for name appSettings",
                         "functionName": "onAccepted",
                         "line": 13
@@ -22,7 +22,7 @@
                     {
                         "codegenSuccessfull": true,
                         "column": 16,
-                        "durationMicroseconds": 363,
+                        "durationMicroseconds": 347,
                         "errorMessage": "",
                         "functionName": "width",
                         "line": 20
@@ -30,7 +30,7 @@
                     {
                         "codegenSuccessfull": true,
                         "column": 27,
-                        "durationMicroseconds": 82,
+                        "durationMicroseconds": 79,
                         "errorMessage": "",
                         "functionName": "centerIn",
                         "line": 19
@@ -38,7 +38,7 @@
                     {
                         "codegenSuccessfull": true,
                         "column": 31,
-                        "durationMicroseconds": 112,
+                        "durationMicroseconds": 109,
                         "errorMessage": "",
                         "functionName": "alignment",
                         "line": 29
@@ -46,34 +46,58 @@
                     {
                         "codegenSuccessfull": true,
                         "column": 31,
-                        "durationMicroseconds": 74,
+                        "durationMicroseconds": 140,
                         "errorMessage": "",
                         "functionName": "fill",
-                        "line": 42
-                    },
-                    {
-                        "codegenSuccessfull": false,
-                        "column": 30,
-                        "durationMicroseconds": 710,
-                        "errorMessage": "Cannot access value for name appSettings",
-                        "functionName": "checked",
-                        "line": 66
+                        "line": 41
                     },
                     {
                         "codegenSuccessfull": false,
                         "column": 39,
-                        "durationMicroseconds": 641,
+                        "durationMicroseconds": 856,
+                        "errorMessage": "Cannot access value for name discordRPC",
+                        "functionName": "onCheckedChanged",
+                        "line": 66
+                    },
+                    {
+                        "codegenSuccessfull": true,
+                        "column": 31,
+                        "durationMicroseconds": 92,
+                        "errorMessage": "",
+                        "functionName": "fill",
+                        "line": 86
+                    },
+                    {
+                        "codegenSuccessfull": false,
+                        "column": 30,
+                        "durationMicroseconds": 834,
+                        "errorMessage": "Cannot access value for name appSettings",
+                        "functionName": "checked",
+                        "line": 110
+                    },
+                    {
+                        "codegenSuccessfull": false,
+                        "column": 39,
+                        "durationMicroseconds": 745,
                         "errorMessage": "Cannot access value for name appSettings",
                         "functionName": "onCheckedChanged",
-                        "line": 67
+                        "line": 111
                     },
                     {
                         "codegenSuccessfull": true,
                         "column": 35,
-                        "durationMicroseconds": 86,
+                        "durationMicroseconds": 190,
                         "errorMessage": "",
                         "functionName": "centerIn",
-                        "line": 82
+                        "line": 125
+                    },
+                    {
+                        "codegenSuccessfull": true,
+                        "column": 39,
+                        "durationMicroseconds": 133,
+                        "errorMessage": "",
+                        "functionName": "alignment",
+                        "line": 133
                     },
                     {
                         "codegenSuccessfull": true,
@@ -81,111 +105,103 @@
                         "durationMicroseconds": 123,
                         "errorMessage": "",
                         "functionName": "alignment",
-                        "line": 90
-                    },
-                    {
-                        "codegenSuccessfull": true,
-                        "column": 39,
-                        "durationMicroseconds": 100,
-                        "errorMessage": "",
-                        "functionName": "alignment",
-                        "line": 94
+                        "line": 137
                     },
                     {
                         "codegenSuccessfull": true,
                         "column": 43,
-                        "durationMicroseconds": 72,
+                        "durationMicroseconds": 73,
                         "errorMessage": "",
                         "functionName": "centerIn",
-                        "line": 101
+                        "line": 144
                     },
                     {
                         "codegenSuccessfull": true,
                         "column": 38,
-                        "durationMicroseconds": 147,
+                        "durationMicroseconds": 116,
                         "errorMessage": "",
                         "functionName": "cursorShape",
-                        "line": 111
+                        "line": 154
                     },
                     {
                         "codegenSuccessfull": false,
                         "column": 36,
-                        "durationMicroseconds": 451,
+                        "durationMicroseconds": 582,
                         "errorMessage": "Cannot access value for name appSettings",
                         "functionName": "onClicked",
-                        "line": 112
+                        "line": 155
                     },
                     {
                         "codegenSuccessfull": true,
                         "column": 39,
-                        "durationMicroseconds": 85,
+                        "durationMicroseconds": 104,
                         "errorMessage": "",
                         "functionName": "fill",
-                        "line": 110
+                        "line": 153
                     },
                     {
                         "codegenSuccessfull": true,
                         "column": 44,
-                        "durationMicroseconds": 98,
+                        "durationMicroseconds": 168,
                         "errorMessage": "",
                         "functionName": "verticalAlignment",
-                        "line": 158
+                        "line": 201
                     },
                     {
                         "codegenSuccessfull": false,
                         "column": 31,
-                        "durationMicroseconds": 553,
+                        "durationMicroseconds": 653,
                         "errorMessage": "Cannot access value for name appSettings",
                         "functionName": "text",
-                        "line": 159
+                        "line": 202
                     },
                     {
                         "codegenSuccessfull": true,
                         "column": 32,
-                        "durationMicroseconds": 95,
+                        "durationMicroseconds": 117,
                         "errorMessage": "",
                         "functionName": "elide",
-                        "line": 163
+                        "line": 206
                     },
                     {
                         "codegenSuccessfull": true,
                         "column": 39,
-                        "durationMicroseconds": 387,
+                        "durationMicroseconds": 80,
                         "errorMessage": "",
                         "functionName": "fill",
-                        "line": 156
+                        "line": 199
                     },
                     {
                         "codegenSuccessfull": true,
                         "column": 43,
-                        "durationMicroseconds": 268,
+                        "durationMicroseconds": 63,
                         "errorMessage": "",
                         "functionName": "centerIn",
-                        "line": 174
+                        "line": 217
                     },
                     {
                         "codegenSuccessfull": true,
                         "column": 38,
-                        "durationMicroseconds": 235,
+                        "durationMicroseconds": 100,
                         "errorMessage": "",
                         "functionName": "cursorShape",
-                        "line": 185
+                        "line": 228
                     },
                     {
                         "codegenSuccessfull": true,
                         "column": 36,
-                        "durationMicroseconds": 239,
+                        "durationMicroseconds": 186,
                         "errorMessage": "",
                         "functionName": "onClicked",
-                        "line": 186
+                        "line": 229
                     },
                     {
                         "codegenSuccessfull": true,
                         "column": 39,
-                        "durationMicroseconds": 88,
+                        "durationMicroseconds": 109,
                         "errorMessage": "",
                         "functionName": "fill",
-                        "line": 184
+                        "line": 227
                     }
                 ],
                 "filepath": "C:/Users/elias/Desktop/GITHUB/wallify/resources/qml/SettingsView.qml"

@@ -7,6 +7,7 @@
 #include <QVariantMap>
 #include <QDir>
 #include <QFile>
+#include <QDateTime>
 
 struct Track {
     QString filePath;
@@ -15,6 +16,7 @@ struct Track {
     QString album;
     int duration = 0;
     bool hasCover = false;
+    QDateTime dateAdded;
 };
 
 struct Playlist {
@@ -22,6 +24,7 @@ struct Playlist {
     QString name;
     QString coverPath;
     QStringList trackPaths;
+    QDateTime dateCreated;
 };
 
 class LocalLibrary : public QObject
@@ -30,6 +33,7 @@ class LocalLibrary : public QObject
     Q_PROPERTY(QVariantList tracks READ tracks NOTIFY libraryChanged)
     Q_PROPERTY(QString libraryPath READ libraryPath WRITE setLibraryPath NOTIFY libraryPathChanged)
     Q_PROPERTY(QVariantList playlists READ playlists NOTIFY playlistsChanged)
+    Q_PROPERTY(int sortMode READ sortMode WRITE setSortMode NOTIFY sortModeChanged)
 
 public:
     explicit LocalLibrary(QObject *parent = nullptr);
@@ -42,7 +46,6 @@ public:
     Q_INVOKABLE void scan();
     QByteArray getCoverData(const QString &filePath);
 
-    // Playlist management
     Q_INVOKABLE void createPlaylist(const QString &name, const QString &coverPath = "");
     Q_INVOKABLE void deletePlaylist(const QString &id);
     Q_INVOKABLE void renamePlaylist(const QString &id, const QString &name);
@@ -51,25 +54,34 @@ public:
     Q_INVOKABLE void removeTrackFromPlaylist(const QString &playlistId, const QString &filePath);
     void createPlaylistFromMigration(const QString &playlistName, const QStringList &filePaths);
 
+    Q_INVOKABLE void renameTrack(const QString &filePath, const QString &newTitle);
+
+    int sortMode() const;
+    Q_INVOKABLE void setSortMode(int mode);
+
 signals:
     void libraryChanged();
     void libraryPathChanged();
     void playlistsChanged();
+    void sortModeChanged();
 
 private:
     void scanDirectory();
     Track parseMp3Metadata(const QString &filePath);
     QString parseId3String(const char *data, int size);
-    
+    void writeId3Tag(const QString &filePath, const QString &title, const QString &artist, const QString &album);
+
     void loadPlaylists();
     void savePlaylists();
+    void sortTracks();
 
     QList<Track> m_tracks;
     QList<Playlist> m_playlists;
     QString m_libraryPath;
-    
+
     QString m_defaultPlaylistName;
     QString m_defaultPlaylistCover;
+    int m_sortMode = 0; // 0 = Custom (date added), 1 = Name, 2 = Album
 };
 
 #endif // LOCALLIBRARY_H

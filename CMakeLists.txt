@@ -19,12 +19,32 @@ qt_add_executable(wallify
     src/main.cpp
     src/SpotifyMigrator.cpp
     src/SpotifyMigrator.h
+    src/YouTubeMigrator.cpp
+    src/YouTubeMigrator.h
+    src/SoundCloudMigrator.cpp
+    src/SoundCloudMigrator.h
+    src/DiscordRPC.cpp
+    src/DiscordRPC.h
     src/AppSettings.cpp
     src/AppSettings.h
     src/LocalLibrary.cpp
     src/LocalLibrary.h
     src/AudioPlayer.cpp
     src/AudioPlayer.h
+    src/CoverImageProvider.h
+)
+
+# Discord RPC static library (bundled, no extra DLL needed)
+# Place discord_rpc.lib in src/discord-rpc/lib/ and headers in src/discord-rpc/include/
+target_link_libraries(wallify
+    PRIVATE
+    ${CMAKE_CURRENT_SOURCE_DIR}/src/discord-rpc/lib/discord-rpc.lib
+)
+
+# Include Discord RPC headers
+target_include_directories(wallify
+    PRIVATE
+    ${CMAKE_CURRENT_SOURCE_DIR}/src/discord-rpc/include
 )
 
 # Create a QML module to embed QML files and resources
@@ -48,6 +68,7 @@ qt_add_qml_module(wallify
     RESOURCES
         resources/fonts/Roboto-Regular.ttf
         resources/fonts/BebasNeue-Regular.ttf
+        resources/icons/app_icon.svg
 )
 
 target_link_libraries(wallify

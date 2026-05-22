@@ -14,20 +14,19 @@ Rectangle {
         var minutes = Math.floor(totalSecs / 60);
         return minutes + ":" + (seconds < 10 ? "0" : "") + seconds;
     }
-    
+
     Rectangle {
         width: parent.width
         height: 1
         color: "#2a2a35"
         anchors.top: parent.top
     }
-    
+
     RowLayout {
         anchors.fill: parent
         anchors.margins: 15
         spacing: 20
-        
-        // Album Cover Art
+
         Rectangle {
             Layout.preferredWidth: 60
             Layout.preferredHeight: 60
@@ -50,18 +49,18 @@ Rectangle {
 
                 Text {
                     anchors.centerIn: parent
-                    text: "\uE8D6"
+                    text: ""
                     font.family: "Segoe MDL2 Assets"
                     font.pixelSize: 20
                     color: "#4e4e5a"
                 }
             }
         }
-        
+
         ColumnLayout {
             spacing: 2
             Layout.maximumWidth: 200
-            
+
             Text {
                 text: (audioPlayer.currentTrack && audioPlayer.currentTrack.title) ? audioPlayer.currentTrack.title : "Not Playing"
                 color: "#e2e2e2"
@@ -71,7 +70,7 @@ Rectangle {
                 elide: Text.ElideRight
                 Layout.fillWidth: true
             }
-            
+
             Text {
                 text: (audioPlayer.currentTrack && audioPlayer.currentTrack.artist) ? audioPlayer.currentTrack.artist : "Select a track to start"
                 color: "#89899f"
@@ -81,23 +80,51 @@ Rectangle {
                 Layout.fillWidth: true
             }
         }
-        
+
         Item { Layout.fillWidth: true } 
-        
+
         ColumnLayout {
             Layout.alignment: Qt.AlignHCenter
             spacing: 10
-            
+
             RowLayout {
                 spacing: 20
                 Layout.alignment: Qt.AlignHCenter
-                
+
                 Text {
-                    text: "\uE892" // Previous Icon
+                    text: ""
+                    color: audioPlayer.shuffleEnabled ? "#bd93f9" : (shuffleMouse.containsMouse ? "#e2e2e2" : "#89899f")
+                    font.family: "Segoe MDL2 Assets"
+                    font.pixelSize: 16
+
+                    Rectangle {
+                        anchors.horizontalCenter: parent.horizontalCenter
+                        anchors.top: parent.bottom
+                        anchors.topMargin: 2
+                        width: 4
+                        height: 4
+                        radius: 2
+                        color: "#bd93f9"
+                        visible: audioPlayer.shuffleEnabled
+                    }
+
+                    MouseArea {
+                        id: shuffleMouse
+                        anchors.fill: parent
+                        hoverEnabled: true
+                        cursorShape: Qt.PointingHandCursor
+                        onClicked: {
+                            audioPlayer.setShuffleEnabled(!audioPlayer.shuffleEnabled)
+                        }
+                    }
+                }
+
+                Text {
+                    text: ""
                     color: prevMouse.containsMouse ? "#bd93f9" : "#89899f"
                     font.family: "Segoe MDL2 Assets"
                     font.pixelSize: 16
-                    
+
                     MouseArea {
                         id: prevMouse
                         anchors.fill: parent
@@ -106,25 +133,25 @@ Rectangle {
                         onClicked: audioPlayer.previous()
                     }
                 }
-                
+
                 Rectangle {
                     Layout.preferredWidth: 40
                     Layout.preferredHeight: 40
                     radius: 20
                     color: playMouse.containsMouse ? "#9a6fd6" : "#bd93f9"
-                    
+
                     Behavior on color { ColorAnimation { duration: 100 } }
-                    
+
                     Text {
                         anchors.centerIn: parent
                         anchors.horizontalCenterOffset: audioPlayer.isPlaying ? 0 : 2
-                        text: audioPlayer.isPlaying ? "\uE71A" : "\uE768" // Pause vs Play Icon
+                        text: audioPlayer.isPlaying ? "" : ""
                         color: "#18181e"
                         font.family: "Segoe MDL2 Assets"
                         font.pixelSize: 14
                         font.bold: true
                     }
-                    
+
                     MouseArea {
                         id: playMouse
                         anchors.fill: parent
@@ -139,13 +166,13 @@ Rectangle {
                         }
                     }
                 }
-                
+
                 Text {
-                    text: "\uE893" // Next Icon
+                    text: ""
                     color: nextMouse.containsMouse ? "#bd93f9" : "#89899f"
                     font.family: "Segoe MDL2 Assets"
                     font.pixelSize: 16
-                    
+
                     MouseArea {
                         id: nextMouse
                         anchors.fill: parent
@@ -157,12 +184,12 @@ Rectangle {
 
                 Text {
                     id: loopText
-                    text: audioPlayer.loopMode === 2 ? "\uE8ED" : "\uE895"
+                    text: audioPlayer.loopMode === 2 ? "" : ""
                     color: audioPlayer.loopMode > 0 ? "#bd93f9" : (loopMouse.containsMouse ? "#e2e2e2" : "#89899f")
                     font.family: "Segoe MDL2 Assets"
                     font.pixelSize: 16
                     Layout.alignment: Qt.AlignVCenter
-                    
+
                     Rectangle {
                         anchors.horizontalCenter: parent.horizontalCenter
                         anchors.top: parent.bottom
@@ -185,18 +212,18 @@ Rectangle {
                     }
                 }
             }
-            
+
             RowLayout {
                 Layout.alignment: Qt.AlignHCenter
                 spacing: 10
-                
+
                 Text {
                     text: bottomBar.formatDuration(audioPlayer.position)
                     color: "#89899f"
                     font.family: "Roboto"
                     font.pixelSize: 12
                 }
-                
+
                 Slider {
                     id: progressSlider
                     Layout.preferredWidth: 350
@@ -212,7 +239,7 @@ Rectangle {
                             audioPlayer.setPosition(value)
                         }
                     }
-                    
+
                     Connections {
                         target: audioPlayer
                         function onPositionChanged() {
@@ -221,7 +248,7 @@ Rectangle {
                             }
                         }
                     }
-                    
+
                     background: Rectangle {
                         x: progressSlider.leftPadding
                         y: progressSlider.topPadding + progressSlider.availableHeight / 2 - height / 2
@@ -239,7 +266,7 @@ Rectangle {
                             radius: 2
                         }
                     }
-                    
+
                     handle: Rectangle {
                         x: progressSlider.leftPadding + progressSlider.visualPosition * (progressSlider.availableWidth - width)
                         y: progressSlider.topPadding + progressSlider.availableHeight / 2 - height / 2
@@ -250,7 +277,7 @@ Rectangle {
                         visible: progressSlider.hovered || progressSlider.pressed
                     }
                 }
-                
+
                 Text {
                     text: bottomBar.formatDuration(audioPlayer.duration)
                     color: "#89899f"
@@ -259,21 +286,20 @@ Rectangle {
                 }
             }
         }
-        
+
         Item { Layout.fillWidth: true } 
 
-        // Volume Controls
         RowLayout {
             spacing: 10
             Layout.alignment: Qt.AlignRight
-            
+
             Text {
-                text: volumeSlider.value === 0 ? "\uE992" : (volumeSlider.value < 0.4 ? "\uE993" : (volumeSlider.value < 0.8 ? "\uE994" : "\uE995"))
+                text: volumeSlider.value === 0 ? "" : (volumeSlider.value < 0.4 ? "" : (volumeSlider.value < 0.8 ? "" : ""))
                 color: "#89899f"
                 font.family: "Segoe MDL2 Assets"
                 font.pixelSize: 16
             }
-            
+
             Slider {
                 id: volumeSlider
                 Layout.preferredWidth: 100
@@ -288,7 +314,7 @@ Rectangle {
                         audioPlayer.setVolume(value)
                     }
                 }
-                
+
                 Connections {
                     target: audioPlayer
                     function onVolumeChanged() {
@@ -297,7 +323,7 @@ Rectangle {
                         }
                     }
                 }
-                
+
                 background: Rectangle {
                     x: volumeSlider.leftPadding
                     y: volumeSlider.topPadding + volumeSlider.availableHeight / 2 - height / 2
@@ -315,7 +341,7 @@ Rectangle {
                         radius: 2
                     }
                 }
-                
+
                 handle: Rectangle {
                     x: volumeSlider.leftPadding + volumeSlider.visualPosition * (volumeSlider.availableWidth - width)
                     y: volumeSlider.topPadding + volumeSlider.availableHeight / 2 - height / 2

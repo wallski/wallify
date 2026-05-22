@@ -5,6 +5,7 @@
 #include <QMediaPlayer>
 #include <QAudioOutput>
 #include <QVariantMap>
+#include <QRandomGenerator>
 #include "LocalLibrary.h"
 
 class AudioPlayer : public QObject
@@ -17,6 +18,7 @@ class AudioPlayer : public QObject
     Q_PROPERTY(QVariantMap currentTrack READ currentTrack NOTIFY currentTrackChanged)
     Q_PROPERTY(int loopMode READ loopMode WRITE setLoopMode NOTIFY loopModeChanged)
     Q_PROPERTY(QVariantList playQueue READ playQueue NOTIFY playQueueChanged)
+    Q_PROPERTY(bool shuffleEnabled READ shuffleEnabled WRITE setShuffleEnabled NOTIFY shuffleEnabledChanged)
 
 public:
     explicit AudioPlayer(LocalLibrary *library, QObject *parent = nullptr);
@@ -36,13 +38,16 @@ public:
     Q_INVOKABLE void playTrackFromPlaylist(const QVariantMap &track, const QVariantList &playlistTracks);
     Q_INVOKABLE void next();
     Q_INVOKABLE void previous();
-    
-    // Queue and Loop functions
+
     Q_INVOKABLE void addToQueue(const QVariantMap &track);
     Q_INVOKABLE void clearQueue();
     int loopMode() const;
     Q_INVOKABLE void setLoopMode(int mode);
     QVariantList playQueue() const;
+
+    bool shuffleEnabled() const;
+    Q_INVOKABLE void setShuffleEnabled(bool enabled);
+    Q_INVOKABLE void playPlaylist(const QVariantList &tracks, bool shuffle);
 
 signals:
     void isPlayingChanged();
@@ -52,6 +57,8 @@ signals:
     void currentTrackChanged();
     void loopModeChanged();
     void playQueueChanged();
+    void shuffleEnabledChanged();
+    void trackChanged(const QVariantMap &track);
 
 private slots:
     void handlePositionChanged(qint64 position);
@@ -59,16 +66,23 @@ private slots:
     void handlePlaybackStateChanged();
 
 private:
+    int getNextShuffledIndex();
+    int getPreviousShuffledIndex();
+    void rebuildShuffleOrder();
+
     LocalLibrary *m_library;
     QMediaPlayer *m_player;
     QAudioOutput *m_audioOutput;
     QVariantMap m_currentTrack;
     bool m_isPlaying;
-    int m_loopMode; // 0 = None, 1 = Repeat All, 2 = Repeat One
-    QVariantList m_playQueue;       // User queue
-    QVariantList m_playlistQueue;   // Playlist/scanned songs context queue
+    int m_loopMode;
+    QVariantList m_playQueue;
+    QVariantList m_playlistQueue;
     bool m_isSeeking = false;
     double m_volume = 0.7;
+    bool m_shuffleEnabled = false;
+    QList<int> m_shuffleOrder;
+    int m_shuffleCurrentIndex = 0;
 };
 
 #endif // AUDIOPLAYER_H

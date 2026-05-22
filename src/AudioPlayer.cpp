@@ -2,27 +2,24 @@
 #include <QUrl>
 #include <QDebug>
 #include <QTimer>
+#include <QDateTime>
 
 AudioPlayer::AudioPlayer(LocalLibrary *library, QObject *parent)
-    : QObject(parent), m_library(library), m_isPlaying(false), m_loopMode(0)
+    : QObject(parent), m_library(library), m_isPlaying(false), m_loopMode(0), m_shuffleEnabled(false)
 {
     m_player = new QMediaPlayer(this);
     m_audioOutput = new QAudioOutput(this);
     m_player->setAudioOutput(m_audioOutput);
-
-    // Initial volume 70%
     m_audioOutput->setVolume(0.7);
 
     connect(m_player, &QMediaPlayer::positionChanged, this, &AudioPlayer::handlePositionChanged);
     connect(m_player, &QMediaPlayer::durationChanged, this, &AudioPlayer::handleDurationChanged);
     connect(m_player, &QMediaPlayer::playbackStateChanged, this, &AudioPlayer::handlePlaybackStateChanged);
-    
-    // Handle error events
+
     connect(m_player, &QMediaPlayer::errorOccurred, this, [](QMediaPlayer::Error error, const QString &errorString) {
         qWarning() << "AudioPlayer: QMediaPlayer error occurred:" << error << "-" << errorString;
     });
 
-    // Auto-advance on track finished and log media status
     connect(m_player, &QMediaPlayer::mediaStatusChanged, this, [this](QMediaPlayer::MediaStatus status) {
         qDebug() << "AudioPlayer: MediaStatus changed to:" << status;
         if (status == QMediaPlayer::EndOfMedia) {
@@ -52,7 +49,7 @@ void AudioPlayer::setPosition(int pos)
         m_isSeeking = true;
         m_player->setPosition(pos);
         emit positionChanged();
-        
+
         QTimer::singleShot(500, this, [this]() {
             m_isSeeking = false;
             emit positionChanged();
@@ -105,6 +102,7 @@ void AudioPlayer::playTrack(const QVariantMap &track)
 {
     m_currentTrack = track;
     emit currentTrackChanged();
+    emit trackChanged(track);
 
     if (m_playlistQueue.isEmpty()) {
         m_playlistQueue.append(track);
@@ -119,23 +117,103 @@ void AudioPlayer::playTrack(const QVariantMap &track)
 void AudioPlayer::playTrackFromPlaylist(const QVariantMap &track, const QVariantList &playlistTracks)
 {
     m_playlistQueue = playlistTracks;
+    if (m_shuffleEnabled) {
+        rebuildShuffleOrder();
+    }
     playTrack(track);
+}
+
+void AudioPlayer::playPlaylist(const QVariantList &tracks, bool shuffle)
+{
+    if (tracks.isEmpty()) return;
+
+    m_playlistQueue = tracks;
+    m_shuffleEnabled = shuffle;
+    emit shuffleEnabledChanged();
+
+    if (m_shuffleEnabled) {
+        rebuildShuffleOrder();
+        playTrack(m_playlistQueue[m_shuffleOrder.first()].toMap());
+    } else {
+        playTrack(tracks.first().toMap());
+    }
+}
+
+int AudioPlayer::getNextShuffledIndex()
+{
+    if (m_shuffleOrder.isEmpty()) return -1;
+    m_shuffleCurrentIndex++;
+    if (m_shuffleCurrentIndex >= m_shuffleOrder.size()) {
+        if (m_loopMode == 1) {
+            m_shuffleCurrentIndex = 0;
+        } else {
+            return -1;
+        }
+    }
+    return m_shuffleOrder[m_shuffleCurrentIndex];
+}
+
+int AudioPlayer::getPreviousShuffledIndex()
+{
+    if (m_shuffleOrder.isEmpty()) return -1;
+    m_shuffleCurrentIndex--;
+    if (m_shuffleCurrentIndex < 0) {
+        if (m_loopMode == 1) {
+            m_shuffleCurrentIndex = m_shuffleOrder.size() - 1;
+        } else {
+            m_shuffleCurrentIndex = 0;
+            return -1;
+        }
+    }
+    return m_shuffleOrder[m_shuffleCurrentIndex];
+}
+
+void AudioPlayer::rebuildShuffleOrder()
+{
+    m_shuffleOrder.clear();
+    for (int i = 0; i < m_playlistQueue.size(); ++i) {
+        m_shuffleOrder.append(i);
+    }
+
+    QRandomGenerator *rng = QRandomGenerator::global();
+    for (int i = m_shuffleOrder.size() - 1; i > 0; --i) {
+        int j = rng->bounded(i + 1);
+        std::swap(m_shuffleOrder[i], m_shuffleOrder[j]);
+    }
+
+    if (!m_currentTrack.isEmpty()) {
+        QString currentPath = m_currentTrack["filePath"].toString();
+        for (int i = 0; i < m_shuffleOrder.size(); ++i) {
+            if (m_playlistQueue[m_shuffleOrder[i]].toMap()["filePath"].toString() == currentPath) {
+                m_shuffleCurrentIndex = i;
+                break;
+            }
+        }
+    } else {
+        m_shuffleCurrentIndex = 0;
+    }
 }
 
 void AudioPlayer::next()
 {
-    // 1. Process user queue first
     if (!m_playQueue.isEmpty()) {
         QVariantMap nextTrack = m_playQueue.takeFirst().toMap();
         emit playQueueChanged();
-        
-        // Ensure playTrack has playlist context if it was empty, or preserve it
         playTrack(nextTrack);
         return;
     }
 
-    // 2. Play next in playlist context
     if (m_playlistQueue.isEmpty() || m_currentTrack.isEmpty()) return;
+
+    if (m_shuffleEnabled) {
+        int nextIdx = getNextShuffledIndex();
+        if (nextIdx != -1) {
+            playTrack(m_playlistQueue[nextIdx].toMap());
+        } else {
+            stop();
+        }
+        return;
+    }
 
     QString currentPath = m_currentTrack["filePath"].toString();
     int currentIndex = -1;
@@ -151,10 +229,8 @@ void AudioPlayer::next()
         playTrack(m_playlistQueue[currentIndex + 1].toMap());
     } else {
         if (m_loopMode == 1) {
-            // Repeat Playlist
             playTrack(m_playlistQueue[0].toMap());
         } else {
-            // Repeat Off: Stop playback
             stop();
         }
     }
@@ -163,6 +239,14 @@ void AudioPlayer::next()
 void AudioPlayer::previous()
 {
     if (m_playlistQueue.isEmpty() || m_currentTrack.isEmpty()) return;
+
+    if (m_shuffleEnabled) {
+        int prevIdx = getPreviousShuffledIndex();
+        if (prevIdx != -1) {
+            playTrack(m_playlistQueue[prevIdx].toMap());
+        }
+        return;
+    }
 
     QString currentPath = m_currentTrack["filePath"].toString();
     int currentIndex = -1;
@@ -178,10 +262,8 @@ void AudioPlayer::previous()
         playTrack(m_playlistQueue[currentIndex - 1].toMap());
     } else if (m_playlistQueue.size() > 0) {
         if (m_loopMode == 1) {
-            // Repeat Playlist: go to last
             playTrack(m_playlistQueue.last().toMap());
         } else {
-            // Seek to 0
             setPosition(0);
         }
     }
@@ -238,4 +320,20 @@ void AudioPlayer::setLoopMode(int mode)
 QVariantList AudioPlayer::playQueue() const
 {
     return m_playQueue;
+}
+
+bool AudioPlayer::shuffleEnabled() const
+{
+    return m_shuffleEnabled;
+}
+
+void AudioPlayer::setShuffleEnabled(bool enabled)
+{
+    if (m_shuffleEnabled != enabled) {
+        m_shuffleEnabled = enabled;
+        if (m_shuffleEnabled && !m_playlistQueue.isEmpty()) {
+            rebuildShuffleOrder();
+        }
+        emit shuffleEnabledChanged();
+    }
 }

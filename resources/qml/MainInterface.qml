@@ -35,21 +35,18 @@ Item {
                 id: contentStack
                 Layout.fillWidth: true
                 Layout.fillHeight: true
-                currentIndex: 1 // Start on Migration for testing
+                currentIndex: 1
 
-                // Index 0: Library
                 LibraryView {
                     Layout.fillWidth: true
                     Layout.fillHeight: true
                 }
 
-                // Index 1: Migration Tool
                 MigrationView {
                     Layout.fillWidth: true
                     Layout.fillHeight: true
                 }
 
-                // Index 2: Settings
                 SettingsView {
                     Layout.fillWidth: true
                     Layout.fillHeight: true
@@ -62,15 +59,13 @@ Item {
         }
     }
 
-    // FFmpeg Overwrite Popup Overlay
     Rectangle {
         id: overlayBackground
         anchors.fill: parent
-        color: "#d00a0a0f" // Dimmed glassmorphism backdrop
+        color: "#d00a0a0f"
         visible: ffmpegOverwriteDialogVisible
-        z: 99999 // Ensure it's on top of everything
+        z: 99999
 
-        // Absorb all mouse events to prevent clicking things behind the popup
         MouseArea {
             anchors.fill: parent
             hoverEnabled: true
@@ -95,13 +90,12 @@ Item {
                     spacing: 10
                     Layout.fillWidth: true
 
-                    // Warning sign/icon
                     Rectangle {
                         width: 24
                         height: 24
                         color: "#ff5555"
                         radius: 12
-                        
+
                         Text {
                             anchors.centerIn: parent
                             text: "!"
@@ -122,7 +116,8 @@ Item {
                 }
 
                 Text {
-                    text: "spotDL detected that FFmpeg is already installed.\nIt might be older or corrupted. Would you like to overwrite it with a fresh installation?"
+                    text: "spotDL detected that FFmpeg is already installed.
+It might be older or corrupted. Would you like to overwrite it with a fresh installation?"
                     color: "#e2e2e2"
                     font.family: "Roboto"
                     font.pixelSize: 14
@@ -139,7 +134,6 @@ Item {
                     Layout.fillWidth: true
                     spacing: 15
 
-                    // NO Button
                     Rectangle {
                         Layout.fillWidth: true
                         height: 40
@@ -170,7 +164,6 @@ Item {
                         }
                     }
 
-                    // YES Button
                     Rectangle {
                         Layout.fillWidth: true
                         height: 40

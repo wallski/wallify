@@ -1,4 +1,5 @@
 C:/Users/elias/Desktop/GITHUB/wallify/build/wallify_autogen/include_Release/UVLADIE3JM/moc_LocalLibrary.cpp: C:/Users/elias/Desktop/GITHUB/wallify/src/LocalLibrary.h \
+  C:/Users/elias/Desktop/GITHUB/wallify/deps/6.8.2/msvc2022_64/include/QtCore/QDateTime \
   C:/Users/elias/Desktop/GITHUB/wallify/deps/6.8.2/msvc2022_64/include/QtCore/QDir \
   C:/Users/elias/Desktop/GITHUB/wallify/deps/6.8.2/msvc2022_64/include/QtCore/QFile \
   C:/Users/elias/Desktop/GITHUB/wallify/deps/6.8.2/msvc2022_64/include/QtCore/QList \

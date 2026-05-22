@@ -48,25 +48,21 @@ Item {
         }
     }
 
-    // Main Column Layout
     ColumnLayout {
         anchors.fill: parent
         anchors.margins: 30
         spacing: 20
 
-        // ================= PLAYLIST DETAIL VIEW =================
         ColumnLayout {
             Layout.fillWidth: true
             Layout.fillHeight: true
             visible: selectedPlaylist !== null
             spacing: 20
 
-            // Header Controls
             RowLayout {
                 Layout.fillWidth: true
                 spacing: 15
 
-                // Back Button
                 Rectangle {
                     width: 36
                     height: 36
@@ -77,7 +73,7 @@ Item {
 
                     Text {
                         anchors.centerIn: parent
-                        text: "\uE72B" // Left Arrow
+                        text: ""
                         font.family: "Segoe MDL2 Assets"
                         font.pixelSize: 14
                         color: "#e2e2e2"
@@ -102,7 +98,6 @@ Item {
 
                 Item { Layout.fillWidth: true }
 
-                // Scan Button (Only shown on Default Library Playlist)
                 Rectangle {
                     id: scanButton
                     width: 140
@@ -110,7 +105,7 @@ Item {
                     color: scanMouse.pressed ? "#9a6fd6" : (scanMouse.containsMouse ? "#ab7fe6" : "#bd93f9")
                     radius: 20
                     visible: selectedPlaylist && selectedPlaylist.isDefault
-                    
+
                     Behavior on color { ColorAnimation { duration: 150 } }
 
                     RowLayout {
@@ -118,7 +113,7 @@ Item {
                         spacing: 8
 
                         Text {
-                            text: "\uE72C" // Refresh
+                            text: ""
                             font.family: "Segoe MDL2 Assets"
                             font.pixelSize: 14
                             color: "#18181e"
@@ -145,7 +140,6 @@ Item {
                     }
                 }
 
-                // Delete Playlist Button (Only on Custom Playlists)
                 Rectangle {
                     width: 140
                     height: 40
@@ -162,7 +156,7 @@ Item {
                         spacing: 8
 
                         Text {
-                            text: "\uE74D" // Trash
+                            text: ""
                             font.family: "Segoe MDL2 Assets"
                             font.pixelSize: 14
                             color: deleteMouse.containsMouse ? "#18181e" : "#ff5555"
@@ -190,16 +184,14 @@ Item {
                 }
             }
 
-            // Playlist Meta Header
             RowLayout {
                 Layout.fillWidth: true
                 spacing: 25
 
-                // Large cover image box with Hover-to-Edit
                 Rectangle {
                     Layout.preferredWidth: 140
                     Layout.preferredHeight: 140
-                    color: "transparent" // transparent container to allow floating overlap
+                    color: "transparent"
 
                     Rectangle {
                         anchors.fill: parent
@@ -216,7 +208,6 @@ Item {
                             visible: selectedPlaylist && selectedPlaylist.coverPath !== ""
                         }
 
-                        // Default cover if none exists
                         Rectangle {
                             anchors.fill: parent
                             color: "#23232f"
@@ -224,14 +215,13 @@ Item {
 
                             Text {
                                 anchors.centerIn: parent
-                                text: "\uE8D6" // Note
+                                text: ""
                                 font.family: "Segoe MDL2 Assets"
                                 font.pixelSize: 42
                                 color: "#4e4e5a"
                             }
                         }
 
-                        // Edit Cover Art Overlay on Hover
                         Rectangle {
                             anchors.fill: parent
                             color: "#aa000000"
@@ -244,7 +234,7 @@ Item {
                                 spacing: 6
 
                                 Text {
-                                    text: "\uE70F" // Edit pencil
+                                    text: ""
                                     font.family: "Segoe MDL2 Assets"
                                     font.pixelSize: 18
                                     color: "#e2e2e2"
@@ -271,7 +261,6 @@ Item {
                         }
                     }
 
-                    // Floating circular edit button (permanently visible for extreme discoverability!)
                     Rectangle {
                         id: floatingEditBtn
                         width: 32
@@ -290,7 +279,7 @@ Item {
 
                         Text {
                             anchors.centerIn: parent
-                            text: "\uE70F" // Pencil icon
+                            text: ""
                             font.family: "Segoe MDL2 Assets"
                             font.pixelSize: 13
                             color: editButtonMouse.containsMouse ? "#18181e" : "#e2e2e2"
@@ -307,7 +296,6 @@ Item {
                     }
                 }
 
-                // Playlist metadata details
                 ColumnLayout {
                     spacing: 8
                     Layout.fillWidth: true
@@ -321,12 +309,10 @@ Item {
                         font.letterSpacing: 1.5
                     }
 
-                    // Playlist Title with click-to-edit rename
                     RowLayout {
                         spacing: 12
                         Layout.fillWidth: true
 
-                        // Title Text
                         Text {
                             text: selectedPlaylist ? selectedPlaylist.name : ""
                             color: "#e2e2e2"
@@ -336,7 +322,6 @@ Item {
                             visible: !titleEditField.visible
                         }
 
-                        // Inline TextField for quick rename
                         TextField {
                             id: titleEditField
                             text: selectedPlaylist ? selectedPlaylist.name : ""
@@ -362,7 +347,6 @@ Item {
                             Keys.onEscapePressed: visible = false
                         }
 
-                        // Edit Icon Button
                         Rectangle {
                             width: 28
                             height: 28
@@ -372,7 +356,7 @@ Item {
 
                             Text {
                                 anchors.centerIn: parent
-                                text: "\uE70F" // Edit Pencil
+                                text: ""
                                 font.family: "Segoe MDL2 Assets"
                                 font.pixelSize: 12
                                 color: "#89899f"
@@ -401,19 +385,150 @@ Item {
                 }
             }
 
-            // Playlist Track Table
+            // Play All + Shuffle buttons row
+            RowLayout {
+                Layout.fillWidth: true
+                spacing: 12
+                visible: selectedPlaylist && selectedPlaylist.tracks && selectedPlaylist.tracks.length > 0
+
+                Rectangle {
+                    width: 120
+                    height: 36
+                    color: playAllMouse.containsMouse ? "#ab7fe6" : "#bd93f9"
+                    radius: 18
+
+                    Behavior on color { ColorAnimation { duration: 150 } }
+
+                    RowLayout {
+                        anchors.centerIn: parent
+                        spacing: 6
+
+                        Text {
+                            text: ""
+                            font.family: "Segoe MDL2 Assets"
+                            font.pixelSize: 14
+                            color: "#18181e"
+                        }
+
+                        Text {
+                            text: "PLAY ALL"
+                            font.family: "Roboto"
+                            font.pixelSize: 12
+                            font.bold: true
+                            color: "#18181e"
+                        }
+                    }
+
+                    MouseArea {
+                        id: playAllMouse
+                        anchors.fill: parent
+                        hoverEnabled: true
+                        cursorShape: Qt.PointingHandCursor
+                        onClicked: {
+                            if (selectedPlaylist && selectedPlaylist.tracks && selectedPlaylist.tracks.length > 0) {
+                                audioPlayer.playPlaylist(selectedPlaylist.tracks, false)
+                            }
+                        }
+                    }
+                }
+
+                Rectangle {
+                    width: 120
+                    height: 36
+                    color: shuffleAllMouse.containsMouse ? "#ab7fe6" : "#2a2a35"
+                    border.color: "#bd93f9"
+                    border.width: 1
+                    radius: 18
+
+                    Behavior on color { ColorAnimation { duration: 150 } }
+
+                    RowLayout {
+                        anchors.centerIn: parent
+                        spacing: 6
+
+                        Text {
+                            text: ""
+                            font.family: "Segoe MDL2 Assets"
+                            font.pixelSize: 14
+                            color: "#bd93f9"
+                        }
+
+                        Text {
+                            text: "SHUFFLE"
+                            font.family: "Roboto"
+                            font.pixelSize: 12
+                            font.bold: true
+                            color: "#bd93f9"
+                        }
+                    }
+
+                    MouseArea {
+                        id: shuffleAllMouse
+                        anchors.fill: parent
+                        hoverEnabled: true
+                        cursorShape: Qt.PointingHandCursor
+                        onClicked: {
+                            if (selectedPlaylist && selectedPlaylist.tracks && selectedPlaylist.tracks.length > 0) {
+                                audioPlayer.playPlaylist(selectedPlaylist.tracks, true)
+                            }
+                        }
+                    }
+                }
+
+                Item { Layout.fillWidth: true }
+
+                // Sort dropdown
+                Rectangle {
+                    width: 140
+                    height: 32
+                    color: sortMouse.containsMouse ? "#2a2a35" : "#1e1e28"
+                    border.color: "#3f3f52"
+                    border.width: 1
+                    radius: 16
+
+                    RowLayout {
+                        anchors.fill: parent
+                        anchors.leftMargin: 12
+                        anchors.rightMargin: 12
+                        spacing: 6
+
+                        Text {
+                            text: ""
+                            font.family: "Segoe MDL2 Assets"
+                            font.pixelSize: 12
+                            color: "#89899f"
+                        }
+
+                        Text {
+                            text: localLibrary.sortMode === 0 ? "Custom" : (localLibrary.sortMode === 1 ? "Name" : "Album")
+                            color: "#e2e2e2"
+                            font.family: "Roboto"
+                            font.pixelSize: 12
+                            Layout.fillWidth: true
+                        }
+                    }
+
+                    MouseArea {
+                        id: sortMouse
+                        anchors.fill: parent
+                        hoverEnabled: true
+                        cursorShape: Qt.PointingHandCursor
+                        onClicked: sortMenu.visible = !sortMenu.visible
+                    }
+                }
+            }
+
             Item {
                 Layout.fillWidth: true
                 Layout.fillHeight: true
 
-                // Empty Track List State
                 ColumnLayout {
                     anchors.centerIn: parent
                     spacing: 12
                     visible: !selectedPlaylist || !selectedPlaylist.tracks || selectedPlaylist.tracks.length === 0
 
                     Text {
-                        text: "\uE90B" // List icon
+                        text: ""
                         font.family: "Segoe MDL2 Assets"
                         font.pixelSize: 36
                         color: "#4e4e5a"
@@ -441,13 +556,11 @@ Item {
                     }
                 }
 
-                // Table Layout
                 ColumnLayout {
                     anchors.fill: parent
                     visible: selectedPlaylist && selectedPlaylist.tracks && selectedPlaylist.tracks.length > 0
                     spacing: 10
 
-                    // Table Header Row
                     Rectangle {
                         Layout.fillWidth: true
                         height: 30
@@ -503,7 +616,7 @@ Item {
                             }
 
                             Text {
-                                text: "\uE916" // Clock icon
+                                text: ""
                                 font.family: "Segoe MDL2 Assets"
                                 font.pixelSize: 11
                                 color: "#89899f"
@@ -516,7 +629,6 @@ Item {
                         }
                     }
 
-                    // Track ListView
                     ListView {
                         id: trackList
                         Layout.fillWidth: true
@@ -528,260 +640,251 @@ Item {
                             policy: ScrollBar.AsNeeded
                         }
 
-                            delegate: Rectangle {
-                                id: trackRowItem
-                                width: trackList.width
-                                height: 56
-                                property bool isContextMenuOpen: customTrackContextMenu.visible && customTrackContextMenu.trackData !== null && customTrackContextMenu.trackData.filePath === modelData.filePath
-                                property bool isHovered: rowMouse.containsMouse || menuMouse.containsMouse || isContextMenuOpen
-                                property var trackModelData: modelData
-                                color: isHovered ? "#1e1e28" : "transparent"
-                                radius: 4
+                        delegate: Rectangle {
+                            id: trackRowItem
+                            width: trackList.width
+                            height: 56
+                            property bool isContextMenuOpen: customTrackContextMenu.visible && customTrackContextMenu.trackData !== null && customTrackContextMenu.trackData.filePath === modelData.filePath
+                            property bool isHovered: rowMouse.containsMouse || menuMouse.containsMouse || isContextMenuOpen
+                            property var trackModelData: modelData
+                            color: isHovered ? "#1e1e28" : "transparent"
+                            radius: 4
 
-                                Behavior on color { ColorAnimation { duration: 100 } }
+                            Behavior on color { ColorAnimation { duration: 100 } }
 
-                                MouseArea {
-                                    id: rowMouse
-                                    anchors.fill: parent
-                                    hoverEnabled: true
-                                    cursorShape: Qt.PointingHandCursor
-                                    acceptedButtons: Qt.LeftButton | Qt.RightButton
-                                    onDoubleClicked: {
-                                        if (mouse.button === Qt.LeftButton) {
-                                            audioPlayer.playTrackFromPlaylist(modelData, selectedPlaylist.tracks)
-                                        }
+                            MouseArea {
+                                id: rowMouse
+                                anchors.fill: parent
+                                hoverEnabled: true
+                                cursorShape: Qt.PointingHandCursor
+                                acceptedButtons: Qt.LeftButton | Qt.RightButton
+                                onDoubleClicked: {
+                                    if (mouse.button === Qt.LeftButton) {
+                                        audioPlayer.playTrackFromPlaylist(modelData, selectedPlaylist.tracks)
                                     }
-                                    onClicked: {
-                                        if (mouse.button === Qt.RightButton) {
-                                            var globalCoords = rowMouse.mapToItem(libraryView, mouse.x, mouse.y)
-                                            var targetX = globalCoords.x
-                                            var targetY = globalCoords.y
-                                            
-                                            // Keep menu within screen boundaries
-                                            if (targetX + customTrackContextMenu.width > libraryView.width) {
-                                                targetX = libraryView.width - customTrackContextMenu.width - 10
-                                            }
-                                            if (targetX < 10) {
-                                                targetX = 10
-                                            }
-                                            if (targetY + customTrackContextMenu.height > libraryView.height) {
-                                                targetY = libraryView.height - customTrackContextMenu.height - 10
-                                            }
-                                            if (targetY < 10) {
-                                                targetY = 10
-                                            }
-                                            
-                                            customTrackContextMenu.trackData = modelData
-                                            customTrackContextMenu.x = targetX
-                                            customTrackContextMenu.y = targetY
-                                            customTrackContextMenu.visible = true
+                                }
+                                onClicked: {
+                                    if (mouse.button === Qt.RightButton) {
+                                        var globalCoords = rowMouse.mapToItem(libraryView, mouse.x, mouse.y)
+                                        var targetX = globalCoords.x
+                                        var targetY = globalCoords.y
+
+                                        if (targetX + customTrackContextMenu.width > libraryView.width) {
+                                            targetX = libraryView.width - customTrackContextMenu.width - 10
                                         }
+                                        if (targetX < 10) {
+                                            targetX = 10
+                                        }
+                                        if (targetY + customTrackContextMenu.height > libraryView.height) {
+                                            targetY = libraryView.height - customTrackContextMenu.height - 10
+                                        }
+                                        if (targetY < 10) {
+                                            targetY = 10
+                                        }
+
+                                        customTrackContextMenu.trackData = modelData
+                                        customTrackContextMenu.x = targetX
+                                        customTrackContextMenu.y = targetY
+                                        customTrackContextMenu.visible = true
+                                    }
+                                }
+                            }
+
+                            RowLayout {
+                                anchors.fill: parent
+                                anchors.leftMargin: 15
+                                anchors.rightMargin: 15
+                                spacing: 10
+
+                                Item {
+                                    Layout.minimumWidth: 30
+                                    Layout.maximumWidth: 30
+                                    Layout.preferredWidth: 30
+                                    Layout.fillHeight: true
+
+                                    Text {
+                                        text: (index + 1).toString()
+                                        color: "#89899f"
+                                        font.family: "Roboto"
+                                        font.pixelSize: 13
+                                        anchors.centerIn: parent
+                                        visible: !isHovered && audioPlayer.currentTrack.filePath !== modelData.filePath
+                                    }
+
+                                    Text {
+                                        text: audioPlayer.currentTrack.filePath === modelData.filePath && audioPlayer.isPlaying ? "" : ""
+                                        font.family: "Segoe MDL2 Assets"
+                                        font.pixelSize: 10
+                                        color: "#bd93f9"
+                                        anchors.centerIn: parent
+                                        visible: isHovered || audioPlayer.currentTrack.filePath === modelData.filePath
                                     }
                                 }
 
                                 RowLayout {
-                                    anchors.fill: parent
-                                    anchors.leftMargin: 15
-                                    anchors.rightMargin: 15
+                                    Layout.fillWidth: true
+                                    Layout.fillHeight: true
                                     spacing: 10
 
-                                    // Column 1: Index / Play Icon (Width: 30)
-                                    Item {
-                                        Layout.minimumWidth: 30
-                                        Layout.maximumWidth: 30
-                                        Layout.preferredWidth: 30
-                                        Layout.fillHeight: true
+                                    Rectangle {
+                                        width: 40
+                                        height: 40
+                                        color: "#2a2a35"
+                                        radius: 4
+                                        clip: true
+                                        Layout.alignment: Qt.AlignVCenter
 
-                                        Text {
-                                            text: (index + 1).toString()
-                                            color: "#89899f"
-                                            font.family: "Roboto"
-                                            font.pixelSize: 13
-                                            anchors.centerIn: parent
-                                            visible: !isHovered && audioPlayer.currentTrack.filePath !== modelData.filePath
+                                        Image {
+                                            anchors.fill: parent
+                                            source: modelData.hasCover ? "image://covers/" + encodeURIComponent(modelData.filePath) + "?t=" + modelData.coverUpdated : ""
+                                            fillMode: Image.PreserveAspectCrop
+                                            visible: modelData.hasCover
+                                            cache: false
                                         }
-
-                                        Text {
-                                            text: audioPlayer.currentTrack.filePath === modelData.filePath && audioPlayer.isPlaying ? "\uE769" : "\uE768" // Pause / Play icon
-                                            font.family: "Segoe MDL2 Assets"
-                                            font.pixelSize: 10
-                                            color: "#bd93f9"
-                                            anchors.centerIn: parent
-                                            visible: isHovered || audioPlayer.currentTrack.filePath === modelData.filePath
-                                        }
-                                    }
-
-                                    // Column 2 & 3: Cover Image + Title & Artist details (Layout.fillWidth: true)
-                                    RowLayout {
-                                        Layout.fillWidth: true
-                                        Layout.fillHeight: true
-                                        spacing: 10
 
                                         Rectangle {
-                                            width: 40
-                                            height: 40
-                                            color: "#2a2a35"
-                                            radius: 4
-                                            clip: true
-                                            Layout.alignment: Qt.AlignVCenter
-
-                                            Image {
-                                                anchors.fill: parent
-                                                source: modelData.hasCover ? "image://covers/" + encodeURIComponent(modelData.filePath) + "?t=" + modelData.coverUpdated : ""
-                                                fillMode: Image.PreserveAspectCrop
-                                                visible: modelData.hasCover
-                                                cache: false
-                                            }
-
-                                            Rectangle {
-                                                anchors.fill: parent
-                                                color: "#23232f"
-                                                visible: !modelData.hasCover
-
-                                                Text {
-                                                    anchors.centerIn: parent
-                                                    text: "\uE8D6"
-                                                    font.family: "Segoe MDL2 Assets"
-                                                    font.pixelSize: 14
-                                                    color: "#4e4e5a"
-                                                }
-                                            }
-                                        }
-
-                                        ColumnLayout {
-                                            spacing: 2
-                                            Layout.fillWidth: true
-                                            Layout.alignment: Qt.AlignVCenter
-
-                                            Text {
-                                                text: modelData.title
-                                                color: audioPlayer.currentTrack.filePath === modelData.filePath ? "#bd93f9" : "#e2e2e2"
-                                                font.family: "Roboto"
-                                                font.pixelSize: 14
-                                                font.bold: true
-                                                elide: Text.ElideRight
-                                                Layout.fillWidth: true
-                                            }
-
-                                            Text {
-                                                text: modelData.artist
-                                                color: "#89899f"
-                                                font.family: "Roboto"
-                                                font.pixelSize: 12
-                                                elide: Text.ElideRight
-                                                Layout.fillWidth: true
-                                            }
-                                        }
-                                    }
-
-                                    // Column 4: Album Title (Width: 200)
-                                    Text {
-                                        text: modelData.album
-                                        color: "#89899f"
-                                        font.family: "Roboto"
-                                        font.pixelSize: 13
-                                        Layout.minimumWidth: 200
-                                        Layout.maximumWidth: 200
-                                        Layout.preferredWidth: 200
-                                        Layout.alignment: Qt.AlignVCenter
-                                        elide: Text.ElideRight
-                                        verticalAlignment: Text.AlignVCenter
-                                    }
-
-                                    // Column 5: Duration / Options (Width: 90)
-                                    RowLayout {
-                                        Layout.minimumWidth: 90
-                                        Layout.maximumWidth: 90
-                                        Layout.preferredWidth: 90
-                                        Layout.fillHeight: true
-                                        spacing: 10
-                                        Layout.alignment: Qt.AlignVCenter
-
-                                        Text {
-                                            text: libraryView.formatDuration(modelData.duration)
-                                            color: "#89899f"
-                                            font.family: "Roboto"
-                                            font.pixelSize: 13
-                                            Layout.fillWidth: true
-                                            horizontalAlignment: Text.AlignRight
-                                            verticalAlignment: Text.AlignVCenter
-                                        }
-
-                                        Item {
-                                            id: menuButtonContainer
-                                            Layout.preferredWidth: 24
-                                            Layout.preferredHeight: 24
-                                            Layout.alignment: Qt.AlignVCenter
-                                            opacity: isHovered ? 1.0 : 0.0
-                                            Behavior on opacity { NumberAnimation { duration: 100 } }
-
-                                            Rectangle {
-                                                anchors.fill: parent
-                                                radius: 12
-                                                color: menuMouse.containsMouse ? "#2a2a35" : "transparent"
-                                                Behavior on color { ColorAnimation { duration: 100 } }
-                                            }
+                                            anchors.fill: parent
+                                            color: "#23232f"
+                                            visible: !modelData.hasCover
 
                                             Text {
                                                 anchors.centerIn: parent
-                                                text: "\uE712" // Triple dots
+                                                text: ""
                                                 font.family: "Segoe MDL2 Assets"
-                                                font.pixelSize: 11
-                                                color: menuMouse.containsMouse ? "#bd93f9" : "#89899f"
+                                                font.pixelSize: 14
+                                                color: "#4e4e5a"
                                             }
+                                        }
+                                    }
 
-                                            MouseArea {
-                                                id: menuMouse
-                                                anchors.fill: parent
-                                                hoverEnabled: true
-                                                acceptedButtons: Qt.LeftButton | Qt.RightButton
-                                                cursorShape: Qt.PointingHandCursor
-                                                onClicked: {
-                                                    var globalCoords = menuMouse.mapToItem(libraryView, mouse.x, mouse.y)
-                                                    var targetX = globalCoords.x
-                                                    var targetY = globalCoords.y
-                                                    
-                                                    // Offset menu slightly to align beautifully with the button
-                                                    targetX = targetX - customTrackContextMenu.width + menuButtonContainer.width
-                                                    targetY = targetY + menuButtonContainer.height + 4
-                                                    
-                                                    // Keep menu within screen boundaries
-                                                    if (targetX + customTrackContextMenu.width > libraryView.width) {
-                                                        targetX = libraryView.width - customTrackContextMenu.width - 10
-                                                    }
-                                                    if (targetX < 10) {
-                                                        targetX = 10
-                                                    }
-                                                    if (targetY + customTrackContextMenu.height > libraryView.height) {
-                                                        targetY = libraryView.height - customTrackContextMenu.height - 10
-                                                    }
-                                                    if (targetY < 10) {
-                                                        targetY = 10
-                                                    }
-                                                    
-                                                    customTrackContextMenu.trackData = modelData
-                                                    customTrackContextMenu.x = targetX
-                                                    customTrackContextMenu.y = targetY
-                                                    customTrackContextMenu.visible = true
+                                    ColumnLayout {
+                                        spacing: 2
+                                        Layout.fillWidth: true
+                                        Layout.alignment: Qt.AlignVCenter
+
+                                        Text {
+                                            text: modelData.title
+                                            color: audioPlayer.currentTrack.filePath === modelData.filePath ? "#bd93f9" : "#e2e2e2"
+                                            font.family: "Roboto"
+                                            font.pixelSize: 14
+                                            font.bold: true
+                                            elide: Text.ElideRight
+                                            Layout.fillWidth: true
+                                        }
+
+                                        Text {
+                                            text: modelData.artist
+                                            color: "#89899f"
+                                            font.family: "Roboto"
+                                            font.pixelSize: 12
+                                            elide: Text.ElideRight
+                                            Layout.fillWidth: true
+                                        }
+                                    }
+                                }
+
+                                Text {
+                                    text: modelData.album
+                                    color: "#89899f"
+                                    font.family: "Roboto"
+                                    font.pixelSize: 13
+                                    Layout.minimumWidth: 200
+                                    Layout.maximumWidth: 200
+                                    Layout.preferredWidth: 200
+                                    Layout.alignment: Qt.AlignVCenter
+                                    elide: Text.ElideRight
+                                    verticalAlignment: Text.AlignVCenter
+                                }
+
+                                RowLayout {
+                                    Layout.minimumWidth: 90
+                                    Layout.maximumWidth: 90
+                                    Layout.preferredWidth: 90
+                                    Layout.fillHeight: true
+                                    spacing: 10
+                                    Layout.alignment: Qt.AlignVCenter
+
+                                    Text {
+                                        text: libraryView.formatDuration(modelData.duration)
+                                        color: "#89899f"
+                                        font.family: "Roboto"
+                                        font.pixelSize: 13
+                                        Layout.fillWidth: true
+                                        horizontalAlignment: Text.AlignRight
+                                        verticalAlignment: Text.AlignVCenter
+                                    }
+
+                                    Item {
+                                        id: menuButtonContainer
+                                        Layout.preferredWidth: 24
+                                        Layout.preferredHeight: 24
+                                        Layout.alignment: Qt.AlignVCenter
+                                        opacity: isHovered ? 1.0 : 0.0
+                                        Behavior on opacity { NumberAnimation { duration: 100 } }
+
+                                        Rectangle {
+                                            anchors.fill: parent
+                                            radius: 12
+                                            color: menuMouse.containsMouse ? "#2a2a35" : "transparent"
+                                            Behavior on color { ColorAnimation { duration: 100 } }
+                                        }
+
+                                        Text {
+                                            anchors.centerIn: parent
+                                            text: ""
+                                            font.family: "Segoe MDL2 Assets"
+                                            font.pixelSize: 11
+                                            color: menuMouse.containsMouse ? "#bd93f9" : "#89899f"
+                                        }
+
+                                        MouseArea {
+                                            id: menuMouse
+                                            anchors.fill: parent
+                                            hoverEnabled: true
+                                            acceptedButtons: Qt.LeftButton | Qt.RightButton
+                                            cursorShape: Qt.PointingHandCursor
+                                            onClicked: {
+                                                var globalCoords = menuMouse.mapToItem(libraryView, mouse.x, mouse.y)
+                                                var targetX = globalCoords.x
+                                                var targetY = globalCoords.y
+
+                                                targetX = targetX - customTrackContextMenu.width + menuButtonContainer.width
+                                                targetY = targetY + menuButtonContainer.height + 4
+
+                                                if (targetX + customTrackContextMenu.width > libraryView.width) {
+                                                    targetX = libraryView.width - customTrackContextMenu.width - 10
                                                 }
+                                                if (targetX < 10) {
+                                                    targetX = 10
+                                                }
+                                                if (targetY + customTrackContextMenu.height > libraryView.height) {
+                                                    targetY = libraryView.height - customTrackContextMenu.height - 10
+                                                }
+                                                if (targetY < 10) {
+                                                    targetY = 10
+                                                }
+
+                                                customTrackContextMenu.trackData = modelData
+                                                customTrackContextMenu.x = targetX
+                                                customTrackContextMenu.y = targetY
+                                                customTrackContextMenu.visible = true
                                             }
                                         }
                                     }
                                 }
                             }
                         }
+                    }
                 }
             }
         }
 
-        // ================= PLAYLIST GRID GRID LIST VIEW =================
         ColumnLayout {
             Layout.fillWidth: true
             Layout.fillHeight: true
             visible: selectedPlaylist === null
             spacing: 20
 
-            // Header Title
             RowLayout {
                 Layout.fillWidth: true
 
@@ -806,7 +909,6 @@ Item {
                 }
             }
 
-            // Playlist grid list
             ScrollView {
                 Layout.fillWidth: true
                 Layout.fillHeight: true
@@ -819,7 +921,6 @@ Item {
                     cellHeight: 250
                     model: localLibrary.playlists
 
-                    // First element is Default Playlist, then Custom Playlists, then Create Button
                     delegate: Item {
                         width: 180
                         height: 230
@@ -840,7 +941,6 @@ Item {
                                 anchors.margins: 12
                                 spacing: 10
 
-                                // Cover
                                 Rectangle {
                                     Layout.fillWidth: true
                                     Layout.preferredHeight: 156
@@ -862,14 +962,13 @@ Item {
 
                                         Text {
                                             anchors.centerIn: parent
-                                            text: modelData.isDefault ? "\uE8D6" : "\uE90B" // Default Note vs List icon
+                                            text: modelData.isDefault ? "" : ""
                                             font.family: "Segoe MDL2 Assets"
                                             font.pixelSize: 38
                                             color: "#4e4e5a"
                                         }
                                     }
 
-                                    // Play Overlay Button on hover
                                     Rectangle {
                                         anchors.fill: parent
                                         color: "#80000000"
@@ -887,7 +986,7 @@ Item {
                                             Text {
                                                 anchors.centerIn: parent
                                                 anchors.horizontalCenterOffset: 2
-                                                text: "\uE768"
+                                                text: ""
                                                 font.family: "Segoe MDL2 Assets"
                                                 font.pixelSize: 16
                                                 color: "#18181e"
@@ -898,7 +997,7 @@ Item {
                                                 cursorShape: Qt.PointingHandCursor
                                                 onClicked: {
                                                     if (modelData.tracks && modelData.tracks.length > 0) {
-                                                        audioPlayer.playTrackFromPlaylist(modelData.tracks[0], modelData.tracks)
+                                                        audioPlayer.playPlaylist(modelData.tracks, false)
                                                     }
                                                 }
                                             }
@@ -906,7 +1005,6 @@ Item {
                                     }
                                 }
 
-                                // Info
                                 ColumnLayout {
                                     Layout.fillWidth: true
                                     spacing: 2
@@ -944,11 +1042,10 @@ Item {
                         }
                     }
 
-                    // Create Playlist Button Card at the end
                     footer: Item {
                         width: 180
                         height: 230
-                        
+
                         Rectangle {
                             id: createPlCard
                             anchors.fill: parent
@@ -972,7 +1069,7 @@ Item {
 
                                     Text {
                                         anchors.centerIn: parent
-                                        text: "\uE710" // Plus
+                                        text: ""
                                         font.family: "Segoe MDL2 Assets"
                                         font.pixelSize: 16
                                         color: createPlMouse.containsMouse ? "#18181e" : "#89899f"
@@ -1002,30 +1099,31 @@ Item {
             }
         }
     }
-    // ================= DISMISS OVERLAY FOR CUSTOM MENU =================
+
     MouseArea {
         id: customMenuDismissOverlay
         anchors.fill: parent
-        enabled: customTrackContextMenu.visible
-        visible: customTrackContextMenu.visible
-        z: 999 // Render right below the custom menu but on top of everything else
+        enabled: customTrackContextMenu.visible || sortMenu.visible || renameDialog.visible
+        visible: customTrackContextMenu.visible || sortMenu.visible || renameDialog.visible
+        z: 999
         acceptedButtons: Qt.LeftButton | Qt.RightButton | Qt.MiddleButton
         onPressed: {
             customTrackContextMenu.visible = false
+            sortMenu.visible = false
+            renameDialog.visible = false
         }
     }
 
-    // ================= CUSTOM DYNAMIC CONTEXT MENU =================
     Rectangle {
         id: customTrackContextMenu
         width: 190
-        height: visible ? (menuItemRemove.visible ? 102 : 70) : 0
+        height: visible ? (menuItemRemove.visible ? 136 : 102) : 0
         color: "#1e1e28"
         border.color: "#3f3f52"
         border.width: 1
         radius: 6
         visible: false
-        z: 1000 // Renders on top of everything inside LibraryView
+        z: 1000
 
         property var trackData: null
 
@@ -1036,7 +1134,6 @@ Item {
             anchors.margins: 4
             spacing: 2
 
-            // Item 1: Add to Queue
             Rectangle {
                 id: menuItemQueue
                 Layout.fillWidth: true
@@ -1053,7 +1150,7 @@ Item {
                     spacing: 10
 
                     Text {
-                        text: "\uE109" // Plus sign / add icon
+                        text: ""
                         font.family: "Segoe MDL2 Assets"
                         font.pixelSize: 11
                         color: menuItemQueue.containsMouse ? "#bd93f9" : "#e2e2e2"
@@ -1082,7 +1179,6 @@ Item {
                 }
             }
 
-            // Item 2: Add to Playlist
             Rectangle {
                 id: menuItemPlaylist
                 Layout.fillWidth: true
@@ -1099,7 +1195,7 @@ Item {
                     spacing: 10
 
                     Text {
-                        text: "\uE8F4" // Library / Playlist icon
+                        text: ""
                         font.family: "Segoe MDL2 Assets"
                         font.pixelSize: 11
                         color: menuItemPlaylist.containsMouse ? "#bd93f9" : "#e2e2e2"
@@ -1129,7 +1225,52 @@ Item {
                 }
             }
 
-            // Item 3: Remove from Playlist (conditional)
+            Rectangle {
+                id: menuItemRename
+                Layout.fillWidth: true
+                height: 30
+                color: renameMouse.containsMouse ? "#2a2a35" : "transparent"
+                radius: 4
+
+                property bool containsMouse: renameMouse.containsMouse
+
+                RowLayout {
+                    anchors.fill: parent
+                    anchors.leftMargin: 12
+                    anchors.rightMargin: 12
+                    spacing: 10
+
+                    Text {
+                        text: ""
+                        font.family: "Segoe MDL2 Assets"
+                        font.pixelSize: 11
+                        color: menuItemRename.containsMouse ? "#bd93f9" : "#e2e2e2"
+                    }
+
+                    Text {
+                        text: "Rename Song"
+                        font.family: "Roboto"
+                        font.pixelSize: 13
+                        color: menuItemRename.containsMouse ? "#bd93f9" : "#e2e2e2"
+                        Layout.fillWidth: true
+                    }
+                }
+
+                MouseArea {
+                    id: renameMouse
+                    anchors.fill: parent
+                    hoverEnabled: true
+                    cursorShape: Qt.PointingHandCursor
+                    onClicked: {
+                        if (customTrackContextMenu.trackData) {
+                            renameDialog.trackData = customTrackContextMenu.trackData
+                            renameDialog.visible = true
+                        }
+                        customTrackContextMenu.visible = false
+                    }
+                }
+            }
+
             Rectangle {
                 id: menuItemRemove
                 Layout.fillWidth: true
@@ -1147,7 +1288,7 @@ Item {
                     spacing: 10
 
                     Text {
-                        text: "\uE74D" // Trash bin icon
+                        text: ""
                         font.family: "Segoe MDL2 Assets"
                         font.pixelSize: 11
                         color: "#ff5555"
@@ -1179,13 +1320,12 @@ Item {
         }
     }
 
-    // ================= CUSTOM ADD TO PLAYLIST DIALOG =================
     Rectangle {
         id: addToPlaylistDialog
         anchors.fill: parent
-        color: "#d0000000" // transparent black backdrop
+        color: "#d0000000"
         visible: false
-        z: 2000 // On top of everything
+        z: 2000
 
         property var trackData: null
 
@@ -1203,7 +1343,7 @@ Item {
             border.width: 1
             anchors.centerIn: parent
 
-            MouseArea { anchors.fill: parent } // absorb clicks
+            MouseArea { anchors.fill: parent }
 
             ColumnLayout {
                 anchors.fill: parent
@@ -1218,7 +1358,7 @@ Item {
                     font.bold: true
                     font.letterSpacing: 1.5
                 }
-                
+
                 Text {
                     text: addToPlaylistDialog.trackData ? addToPlaylistDialog.trackData.title : ""
                     color: "#e2e2e2"
@@ -1246,7 +1386,7 @@ Item {
                                 color: playlistItemMouse.containsMouse ? "#2a2a35" : "transparent"
                                 radius: 6
                                 visible: modelData.id !== "default"
-                                
+
                                 RowLayout {
                                     anchors.fill: parent
                                     anchors.leftMargin: 12
@@ -1254,7 +1394,7 @@ Item {
                                     spacing: 12
 
                                     Text {
-                                        text: "\uE8F4" // Playlist icon
+                                        text: ""
                                         font.family: "Segoe MDL2 Assets"
                                         font.pixelSize: 12
                                         color: playlistItemMouse.containsMouse ? "#bd93f9" : "#89899f"
@@ -1291,7 +1431,6 @@ Item {
                     Layout.alignment: Qt.AlignRight
                     spacing: 12
 
-                    // Close Button
                     Rectangle {
                         width: 80
                         height: 32
@@ -1320,8 +1459,6 @@ Item {
         }
     }
 
-    // ================= DIALOGS =================
-    // Create Playlist Dialog
     Rectangle {
         id: createPlaylistDialog
         anchors.fill: parent
@@ -1381,7 +1518,6 @@ Item {
                     Layout.alignment: Qt.AlignRight
                     spacing: 12
 
-                    // Cancel
                     Rectangle {
                         width: 80
                         height: 32
@@ -1406,7 +1542,6 @@ Item {
                         }
                     }
 
-                    // Create
                     Rectangle {
                         width: 80
                         height: 32
@@ -1431,7 +1566,283 @@ Item {
                                 if (createNameField.text.trim() !== "") {
                                     localLibrary.createPlaylist(createNameField.text.trim())
                                     createPlaylistDialog.visible = false
-                                    createNameField.text = ""
+                                    createPlaylistDialog.text = ""
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    // Sort Menu
+    Rectangle {
+        id: sortMenu
+        width: 160
+        height: visible ? 96 : 0
+        color: "#1e1e28"
+        border.color: "#3f3f52"
+        border.width: 1
+        radius: 6
+        visible: false
+        z: 1001
+        anchors.right: parent.right
+        anchors.top: parent.top
+        anchors.topMargin: 200
+        anchors.rightMargin: 30
+
+        Behavior on height { NumberAnimation { duration: 120; easing.type: Easing.OutCubic } }
+
+        ColumnLayout {
+            anchors.fill: parent
+            anchors.margins: 4
+            spacing: 2
+
+            Rectangle {
+                Layout.fillWidth: true
+                height: 28
+                color: sortCustomMouse.containsMouse ? "#2a2a35" : "transparent"
+                radius: 4
+
+                RowLayout {
+                    anchors.fill: parent
+                    anchors.leftMargin: 12
+                    anchors.rightMargin: 12
+                    spacing: 10
+
+                    Text {
+                        text: ""
+                        font.family: "Segoe MDL2 Assets"
+                        font.pixelSize: 11
+                        color: localLibrary.sortMode === 0 ? "#bd93f9" : "#e2e2e2"
+                    }
+
+                    Text {
+                        text: "Custom (Date Added)"
+                        font.family: "Roboto"
+                        font.pixelSize: 12
+                        color: localLibrary.sortMode === 0 ? "#bd93f9" : "#e2e2e2"
+                        Layout.fillWidth: true
+                    }
+                }
+
+                MouseArea {
+                    id: sortCustomMouse
+                    anchors.fill: parent
+                    hoverEnabled: true
+                    cursorShape: Qt.PointingHandCursor
+                    onClicked: {
+                        localLibrary.setSortMode(0)
+                        sortMenu.visible = false
+                    }
+                }
+            }
+
+            Rectangle {
+                Layout.fillWidth: true
+                height: 28
+                color: sortNameMouse.containsMouse ? "#2a2a35" : "transparent"
+                radius: 4
+
+                RowLayout {
+                    anchors.fill: parent
+                    anchors.leftMargin: 12
+                    anchors.rightMargin: 12
+                    spacing: 10
+
+                    Text {
+                        text: ""
+                        font.family: "Segoe MDL2 Assets"
+                        font.pixelSize: 11
+                        color: localLibrary.sortMode === 1 ? "#bd93f9" : "#e2e2e2"
+                    }
+
+                    Text {
+                        text: "Name (A-Z)"
+                        font.family: "Roboto"
+                        font.pixelSize: 12
+                        color: localLibrary.sortMode === 1 ? "#bd93f9" : "#e2e2e2"
+                        Layout.fillWidth: true
+                    }
+                }
+
+                MouseArea {
+                    id: sortNameMouse
+                    anchors.fill: parent
+                    hoverEnabled: true
+                    cursorShape: Qt.PointingHandCursor
+                    onClicked: {
+                        localLibrary.setSortMode(1)
+                        sortMenu.visible = false
+                    }
+                }
+            }
+
+            Rectangle {
+                Layout.fillWidth: true
+                height: 28
+                color: sortAlbumMouse.containsMouse ? "#2a2a35" : "transparent"
+                radius: 4
+
+                RowLayout {
+                    anchors.fill: parent
+                    anchors.leftMargin: 12
+                    anchors.rightMargin: 12
+                    spacing: 10
+
+                    Text {
+                        text: ""
+                        font.family: "Segoe MDL2 Assets"
+                        font.pixelSize: 11
+                        color: localLibrary.sortMode === 2 ? "#bd93f9" : "#e2e2e2"
+                    }
+
+                    Text {
+                        text: "Album"
+                        font.family: "Roboto"
+                        font.pixelSize: 12
+                        color: localLibrary.sortMode === 2 ? "#bd93f9" : "#e2e2e2"
+                        Layout.fillWidth: true
+                    }
+                }
+
+                MouseArea {
+                    id: sortAlbumMouse
+                    anchors.fill: parent
+                    hoverEnabled: true
+                    cursorShape: Qt.PointingHandCursor
+                    onClicked: {
+                        localLibrary.setSortMode(2)
+                        sortMenu.visible = false
+                    }
+                }
+            }
+        }
+    }
+
+    // Rename Song Dialog
+    Rectangle {
+        id: renameDialog
+        anchors.fill: parent
+        color: "#d0000000"
+        visible: false
+        z: 2000
+
+        property var trackData: null
+
+        MouseArea {
+            anchors.fill: parent
+            onClicked: renameDialog.visible = false
+        }
+
+        Rectangle {
+            width: 380
+            height: 200
+            color: "#1e1e28"
+            radius: 12
+            border.color: "#3f3f52"
+            border.width: 1
+            anchors.centerIn: parent
+
+            MouseArea { anchors.fill: parent }
+
+            ColumnLayout {
+                anchors.fill: parent
+                anchors.margins: 20
+                spacing: 15
+
+                Text {
+                    text: "RENAME SONG"
+                    color: "#bd93f9"
+                    font.family: "Roboto"
+                    font.pixelSize: 12
+                    font.bold: true
+                    font.letterSpacing: 1.5
+                }
+
+                Text {
+                    text: renameDialog.trackData ? renameDialog.trackData.title : ""
+                    color: "#89899f"
+                    font.family: "Roboto"
+                    font.pixelSize: 13
+                    elide: Text.ElideRight
+                    Layout.fillWidth: true
+                }
+
+                TextField {
+                    id: renameField
+                    Layout.fillWidth: true
+                    color: "#e2e2e2"
+                    placeholderText: "New Song Title"
+                    background: Rectangle {
+                        color: "#18181e"
+                        border.color: renameField.activeFocus ? "#bd93f9" : "#2a2a35"
+                        border.width: 1
+                        radius: 6
+                    }
+                    Keys.onReturnPressed: {
+                        if (renameField.text.trim() !== "" && renameDialog.trackData) {
+                            localLibrary.renameTrack(renameDialog.trackData.filePath, renameField.text.trim())
+                            renameDialog.visible = false
+                            renameField.text = ""
+                        }
+                    }
+                }
+
+                RowLayout {
+                    Layout.alignment: Qt.AlignRight
+                    spacing: 12
+
+                    Rectangle {
+                        width: 80
+                        height: 32
+                        color: "transparent"
+                        border.color: "#3f3f52"
+                        border.width: 1
+                        radius: 16
+
+                        Text {
+                            anchors.centerIn: parent
+                            text: "Cancel"
+                            color: "#89899f"
+                            font.family: "Roboto"
+                            font.pixelSize: 12
+                            font.bold: true
+                        }
+
+                        MouseArea {
+                            anchors.fill: parent
+                            cursorShape: Qt.PointingHandCursor
+                            onClicked: renameDialog.visible = false
+                        }
+                    }
+
+                    Rectangle {
+                        width: 80
+                        height: 32
+                        color: renameBtnMouse.containsMouse ? "#ab7fe6" : "#bd93f9"
+                        radius: 16
+
+                        Text {
+                            anchors.centerIn: parent
+                            text: "Rename"
+                            color: "#18181e"
+                            font.family: "Roboto"
+                            font.pixelSize: 12
+                            font.bold: true
+                        }
+
+                        MouseArea {
+                            id: renameBtnMouse
+                            anchors.fill: parent
+                            hoverEnabled: true
+                            cursorShape: Qt.PointingHandCursor
+                            onClicked: {
+                                if (renameField.text.trim() !== "" && renameDialog.trackData) {
+                                    localLibrary.renameTrack(renameDialog.trackData.filePath, renameField.text.trim())
+                                    renameDialog.visible = false
+                                    renameField.text = ""
                                 }
                             }
                         }

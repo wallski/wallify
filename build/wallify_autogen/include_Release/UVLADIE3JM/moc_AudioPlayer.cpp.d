@@ -1,9 +1,11 @@
 C:/Users/elias/Desktop/GITHUB/wallify/build/wallify_autogen/include_Release/UVLADIE3JM/moc_AudioPlayer.cpp: C:/Users/elias/Desktop/GITHUB/wallify/src/AudioPlayer.h \
+  C:/Users/elias/Desktop/GITHUB/wallify/deps/6.8.2/msvc2022_64/include/QtCore/QDateTime \
   C:/Users/elias/Desktop/GITHUB/wallify/deps/6.8.2/msvc2022_64/include/QtCore/QDir \
   C:/Users/elias/Desktop/GITHUB/wallify/deps/6.8.2/msvc2022_64/include/QtCore/QFile \
   C:/Users/elias/Desktop/GITHUB/wallify/deps/6.8.2/msvc2022_64/include/QtCore/QList \
   C:/Users/elias/Desktop/GITHUB/wallify/deps/6.8.2/msvc2022_64/include/QtCore/QMap \
   C:/Users/elias/Desktop/GITHUB/wallify/deps/6.8.2/msvc2022_64/include/QtCore/QObject \
+  C:/Users/elias/Desktop/GITHUB/wallify/deps/6.8.2/msvc2022_64/include/QtCore/QRandomGenerator \
   C:/Users/elias/Desktop/GITHUB/wallify/deps/6.8.2/msvc2022_64/include/QtCore/QString \
   C:/Users/elias/Desktop/GITHUB/wallify/deps/6.8.2/msvc2022_64/include/QtCore/QVariant \
   C:/Users/elias/Desktop/GITHUB/wallify/deps/6.8.2/msvc2022_64/include/QtCore/QVariantList \
@@ -81,6 +83,7 @@ C:/Users/elias/Desktop/GITHUB/wallify/build/wallify_autogen/include_Release/UVLA
   C:/Users/elias/Desktop/GITHUB/wallify/deps/6.8.2/msvc2022_64/include/QtCore/qoverload.h \
   C:/Users/elias/Desktop/GITHUB/wallify/deps/6.8.2/msvc2022_64/include/QtCore/qpair.h \
   C:/Users/elias/Desktop/GITHUB/wallify/deps/6.8.2/msvc2022_64/include/QtCore/qprocessordetection.h \
+  C:/Users/elias/Desktop/GITHUB/wallify/deps/6.8.2/msvc2022_64/include/QtCore/qrandom.h \
   C:/Users/elias/Desktop/GITHUB/wallify/deps/6.8.2/msvc2022_64/include/QtCore/qrefcount.h \
   C:/Users/elias/Desktop/GITHUB/wallify/deps/6.8.2/msvc2022_64/include/QtCore/qscopedpointer.h \
   C:/Users/elias/Desktop/GITHUB/wallify/deps/6.8.2/msvc2022_64/include/QtCore/qscopeguard.h \

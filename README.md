@@ -1,5 +1,3 @@
-# Wallify
-
 Wallify is a native desktop music player built with Qt6 and C++. It focuses on speed, low resource usage, and a clean local-first experience for managing and playing your music library.
 
 ## Features
@@ -21,11 +19,24 @@ Wallify is a native desktop music player built with Qt6 and C++. It focuses on s
 - Add or remove tracks from playlists
 - Queue system with:
   - Shuffle
-  - Repeat modes
+  - Repeat modes (off, repeat all, repeat one)
+- "Play All" and "Shuffle" buttons on every playlist
 
-### Spotify Migration
-- Import playlists and tracks using `spotdl`
-- Download and migrate Spotify libraries into your local collection
+### Migration
+Import music from multiple platforms:
+- **Spotify** — playlists, albums, and tracks via `spotdl`
+- **YouTube** — videos and playlists via `yt-dlp`
+- **SoundCloud** — tracks and sets via `scdl`
+
+All downloaded songs are saved as MP3 with embedded metadata and cover art.
+
+### Library Tools
+- **Sort** songs by custom order (date added), name (A-Z), or album
+- **Rename** songs directly from the right-click context menu (updates ID3 tags)
+- Playlist cover image selection
+
+### Integrations
+- **Discord Rich Presence** — shows what you're listening to on your Discord profile with live timestamps
 
 ### User Interface
 - Native desktop application
@@ -45,6 +56,7 @@ Wallify is a native desktop music player built with Qt6 and C++. It focuses on s
   - Multimedia
 - **Build System:** CMake
 - **Metadata Parsing:** Custom ID3v2 parser
+- **Discord RPC:** Static-linked `discord-rpc` library
 
 Wallify does not rely on external tag parsing libraries.
 
@@ -61,7 +73,7 @@ Wallify does not rely on external tag parsing libraries.
 
 ---
 
-## Build Instructions
+## Setup
 
 ### Clone the Repository
 
@@ -72,22 +84,20 @@ cd wallify
 
 ### Install Dependencies
 
-Installs:
-- Qt 6.8.2
-- FFmpeg
-- spotdl
+Installs Qt 6.8.2, FFmpeg, and spotdl:
 
 ```powershell
-.\install_deps.ps1
+.\\install_deps.ps1
 ```
+---
 
-### Build the Project
+## Build Instructions
 
 ```powershell
 mkdir build
 cd build
 
-cmake .. -G "Visual Studio 18 2026" -A x64
+cmake .. -G "Visual Studio 17 2022" -A x64
 cmake --build . --config Release
 ```
 
@@ -95,13 +105,13 @@ cmake --build . --config Release
 
 ```powershell
 cd Release
-..\..\deps\6.8.2\msvc2022_64\bin\windeployqt.exe wallify.exe --qmldir ..\..\resources\qml
+..\\..\\deps\\6.8.2\\msvc2022_64\\bin\\windeployqt.exe wallify.exe --qmldir ..\\..\\resources\\qml
 ```
 
 ### Run
 
 ```powershell
-.\wallify.exe
+.\\wallify.exe
 ```
 
 The executable will be located at:
@@ -145,33 +155,16 @@ Select the directory containing your music files and Wallify will automatically:
 
 # Known Bugs
 
-- Downloaded songs lose the last character from the filename/title.
-- Migrating a playlist or album incorrectly adds every song from the default library into the newly created playlist.
+- Downloaded songs may lose the last character from the filename when using `spotdl` (upstream issue, not Wallify)
 
 ---
 
 # Planned Features
 
-## Migration
-- YouTube support
-- SoundCloud support
-- Rename the Spotify migration tab to `Migration`
-- Separate tabs for each migration service
-
-## Playback & Library
-- Rename songs from the right-click context menu
-- Sorting options:
-  - Name
-  - Album
-  - Custom order (date added)
-- "Play Playlist" button
-- Shuffle toggle for playlists
-
-## Integrations
-- Discord Rich Presence (RPC)
-
-## UI / Branding
-- Proper application icon and branding
+- WAV and OGG playback support (currently MP3 only)
+- Cross-platform Linux and macOS builds
+- Mini player mode
+- System tray integration
 
 ---
 

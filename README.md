@@ -89,19 +89,6 @@ Installs Qt 6.8.2, FFmpeg, and spotdl:
 ```powershell
 .\\install_deps.ps1
 ```
-
-### Add Discord RPC Library
-
-Download the [Discord RPC release](https://github.com/discord/discord-rpc/releases) and place the files:
-
-```text
-src/discord-rpc/include/discord_rpc.h
-src/discord-rpc/include/discord_register.h
-src/discord-rpc/lib/discord-rpc.lib
-```
-
-Use the `win64-static` build for static linking (no extra DLL required).
-
 ---
 
 ## Build Instructions

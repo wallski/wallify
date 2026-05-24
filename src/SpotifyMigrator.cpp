@@ -25,6 +25,14 @@ SpotifyMigrator::SpotifyMigrator(LocalLibrary* library, QObject* parent)
     m_statusText = "Ready";
 }
 
+SpotifyMigrator::~SpotifyMigrator()
+{
+    if (m_process && m_process->state() != QProcess::NotRunning) {
+        m_process->kill();
+        m_process->waitForFinished(1000);
+    }
+}
+
 QString SpotifyMigrator::statusText() const { return m_statusText; }
 bool SpotifyMigrator::isWorking() const { return m_isWorking; }
 int SpotifyMigrator::progress() const { return m_progress; }
@@ -73,7 +81,13 @@ void SpotifyMigrator::startMigration(const QString& url)
     clearLogs();
     m_currentUrl = url;
     m_detectedPlaylistName.clear();
-    m_filesBefore = scanFiles();
+    m_playlistFiles.clear();
+
+    // Normalize existing files list to avoid slash-mismatch
+    m_filesBefore.clear();
+    for (const QString& f : scanFiles()) {
+        m_filesBefore.append(QDir::cleanPath(f));
+    }
 
     setWorking(true);
     setProgress(0);
@@ -112,6 +126,12 @@ void SpotifyMigrator::prepareEnvironmentAndRun(const QString& url)
     setStatus("Migrating " + statusType + "...");
     m_state = Migrating;
     m_process->setWorkingDirectory(m_musicDir);
+
+    // Set environment variable to force Python to use UTF-8 console output
+    QProcessEnvironment env = QProcessEnvironment::systemEnvironment();
+    env.insert("PYTHONIOENCODING", "utf-8");
+    m_process->setProcessEnvironment(env);
+
     m_process->start(m_spotdlPath, QStringList() << url);
 }
 
@@ -155,11 +175,47 @@ void SpotifyMigrator::processOutput()
             setProgress(match.captured(1).toInt());
         }
 
-        if (text.contains("Downloaded")) {
-            QStringList lines = text.split('\n');
-            for (const QString& line : lines) {
-                if (line.contains("Downloaded")) {
-                    setStatus(line.trimmed());
+        QStringList lines = text.split('\n');
+        for (const QString& line : lines) {
+            QString trimmed = line.trimmed();
+            if (trimmed.isEmpty()) continue;
+
+            if (trimmed.contains("Downloaded")) {
+                setStatus(trimmed);
+                
+                // Extract track title/artist to build accurate playlist
+                // e.g. Downloaded "Artist - Title": https://...
+                QRegularExpression re("Downloaded\\s+\"([^\"]+)\"");
+                QRegularExpressionMatch match = re.match(trimmed);
+                if (match.hasMatch()) {
+                    QString trackName = match.captured(1).remove("\"").trimmed();
+                    QString safeTrack = trackName;
+                    QStringList invalidChars = {"<", ">", ":", "\"", "/", "\\", "|", "?", "*"};
+                    for (const QString &c : invalidChars) {
+                        safeTrack.replace(c, "");
+                    }
+                    QString expectedFile = QDir(m_musicDir).absoluteFilePath(safeTrack + ".mp3");
+                    expectedFile = QDir::cleanPath(expectedFile);
+                    if (!m_playlistFiles.contains(expectedFile)) {
+                        m_playlistFiles.append(expectedFile);
+                    }
+                }
+            } else if (trimmed.contains("Skipping", Qt::CaseInsensitive)) {
+                // e.g. Skipping Artist - Title (already downloaded)
+                QRegularExpression re("Skipping\\s+([^(\n]+?)\\s+\\(");
+                QRegularExpressionMatch match = re.match(trimmed);
+                if (match.hasMatch()) {
+                    QString trackName = match.captured(1).remove("\"").trimmed();
+                    QString safeTrack = trackName;
+                    QStringList invalidChars = {"<", ">", ":", "\"", "/", "\\", "|", "?", "*"};
+                    for (const QString &c : invalidChars) {
+                        safeTrack.replace(c, "");
+                    }
+                    QString expectedFile = QDir(m_musicDir).absoluteFilePath(safeTrack + ".mp3");
+                    expectedFile = QDir::cleanPath(expectedFile);
+                    if (!m_playlistFiles.contains(expectedFile)) {
+                        m_playlistFiles.append(expectedFile);
+                    }
                 }
             }
         }
@@ -196,18 +252,33 @@ void SpotifyMigrator::processFinished(int exitCode, QProcess::ExitStatus exitSta
 
         m_library->scan();
 
-        QStringList filesAfter = scanFiles();
-        QStringList newFiles;
-        for (const QString& file : filesAfter) {
-            if (!m_filesBefore.contains(file)) {
-                newFiles.append(file);
+        QStringList playlistTracks;
+        QStringList filesOnDisk = scanFiles();
+
+        for (const QString& file : m_playlistFiles) {
+            QString cleanPath = QDir::cleanPath(file);
+            for (const QString& diskFile : filesOnDisk) {
+                if (QDir::cleanPath(diskFile).toLower() == cleanPath.toLower()) {
+                    playlistTracks.append(diskFile);
+                    break;
+                }
+            }
+        }
+
+        // Fallback: If we couldn't parse individual tracks, use clean file differences
+        if (playlistTracks.isEmpty()) {
+            for (const QString& file : filesOnDisk) {
+                QString cleanFile = QDir::cleanPath(file);
+                if (!m_filesBefore.contains(cleanFile)) {
+                    playlistTracks.append(cleanFile);
+                }
             }
         }
 
         bool isPlaylistOrAlbum = m_currentUrl.contains("/playlist/", Qt::CaseInsensitive) ||
             m_currentUrl.contains("/album/", Qt::CaseInsensitive);
 
-        if (isPlaylistOrAlbum && !newFiles.isEmpty()) {
+        if (isPlaylistOrAlbum && !playlistTracks.isEmpty()) {
             QString plName = m_detectedPlaylistName;
             if (plName.isEmpty()) {
                 if (m_currentUrl.contains("/album/", Qt::CaseInsensitive)) {
@@ -217,7 +288,7 @@ void SpotifyMigrator::processFinished(int exitCode, QProcess::ExitStatus exitSta
                     plName = "Imported Playlist";
                 }
             }
-            m_library->createPlaylistFromMigration(plName, newFiles);
+            m_library->createPlaylistFromMigration(plName, playlistTracks);
         }
 
         emit migrationCompleted();

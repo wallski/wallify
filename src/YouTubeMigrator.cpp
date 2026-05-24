@@ -25,6 +25,14 @@ YouTubeMigrator::YouTubeMigrator(LocalLibrary* library, QObject* parent)
     m_statusText = "Ready";
 }
 
+YouTubeMigrator::~YouTubeMigrator()
+{
+    if (m_process && m_process->state() != QProcess::NotRunning) {
+        m_process->kill();
+        m_process->waitForFinished(1000);
+    }
+}
+
 QString YouTubeMigrator::statusText() const { return m_statusText; }
 bool YouTubeMigrator::isWorking() const { return m_isWorking; }
 int YouTubeMigrator::progress() const { return m_progress; }
@@ -73,7 +81,12 @@ void YouTubeMigrator::startMigration(const QString& url)
     clearLogs();
     m_currentUrl = url;
     m_detectedPlaylistName.clear();
-    m_filesBefore = scanFiles();
+    m_playlistFiles.clear();
+
+    m_filesBefore.clear();
+    for (const QString& f : scanFiles()) {
+        m_filesBefore.append(QDir::cleanPath(f));
+    }
 
     setWorking(true);
     setProgress(0);
@@ -133,6 +146,40 @@ void YouTubeMigrator::processOutput()
             m_detectedPlaylistName = plMatch.captured(1).trimmed();
         }
     }
+
+    // Parse the tracks processed (downloaded and skipped)
+    QStringList lines = text.split('\n');
+    for (const QString& line : lines) {
+        QString trimmed = line.trimmed();
+        if (trimmed.isEmpty()) continue;
+
+        if (trimmed.contains("has already been downloaded")) {
+            // e.g. "[download] Artist - Title.mp3 has already been downloaded"
+            QRegularExpression re("\\[download\\]\\s+(.+?)\\s+has already been downloaded");
+            QRegularExpressionMatch match = re.match(trimmed);
+            if (match.hasMatch()) {
+                QString file = match.captured(1).trimmed();
+                QString fullPath = QDir(m_musicDir).absoluteFilePath(file);
+                fullPath = QDir::cleanPath(fullPath);
+                if (!m_playlistFiles.contains(fullPath)) {
+                    m_playlistFiles.append(fullPath);
+                }
+            }
+        }
+        else if (trimmed.contains("Destination:") && trimmed.contains(".mp3")) {
+            // e.g. "[ExtractAudio] Destination: Artist - Title.mp3" or "[ffmpeg] Destination: Artist - Title.mp3"
+            QRegularExpression re("Destination:\\s+(.+?\\.mp3)");
+            QRegularExpressionMatch match = re.match(trimmed);
+            if (match.hasMatch()) {
+                QString file = match.captured(1).trimmed();
+                QString fullPath = QDir(m_musicDir).absoluteFilePath(file);
+                fullPath = QDir::cleanPath(fullPath);
+                if (!m_playlistFiles.contains(fullPath)) {
+                    m_playlistFiles.append(fullPath);
+                }
+            }
+        }
+    }
 }
 
 void YouTubeMigrator::processFinished(int exitCode, QProcess::ExitStatus exitStatus)
@@ -162,18 +209,33 @@ void YouTubeMigrator::processFinished(int exitCode, QProcess::ExitStatus exitSta
 
     m_library->scan();
 
-    QStringList filesAfter = scanFiles();
-    QStringList newFiles;
-    for (const QString& file : filesAfter) {
-        if (!m_filesBefore.contains(file)) {
-            newFiles.append(file);
+    QStringList playlistTracks;
+    QStringList filesOnDisk = scanFiles();
+
+    for (const QString& file : m_playlistFiles) {
+        QString cleanPath = QDir::cleanPath(file);
+        for (const QString& diskFile : filesOnDisk) {
+            if (QDir::cleanPath(diskFile).toLower() == cleanPath.toLower()) {
+                playlistTracks.append(diskFile);
+                break;
+            }
         }
     }
 
-    if (!newFiles.isEmpty() && m_currentUrl.contains("playlist", Qt::CaseInsensitive)) {
+    // Fallback: If we couldn't parse individual tracks, use clean file differences
+    if (playlistTracks.isEmpty()) {
+        for (const QString& file : filesOnDisk) {
+            QString cleanFile = QDir::cleanPath(file);
+            if (!m_filesBefore.contains(cleanFile)) {
+                playlistTracks.append(cleanFile);
+            }
+        }
+    }
+
+    if (!playlistTracks.isEmpty() && m_currentUrl.contains("playlist", Qt::CaseInsensitive)) {
         QString plName = m_detectedPlaylistName;
         if (plName.isEmpty()) plName = "YouTube Playlist";
-        m_library->createPlaylistFromMigration(plName, newFiles);
+        m_library->createPlaylistFromMigration(plName, playlistTracks);
     }
 
     emit migrationCompleted();

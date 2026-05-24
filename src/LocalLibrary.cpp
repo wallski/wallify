@@ -91,6 +91,22 @@ QVariantList LocalLibrary::playlists() const
                 }
             }
         }
+
+        // Sort the custom playlist tracks if a sort mode is active
+        if (m_sortMode == 1) { // Name
+            std::sort(pTracks.begin(), pTracks.end(), [](const QVariant &a, const QVariant &b) {
+                return a.toMap()["title"].toString().toLower() < b.toMap()["title"].toString().toLower();
+            });
+        } else if (m_sortMode == 2) { // Album
+            std::sort(pTracks.begin(), pTracks.end(), [](const QVariant &a, const QVariant &b) {
+                QString albumA = a.toMap()["album"].toString().toLower();
+                QString albumB = b.toMap()["album"].toString().toLower();
+                if (albumA != albumB)
+                    return albumA < albumB;
+                return a.toMap()["title"].toString().toLower() < b.toMap()["title"].toString().toLower();
+            });
+        }
+
         pMap["tracks"] = pTracks;
         list.append(pMap);
     }
@@ -372,8 +388,16 @@ QString LocalLibrary::parseId3String(const char *data, int size)
     const char *textData = data + 1;
     int textSize = size - 1;
 
-    while (textSize > 0 && textData[textSize - 1] == 0) {
-        textSize--;
+    if (encoding == 1 || encoding == 2) {
+        // Strip 16-bit null terminators (2 bytes at a time) to avoid dropping valid half-characters
+        while (textSize >= 2 && textData[textSize - 1] == 0 && textData[textSize - 2] == 0) {
+            textSize -= 2;
+        }
+    } else {
+        // Strip 8-bit null terminators
+        while (textSize > 0 && textData[textSize - 1] == 0) {
+            textSize--;
+        }
     }
 
     if (encoding == 0) {
@@ -464,6 +488,43 @@ void LocalLibrary::renameTrack(const QString &filePath, const QString &newTitle)
         if (m_tracks[i].filePath == filePath) {
             m_tracks[i].title = newTitle;
             writeId3Tag(filePath, newTitle, m_tracks[i].artist, m_tracks[i].album);
+
+            // Physically rename the file on disk
+            QFileInfo info(filePath);
+            QString dir = info.absolutePath();
+            QString ext = info.suffix();
+
+            // Construct new file name based on artist and new title
+            QString safeArtist = m_tracks[i].artist;
+            QString safeTitle = newTitle;
+            // Clean up invalid filesystem characters for Windows
+            QStringList invalidChars = {"<", ">", ":", "\"", "/", "\\", "|", "?", "*"};
+            for (const QString &c : invalidChars) {
+                safeArtist.replace(c, "");
+                safeTitle.replace(c, "");
+            }
+
+            QString newFileName = safeArtist + " - " + safeTitle + "." + ext;
+            QString newPath = dir + "/" + newFileName;
+
+            if (newPath != filePath && QFile::rename(filePath, newPath)) {
+                // Update file path in memory
+                m_tracks[i].filePath = newPath;
+
+                // Update all custom playlists referencing the old file path
+                bool playlistChanged = false;
+                for (int pIdx = 0; pIdx < m_playlists.size(); ++pIdx) {
+                    for (int tIdx = 0; tIdx < m_playlists[pIdx].trackPaths.size(); ++tIdx) {
+                        if (m_playlists[pIdx].trackPaths[tIdx] == filePath) {
+                            m_playlists[pIdx].trackPaths[tIdx] = newPath;
+                            playlistChanged = true;
+                        }
+                    }
+                }
+                if (playlistChanged) {
+                    savePlaylists();
+                }
+            }
             break;
         }
     }

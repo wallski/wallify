@@ -108,6 +108,19 @@ void AudioPlayer::playTrack(const QVariantMap &track)
         m_playlistQueue.append(track);
     }
 
+    if (m_shuffleEnabled && !m_shuffleOrder.isEmpty()) {
+        QString path = track["filePath"].toString();
+        for (int i = 0; i < m_shuffleOrder.size(); ++i) {
+            int idx = m_shuffleOrder[i];
+            if (idx >= 0 && idx < m_playlistQueue.size()) {
+                if (m_playlistQueue[idx].toMap()["filePath"].toString() == path) {
+                    m_shuffleCurrentIndex = i;
+                    break;
+                }
+            }
+        }
+    }
+
     QString path = track["filePath"].toString();
     qDebug() << "AudioPlayer: playTrack requested for:" << path;
     m_player->setSource(QUrl::fromLocalFile(path));

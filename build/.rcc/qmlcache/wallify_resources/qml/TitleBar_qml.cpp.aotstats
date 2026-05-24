@@ -6,7 +6,7 @@
                     {
                         "codegenSuccessfull": true,
                         "column": 5,
-                        "durationMicroseconds": 860,
+                        "durationMicroseconds": 1070,
                         "errorMessage": "",
                         "functionName": "toggleMaximized",
                         "line": 62
@@ -14,7 +14,7 @@
                     {
                         "codegenSuccessfull": false,
                         "column": 19,
-                        "durationMicroseconds": 325,
+                        "durationMicroseconds": 384,
                         "errorMessage": "method toggleMaximized cannot be resolved.",
                         "functionName": "onTapped",
                         "line": 13
@@ -22,7 +22,7 @@
                     {
                         "codegenSuccessfull": true,
                         "column": 24,
-                        "durationMicroseconds": 112,
+                        "durationMicroseconds": 121,
                         "errorMessage": "",
                         "functionName": "gesturePolicy",
                         "line": 14
@@ -30,7 +30,7 @@
                     {
                         "codegenSuccessfull": false,
                         "column": 26,
-                        "durationMicroseconds": 57,
+                        "durationMicroseconds": 63,
                         "errorMessage": "Cannot access value for name window",
                         "functionName": "onActiveChanged",
                         "line": 19
@@ -38,7 +38,7 @@
                     {
                         "codegenSuccessfull": true,
                         "column": 23,
-                        "durationMicroseconds": 115,
+                        "durationMicroseconds": 87,
                         "errorMessage": "",
                         "functionName": "fill",
                         "line": 23
@@ -46,7 +46,7 @@
                     {
                         "codegenSuccessfull": true,
                         "column": 21,
-                        "durationMicroseconds": 104,
+                        "durationMicroseconds": 105,
                         "errorMessage": "",
                         "functionName": "height",
                         "line": 28
@@ -54,7 +54,7 @@
                     {
                         "codegenSuccessfull": true,
                         "column": 31,
-                        "durationMicroseconds": 100,
+                        "durationMicroseconds": 105,
                         "errorMessage": "",
                         "functionName": "alignment",
                         "line": 36
@@ -62,7 +62,7 @@
                     {
                         "codegenSuccessfull": true,
                         "column": 21,
-                        "durationMicroseconds": 99,
+                        "durationMicroseconds": 105,
                         "errorMessage": "",
                         "functionName": "height",
                         "line": 41
@@ -70,7 +70,7 @@
                     {
                         "codegenSuccessfull": false,
                         "column": 24,
-                        "durationMicroseconds": 36,
+                        "durationMicroseconds": 47,
                         "errorMessage": "Cannot access value for name window",
                         "functionName": "onClicked",
                         "line": 46
@@ -78,7 +78,7 @@
                     {
                         "codegenSuccessfull": false,
                         "column": 23,
-                        "durationMicroseconds": 29,
+                        "durationMicroseconds": 44,
                         "errorMessage": "Cannot access value for name window",
                         "functionName": "iconText",
                         "line": 50
@@ -86,7 +86,7 @@
                     {
                         "codegenSuccessfull": false,
                         "column": 24,
-                        "durationMicroseconds": 495,
+                        "durationMicroseconds": 726,
                         "errorMessage": "method toggleMaximized cannot be resolved.",
                         "functionName": "onClicked",
                         "line": 51
@@ -94,7 +94,7 @@
                     {
                         "codegenSuccessfull": true,
                         "column": 24,
-                        "durationMicroseconds": 141,
+                        "durationMicroseconds": 227,
                         "errorMessage": "",
                         "functionName": "onClicked",
                         "line": 58

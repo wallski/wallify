@@ -18,6 +18,7 @@ class SoundCloudMigrator : public QObject
 
 public:
     explicit SoundCloudMigrator(LocalLibrary *library, QObject *parent = nullptr);
+    ~SoundCloudMigrator();
 
     QString statusText() const;
     bool isWorking() const;
@@ -60,4 +61,5 @@ private:
     QString m_currentUrl;
     QStringList m_filesBefore;
     QString m_detectedPlaylistName;
+    QStringList m_playlistFiles;
 };

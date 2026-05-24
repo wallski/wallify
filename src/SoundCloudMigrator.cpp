@@ -25,6 +25,14 @@ SoundCloudMigrator::SoundCloudMigrator(LocalLibrary* library, QObject* parent)
     m_statusText = "Ready";
 }
 
+SoundCloudMigrator::~SoundCloudMigrator()
+{
+    if (m_process && m_process->state() != QProcess::NotRunning) {
+        m_process->kill();
+        m_process->waitForFinished(1000);
+    }
+}
+
 QString SoundCloudMigrator::statusText() const { return m_statusText; }
 bool SoundCloudMigrator::isWorking() const { return m_isWorking; }
 int SoundCloudMigrator::progress() const { return m_progress; }
@@ -73,7 +81,12 @@ void SoundCloudMigrator::startMigration(const QString& url)
     clearLogs();
     m_currentUrl = url;
     m_detectedPlaylistName.clear();
-    m_filesBefore = scanFiles();
+    m_playlistFiles.clear();
+
+    m_filesBefore.clear();
+    for (const QString& f : scanFiles()) {
+        m_filesBefore.append(QDir::cleanPath(f));
+    }
 
     setWorking(true);
     setProgress(0);
@@ -129,6 +142,23 @@ void SoundCloudMigrator::processOutput()
             m_detectedPlaylistName = plMatch.captured(1).trimmed();
         }
     }
+
+    // Parse track titles/permalinks processed
+    QStringList lines = text.split('\n');
+    for (const QString& line : lines) {
+        QString trimmed = line.trimmed();
+        if (trimmed.isEmpty()) continue;
+
+        if (trimmed.contains("Downloading", Qt::CaseInsensitive)) {
+            int idx = trimmed.indexOf("Downloading", 0, Qt::CaseInsensitive);
+            if (idx != -1) {
+                QString trackName = trimmed.mid(idx + 11).trimmed();
+                if (!trackName.isEmpty()) {
+                    m_playlistFiles.append(trackName);
+                }
+            }
+        }
+    }
 }
 
 void SoundCloudMigrator::processFinished(int exitCode, QProcess::ExitStatus exitStatus)
@@ -158,18 +188,38 @@ void SoundCloudMigrator::processFinished(int exitCode, QProcess::ExitStatus exit
 
     m_library->scan();
 
-    QStringList filesAfter = scanFiles();
-    QStringList newFiles;
-    for (const QString& file : filesAfter) {
-        if (!m_filesBefore.contains(file)) {
-            newFiles.append(file);
+    QStringList playlistTracks;
+    QStringList filesOnDisk = scanFiles();
+
+    for (const QString& trackName : m_playlistFiles) {
+        QString cleanTrack = trackName.toLower();
+        cleanTrack.replace("-", " ").replace("_", " ");
+        
+        for (const QString& diskFile : filesOnDisk) {
+            QString fileName = QFileInfo(diskFile).completeBaseName().toLower();
+            fileName.replace("-", " ").replace("_", " ");
+            
+            if (fileName.contains(cleanTrack) || cleanTrack.contains(fileName)) {
+                playlistTracks.append(diskFile);
+                break;
+            }
         }
     }
 
-    if (!newFiles.isEmpty() && m_currentUrl.contains("sets", Qt::CaseInsensitive)) {
+    // Fallback: If we couldn't parse individual tracks, use clean file differences
+    if (playlistTracks.isEmpty()) {
+        for (const QString& file : filesOnDisk) {
+            QString cleanFile = QDir::cleanPath(file);
+            if (!m_filesBefore.contains(cleanFile)) {
+                playlistTracks.append(cleanFile);
+            }
+        }
+    }
+
+    if (!playlistTracks.isEmpty() && m_currentUrl.contains("sets", Qt::CaseInsensitive)) {
         QString plName = m_detectedPlaylistName;
         if (plName.isEmpty()) plName = "SoundCloud Playlist";
-        m_library->createPlaylistFromMigration(plName, newFiles);
+        m_library->createPlaylistFromMigration(plName, playlistTracks);
     }
 
     emit migrationCompleted();

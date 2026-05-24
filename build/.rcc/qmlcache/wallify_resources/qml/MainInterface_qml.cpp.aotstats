@@ -6,7 +6,7 @@
                     {
                         "codegenSuccessfull": false,
                         "column": 17,
-                        "durationMicroseconds": 465,
+                        "durationMicroseconds": 198,
                         "errorMessage": "Cannot access value for name spotifyMigrator",
                         "functionName": "target",
                         "line": 10
@@ -14,7 +14,7 @@
                     {
                         "codegenSuccessfull": false,
                         "column": 9,
-                        "durationMicroseconds": 54,
+                        "durationMicroseconds": 35,
                         "errorMessage": "Cannot find name ffmpegOverwriteDialogVisible",
                         "functionName": "onFfmpegOverwriteRequested",
                         "line": 11
@@ -22,7 +22,7 @@
                     {
                         "codegenSuccessfull": true,
                         "column": 23,
-                        "durationMicroseconds": 288,
+                        "durationMicroseconds": 238,
                         "errorMessage": "",
                         "functionName": "fill",
                         "line": 17
@@ -30,7 +30,7 @@
                     {
                         "codegenSuccessfull": true,
                         "column": 31,
-                        "durationMicroseconds": 177,
+                        "durationMicroseconds": 158,
                         "errorMessage": "",
                         "functionName": "currentIndex",
                         "line": 28
@@ -38,7 +38,7 @@
                     {
                         "codegenSuccessfull": true,
                         "column": 32,
-                        "durationMicroseconds": 379,
+                        "durationMicroseconds": 159,
                         "errorMessage": "",
                         "functionName": "onShowLibrary",
                         "line": 29
@@ -46,7 +46,7 @@
                     {
                         "codegenSuccessfull": true,
                         "column": 34,
-                        "durationMicroseconds": 141,
+                        "durationMicroseconds": 121,
                         "errorMessage": "",
                         "functionName": "onShowMigration",
                         "line": 30
@@ -54,7 +54,7 @@
                     {
                         "codegenSuccessfull": true,
                         "column": 33,
-                        "durationMicroseconds": 272,
+                        "durationMicroseconds": 113,
                         "errorMessage": "",
                         "functionName": "onShowSettings",
                         "line": 31
@@ -62,7 +62,7 @@
                     {
                         "codegenSuccessfull": false,
                         "column": 18,
-                        "durationMicroseconds": 60,
+                        "durationMicroseconds": 33,
                         "errorMessage": "Cannot access value for name ffmpegOverwriteDialogVisible",
                         "functionName": "visible",
                         "line": 66
@@ -70,7 +70,7 @@
                     {
                         "codegenSuccessfull": true,
                         "column": 23,
-                        "durationMicroseconds": 267,
+                        "durationMicroseconds": 77,
                         "errorMessage": "",
                         "functionName": "fill",
                         "line": 64
@@ -78,7 +78,7 @@
                     {
                         "codegenSuccessfull": true,
                         "column": 30,
-                        "durationMicroseconds": 377,
+                        "durationMicroseconds": 483,
                         "errorMessage": "",
                         "functionName": "acceptedButtons",
                         "line": 72
@@ -86,7 +86,7 @@
                     {
                         "codegenSuccessfull": true,
                         "column": 27,
-                        "durationMicroseconds": 87,
+                        "durationMicroseconds": 124,
                         "errorMessage": "",
                         "functionName": "fill",
                         "line": 70
@@ -94,7 +94,7 @@
                     {
                         "codegenSuccessfull": true,
                         "column": 31,
-                        "durationMicroseconds": 117,
+                        "durationMicroseconds": 120,
                         "errorMessage": "",
                         "functionName": "centerIn",
                         "line": 82
@@ -102,7 +102,7 @@
                     {
                         "codegenSuccessfull": true,
                         "column": 31,
-                        "durationMicroseconds": 129,
+                        "durationMicroseconds": 104,
                         "errorMessage": "",
                         "functionName": "fill",
                         "line": 85
@@ -110,7 +110,7 @@
                     {
                         "codegenSuccessfull": true,
                         "column": 47,
-                        "durationMicroseconds": 127,
+                        "durationMicroseconds": 80,
                         "errorMessage": "",
                         "functionName": "centerIn",
                         "line": 100
@@ -118,7 +118,7 @@
                     {
                         "codegenSuccessfull": true,
                         "column": 31,
-                        "durationMicroseconds": 125,
+                        "durationMicroseconds": 144,
                         "errorMessage": "",
                         "functionName": "wrapMode",
                         "line": 125
@@ -126,7 +126,7 @@
                     {
                         "codegenSuccessfull": true,
                         "column": 39,
-                        "durationMicroseconds": 465,
+                        "durationMicroseconds": 556,
                         "errorMessage": "",
                         "functionName": "color",
                         "line": 142
@@ -134,7 +134,7 @@
                     {
                         "codegenSuccessfull": true,
                         "column": 47,
-                        "durationMicroseconds": 82,
+                        "durationMicroseconds": 95,
                         "errorMessage": "",
                         "functionName": "centerIn",
                         "line": 146
@@ -142,7 +142,7 @@
                     {
                         "codegenSuccessfull": true,
                         "column": 42,
-                        "durationMicroseconds": 151,
+                        "durationMicroseconds": 131,
                         "errorMessage": "",
                         "functionName": "cursorShape",
                         "line": 159
@@ -150,7 +150,7 @@
                     {
                         "codegenSuccessfull": false,
                         "column": 40,
-                        "durationMicroseconds": 588,
+                        "durationMicroseconds": 565,
                         "errorMessage": "Cannot access value for name spotifyMigrator",
                         "functionName": "onClicked",
                         "line": 160
@@ -158,7 +158,7 @@
                     {
                         "codegenSuccessfull": true,
                         "column": 43,
-                        "durationMicroseconds": 119,
+                        "durationMicroseconds": 85,
                         "errorMessage": "",
                         "functionName": "fill",
                         "line": 157
@@ -166,7 +166,7 @@
                     {
                         "codegenSuccessfull": true,
                         "column": 39,
-                        "durationMicroseconds": 395,
+                        "durationMicroseconds": 466,
                         "errorMessage": "",
                         "functionName": "color",
                         "line": 172
@@ -174,7 +174,7 @@
                     {
                         "codegenSuccessfull": true,
                         "column": 47,
-                        "durationMicroseconds": 84,
+                        "durationMicroseconds": 82,
                         "errorMessage": "",
                         "functionName": "centerIn",
                         "line": 176
@@ -182,7 +182,7 @@
                     {
                         "codegenSuccessfull": true,
                         "column": 42,
-                        "durationMicroseconds": 109,
+                        "durationMicroseconds": 110,
                         "errorMessage": "",
                         "functionName": "cursorShape",
                         "line": 189
@@ -190,7 +190,7 @@
                     {
                         "codegenSuccessfull": false,
                         "column": 40,
-                        "durationMicroseconds": 549,
+                        "durationMicroseconds": 521,
                         "errorMessage": "Cannot access value for name spotifyMigrator",
                         "functionName": "onClicked",
                         "line": 190
@@ -198,7 +198,7 @@
                     {
                         "codegenSuccessfull": true,
                         "column": 43,
-                        "durationMicroseconds": 99,
+                        "durationMicroseconds": 77,
                         "errorMessage": "",
                         "functionName": "fill",
                         "line": 187

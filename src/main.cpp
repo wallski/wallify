@@ -39,38 +39,63 @@ int main(int argc, char *argv[])
 
     engine.addImageProvider("covers", new CoverImageProvider(library));
 
-    SpotifyMigrator* spotifyMigrator = new SpotifyMigrator(library);
+    SpotifyMigrator* spotifyMigrator = new SpotifyMigrator(library, &app);
     engine.rootContext()->setContextProperty("spotifyMigrator", spotifyMigrator);
 
-    YouTubeMigrator* youtubeMigrator = new YouTubeMigrator(library);
+    YouTubeMigrator* youtubeMigrator = new YouTubeMigrator(library, &app);
     engine.rootContext()->setContextProperty("youtubeMigrator", youtubeMigrator);
 
-    SoundCloudMigrator* soundcloudMigrator = new SoundCloudMigrator(library);
+    SoundCloudMigrator* soundcloudMigrator = new SoundCloudMigrator(library, &app);
     engine.rootContext()->setContextProperty("soundcloudMigrator", soundcloudMigrator);
 
     DiscordRPC* discordRPC = new DiscordRPC(&app);
     engine.rootContext()->setContextProperty("discordRPC", discordRPC);
     discordRPC->initialize();
 
-    QObject::connect(player, &AudioPlayer::trackChanged, discordRPC, [discordRPC](const QVariantMap &track) {
-        if (!track.isEmpty()) {
-            QString title = track["title"].toString();
-            QString artist = track["artist"].toString();
+    auto updateDiscordPresence = [player, discordRPC]() {
+        QVariantMap track = player->currentTrack();
+        if (track.isEmpty()) {
+            discordRPC->clearPresence();
+            return;
+        }
+
+        QString title = track["title"].toString();
+        QString artist = track["artist"].toString();
+        
+        if (player->isPlaying()) {
             qint64 duration = track["duration"].toLongLong();
+            qint64 position = player->position(); // in ms
             qint64 now = QDateTime::currentDateTime().toSecsSinceEpoch();
-            qint64 endTime = duration > 0 ? now + (duration / 1000) : 0;
+            
+            qint64 startTimestamp = now - (position / 1000);
+            qint64 endTimestamp = duration > 0 ? startTimestamp + (duration / 1000) : 0;
 
             discordRPC->updatePresence(
-                "Listening to " + title,
                 "by " + artist,
+                "Listening to " + title,
                 "wallify_logo",
                 "Wallify Music",
-                now,
-                endTime
+                startTimestamp,
+                endTimestamp
             );
         } else {
-            discordRPC->clearPresence();
+            discordRPC->updatePresence(
+                "by " + artist,
+                "Paused - " + title,
+                "wallify_logo",
+                "Wallify Music",
+                0,
+                0
+            );
         }
+    };
+
+    QObject::connect(player, &AudioPlayer::trackChanged, discordRPC, [updateDiscordPresence](const QVariantMap &) {
+        updateDiscordPresence();
+    });
+
+    QObject::connect(player, &AudioPlayer::isPlayingChanged, discordRPC, [updateDiscordPresence]() {
+        updateDiscordPresence();
     });
 
     const QUrl url(u"qrc:/Wallify/resources/qml/Main.qml"_qs);

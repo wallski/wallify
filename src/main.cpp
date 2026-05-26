@@ -48,6 +48,11 @@ int main(int argc, char *argv[])
     SoundCloudMigrator* soundcloudMigrator = new SoundCloudMigrator(library, &app);
     engine.rootContext()->setContextProperty("soundcloudMigrator", soundcloudMigrator);
 
+    // Wire settings → library: when the user changes path in settings, update LocalLibrary
+    QObject::connect(&appSettings, &AppSettings::libraryPathChanged, library, [library, &appSettings]() {
+        library->setLibraryPath(appSettings.libraryPath());
+    });
+
     DiscordRPC* discordRPC = new DiscordRPC(&app);
     engine.rootContext()->setContextProperty("discordRPC", discordRPC);
     discordRPC->initialize();

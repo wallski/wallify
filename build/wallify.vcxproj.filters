@@ -125,7 +125,6 @@
     </ClInclude>
     <ClInclude Include="C:\Users\elias\Desktop\GITHUB\wallify\resources\fonts\Roboto-Regular.ttf" />
     <ClInclude Include="C:\Users\elias\Desktop\GITHUB\wallify\resources\fonts\BebasNeue-Regular.ttf" />
-    <ClInclude Include="C:\Users\elias\Desktop\GITHUB\wallify\resources\icons\app_icon.svg" />
   </ItemGroup>
   <ItemGroup>
     <CustomBuild Include="C:\Users\elias\Desktop\GITHUB\wallify\build\CMakeFiles\41b0c52f71db55949f52065f22ec02db\qt6wallify_metatypes.json.gen.rule">
@@ -251,6 +250,11 @@
     <None Include="C:\Users\elias\Desktop\GITHUB\wallify\deps\6.8.2\msvc2022_64\metatypes\qt6multimedia_metatypes.json">
       <Filter>Source Files\Generated</Filter>
     </None>
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="C:\Users\elias\Desktop\GITHUB\wallify\Wallify.rc">
+      <Filter>Source Files</Filter>
+    </ResourceCompile>
   </ItemGroup>
   <ItemGroup>
     <Filter Include="CMake Rules">

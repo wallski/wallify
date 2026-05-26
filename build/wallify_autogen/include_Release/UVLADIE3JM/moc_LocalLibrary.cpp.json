@@ -2,7 +2,7 @@
     "classes": [
         {
             "className": "LocalLibrary",
-            "lineNumber": 30,
+            "lineNumber": 31,
             "methods": [
                 {
                     "access": "public",
@@ -151,11 +151,23 @@
                     "access": "public",
                     "arguments": [
                         {
+                            "name": "filePath",
+                            "type": "QString"
+                        }
+                    ],
+                    "index": 14,
+                    "name": "deleteTrack",
+                    "returnType": "void"
+                },
+                {
+                    "access": "public",
+                    "arguments": [
+                        {
                             "name": "mode",
                             "type": "int"
                         }
                     ],
-                    "index": 14,
+                    "index": 15,
                     "name": "setSortMode",
                     "returnType": "void"
                 }

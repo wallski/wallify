@@ -32,6 +32,7 @@ qt_add_executable(wallify
     src/AudioPlayer.cpp
     src/AudioPlayer.h
     src/CoverImageProvider.h
+    Wallify.rc
 )
 
 # Discord RPC static library (bundled, no extra DLL needed)
@@ -68,7 +69,6 @@ qt_add_qml_module(wallify
     RESOURCES
         resources/fonts/Roboto-Regular.ttf
         resources/fonts/BebasNeue-Regular.ttf
-        resources/icons/app_icon.svg
 )
 
 target_link_libraries(wallify

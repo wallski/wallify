@@ -33,6 +33,7 @@ QVariantList LocalLibrary::tracks() const
         map["album"] = t.album;
         map["duration"] = t.duration;
         map["hasCover"] = t.hasCover;
+        map["coverUpdateTime"] = t.coverUpdateTime;
         map["dateAdded"] = t.dateAdded.toString(Qt::ISODate);
         list.append(map);
     }
@@ -419,7 +420,7 @@ QString LocalLibrary::parseId3String(const char *data, int size)
     return QString::fromLatin1(textData, textSize).trimmed();
 }
 
-void LocalLibrary::writeId3Tag(const QString &filePath, const QString &title, const QString &artist, const QString &album, const QByteArray &newCoverData)
+void LocalLibrary::writeId3Tag(const QString &filePath, const QString &title, const QString &artist, const QString &album, const QByteArray &newCoverData, const QString &coverMimeType)
 {
     QFile file(filePath);
     if (!file.open(QIODevice::ReadOnly)) return;
@@ -455,7 +456,7 @@ void LocalLibrary::writeId3Tag(const QString &filePath, const QString &title, co
 
     if (!newCoverData.isEmpty()) {
         frames.append("APIC");
-        QByteArray mimeType = "image/jpeg";
+        QByteArray mimeType = coverMimeType.toUtf8();
         quint32 size = 1 + mimeType.size() + 1 + 1 + 1 + newCoverData.size();
         frames.append(char((size >> 24) & 0xFF));
         frames.append(char((size >> 16) & 0xFF));
@@ -587,6 +588,7 @@ void LocalLibrary::renameTrack(const QString &filePath, const QString &newTitle)
                 if (playlistChanged) savePlaylists();
             }
             emit libraryChanged();
+            emit playlistsChanged();
             break;
         }
     }
@@ -600,15 +602,28 @@ void LocalLibrary::changeCover(const QString &filePath, const QString &imagePath
     }
 
     QFile imgFile(cleanPath);
-    if (!imgFile.open(QIODevice::ReadOnly)) return;
+    if (!imgFile.open(QIODevice::ReadOnly)) {
+        qWarning() << "changeCover: cannot open image file" << cleanPath;
+        return;
+    }
     QByteArray imgData = imgFile.readAll();
     imgFile.close();
 
+    // Detect image MIME type from magic bytes so the ID3 tag is correct
+    QString mimeType = "image/jpeg";
+    if (imgData.size() >= 4) {
+        const uchar *b = reinterpret_cast<const uchar *>(imgData.constData());
+        if (b[0] == 0x89 && b[1] == 'P' && b[2] == 'N' && b[3] == 'G')
+            mimeType = "image/png";
+    }
+
     for (int i = 0; i < m_tracks.size(); ++i) {
         if (m_tracks[i].filePath == filePath) {
-            writeId3Tag(filePath, m_tracks[i].title, m_tracks[i].artist, m_tracks[i].album, imgData);
+            writeId3Tag(filePath, m_tracks[i].title, m_tracks[i].artist, m_tracks[i].album, imgData, mimeType);
             m_tracks[i].hasCover = true;
+            m_tracks[i].coverUpdateTime = QDateTime::currentMSecsSinceEpoch();
             emit libraryChanged();
+            emit playlistsChanged();
             break;
         }
     }
@@ -957,5 +972,30 @@ void LocalLibrary::createPlaylistFromMigration(const QString &playlistName, cons
     p.dateCreated = QDateTime::currentDateTime();
     m_playlists.append(p);
     savePlaylists();
+    emit playlistsChanged();
+}
+
+void LocalLibrary::deleteTrack(const QString &filePath)
+{
+    // Remove from all custom playlists
+    bool playlistChanged = false;
+    for (int i = 0; i < m_playlists.size(); ++i) {
+        if (m_playlists[i].trackPaths.removeAll(filePath) > 0)
+            playlistChanged = true;
+    }
+    if (playlistChanged) savePlaylists();
+
+    // Remove from in-memory track list
+    for (int i = 0; i < m_tracks.size(); ++i) {
+        if (m_tracks[i].filePath == filePath) {
+            m_tracks.removeAt(i);
+            break;
+        }
+    }
+
+    // Delete the file from disk
+    QFile::remove(filePath);
+
+    emit libraryChanged();
     emit playlistsChanged();
 }

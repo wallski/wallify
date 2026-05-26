@@ -6,7 +6,7 @@
                     {
                         "codegenSuccessfull": false,
                         "column": 14,
-                        "durationMicroseconds": 466,
+                        "durationMicroseconds": 541,
                         "errorMessage": "Cannot access value for name appSettings",
                         "functionName": "visible",
                         "line": 14
@@ -14,7 +14,7 @@
                     {
                         "codegenSuccessfull": false,
                         "column": 16,
-                        "durationMicroseconds": 424,
+                        "durationMicroseconds": 369,
                         "errorMessage": "Cannot access value for name appSettings",
                         "functionName": "onClosing",
                         "line": 17
@@ -22,7 +22,7 @@
                     {
                         "codegenSuccessfull": true,
                         "column": 23,
-                        "durationMicroseconds": 220,
+                        "durationMicroseconds": 300,
                         "errorMessage": "",
                         "functionName": "fill",
                         "line": 22
@@ -30,7 +30,7 @@
                     {
                         "codegenSuccessfull": true,
                         "column": 31,
-                        "durationMicroseconds": 87,
+                        "durationMicroseconds": 111,
                         "errorMessage": "",
                         "functionName": "fill",
                         "line": 43
@@ -38,7 +38,7 @@
                     {
                         "codegenSuccessfull": true,
                         "column": 31,
-                        "durationMicroseconds": 156,
+                        "durationMicroseconds": 224,
                         "errorMessage": "",
                         "functionName": "wrapMode",
                         "line": 53
@@ -46,7 +46,7 @@
                     {
                         "codegenSuccessfull": true,
                         "column": 33,
-                        "durationMicroseconds": 96,
+                        "durationMicroseconds": 130,
                         "errorMessage": "",
                         "functionName": "textFormat",
                         "line": 54
@@ -54,7 +54,7 @@
                     {
                         "codegenSuccessfull": false,
                         "column": 27,
-                        "durationMicroseconds": 1251,
+                        "durationMicroseconds": 1391,
                         "errorMessage": "Cannot access value for name spotifyMigrator",
                         "functionName": "text",
                         "line": 56
@@ -62,7 +62,7 @@
                     {
                         "codegenSuccessfull": true,
                         "column": 36,
-                        "durationMicroseconds": 473,
+                        "durationMicroseconds": 719,
                         "errorMessage": "",
                         "functionName": "onTextChanged",
                         "line": 58

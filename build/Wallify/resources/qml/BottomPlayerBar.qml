@@ -144,7 +144,7 @@ Rectangle {
 
                     Text {
                         anchors.centerIn: parent
-                        anchors.horizontalCenterOffset: audioPlayer.isPlaying ? 0 : 2
+                        anchors.horizontalCenterOffset: audioPlayer.isPlaying ? 0 : 3
                         text: audioPlayer.isPlaying ? "" : ""
                         color: "#18181e"
                         font.family: "Segoe MDL2 Assets"
@@ -293,11 +293,45 @@ Rectangle {
             spacing: 10
             Layout.alignment: Qt.AlignRight
 
-            Text {
-                text: volumeSlider.value === 0 ? "" : (volumeSlider.value < 0.4 ? "" : (volumeSlider.value < 0.8 ? "" : ""))
-                color: "#89899f"
-                font.family: "Segoe MDL2 Assets"
-                font.pixelSize: 16
+            Item {
+                Layout.preferredWidth: 20
+                Layout.preferredHeight: 20
+                Layout.alignment: Qt.AlignVCenter
+
+                Text {
+                    anchors.centerIn: parent
+                    text: volumeSlider.value === 0 ? "" : (volumeSlider.value < 0.4 ? "" : (volumeSlider.value < 0.8 ? "" : ""))
+                    color: muteMouse.containsMouse ? "#bd93f9" : "#89899f"
+                    font.family: "Segoe MDL2 Assets"
+                    font.pixelSize: 16
+                }
+
+                // Mute overlay (a slash through the icon)
+                Text {
+                    anchors.centerIn: parent
+                    text: "/"
+                    color: "#ff5555"
+                    font.family: "Roboto"
+                    font.pixelSize: 22
+                    font.bold: true
+                    visible: volumeSlider.value === 0
+                }
+
+                MouseArea {
+                    id: muteMouse
+                    anchors.fill: parent
+                    hoverEnabled: true
+                    cursorShape: Qt.PointingHandCursor
+                    property real previousVolume: 1.0
+                    onClicked: {
+                        if (audioPlayer.volume > 0) {
+                            previousVolume = audioPlayer.volume
+                            audioPlayer.setVolume(0)
+                        } else {
+                            audioPlayer.setVolume(previousVolume > 0 ? previousVolume : 1.0)
+                        }
+                    }
+                }
             }
 
             Slider {

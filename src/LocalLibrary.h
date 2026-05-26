@@ -17,6 +17,7 @@ struct Track {
     int duration = 0;
     bool hasCover = false;
     QDateTime dateAdded;
+    qint64 coverUpdateTime = 0; // ms timestamp, used as QML image cache-buster
 };
 
 struct Playlist {
@@ -56,6 +57,7 @@ public:
 
     Q_INVOKABLE void renameTrack(const QString &filePath, const QString &newTitle);
     Q_INVOKABLE void changeCover(const QString &filePath, const QString &imagePath);
+    Q_INVOKABLE void deleteTrack(const QString &filePath);
 
     int sortMode() const;
     Q_INVOKABLE void setSortMode(int mode);
@@ -70,7 +72,7 @@ private:
     void scanDirectory();
     Track parseMp3Metadata(const QString &filePath);
     QString parseId3String(const char *data, int size);
-    void writeId3Tag(const QString &filePath, const QString &title, const QString &artist, const QString &album, const QByteArray &newCoverData = QByteArray());
+    void writeId3Tag(const QString &filePath, const QString &title, const QString &artist, const QString &album, const QByteArray &newCoverData = QByteArray(), const QString &coverMimeType = "image/jpeg");
 
     void loadPlaylists();
     void savePlaylists();

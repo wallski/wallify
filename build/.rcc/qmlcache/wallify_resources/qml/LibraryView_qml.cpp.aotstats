@@ -14,7 +14,7 @@
                     {
                         "codegenSuccessfull": false,
                         "column": 5,
-                        "durationMicroseconds": 221,
+                        "durationMicroseconds": 175,
                         "errorMessage": "Cannot load property id from (component in C:/Users/elias/Desktop/GITHUB/wallify/resources/qml/LibraryView.qml)::selectedPlaylist with type QVariant.",
                         "functionName": "refreshSelectedPlaylist",
                         "line": 20
@@ -22,7 +22,7 @@
                     {
                         "codegenSuccessfull": false,
                         "column": 17,
-                        "durationMicroseconds": 127,
+                        "durationMicroseconds": 118,
                         "errorMessage": "Cannot access value for name localLibrary",
                         "functionName": "target",
                         "line": 33
@@ -30,7 +30,7 @@
                     {
                         "codegenSuccessfull": false,
                         "column": 9,
-                        "durationMicroseconds": 130,
+                        "durationMicroseconds": 126,
                         "errorMessage": "method refreshSelectedPlaylist cannot be resolved.",
                         "functionName": "onPlaylistsChanged",
                         "line": 34
@@ -38,7 +38,7 @@
                     {
                         "codegenSuccessfull": true,
                         "column": 22,
-                        "durationMicroseconds": 332,
+                        "durationMicroseconds": 383,
                         "errorMessage": "",
                         "functionName": "nameFilters",
                         "line": 42
@@ -46,7 +46,7 @@
                     {
                         "codegenSuccessfull": false,
                         "column": 21,
-                        "durationMicroseconds": 56,
+                        "durationMicroseconds": 50,
                         "errorMessage": "Cannot access value for name selectedPlaylist",
                         "functionName": "onAccepted",
                         "line": 43
@@ -54,7 +54,7 @@
                     {
                         "codegenSuccessfull": true,
                         "column": 22,
-                        "durationMicroseconds": 137,
+                        "durationMicroseconds": 129,
                         "errorMessage": "",
                         "functionName": "nameFilters",
                         "line": 54
@@ -62,7 +62,7 @@
                     {
                         "codegenSuccessfull": false,
                         "column": 21,
-                        "durationMicroseconds": 252,
+                        "durationMicroseconds": 258,
                         "errorMessage": "Cannot access value for name localLibrary",
                         "functionName": "onAccepted",
                         "line": 55
@@ -70,7 +70,7 @@
                     {
                         "codegenSuccessfull": true,
                         "column": 23,
-                        "durationMicroseconds": 127,
+                        "durationMicroseconds": 129,
                         "errorMessage": "",
                         "functionName": "fill",
                         "line": 63
@@ -78,7 +78,7 @@
                     {
                         "codegenSuccessfull": false,
                         "column": 22,
-                        "durationMicroseconds": 50,
+                        "durationMicroseconds": 43,
                         "errorMessage": "Cannot access value for name selectedPlaylist",
                         "functionName": "visible",
                         "line": 70
@@ -86,7 +86,7 @@
                     {
                         "codegenSuccessfull": true,
                         "column": 28,
-                        "durationMicroseconds": 402,
+                        "durationMicroseconds": 428,
                         "errorMessage": "",
                         "functionName": "color",
                         "line": 81
@@ -94,7 +94,7 @@
                     {
                         "codegenSuccessfull": true,
                         "column": 43,
-                        "durationMicroseconds": 170,
+                        "durationMicroseconds": 85,
                         "errorMessage": "",
                         "functionName": "centerIn",
                         "line": 86
@@ -102,7 +102,7 @@
                     {
                         "codegenSuccessfull": true,
                         "column": 38,
-                        "durationMicroseconds": 200,
+                        "durationMicroseconds": 122,
                         "errorMessage": "",
                         "functionName": "cursorShape",
                         "line": 97
@@ -110,7 +110,7 @@
                     {
                         "codegenSuccessfull": false,
                         "column": 36,
-                        "durationMicroseconds": 62,
+                        "durationMicroseconds": 54,
                         "errorMessage": "Cannot find name selectedPlaylist",
                         "functionName": "onClicked",
                         "line": 98
@@ -118,7 +118,7 @@
                     {
                         "codegenSuccessfull": true,
                         "column": 39,
-                        "durationMicroseconds": 100,
+                        "durationMicroseconds": 90,
                         "errorMessage": "",
                         "functionName": "fill",
                         "line": 95
@@ -126,7 +126,7 @@
                     {
                         "codegenSuccessfull": true,
                         "column": 28,
-                        "durationMicroseconds": 512,
+                        "durationMicroseconds": 691,
                         "errorMessage": "",
                         "functionName": "color",
                         "line": 116
@@ -134,7 +134,7 @@
                     {
                         "codegenSuccessfull": false,
                         "column": 30,
-                        "durationMicroseconds": 50,
+                        "durationMicroseconds": 61,
                         "errorMessage": "Cannot access value for name selectedPlaylist",
                         "functionName": "visible",
                         "line": 118
@@ -142,7 +142,7 @@
                     {
                         "codegenSuccessfull": true,
                         "column": 43,
-                        "durationMicroseconds": 119,
+                        "durationMicroseconds": 96,
                         "errorMessage": "",
                         "functionName": "centerIn",
                         "line": 123
@@ -150,7 +150,7 @@
                     {
                         "codegenSuccessfull": true,
                         "column": 38,
-                        "durationMicroseconds": 224,
+                        "durationMicroseconds": 111,
                         "errorMessage": "",
                         "functionName": "cursorShape",
                         "line": 147
@@ -158,7 +158,7 @@
                     {
                         "codegenSuccessfull": false,
                         "column": 36,
-                        "durationMicroseconds": 789,
+                        "durationMicroseconds": 465,
                         "errorMessage": "Cannot access value for name localLibrary",
                         "functionName": "onClicked",
                         "line": 148
@@ -166,7 +166,7 @@
                     {
                         "codegenSuccessfull": true,
                         "column": 39,
-                        "durationMicroseconds": 117,
+                        "durationMicroseconds": 75,
                         "errorMessage": "",
                         "functionName": "fill",
                         "line": 145
@@ -174,7 +174,7 @@
                     {
                         "codegenSuccessfull": true,
                         "column": 28,
-                        "durationMicroseconds": 464,
+                        "durationMicroseconds": 351,
                         "errorMessage": "",
                         "functionName": "color",
                         "line": 157
@@ -182,7 +182,7 @@
                     {
                         "codegenSuccessfull": false,
                         "column": 30,
-                        "durationMicroseconds": 118,
+                        "durationMicroseconds": 44,
                         "errorMessage": "Cannot access value for name selectedPlaylist",
                         "functionName": "visible",
                         "line": 161
@@ -190,7 +190,7 @@
                     {
                         "codegenSuccessfull": true,
                         "column": 35,
-                        "durationMicroseconds": 522,
+                        "durationMicroseconds": 326,
                         "errorMessage": "",
                         "functionName": "color",
                         "line": 158
@@ -198,7 +198,7 @@
                     {
                         "codegenSuccessfull": true,
                         "column": 43,
-                        "durationMicroseconds": 239,
+                        "durationMicroseconds": 73,
                         "errorMessage": "",
                         "functionName": "centerIn",
                         "line": 166
@@ -206,7 +206,7 @@
                     {
                         "codegenSuccessfull": true,
                         "column": 36,
-                        "durationMicroseconds": 616,
+                        "durationMicroseconds": 306,
                         "errorMessage": "",
                         "functionName": "color",
                         "line": 173
@@ -214,7 +214,7 @@
                     {
                         "codegenSuccessfull": true,
                         "column": 36,
-                        "durationMicroseconds": 396,
+                        "durationMicroseconds": 316,
                         "errorMessage": "",
                         "functionName": "color",
                         "line": 181
@@ -222,7 +222,7 @@
                     {
                         "codegenSuccessfull": true,
                         "column": 38,
-                        "durationMicroseconds": 134,
+                        "durationMicroseconds": 102,
                         "errorMessage": "",
                         "functionName": "cursorShape",
                         "line": 189
@@ -230,7 +230,7 @@
                     {
                         "codegenSuccessfull": false,
                         "column": 36,
-                        "durationMicroseconds": 481,
+                        "durationMicroseconds": 432,
                         "errorMessage": "Cannot access value for name localLibrary",
                         "functionName": "onClicked",
                         "line": 190
@@ -238,7 +238,7 @@
                     {
                         "codegenSuccessfull": true,
                         "column": 39,
-                        "durationMicroseconds": 86,
+                        "durationMicroseconds": 73,
                         "errorMessage": "",
                         "functionName": "fill",
                         "line": 187
@@ -246,7 +246,7 @@
                     {
                         "codegenSuccessfull": true,
                         "column": 39,
-                        "durationMicroseconds": 74,
+                        "durationMicroseconds": 61,
                         "errorMessage": "",
                         "functionName": "fill",
                         "line": 208
@@ -254,7 +254,7 @@
                     {
                         "codegenSuccessfull": false,
                         "column": 37,
-                        "durationMicroseconds": 51,
+                        "durationMicroseconds": 42,
                         "errorMessage": "Cannot access value for name selectedPlaylist",
                         "functionName": "source",
                         "line": 217
@@ -262,7 +262,7 @@
                     {
                         "codegenSuccessfull": true,
                         "column": 39,
-                        "durationMicroseconds": 99,
+                        "durationMicroseconds": 91,
                         "errorMessage": "",
                         "functionName": "fillMode",
                         "line": 218
@@ -270,7 +270,7 @@
                     {
                         "codegenSuccessfull": false,
                         "column": 38,
-                        "durationMicroseconds": 38,
+                        "durationMicroseconds": 36,
                         "errorMessage": "Cannot access value for name selectedPlaylist",
                         "functionName": "visible",
                         "line": 219
@@ -278,7 +278,7 @@
                     {
                         "codegenSuccessfull": true,
                         "column": 43,
-                        "durationMicroseconds": 75,
+                        "durationMicroseconds": 67,
                         "errorMessage": "",
                         "functionName": "fill",
                         "line": 216
@@ -286,7 +286,7 @@
                     {
                         "codegenSuccessfull": false,
                         "column": 38,
-                        "durationMicroseconds": 40,
+                        "durationMicroseconds": 36,
                         "errorMessage": "Cannot access value for name selectedPlaylist",
                         "functionName": "visible",
                         "line": 225
@@ -294,7 +294,7 @@
                     {
                         "codegenSuccessfull": true,
                         "column": 43,
-                        "durationMicroseconds": 129,
+                        "durationMicroseconds": 76,
                         "errorMessage": "",
                         "functionName": "fill",
                         "line": 223
@@ -302,7 +302,7 @@
                     {
                         "codegenSuccessfull": true,
                         "column": 51,
-                        "durationMicroseconds": 76,
+                        "durationMicroseconds": 61,
                         "errorMessage": "",
                         "functionName": "centerIn",
                         "line": 228
@@ -310,7 +310,7 @@
                     {
                         "codegenSuccessfull": true,
                         "column": 38,
-                        "durationMicroseconds": 664,
+                        "durationMicroseconds": 185,
                         "errorMessage": "",
                         "functionName": "opacity",
                         "line": 239
@@ -318,7 +318,7 @@
                     {
                         "codegenSuccessfull": true,
                         "column": 38,
-                        "durationMicroseconds": 453,
+                        "durationMicroseconds": 149,
                         "errorMessage": "",
                         "functionName": "visible",
                         "line": 240
@@ -326,7 +326,7 @@
                     {
                         "codegenSuccessfull": true,
                         "column": 43,
-                        "durationMicroseconds": 295,
+                        "durationMicroseconds": 68,
                         "errorMessage": "",
                         "functionName": "fill",
                         "line": 237
@@ -334,7 +334,7 @@
                     {
                         "codegenSuccessfull": true,
                         "column": 51,
-                        "durationMicroseconds": 191,
+                        "durationMicroseconds": 63,
                         "errorMessage": "",
                         "functionName": "centerIn",
                         "line": 244
@@ -342,7 +342,7 @@
                     {
                         "codegenSuccessfull": true,
                         "column": 55,
-                        "durationMicroseconds": 352,
+                        "durationMicroseconds": 98,
                         "errorMessage": "",
                         "functionName": "alignment",
                         "line": 252
@@ -350,7 +350,7 @@
                     {
                         "codegenSuccessfull": true,
                         "column": 55,
-                        "durationMicroseconds": 295,
+                        "durationMicroseconds": 101,
                         "errorMessage": "",
                         "functionName": "alignment",
                         "line": 261
@@ -358,7 +358,7 @@
                     {
                         "codegenSuccessfull": true,
                         "column": 46,
-                        "durationMicroseconds": 285,
+                        "durationMicroseconds": 92,
                         "errorMessage": "",
                         "functionName": "cursorShape",
                         "line": 269
@@ -366,7 +366,7 @@
                     {
                         "codegenSuccessfull": true,
                         "column": 44,
-                        "durationMicroseconds": 272,
+                        "durationMicroseconds": 155,
                         "errorMessage": "",
                         "functionName": "onClicked",
                         "line": 270
@@ -374,7 +374,7 @@
                     {
                         "codegenSuccessfull": true,
                         "column": 47,
-                        "durationMicroseconds": 104,
+                        "durationMicroseconds": 66,
                         "errorMessage": "",
                         "functionName": "fill",
                         "line": 267
@@ -382,7 +382,7 @@
                     {
                         "codegenSuccessfull": true,
                         "column": 32,
-                        "durationMicroseconds": 398,
+                        "durationMicroseconds": 376,
                         "errorMessage": "",
                         "functionName": "color",
                         "line": 280
@@ -390,7 +390,7 @@
                     {
                         "codegenSuccessfull": true,
                         "column": 40,
-                        "durationMicroseconds": 185,
+                        "durationMicroseconds": 125,
                         "errorMessage": "",
                         "functionName": "right",
                         "line": 283
@@ -398,7 +398,7 @@
                     {
                         "codegenSuccessfull": true,
                         "column": 41,
-                        "durationMicroseconds": 171,
+                        "durationMicroseconds": 117,
                         "errorMessage": "",
                         "functionName": "bottom",
                         "line": 284
@@ -406,7 +406,7 @@
                     {
                         "codegenSuccessfull": true,
                         "column": 36,
-                        "durationMicroseconds": 448,
+                        "durationMicroseconds": 308,
                         "errorMessage": "",
                         "functionName": "color",
                         "line": 296
@@ -414,7 +414,7 @@
                     {
                         "codegenSuccessfull": true,
                         "column": 47,
-                        "durationMicroseconds": 91,
+                        "durationMicroseconds": 68,
                         "errorMessage": "",
                         "functionName": "centerIn",
                         "line": 292
@@ -422,7 +422,7 @@
                     {
                         "codegenSuccessfull": true,
                         "column": 42,
-                        "durationMicroseconds": 148,
+                        "durationMicroseconds": 94,
                         "errorMessage": "",
                         "functionName": "cursorShape",
                         "line": 304
@@ -430,7 +430,7 @@
                     {
                         "codegenSuccessfull": true,
                         "column": 40,
-                        "durationMicroseconds": 244,
+                        "durationMicroseconds": 123,
                         "errorMessage": "",
                         "functionName": "onClicked",
                         "line": 305
@@ -438,7 +438,7 @@
                     {
                         "codegenSuccessfull": true,
                         "column": 43,
-                        "durationMicroseconds": 128,
+                        "durationMicroseconds": 89,
                         "errorMessage": "",
                         "functionName": "fill",
                         "line": 302
@@ -446,7 +446,7 @@
                     {
                         "codegenSuccessfull": false,
                         "column": 31,
-                        "durationMicroseconds": 66,
+                        "durationMicroseconds": 51,
                         "errorMessage": "Cannot access value for name selectedPlaylist",
                         "functionName": "text",
                         "line": 315
@@ -454,7 +454,7 @@
                     {
                         "codegenSuccessfull": false,
                         "column": 35,
-                        "durationMicroseconds": 44,
+                        "durationMicroseconds": 36,
                         "errorMessage": "Cannot access value for name selectedPlaylist",
                         "functionName": "text",
                         "line": 328
@@ -462,7 +462,7 @@
                     {
                         "codegenSuccessfull": true,
                         "column": 38,
-                        "durationMicroseconds": 234,
+                        "durationMicroseconds": 130,
                         "errorMessage": "",
                         "functionName": "visible",
                         "line": 333
@@ -470,7 +470,7 @@
                     {
                         "codegenSuccessfull": false,
                         "column": 35,
-                        "durationMicroseconds": 60,
+                        "durationMicroseconds": 46,
                         "errorMessage": "Cannot access value for name selectedPlaylist",
                         "functionName": "text",
                         "line": 338
@@ -478,7 +478,7 @@
                     {
                         "codegenSuccessfull": false,
                         "column": 48,
-                        "durationMicroseconds": 145,
+                        "durationMicroseconds": 100,
                         "errorMessage": "Cannot access value for name selectedPlaylist",
                         "functionName": "onEditingFinished",
                         "line": 351
@@ -486,7 +486,7 @@
                     {
                         "codegenSuccessfull": true,
                         "column": 51,
-                        "durationMicroseconds": 127,
+                        "durationMicroseconds": 107,
                         "errorMessage": "",
                         "functionName": "onEscapePressed",
                         "line": 358
@@ -494,7 +494,7 @@
                     {
                         "codegenSuccessfull": true,
                         "column": 36,
-                        "durationMicroseconds": 666,
+                        "durationMicroseconds": 347,
                         "errorMessage": "",
                         "functionName": "color",
                         "line": 365
@@ -502,7 +502,7 @@
                     {
                         "codegenSuccessfull": true,
                         "column": 38,
-                        "durationMicroseconds": 197,
+                        "durationMicroseconds": 121,
                         "errorMessage": "",
                         "functionName": "visible",
                         "line": 366
@@ -510,7 +510,7 @@
                     {
                         "codegenSuccessfull": true,
                         "column": 51,
-                        "durationMicroseconds": 142,
+                        "durationMicroseconds": 113,
                         "errorMessage": "",
                         "functionName": "centerIn",
                         "line": 369
@@ -518,7 +518,7 @@
                     {
                         "codegenSuccessfull": true,
                         "column": 46,
-                        "durationMicroseconds": 216,
+                        "durationMicroseconds": 154,
                         "errorMessage": "",
                         "functionName": "cursorShape",
                         "line": 380
@@ -526,7 +526,7 @@
                     {
                         "codegenSuccessfull": true,
                         "column": 44,
-                        "durationMicroseconds": 367,
+                        "durationMicroseconds": 509,
                         "errorMessage": "",
                         "functionName": "onClicked",
                         "line": 381
@@ -534,7 +534,7 @@
                     {
                         "codegenSuccessfull": true,
                         "column": 47,
-                        "durationMicroseconds": 83,
+                        "durationMicroseconds": 171,
                         "errorMessage": "",
                         "functionName": "fill",
                         "line": 378
@@ -542,7 +542,7 @@
                     {
                         "codegenSuccessfull": false,
                         "column": 31,
-                        "durationMicroseconds": 60,
+                        "durationMicroseconds": 80,
                         "errorMessage": "Cannot access value for name selectedPlaylist",
                         "functionName": "text",
                         "line": 391
@@ -550,7 +550,7 @@
                     {
                         "codegenSuccessfull": false,
                         "column": 26,
-                        "durationMicroseconds": 37,
+                        "durationMicroseconds": 43,
                         "errorMessage": "Cannot access value for name selectedPlaylist",
                         "functionName": "visible",
                         "line": 403
@@ -558,7 +558,7 @@
                     {
                         "codegenSuccessfull": true,
                         "column": 28,
-                        "durationMicroseconds": 456,
+                        "durationMicroseconds": 387,
                         "errorMessage": "",
                         "functionName": "color",
                         "line": 408
@@ -566,7 +566,7 @@
                     {
                         "codegenSuccessfull": true,
                         "column": 43,
-                        "durationMicroseconds": 93,
+                        "durationMicroseconds": 81,
                         "errorMessage": "",
                         "functionName": "centerIn",
                         "line": 414
@@ -574,7 +574,7 @@
                     {
                         "codegenSuccessfull": true,
                         "column": 38,
-                        "durationMicroseconds": 126,
+                        "durationMicroseconds": 129,
                         "errorMessage": "",
                         "functionName": "cursorShape",
                         "line": 437
@@ -582,7 +582,7 @@
                     {
                         "codegenSuccessfull": false,
                         "column": 36,
-                        "durationMicroseconds": 59,
+                        "durationMicroseconds": 69,
                         "errorMessage": "Cannot access value for name selectedPlaylist",
                         "functionName": "onClicked",
                         "line": 438
@@ -598,7 +598,7 @@
                     {
                         "codegenSuccessfull": true,
                         "column": 28,
-                        "durationMicroseconds": 339,
+                        "durationMicroseconds": 347,
                         "errorMessage": "",
                         "functionName": "color",
                         "line": 452
@@ -606,7 +606,7 @@
                     {
                         "codegenSuccessfull": true,
                         "column": 39,
-                        "durationMicroseconds": 75,
+                        "durationMicroseconds": 91,
                         "errorMessage": "",
                         "functionName": "fill",
                         "line": 458
@@ -614,7 +614,7 @@
                     {
                         "codegenSuccessfull": false,
                         "column": 35,
-                        "durationMicroseconds": 861,
+                        "durationMicroseconds": 689,
                         "errorMessage": "Cannot access value for name localLibrary",
                         "functionName": "text",
                         "line": 471
@@ -622,7 +622,7 @@
                     {
                         "codegenSuccessfull": true,
                         "column": 38,
-                        "durationMicroseconds": 203,
+                        "durationMicroseconds": 128,
                         "errorMessage": "",
                         "functionName": "cursorShape",
                         "line": 483
@@ -630,7 +630,7 @@
                     {
                         "codegenSuccessfull": true,
                         "column": 36,
-                        "durationMicroseconds": 413,
+                        "durationMicroseconds": 217,
                         "errorMessage": "",
                         "functionName": "onClicked",
                         "line": 484
@@ -638,7 +638,7 @@
                     {
                         "codegenSuccessfull": true,
                         "column": 39,
-                        "durationMicroseconds": 125,
+                        "durationMicroseconds": 92,
                         "errorMessage": "",
                         "functionName": "fill",
                         "line": 481
@@ -646,7 +646,7 @@
                     {
                         "codegenSuccessfull": false,
                         "column": 30,
-                        "durationMicroseconds": 72,
+                        "durationMicroseconds": 63,
                         "errorMessage": "Cannot access value for name selectedPlaylist",
                         "functionName": "visible",
                         "line": 496
@@ -654,7 +654,7 @@
                     {
                         "codegenSuccessfull": true,
                         "column": 39,
-                        "durationMicroseconds": 132,
+                        "durationMicroseconds": 81,
                         "errorMessage": "",
                         "functionName": "centerIn",
                         "line": 494
@@ -662,7 +662,7 @@
                     {
                         "codegenSuccessfull": true,
                         "column": 43,
-                        "durationMicroseconds": 164,
+                        "durationMicroseconds": 128,
                         "errorMessage": "",
                         "functionName": "alignment",
                         "line": 503
@@ -670,7 +670,7 @@
                     {
                         "codegenSuccessfull": true,
                         "column": 43,
-                        "durationMicroseconds": 172,
+                        "durationMicroseconds": 105,
                         "errorMessage": "",
                         "functionName": "alignment",
                         "line": 512
@@ -678,7 +678,7 @@
                     {
                         "codegenSuccessfull": false,
                         "column": 31,
-                        "durationMicroseconds": 69,
+                        "durationMicroseconds": 44,
                         "errorMessage": "Cannot access value for name selectedPlaylist",
                         "functionName": "text",
                         "line": 516
@@ -686,7 +686,7 @@
                     {
                         "codegenSuccessfull": true,
                         "column": 46,
-                        "durationMicroseconds": 155,
+                        "durationMicroseconds": 104,
                         "errorMessage": "",
                         "functionName": "horizontalAlignment",
                         "line": 522
@@ -694,7 +694,7 @@
                     {
                         "codegenSuccessfull": true,
                         "column": 43,
-                        "durationMicroseconds": 308,
+                        "durationMicroseconds": 89,
                         "errorMessage": "",
                         "functionName": "alignment",
                         "line": 523
@@ -702,7 +702,7 @@
                     {
                         "codegenSuccessfull": false,
                         "column": 30,
-                        "durationMicroseconds": 93,
+                        "durationMicroseconds": 49,
                         "errorMessage": "Cannot access value for name selectedPlaylist",
                         "functionName": "visible",
                         "line": 529
@@ -710,7 +710,7 @@
                     {
                         "codegenSuccessfull": true,
                         "column": 35,
-                        "durationMicroseconds": 136,
+                        "durationMicroseconds": 127,
                         "errorMessage": "",
                         "functionName": "fill",
                         "line": 528
@@ -718,7 +718,7 @@
                     {
                         "codegenSuccessfull": true,
                         "column": 36,
-                        "durationMicroseconds": 207,
+                        "durationMicroseconds": 205,
                         "errorMessage": "",
                         "functionName": "width",
                         "line": 538
@@ -726,7 +726,7 @@
                     {
                         "codegenSuccessfull": true,
                         "column": 45,
-                        "durationMicroseconds": 2450,
+                        "durationMicroseconds": 185,
                         "errorMessage": "",
                         "functionName": "bottom",
                         "line": 541
@@ -734,7 +734,7 @@
                     {
                         "codegenSuccessfull": true,
                         "column": 43,
-                        "durationMicroseconds": 153,
+                        "durationMicroseconds": 107,
                         "errorMessage": "",
                         "functionName": "fill",
                         "line": 545
@@ -742,7 +742,7 @@
                     {
                         "codegenSuccessfull": true,
                         "column": 52,
-                        "durationMicroseconds": 323,
+                        "durationMicroseconds": 137,
                         "errorMessage": "",
                         "functionName": "verticalAlignment",
                         "line": 559
@@ -750,7 +750,7 @@
                     {
                         "codegenSuccessfull": true,
                         "column": 52,
-                        "durationMicroseconds": 164,
+                        "durationMicroseconds": 89,
                         "errorMessage": "",
                         "functionName": "verticalAlignment",
                         "line": 569
@@ -758,7 +758,7 @@
                     {
                         "codegenSuccessfull": true,
                         "column": 40,
-                        "durationMicroseconds": 124,
+                        "durationMicroseconds": 81,
                         "errorMessage": "",
                         "functionName": "elide",
                         "line": 570
@@ -766,7 +766,7 @@
                     {
                         "codegenSuccessfull": true,
                         "column": 52,
-                        "durationMicroseconds": 99,
+                        "durationMicroseconds": 203,
                         "errorMessage": "",
                         "functionName": "verticalAlignment",
                         "line": 582
@@ -774,7 +774,7 @@
                     {
                         "codegenSuccessfull": true,
                         "column": 40,
-                        "durationMicroseconds": 170,
+                        "durationMicroseconds": 273,
                         "errorMessage": "",
                         "functionName": "elide",
                         "line": 583
@@ -782,7 +782,7 @@
                     {
                         "codegenSuccessfull": true,
                         "column": 52,
-                        "durationMicroseconds": 120,
+                        "durationMicroseconds": 99,
                         "errorMessage": "",
                         "functionName": "verticalAlignment",
                         "line": 594
@@ -790,7 +790,7 @@
                     {
                         "codegenSuccessfull": true,
                         "column": 54,
-                        "durationMicroseconds": 197,
+                        "durationMicroseconds": 100,
                         "errorMessage": "",
                         "functionName": "horizontalAlignment",
                         "line": 595
@@ -798,7 +798,7 @@
                     {
                         "codegenSuccessfull": false,
                         "column": 32,
-                        "durationMicroseconds": 154,
+                        "durationMicroseconds": 67,
                         "errorMessage": "Cannot access value for name selectedPlaylist",
                         "functionName": "model",
                         "line": 605
@@ -806,7 +806,7 @@
                     {
                         "codegenSuccessfull": true,
                         "column": 37,
-                        "durationMicroseconds": 222,
+                        "durationMicroseconds": 124,
                         "errorMessage": "",
                         "functionName": "policy",
                         "line": 608
@@ -814,7 +814,7 @@
                     {
                         "codegenSuccessfull": false,
                         "column": 36,
-                        "durationMicroseconds": 124,
+                        "durationMicroseconds": 41,
                         "errorMessage": "Cannot access value for name trackList",
                         "functionName": "width",
                         "line": 613
@@ -822,7 +822,7 @@
                     {
                         "codegenSuccessfull": false,
                         "column": 62,
-                        "durationMicroseconds": 75,
+                        "durationMicroseconds": 34,
                         "errorMessage": "Cannot access value for name customTrackContextMenu",
                         "functionName": "isContextMenuOpen",
                         "line": 615
@@ -830,7 +830,7 @@
                     {
                         "codegenSuccessfull": true,
                         "column": 54,
-                        "durationMicroseconds": 381,
+                        "durationMicroseconds": 296,
                         "errorMessage": "",
                         "functionName": "isHovered",
                         "line": 616
@@ -838,7 +838,7 @@
                     {
                         "codegenSuccessfull": false,
                         "column": 58,
-                        "durationMicroseconds": 444,
+                        "durationMicroseconds": 422,
                         "errorMessage": "Cannot access value for name modelData",
                         "functionName": "trackModelData",
                         "line": 617
@@ -846,7 +846,7 @@
                     {
                         "codegenSuccessfull": true,
                         "column": 36,
-                        "durationMicroseconds": 448,
+                        "durationMicroseconds": 347,
                         "errorMessage": "",
                         "functionName": "color",
                         "line": 618
@@ -854,7 +854,7 @@
                     {
                         "codegenSuccessfull": true,
                         "column": 46,
-                        "durationMicroseconds": 173,
+                        "durationMicroseconds": 217,
                         "errorMessage": "",
                         "functionName": "cursorShape",
                         "line": 627
@@ -862,7 +862,7 @@
                     {
                         "codegenSuccessfull": true,
                         "column": 50,
-                        "durationMicroseconds": 482,
+                        "durationMicroseconds": 654,
                         "errorMessage": "",
                         "functionName": "acceptedButtons",
                         "line": 628
@@ -870,7 +870,7 @@
                     {
                         "codegenSuccessfull": false,
                         "column": 50,
-                        "durationMicroseconds": 68,
+                        "durationMicroseconds": 82,
                         "errorMessage": "Cannot access value for name mouse",
                         "functionName": "onDoubleClicked",
                         "line": 629
@@ -878,7 +878,7 @@
                     {
                         "codegenSuccessfull": false,
                         "column": 44,
-                        "durationMicroseconds": 90,
+                        "durationMicroseconds": 91,
                         "errorMessage": "Cannot access value for name mouse",
                         "functionName": "onClicked",
                         "line": 634
@@ -886,7 +886,7 @@
                     {
                         "codegenSuccessfull": true,
                         "column": 47,
-                        "durationMicroseconds": 121,
+                        "durationMicroseconds": 204,
                         "errorMessage": "",
                         "functionName": "fill",
                         "line": 625
@@ -894,7 +894,7 @@
                     {
                         "codegenSuccessfull": true,
                         "column": 47,
-                        "durationMicroseconds": 109,
+                        "durationMicroseconds": 89,
                         "errorMessage": "",
                         "functionName": "fill",
                         "line": 662
@@ -902,7 +902,7 @@
                     {
                         "codegenSuccessfull": false,
                         "column": 47,
-                        "durationMicroseconds": 506,
+                        "durationMicroseconds": 446,
                         "errorMessage": "Cannot access value for name index",
                         "functionName": "text",
                         "line": 674
@@ -910,7 +910,7 @@
                     {
                         "codegenSuccessfull": false,
                         "column": 50,
-                        "durationMicroseconds": 85,
+                        "durationMicroseconds": 48,
                         "errorMessage": "Cannot access value for name isHovered",
                         "functionName": "visible",
                         "line": 679
@@ -918,7 +918,7 @@
                     {
                         "codegenSuccessfull": true,
                         "column": 59,
-                        "durationMicroseconds": 179,
+                        "durationMicroseconds": 83,
                         "errorMessage": "",
                         "functionName": "centerIn",
                         "line": 678
@@ -926,7 +926,7 @@
                     {
                         "codegenSuccessfull": false,
                         "column": 47,
-                        "durationMicroseconds": 911,
+                        "durationMicroseconds": 656,
                         "errorMessage": "Cannot access value for name audioPlayer",
                         "functionName": "text",
                         "line": 683
@@ -934,7 +934,7 @@
                     {
                         "codegenSuccessfull": false,
                         "column": 50,
-                        "durationMicroseconds": 86,
+                        "durationMicroseconds": 54,
                         "errorMessage": "Cannot access value for name isHovered",
                         "functionName": "visible",
                         "line": 688
@@ -942,7 +942,7 @@
                     {
                         "codegenSuccessfull": true,
                         "column": 59,
-                        "durationMicroseconds": 253,
+                        "durationMicroseconds": 103,
                         "errorMessage": "",
                         "functionName": "centerIn",
                         "line": 687
@@ -950,7 +950,7 @@
                     {
                         "codegenSuccessfull": true,
                         "column": 59,
-                        "durationMicroseconds": 222,
+                        "durationMicroseconds": 136,
                         "errorMessage": "",
                         "functionName": "alignment",
                         "line": 703
@@ -958,7 +958,7 @@
                     {
                         "codegenSuccessfull": false,
                         "column": 53,
-                        "durationMicroseconds": 537,
+                        "durationMicroseconds": 465,
                         "errorMessage": "Cannot access value for name modelData",
                         "functionName": "source",
                         "line": 707
@@ -966,7 +966,7 @@
                     {
                         "codegenSuccessfull": true,
                         "column": 55,
-                        "durationMicroseconds": 310,
+                        "durationMicroseconds": 124,
                         "errorMessage": "",
                         "functionName": "fillMode",
                         "line": 708
@@ -974,7 +974,7 @@
                     {
                         "codegenSuccessfull": false,
                         "column": 54,
-                        "durationMicroseconds": 498,
+                        "durationMicroseconds": 400,
                         "errorMessage": "Cannot access value for name modelData",
                         "functionName": "visible",
                         "line": 709
@@ -982,7 +982,7 @@
                     {
                         "codegenSuccessfull": true,
                         "column": 59,
-                        "durationMicroseconds": 432,
+                        "durationMicroseconds": 274,
                         "errorMessage": "",
                         "functionName": "fill",
                         "line": 706
@@ -990,7 +990,7 @@
                     {
                         "codegenSuccessfull": false,
                         "column": 54,
-                        "durationMicroseconds": 414,
+                        "durationMicroseconds": 335,
                         "errorMessage": "Cannot access value for name modelData",
                         "functionName": "visible",
                         "line": 716
@@ -998,7 +998,7 @@
                     {
                         "codegenSuccessfull": true,
                         "column": 59,
-                        "durationMicroseconds": 133,
+                        "durationMicroseconds": 81,
                         "errorMessage": "",
                         "functionName": "fill",
                         "line": 714
@@ -1006,7 +1006,7 @@
                     {
                         "codegenSuccessfull": true,
                         "column": 67,
-                        "durationMicroseconds": 96,
+                        "durationMicroseconds": 66,
                         "errorMessage": "",
                         "functionName": "centerIn",
                         "line": 719
@@ -1014,7 +1014,7 @@
                     {
                         "codegenSuccessfull": true,
                         "column": 59,
-                        "durationMicroseconds": 119,
+                        "durationMicroseconds": 99,
                         "errorMessage": "",
                         "functionName": "alignment",
                         "line": 731
@@ -1022,7 +1022,7 @@
                     {
                         "codegenSuccessfull": false,
                         "column": 51,
-                        "durationMicroseconds": 551,
+                        "durationMicroseconds": 483,
                         "errorMessage": "Cannot access value for name modelData",
                         "functionName": "text",
                         "line": 734
@@ -1030,7 +1030,7 @@
                     {
                         "codegenSuccessfull": false,
                         "column": 52,
-                        "durationMicroseconds": 809,
+                        "durationMicroseconds": 576,
                         "errorMessage": "Cannot access value for name audioPlayer",
                         "functionName": "color",
                         "line": 735
@@ -1038,7 +1038,7 @@
                     {
                         "codegenSuccessfull": true,
                         "column": 52,
-                        "durationMicroseconds": 146,
+                        "durationMicroseconds": 120,
                         "errorMessage": "",
                         "functionName": "elide",
                         "line": 739
@@ -1046,7 +1046,7 @@
                     {
                         "codegenSuccessfull": false,
                         "column": 51,
-                        "durationMicroseconds": 589,
+                        "durationMicroseconds": 520,
                         "errorMessage": "Cannot access value for name modelData",
                         "functionName": "text",
                         "line": 744
@@ -1054,7 +1054,7 @@
                     {
                         "codegenSuccessfull": true,
                         "column": 52,
-                        "durationMicroseconds": 212,
+                        "durationMicroseconds": 108,
                         "errorMessage": "",
                         "functionName": "elide",
                         "line": 748
@@ -1062,7 +1062,7 @@
                     {
                         "codegenSuccessfull": false,
                         "column": 43,
-                        "durationMicroseconds": 1029,
+                        "durationMicroseconds": 500,
                         "errorMessage": "Cannot access value for name modelData",
                         "functionName": "text",
                         "line": 755
@@ -1070,7 +1070,7 @@
                     {
                         "codegenSuccessfull": true,
                         "column": 44,
-                        "durationMicroseconds": 278,
+                        "durationMicroseconds": 111,
                         "errorMessage": "",
                         "functionName": "elide",
                         "line": 763
@@ -1078,7 +1078,7 @@
                     {
                         "codegenSuccessfull": true,
                         "column": 56,
-                        "durationMicroseconds": 144,
+                        "durationMicroseconds": 82,
                         "errorMessage": "",
                         "functionName": "verticalAlignment",
                         "line": 764
@@ -1086,7 +1086,7 @@
                     {
                         "codegenSuccessfull": true,
                         "column": 55,
-                        "durationMicroseconds": 210,
+                        "durationMicroseconds": 104,
                         "errorMessage": "",
                         "functionName": "alignment",
                         "line": 762
@@ -1094,7 +1094,7 @@
                     {
                         "codegenSuccessfull": true,
                         "column": 55,
-                        "durationMicroseconds": 208,
+                        "durationMicroseconds": 88,
                         "errorMessage": "",
                         "functionName": "alignment",
                         "line": 773
@@ -1102,7 +1102,7 @@
                     {
                         "codegenSuccessfull": false,
                         "column": 47,
-                        "durationMicroseconds": 126,
+                        "durationMicroseconds": 52,
                         "errorMessage": "Cannot access value for name libraryView",
                         "functionName": "text",
                         "line": 776
@@ -1110,7 +1110,7 @@
                     {
                         "codegenSuccessfull": true,
                         "column": 62,
-                        "durationMicroseconds": 198,
+                        "durationMicroseconds": 127,
                         "errorMessage": "",
                         "functionName": "horizontalAlignment",
                         "line": 781
@@ -1118,7 +1118,7 @@
                     {
                         "codegenSuccessfull": true,
                         "column": 60,
-                        "durationMicroseconds": 123,
+                        "durationMicroseconds": 92,
                         "errorMessage": "",
                         "functionName": "verticalAlignment",
                         "line": 782
@@ -1126,7 +1126,7 @@
                     {
                         "codegenSuccessfull": false,
                         "column": 50,
-                        "durationMicroseconds": 65,
+                        "durationMicroseconds": 54,
                         "errorMessage": "Cannot access value for name isHovered",
                         "functionName": "opacity",
                         "line": 790
@@ -1134,7 +1134,7 @@
                     {
                         "codegenSuccessfull": true,
                         "column": 59,
-                        "durationMicroseconds": 131,
+                        "durationMicroseconds": 91,
                         "errorMessage": "",
                         "functionName": "alignment",
                         "line": 789
@@ -1142,7 +1142,7 @@
                     {
                         "codegenSuccessfull": true,
                         "column": 52,
-                        "durationMicroseconds": 478,
+                        "durationMicroseconds": 343,
                         "errorMessage": "",
                         "functionName": "color",
                         "line": 796
@@ -1150,7 +1150,7 @@
                     {
                         "codegenSuccessfull": true,
                         "column": 59,
-                        "durationMicroseconds": 121,
+                        "durationMicroseconds": 87,
                         "errorMessage": "",
                         "functionName": "fill",
                         "line": 794
@@ -1158,7 +1158,7 @@
                     {
                         "codegenSuccessfull": true,
                         "column": 52,
-                        "durationMicroseconds": 500,
+                        "durationMicroseconds": 646,
                         "errorMessage": "",
                         "functionName": "color",
                         "line": 805
@@ -1166,7 +1166,7 @@
                     {
                         "codegenSuccessfull": true,
                         "column": 63,
-                        "durationMicroseconds": 101,
+                        "durationMicroseconds": 196,
                         "errorMessage": "",
                         "functionName": "centerIn",
                         "line": 801
@@ -1174,7 +1174,7 @@
                     {
                         "codegenSuccessfull": true,
                         "column": 62,
-                        "durationMicroseconds": 378,
+                        "durationMicroseconds": 403,
                         "errorMessage": "",
                         "functionName": "acceptedButtons",
                         "line": 812
@@ -1182,7 +1182,7 @@
                     {
                         "codegenSuccessfull": true,
                         "column": 58,
-                        "durationMicroseconds": 97,
+                        "durationMicroseconds": 104,
                         "errorMessage": "",
                         "functionName": "cursorShape",
                         "line": 813
@@ -1190,7 +1190,7 @@
                     {
                         "codegenSuccessfull": false,
                         "column": 56,
-                        "durationMicroseconds": 88,
+                        "durationMicroseconds": 89,
                         "errorMessage": "Cannot access value for name libraryView",
                         "functionName": "onClicked",
                         "line": 814
@@ -1198,7 +1198,7 @@
                     {
                         "codegenSuccessfull": true,
                         "column": 59,
-                        "durationMicroseconds": 76,
+                        "durationMicroseconds": 77,
                         "errorMessage": "",
                         "functionName": "fill",
                         "line": 810
@@ -1206,7 +1206,7 @@
                     {
                         "codegenSuccessfull": false,
                         "column": 22,
-                        "durationMicroseconds": 38,
+                        "durationMicroseconds": 40,
                         "errorMessage": "Cannot access value for name selectedPlaylist",
                         "functionName": "visible",
                         "line": 853
@@ -1214,7 +1214,7 @@
                     {
                         "codegenSuccessfull": false,
                         "column": 28,
-                        "durationMicroseconds": 1286,
+                        "durationMicroseconds": 1692,
                         "errorMessage": "Cannot access value for name localLibrary",
                         "functionName": "model",
                         "line": 890
@@ -1222,7 +1222,7 @@
                     {
                         "codegenSuccessfull": true,
                         "column": 35,
-                        "durationMicroseconds": 121,
+                        "durationMicroseconds": 140,
                         "errorMessage": "",
                         "functionName": "fill",
                         "line": 887
@@ -1230,7 +1230,7 @@
                     {
                         "codegenSuccessfull": true,
                         "column": 36,
-                        "durationMicroseconds": 413,
+                        "durationMicroseconds": 373,
                         "errorMessage": "",
                         "functionName": "color",
                         "line": 899
@@ -1238,7 +1238,7 @@
                     {
                         "codegenSuccessfull": true,
                         "column": 43,
-                        "durationMicroseconds": 91,
+                        "durationMicroseconds": 78,
                         "errorMessage": "",
                         "functionName": "fill",
                         "line": 898
@@ -1246,7 +1246,7 @@
                     {
                         "codegenSuccessfull": true,
                         "column": 43,
-                        "durationMicroseconds": 345,
+                        "durationMicroseconds": 304,
                         "errorMessage": "",
                         "functionName": "color",
                         "line": 901
@@ -1254,7 +1254,7 @@
                     {
                         "codegenSuccessfull": true,
                         "column": 47,
-                        "durationMicroseconds": 92,
+                        "durationMicroseconds": 75,
                         "errorMessage": "",
                         "functionName": "fill",
                         "line": 908
@@ -1262,7 +1262,7 @@
                     {
                         "codegenSuccessfull": false,
                         "column": 49,
-                        "durationMicroseconds": 464,
+                        "durationMicroseconds": 439,
                         "errorMessage": "Cannot access value for name modelData",
                         "functionName": "source",
                         "line": 921
@@ -1270,7 +1270,7 @@
                     {
                         "codegenSuccessfull": true,
                         "column": 51,
-                        "durationMicroseconds": 118,
+                        "durationMicroseconds": 100,
                         "errorMessage": "",
                         "functionName": "fillMode",
                         "line": 922
@@ -1278,7 +1278,7 @@
                     {
                         "codegenSuccessfull": false,
                         "column": 50,
-                        "durationMicroseconds": 385,
+                        "durationMicroseconds": 372,
                         "errorMessage": "Cannot access value for name modelData",
                         "functionName": "visible",
                         "line": 923
@@ -1286,7 +1286,7 @@
                     {
                         "codegenSuccessfull": true,
                         "column": 55,
-                        "durationMicroseconds": 84,
+                        "durationMicroseconds": 72,
                         "errorMessage": "",
                         "functionName": "fill",
                         "line": 920
@@ -1294,7 +1294,7 @@
                     {
                         "codegenSuccessfull": false,
                         "column": 48,
-                        "durationMicroseconds": 340,
+                        "durationMicroseconds": 310,
                         "errorMessage": "Cannot access value for name modelData",
                         "functionName": "color",
                         "line": 928
@@ -1302,7 +1302,7 @@
                     {
                         "codegenSuccessfull": false,
                         "column": 50,
-                        "durationMicroseconds": 285,
+                        "durationMicroseconds": 274,
                         "errorMessage": "Cannot access value for name modelData",
                         "functionName": "visible",
                         "line": 929
@@ -1310,7 +1310,7 @@
                     {
                         "codegenSuccessfull": true,
                         "column": 55,
-                        "durationMicroseconds": 89,
+                        "durationMicroseconds": 76,
                         "errorMessage": "",
                         "functionName": "fill",
                         "line": 927
@@ -1318,7 +1318,7 @@
                     {
                         "codegenSuccessfull": false,
                         "column": 51,
-                        "durationMicroseconds": 522,
+                        "durationMicroseconds": 489,
                         "errorMessage": "Cannot access value for name modelData",
                         "functionName": "text",
                         "line": 933
@@ -1326,7 +1326,7 @@
                     {
                         "codegenSuccessfull": true,
                         "column": 63,
-                        "durationMicroseconds": 160,
+                        "durationMicroseconds": 73,
                         "errorMessage": "",
                         "functionName": "centerIn",
                         "line": 932
@@ -1334,7 +1334,7 @@
                     {
                         "codegenSuccessfull": false,
                         "column": 50,
-                        "durationMicroseconds": 426,
+                        "durationMicroseconds": 381,
                         "errorMessage": "Cannot access value for name modelData",
                         "functionName": "opacity",
                         "line": 943
@@ -1342,7 +1342,7 @@
                     {
                         "codegenSuccessfull": true,
                         "column": 50,
-                        "durationMicroseconds": 359,
+                        "durationMicroseconds": 252,
                         "errorMessage": "",
                         "functionName": "visible",
                         "line": 944
@@ -1350,7 +1350,7 @@
                     {
                         "codegenSuccessfull": true,
                         "column": 55,
-                        "durationMicroseconds": 127,
+                        "durationMicroseconds": 188,
                         "errorMessage": "",
                         "functionName": "fill",
                         "line": 941
@@ -1358,7 +1358,7 @@
                     {
                         "codegenSuccessfull": true,
                         "column": 63,
-                        "durationMicroseconds": 156,
+                        "durationMicroseconds": 267,
                         "errorMessage": "",
                         "functionName": "centerIn",
                         "line": 952
@@ -1366,7 +1366,7 @@
                     {
                         "codegenSuccessfull": true,
                         "column": 67,
-                        "durationMicroseconds": 160,
+                        "durationMicroseconds": 111,
                         "errorMessage": "",
                         "functionName": "centerIn",
                         "line": 955
@@ -1374,7 +1374,7 @@
                     {
                         "codegenSuccessfull": true,
                         "column": 62,
-                        "durationMicroseconds": 167,
+                        "durationMicroseconds": 233,
                         "errorMessage": "",
                         "functionName": "cursorShape",
                         "line": 965
@@ -1382,7 +1382,7 @@
                     {
                         "codegenSuccessfull": false,
                         "column": 60,
-                        "durationMicroseconds": 533,
+                        "durationMicroseconds": 661,
                         "errorMessage": "Cannot access value for name modelData",
                         "functionName": "onClicked",
                         "line": 966
@@ -1390,7 +1390,7 @@
                     {
                         "codegenSuccessfull": true,
                         "column": 63,
-                        "durationMicroseconds": 102,
+                        "durationMicroseconds": 141,
                         "errorMessage": "",
                         "functionName": "fill",
                         "line": 964
@@ -1398,7 +1398,7 @@
                     {
                         "codegenSuccessfull": false,
                         "column": 47,
-                        "durationMicroseconds": 689,
+                        "durationMicroseconds": 623,
                         "errorMessage": "Cannot access value for name modelData",
                         "functionName": "text",
                         "line": 981
@@ -1406,7 +1406,7 @@
                     {
                         "codegenSuccessfull": true,
                         "column": 48,
-                        "durationMicroseconds": 383,
+                        "durationMicroseconds": 129,
                         "errorMessage": "",
                         "functionName": "elide",
                         "line": 986
@@ -1414,7 +1414,7 @@
                     {
                         "codegenSuccessfull": false,
                         "column": 47,
-                        "durationMicroseconds": 679,
+                        "durationMicroseconds": 488,
                         "errorMessage": "Cannot access value for name modelData",
                         "functionName": "text",
                         "line": 991
@@ -1422,7 +1422,7 @@
                     {
                         "codegenSuccessfull": true,
                         "column": 48,
-                        "durationMicroseconds": 291,
+                        "durationMicroseconds": 101,
                         "errorMessage": "",
                         "functionName": "elide",
                         "line": 995
@@ -1430,7 +1430,7 @@
                     {
                         "codegenSuccessfull": true,
                         "column": 46,
-                        "durationMicroseconds": 177,
+                        "durationMicroseconds": 112,
                         "errorMessage": "",
                         "functionName": "cursorShape",
                         "line": 1005
@@ -1438,7 +1438,7 @@
                     {
                         "codegenSuccessfull": false,
                         "column": 44,
-                        "durationMicroseconds": 475,
+                        "durationMicroseconds": 396,
                         "errorMessage": "Cannot access value for name modelData",
                         "functionName": "onClicked",
                         "line": 1006
@@ -1446,7 +1446,7 @@
                     {
                         "codegenSuccessfull": true,
                         "column": 47,
-                        "durationMicroseconds": 110,
+                        "durationMicroseconds": 87,
                         "errorMessage": "",
                         "functionName": "fill",
                         "line": 1003
@@ -1454,7 +1454,7 @@
                     {
                         "codegenSuccessfull": true,
                         "column": 36,
-                        "durationMicroseconds": 381,
+                        "durationMicroseconds": 399,
                         "errorMessage": "",
                         "functionName": "color",
                         "line": 1021
@@ -1462,7 +1462,7 @@
                     {
                         "codegenSuccessfull": true,
                         "column": 43,
-                        "durationMicroseconds": 74,
+                        "durationMicroseconds": 93,
                         "errorMessage": "",
                         "functionName": "fill",
                         "line": 1019
@@ -1470,7 +1470,7 @@
                     {
                         "codegenSuccessfull": true,
                         "column": 43,
-                        "durationMicroseconds": 315,
+                        "durationMicroseconds": 340,
                         "errorMessage": "",
                         "functionName": "color",
                         "line": 1023
@@ -1478,7 +1478,7 @@
                     {
                         "codegenSuccessfull": true,
                         "column": 51,
-                        "durationMicroseconds": 76,
+                        "durationMicroseconds": 77,
                         "errorMessage": "",
                         "functionName": "centerIn",
                         "line": 1027
@@ -1486,7 +1486,7 @@
                     {
                         "codegenSuccessfull": true,
                         "column": 44,
-                        "durationMicroseconds": 353,
+                        "durationMicroseconds": 1550,
                         "errorMessage": "",
                         "functionName": "color",
                         "line": 1034
@@ -1494,7 +1494,7 @@
                     {
                         "codegenSuccessfull": true,
                         "column": 55,
-                        "durationMicroseconds": 109,
+                        "durationMicroseconds": 257,
                         "errorMessage": "",
                         "functionName": "alignment",
                         "line": 1035
@@ -1502,7 +1502,7 @@
                     {
                         "codegenSuccessfull": true,
                         "column": 48,
-                        "durationMicroseconds": 479,
+                        "durationMicroseconds": 378,
                         "errorMessage": "",
                         "functionName": "color",
                         "line": 1043
@@ -1510,7 +1510,7 @@
                     {
                         "codegenSuccessfull": true,
                         "column": 59,
-                        "durationMicroseconds": 100,
+                        "durationMicroseconds": 87,
                         "errorMessage": "",
                         "functionName": "centerIn",
                         "line": 1039
@@ -1518,7 +1518,7 @@
                     {
                         "codegenSuccessfull": true,
                         "column": 55,
-                        "durationMicroseconds": 133,
+                        "durationMicroseconds": 152,
                         "errorMessage": "",
                         "functionName": "alignment",
                         "line": 1053
@@ -1526,7 +1526,7 @@
                     {
                         "codegenSuccessfull": true,
                         "column": 46,
-                        "durationMicroseconds": 193,
+                        "durationMicroseconds": 186,
                         "errorMessage": "",
                         "functionName": "cursorShape",
                         "line": 1061
@@ -1534,7 +1534,7 @@
                     {
                         "codegenSuccessfull": false,
                         "column": 44,
-                        "durationMicroseconds": 82,
+                        "durationMicroseconds": 84,
                         "errorMessage": "Cannot access value for name createPlaylistDialog",
                         "functionName": "onClicked",
                         "line": 1062
@@ -1542,7 +1542,7 @@
                     {
                         "codegenSuccessfull": true,
                         "column": 47,
-                        "durationMicroseconds": 130,
+                        "durationMicroseconds": 117,
                         "errorMessage": "",
                         "functionName": "fill",
                         "line": 1059
@@ -1550,7 +1550,7 @@
                     {
                         "codegenSuccessfull": true,
                         "column": 18,
-                        "durationMicroseconds": 409,
+                        "durationMicroseconds": 347,
                         "errorMessage": "",
                         "functionName": "enabled",
                         "line": 1074
@@ -1558,7 +1558,7 @@
                     {
                         "codegenSuccessfull": true,
                         "column": 18,
-                        "durationMicroseconds": 287,
+                        "durationMicroseconds": 235,
                         "errorMessage": "",
                         "functionName": "visible",
                         "line": 1075
@@ -1566,7 +1566,7 @@
                     {
                         "codegenSuccessfull": true,
                         "column": 26,
-                        "durationMicroseconds": 576,
+                        "durationMicroseconds": 580,
                         "errorMessage": "",
                         "functionName": "acceptedButtons",
                         "line": 1077
@@ -1574,7 +1574,7 @@
                     {
                         "codegenSuccessfull": true,
                         "column": 20,
-                        "durationMicroseconds": 293,
+                        "durationMicroseconds": 356,
                         "errorMessage": "",
                         "functionName": "onPressed",
                         "line": 1078
@@ -1582,7 +1582,7 @@
                     {
                         "codegenSuccessfull": true,
                         "column": 23,
-                        "durationMicroseconds": 104,
+                        "durationMicroseconds": 81,
                         "errorMessage": "",
                         "functionName": "fill",
                         "line": 1073
@@ -1590,7 +1590,7 @@
                     {
                         "codegenSuccessfull": true,
                         "column": 17,
-                        "durationMicroseconds": 256,
+                        "durationMicroseconds": 266,
                         "errorMessage": "",
                         "functionName": "height",
                         "line": 1088
@@ -1598,7 +1598,7 @@
                     {
                         "codegenSuccessfull": true,
                         "column": 76,
-                        "durationMicroseconds": 99,
+                        "durationMicroseconds": 103,
                         "errorMessage": "",
                         "functionName": "type",
                         "line": 1098
@@ -1606,7 +1606,7 @@
                     {
                         "codegenSuccessfull": true,
                         "column": 27,
-                        "durationMicroseconds": 72,
+                        "durationMicroseconds": 76,
                         "errorMessage": "",
                         "functionName": "fill",
                         "line": 1101
@@ -1614,7 +1614,7 @@
                     {
                         "codegenSuccessfull": true,
                         "column": 24,
-                        "durationMicroseconds": 409,
+                        "durationMicroseconds": 336,
                         "errorMessage": "",
                         "functionName": "color",
                         "line": 1109
@@ -1622,7 +1622,7 @@
                     {
                         "codegenSuccessfull": true,
                         "column": 46,
-                        "durationMicroseconds": 104,
+                        "durationMicroseconds": 344,
                         "errorMessage": "",
                         "functionName": "containsMouse",
                         "line": 1112
@@ -1630,7 +1630,7 @@
                     {
                         "codegenSuccessfull": true,
                         "column": 35,
-                        "durationMicroseconds": 77,
+                        "durationMicroseconds": 79,
                         "errorMessage": "",
                         "functionName": "fill",
                         "line": 1115
@@ -1638,7 +1638,7 @@
                     {
                         "codegenSuccessfull": true,
                         "column": 32,
-                        "durationMicroseconds": 330,
+                        "durationMicroseconds": 372,
                         "errorMessage": "",
                         "functionName": "color",
                         "line": 1124
@@ -1646,7 +1646,7 @@
                     {
                         "codegenSuccessfull": true,
                         "column": 32,
-                        "durationMicroseconds": 298,
+                        "durationMicroseconds": 302,
                         "errorMessage": "",
                         "functionName": "color",
                         "line": 1131
@@ -1654,7 +1654,7 @@
                     {
                         "codegenSuccessfull": true,
                         "column": 34,
-                        "durationMicroseconds": 116,
+                        "durationMicroseconds": 106,
                         "errorMessage": "",
                         "functionName": "cursorShape",
                         "line": 1140
@@ -1662,7 +1662,7 @@
                     {
                         "codegenSuccessfull": false,
                         "column": 32,
-                        "durationMicroseconds": 799,
+                        "durationMicroseconds": 488,
                         "errorMessage": "Cannot access value for name audioPlayer",
                         "functionName": "onClicked",
                         "line": 1141
@@ -1670,7 +1670,7 @@
                     {
                         "codegenSuccessfull": true,
                         "column": 35,
-                        "durationMicroseconds": 165,
+                        "durationMicroseconds": 77,
                         "errorMessage": "",
                         "functionName": "fill",
                         "line": 1138
@@ -1678,7 +1678,7 @@
                     {
                         "codegenSuccessfull": true,
                         "column": 24,
-                        "durationMicroseconds": 392,
+                        "durationMicroseconds": 312,
                         "errorMessage": "",
                         "functionName": "color",
                         "line": 1154
@@ -1686,7 +1686,7 @@
                     {
                         "codegenSuccessfull": true,
                         "column": 46,
-                        "durationMicroseconds": 128,
+                        "durationMicroseconds": 93,
                         "errorMessage": "",
                         "functionName": "containsMouse",
                         "line": 1157
@@ -1694,7 +1694,7 @@
                     {
                         "codegenSuccessfull": true,
                         "column": 35,
-                        "durationMicroseconds": 132,
+                        "durationMicroseconds": 69,
                         "errorMessage": "",
                         "functionName": "fill",
                         "line": 1160
@@ -1702,7 +1702,7 @@
                     {
                         "codegenSuccessfull": true,
                         "column": 32,
-                        "durationMicroseconds": 373,
+                        "durationMicroseconds": 306,
                         "errorMessage": "",
                         "functionName": "color",
                         "line": 1169
@@ -1710,7 +1710,7 @@
                     {
                         "codegenSuccessfull": true,
                         "column": 32,
-                        "durationMicroseconds": 392,
+                        "durationMicroseconds": 351,
                         "errorMessage": "",
                         "functionName": "color",
                         "line": 1176
@@ -1718,7 +1718,7 @@
                     {
                         "codegenSuccessfull": true,
                         "column": 34,
-                        "durationMicroseconds": 142,
+                        "durationMicroseconds": 108,
                         "errorMessage": "",
                         "functionName": "cursorShape",
                         "line": 1185
@@ -1726,7 +1726,7 @@
                     {
                         "codegenSuccessfull": true,
                         "column": 32,
-                        "durationMicroseconds": 509,
+                        "durationMicroseconds": 436,
                         "errorMessage": "",
                         "functionName": "onClicked",
                         "line": 1186
@@ -1734,7 +1734,7 @@
                     {
                         "codegenSuccessfull": true,
                         "column": 35,
-                        "durationMicroseconds": 90,
+                        "durationMicroseconds": 75,
                         "errorMessage": "",
                         "functionName": "fill",
                         "line": 1183
@@ -1742,7 +1742,7 @@
                     {
                         "codegenSuccessfull": true,
                         "column": 24,
-                        "durationMicroseconds": 330,
+                        "durationMicroseconds": 314,
                         "errorMessage": "",
                         "functionName": "color",
                         "line": 1200
@@ -1750,7 +1750,7 @@
                     {
                         "codegenSuccessfull": true,
                         "column": 46,
-                        "durationMicroseconds": 156,
+                        "durationMicroseconds": 92,
                         "errorMessage": "",
                         "functionName": "containsMouse",
                         "line": 1203
@@ -1758,7 +1758,7 @@
                     {
                         "codegenSuccessfull": true,
                         "column": 35,
-                        "durationMicroseconds": 136,
+                        "durationMicroseconds": 68,
                         "errorMessage": "",
                         "functionName": "fill",
                         "line": 1206
@@ -1766,7 +1766,7 @@
                     {
                         "codegenSuccessfull": true,
                         "column": 32,
-                        "durationMicroseconds": 510,
+                        "durationMicroseconds": 392,
                         "errorMessage": "",
                         "functionName": "color",
                         "line": 1215
@@ -1774,7 +1774,7 @@
                     {
                         "codegenSuccessfull": true,
                         "column": 32,
-                        "durationMicroseconds": 927,
+                        "durationMicroseconds": 324,
                         "errorMessage": "",
                         "functionName": "color",
                         "line": 1222
@@ -1782,7 +1782,7 @@
                     {
                         "codegenSuccessfull": true,
                         "column": 34,
-                        "durationMicroseconds": 192,
+                        "durationMicroseconds": 113,
                         "errorMessage": "",
                         "functionName": "cursorShape",
                         "line": 1231
@@ -1790,7 +1790,7 @@
                     {
                         "codegenSuccessfull": true,
                         "column": 32,
-                        "durationMicroseconds": 662,
+                        "durationMicroseconds": 716,
                         "errorMessage": "",
                         "functionName": "onClicked",
                         "line": 1232
@@ -1798,7 +1798,7 @@
                     {
                         "codegenSuccessfull": true,
                         "column": 35,
-                        "durationMicroseconds": 202,
+                        "durationMicroseconds": 88,
                         "errorMessage": "",
                         "functionName": "fill",
                         "line": 1229
@@ -1806,7 +1806,7 @@
                     {
                         "codegenSuccessfull": true,
                         "column": 24,
-                        "durationMicroseconds": 383,
+                        "durationMicroseconds": 351,
                         "errorMessage": "",
                         "functionName": "color",
                         "line": 1246
@@ -1814,7 +1814,7 @@
                     {
                         "codegenSuccessfull": true,
                         "column": 46,
-                        "durationMicroseconds": 101,
+                        "durationMicroseconds": 104,
                         "errorMessage": "",
                         "functionName": "containsMouse",
                         "line": 1249
@@ -1822,7 +1822,7 @@
                     {
                         "codegenSuccessfull": true,
                         "column": 35,
-                        "durationMicroseconds": 81,
+                        "durationMicroseconds": 71,
                         "errorMessage": "",
                         "functionName": "fill",
                         "line": 1252
@@ -1830,7 +1830,7 @@
                     {
                         "codegenSuccessfull": true,
                         "column": 32,
-                        "durationMicroseconds": 439,
+                        "durationMicroseconds": 390,
                         "errorMessage": "",
                         "functionName": "color",
                         "line": 1261
@@ -1838,7 +1838,7 @@
                     {
                         "codegenSuccessfull": true,
                         "column": 32,
-                        "durationMicroseconds": 340,
+                        "durationMicroseconds": 352,
                         "errorMessage": "",
                         "functionName": "color",
                         "line": 1268
@@ -1846,7 +1846,7 @@
                     {
                         "codegenSuccessfull": true,
                         "column": 34,
-                        "durationMicroseconds": 124,
+                        "durationMicroseconds": 127,
                         "errorMessage": "",
                         "functionName": "cursorShape",
                         "line": 1277
@@ -1854,7 +1854,7 @@
                     {
                         "codegenSuccessfull": true,
                         "column": 32,
-                        "durationMicroseconds": 221,
+                        "durationMicroseconds": 256,
                         "errorMessage": "",
                         "functionName": "onClicked",
                         "line": 1278
@@ -1862,7 +1862,7 @@
                     {
                         "codegenSuccessfull": true,
                         "column": 35,
-                        "durationMicroseconds": 71,
+                        "durationMicroseconds": 265,
                         "errorMessage": "",
                         "functionName": "fill",
                         "line": 1275
@@ -1870,7 +1870,7 @@
                     {
                         "codegenSuccessfull": true,
                         "column": 24,
-                        "durationMicroseconds": 324,
+                        "durationMicroseconds": 556,
                         "errorMessage": "",
                         "functionName": "color",
                         "line": 1289
@@ -1878,7 +1878,7 @@
                     {
                         "codegenSuccessfull": false,
                         "column": 26,
-                        "durationMicroseconds": 53,
+                        "durationMicroseconds": 86,
                         "errorMessage": "Cannot access value for name selectedPlaylist",
                         "functionName": "visible",
                         "line": 1291
@@ -1886,7 +1886,7 @@
                     {
                         "codegenSuccessfull": true,
                         "column": 46,
-                        "durationMicroseconds": 96,
+                        "durationMicroseconds": 139,
                         "errorMessage": "",
                         "functionName": "containsMouse",
                         "line": 1293
@@ -1894,7 +1894,7 @@
                     {
                         "codegenSuccessfull": true,
                         "column": 35,
-                        "durationMicroseconds": 70,
+                        "durationMicroseconds": 127,
                         "errorMessage": "",
                         "functionName": "fill",
                         "line": 1296
@@ -1902,7 +1902,7 @@
                     {
                         "codegenSuccessfull": true,
                         "column": 34,
-                        "durationMicroseconds": 258,
+                        "durationMicroseconds": 190,
                         "errorMessage": "",
                         "functionName": "cursorShape",
                         "line": 1321
@@ -1910,7 +1910,7 @@
                     {
                         "codegenSuccessfull": false,
                         "column": 32,
-                        "durationMicroseconds": 70,
+                        "durationMicroseconds": 94,
                         "errorMessage": "Cannot access value for name selectedPlaylist",
                         "functionName": "onClicked",
                         "line": 1322
@@ -1918,18 +1918,258 @@
                     {
                         "codegenSuccessfull": true,
                         "column": 35,
-                        "durationMicroseconds": 72,
+                        "durationMicroseconds": 147,
                         "errorMessage": "",
                         "functionName": "fill",
                         "line": 1319
                     },
                     {
                         "codegenSuccessfull": true,
-                        "column": 23,
-                        "durationMicroseconds": 78,
+                        "column": 24,
+                        "durationMicroseconds": 569,
+                        "errorMessage": "",
+                        "functionName": "color",
+                        "line": 1345
+                    },
+                    {
+                        "codegenSuccessfull": true,
+                        "column": 46,
+                        "durationMicroseconds": 381,
+                        "errorMessage": "",
+                        "functionName": "containsMouse",
+                        "line": 1348
+                    },
+                    {
+                        "codegenSuccessfull": true,
+                        "column": 35,
+                        "durationMicroseconds": 749,
                         "errorMessage": "",
                         "functionName": "fill",
-                        "line": 1336
+                        "line": 1351
+                    },
+                    {
+                        "codegenSuccessfull": true,
+                        "column": 34,
+                        "durationMicroseconds": 232,
+                        "errorMessage": "",
+                        "functionName": "cursorShape",
+                        "line": 1376
+                    },
+                    {
+                        "codegenSuccessfull": false,
+                        "column": 32,
+                        "durationMicroseconds": 934,
+                        "errorMessage": "Cannot access value for name localLibrary",
+                        "functionName": "onClicked",
+                        "line": 1377
+                    },
+                    {
+                        "codegenSuccessfull": true,
+                        "column": 35,
+                        "durationMicroseconds": 201,
+                        "errorMessage": "",
+                        "functionName": "fill",
+                        "line": 1374
+                    },
+                    {
+                        "codegenSuccessfull": true,
+                        "column": 23,
+                        "durationMicroseconds": 106,
+                        "errorMessage": "",
+                        "functionName": "fill",
+                        "line": 1390
+                    },
+                    {
+                        "codegenSuccessfull": true,
+                        "column": 24,
+                        "durationMicroseconds": 283,
+                        "errorMessage": "",
+                        "functionName": "onClicked",
+                        "line": 1399
+                    },
+                    {
+                        "codegenSuccessfull": true,
+                        "column": 27,
+                        "durationMicroseconds": 177,
+                        "errorMessage": "",
+                        "functionName": "fill",
+                        "line": 1398
+                    },
+                    {
+                        "codegenSuccessfull": true,
+                        "column": 31,
+                        "durationMicroseconds": 247,
+                        "errorMessage": "",
+                        "functionName": "centerIn",
+                        "line": 1409
+                    },
+                    {
+                        "codegenSuccessfull": true,
+                        "column": 39,
+                        "durationMicroseconds": 250,
+                        "errorMessage": "",
+                        "functionName": "fill",
+                        "line": 1411
+                    },
+                    {
+                        "codegenSuccessfull": true,
+                        "column": 31,
+                        "durationMicroseconds": 325,
+                        "errorMessage": "",
+                        "functionName": "fill",
+                        "line": 1414
+                    },
+                    {
+                        "codegenSuccessfull": false,
+                        "column": 27,
+                        "durationMicroseconds": 528,
+                        "errorMessage": "Cannot load property title from (component in C:/Users/elias/Desktop/GITHUB/wallify/resources/qml/LibraryView.qml)::trackData with type QVariant.",
+                        "functionName": "text",
+                        "line": 1428
+                    },
+                    {
+                        "codegenSuccessfull": true,
+                        "column": 28,
+                        "durationMicroseconds": 468,
+                        "errorMessage": "",
+                        "functionName": "elide",
+                        "line": 1433
+                    },
+                    {
+                        "codegenSuccessfull": true,
+                        "column": 32,
+                        "durationMicroseconds": 194,
+                        "errorMessage": "",
+                        "functionName": "width",
+                        "line": 1443
+                    },
+                    {
+                        "codegenSuccessfull": false,
+                        "column": 36,
+                        "durationMicroseconds": 426,
+                        "errorMessage": "Cannot access value for name localLibrary",
+                        "functionName": "model",
+                        "line": 1447
+                    },
+                    {
+                        "codegenSuccessfull": true,
+                        "column": 40,
+                        "durationMicroseconds": 641,
+                        "errorMessage": "",
+                        "functionName": "color",
+                        "line": 1451
+                    },
+                    {
+                        "codegenSuccessfull": false,
+                        "column": 42,
+                        "durationMicroseconds": 581,
+                        "errorMessage": "Cannot access value for name modelData",
+                        "functionName": "visible",
+                        "line": 1453
+                    },
+                    {
+                        "codegenSuccessfull": true,
+                        "column": 51,
+                        "durationMicroseconds": 201,
+                        "errorMessage": "",
+                        "functionName": "fill",
+                        "line": 1456
+                    },
+                    {
+                        "codegenSuccessfull": true,
+                        "column": 48,
+                        "durationMicroseconds": 1628,
+                        "errorMessage": "",
+                        "functionName": "color",
+                        "line": 1465
+                    },
+                    {
+                        "codegenSuccessfull": false,
+                        "column": 47,
+                        "durationMicroseconds": 961,
+                        "errorMessage": "Cannot access value for name modelData",
+                        "functionName": "text",
+                        "line": 1469
+                    },
+                    {
+                        "codegenSuccessfull": true,
+                        "column": 48,
+                        "durationMicroseconds": 1130,
+                        "errorMessage": "",
+                        "functionName": "color",
+                        "line": 1470
+                    },
+                    {
+                        "codegenSuccessfull": true,
+                        "column": 50,
+                        "durationMicroseconds": 205,
+                        "errorMessage": "",
+                        "functionName": "cursorShape",
+                        "line": 1481
+                    },
+                    {
+                        "codegenSuccessfull": false,
+                        "column": 48,
+                        "durationMicroseconds": 106,
+                        "errorMessage": "Cannot access value for name addToPlaylistDialog",
+                        "functionName": "onClicked",
+                        "line": 1482
+                    },
+                    {
+                        "codegenSuccessfull": true,
+                        "column": 51,
+                        "durationMicroseconds": 104,
+                        "errorMessage": "",
+                        "functionName": "fill",
+                        "line": 1479
+                    },
+                    {
+                        "codegenSuccessfull": true,
+                        "column": 39,
+                        "durationMicroseconds": 120,
+                        "errorMessage": "",
+                        "functionName": "alignment",
+                        "line": 1496
+                    },
+                    {
+                        "codegenSuccessfull": true,
+                        "column": 47,
+                        "durationMicroseconds": 110,
+                        "errorMessage": "",
+                        "functionName": "centerIn",
+                        "line": 1508
+                    },
+                    {
+                        "codegenSuccessfull": true,
+                        "column": 42,
+                        "durationMicroseconds": 214,
+                        "errorMessage": "",
+                        "functionName": "cursorShape",
+                        "line": 1518
+                    },
+                    {
+                        "codegenSuccessfull": true,
+                        "column": 40,
+                        "durationMicroseconds": 302,
+                        "errorMessage": "",
+                        "functionName": "onClicked",
+                        "line": 1519
+                    },
+                    {
+                        "codegenSuccessfull": true,
+                        "column": 43,
+                        "durationMicroseconds": 111,
+                        "errorMessage": "",
+                        "functionName": "fill",
+                        "line": 1517
+                    },
+                    {
+                        "codegenSuccessfull": true,
+                        "column": 23,
+                        "durationMicroseconds": 81,
+                        "errorMessage": "",
+                        "functionName": "fill",
+                        "line": 1529
                     },
                     {
                         "codegenSuccessfull": true,
@@ -1937,599 +2177,39 @@
                         "durationMicroseconds": 194,
                         "errorMessage": "",
                         "functionName": "onClicked",
-                        "line": 1345
+                        "line": 1535
                     },
                     {
                         "codegenSuccessfull": true,
                         "column": 27,
-                        "durationMicroseconds": 80,
+                        "durationMicroseconds": 136,
                         "errorMessage": "",
                         "functionName": "fill",
-                        "line": 1344
+                        "line": 1534
                     },
                     {
                         "codegenSuccessfull": true,
                         "column": 31,
-                        "durationMicroseconds": 137,
-                        "errorMessage": "",
-                        "functionName": "centerIn",
-                        "line": 1355
-                    },
-                    {
-                        "codegenSuccessfull": true,
-                        "column": 39,
-                        "durationMicroseconds": 151,
-                        "errorMessage": "",
-                        "functionName": "fill",
-                        "line": 1357
-                    },
-                    {
-                        "codegenSuccessfull": true,
-                        "column": 31,
-                        "durationMicroseconds": 150,
-                        "errorMessage": "",
-                        "functionName": "fill",
-                        "line": 1360
-                    },
-                    {
-                        "codegenSuccessfull": false,
-                        "column": 27,
-                        "durationMicroseconds": 337,
-                        "errorMessage": "Cannot load property title from (component in C:/Users/elias/Desktop/GITHUB/wallify/resources/qml/LibraryView.qml)::trackData with type QVariant.",
-                        "functionName": "text",
-                        "line": 1374
-                    },
-                    {
-                        "codegenSuccessfull": true,
-                        "column": 28,
-                        "durationMicroseconds": 259,
-                        "errorMessage": "",
-                        "functionName": "elide",
-                        "line": 1379
-                    },
-                    {
-                        "codegenSuccessfull": true,
-                        "column": 32,
-                        "durationMicroseconds": 183,
-                        "errorMessage": "",
-                        "functionName": "width",
-                        "line": 1389
-                    },
-                    {
-                        "codegenSuccessfull": false,
-                        "column": 36,
-                        "durationMicroseconds": 384,
-                        "errorMessage": "Cannot access value for name localLibrary",
-                        "functionName": "model",
-                        "line": 1393
-                    },
-                    {
-                        "codegenSuccessfull": true,
-                        "column": 40,
-                        "durationMicroseconds": 469,
-                        "errorMessage": "",
-                        "functionName": "color",
-                        "line": 1397
-                    },
-                    {
-                        "codegenSuccessfull": false,
-                        "column": 42,
-                        "durationMicroseconds": 326,
-                        "errorMessage": "Cannot access value for name modelData",
-                        "functionName": "visible",
-                        "line": 1399
-                    },
-                    {
-                        "codegenSuccessfull": true,
-                        "column": 51,
-                        "durationMicroseconds": 85,
-                        "errorMessage": "",
-                        "functionName": "fill",
-                        "line": 1402
-                    },
-                    {
-                        "codegenSuccessfull": true,
-                        "column": 48,
-                        "durationMicroseconds": 320,
-                        "errorMessage": "",
-                        "functionName": "color",
-                        "line": 1411
-                    },
-                    {
-                        "codegenSuccessfull": false,
-                        "column": 47,
-                        "durationMicroseconds": 494,
-                        "errorMessage": "Cannot access value for name modelData",
-                        "functionName": "text",
-                        "line": 1415
-                    },
-                    {
-                        "codegenSuccessfull": true,
-                        "column": 48,
-                        "durationMicroseconds": 303,
-                        "errorMessage": "",
-                        "functionName": "color",
-                        "line": 1416
-                    },
-                    {
-                        "codegenSuccessfull": true,
-                        "column": 50,
-                        "durationMicroseconds": 138,
-                        "errorMessage": "",
-                        "functionName": "cursorShape",
-                        "line": 1427
-                    },
-                    {
-                        "codegenSuccessfull": false,
-                        "column": 48,
-                        "durationMicroseconds": 57,
-                        "errorMessage": "Cannot access value for name addToPlaylistDialog",
-                        "functionName": "onClicked",
-                        "line": 1428
-                    },
-                    {
-                        "codegenSuccessfull": true,
-                        "column": 51,
-                        "durationMicroseconds": 73,
-                        "errorMessage": "",
-                        "functionName": "fill",
-                        "line": 1425
-                    },
-                    {
-                        "codegenSuccessfull": true,
-                        "column": 39,
-                        "durationMicroseconds": 96,
-                        "errorMessage": "",
-                        "functionName": "alignment",
-                        "line": 1442
-                    },
-                    {
-                        "codegenSuccessfull": true,
-                        "column": 47,
-                        "durationMicroseconds": 117,
-                        "errorMessage": "",
-                        "functionName": "centerIn",
-                        "line": 1454
-                    },
-                    {
-                        "codegenSuccessfull": true,
-                        "column": 42,
-                        "durationMicroseconds": 217,
-                        "errorMessage": "",
-                        "functionName": "cursorShape",
-                        "line": 1464
-                    },
-                    {
-                        "codegenSuccessfull": true,
-                        "column": 40,
-                        "durationMicroseconds": 361,
-                        "errorMessage": "",
-                        "functionName": "onClicked",
-                        "line": 1465
-                    },
-                    {
-                        "codegenSuccessfull": true,
-                        "column": 43,
-                        "durationMicroseconds": 163,
-                        "errorMessage": "",
-                        "functionName": "fill",
-                        "line": 1463
-                    },
-                    {
-                        "codegenSuccessfull": true,
-                        "column": 23,
                         "durationMicroseconds": 125,
                         "errorMessage": "",
-                        "functionName": "fill",
-                        "line": 1475
+                        "functionName": "centerIn",
+                        "line": 1545
                     },
                     {
                         "codegenSuccessfull": true,
-                        "column": 24,
-                        "durationMicroseconds": 215,
-                        "errorMessage": "",
-                        "functionName": "onClicked",
-                        "line": 1481
-                    },
-                    {
-                        "codegenSuccessfull": true,
-                        "column": 27,
-                        "durationMicroseconds": 109,
+                        "column": 39,
+                        "durationMicroseconds": 90,
                         "errorMessage": "",
                         "functionName": "fill",
-                        "line": 1480
+                        "line": 1547
                     },
                     {
                         "codegenSuccessfull": true,
                         "column": 31,
-                        "durationMicroseconds": 76,
-                        "errorMessage": "",
-                        "functionName": "centerIn",
-                        "line": 1491
-                    },
-                    {
-                        "codegenSuccessfull": true,
-                        "column": 39,
-                        "durationMicroseconds": 101,
-                        "errorMessage": "",
-                        "functionName": "fill",
-                        "line": 1493
-                    },
-                    {
-                        "codegenSuccessfull": true,
-                        "column": 31,
-                        "durationMicroseconds": 218,
-                        "errorMessage": "",
-                        "functionName": "fill",
-                        "line": 1496
-                    },
-                    {
-                        "codegenSuccessfull": true,
-                        "column": 39,
-                        "durationMicroseconds": 494,
-                        "errorMessage": "",
-                        "functionName": "color",
-                        "line": 1515
-                    },
-                    {
-                        "codegenSuccessfull": false,
-                        "column": 43,
-                        "durationMicroseconds": 1087,
-                        "errorMessage": "Cannot access value for name localLibrary",
-                        "functionName": "onReturnPressed",
-                        "line": 1519
-                    },
-                    {
-                        "codegenSuccessfull": true,
-                        "column": 39,
-                        "durationMicroseconds": 140,
-                        "errorMessage": "",
-                        "functionName": "alignment",
-                        "line": 1529
-                    },
-                    {
-                        "codegenSuccessfull": true,
-                        "column": 47,
-                        "durationMicroseconds": 78,
-                        "errorMessage": "",
-                        "functionName": "centerIn",
-                        "line": 1541
-                    },
-                    {
-                        "codegenSuccessfull": true,
-                        "column": 42,
-                        "durationMicroseconds": 125,
-                        "errorMessage": "",
-                        "functionName": "cursorShape",
-                        "line": 1551
-                    },
-                    {
-                        "codegenSuccessfull": true,
-                        "column": 40,
-                        "durationMicroseconds": 151,
-                        "errorMessage": "",
-                        "functionName": "onClicked",
-                        "line": 1552
-                    },
-                    {
-                        "codegenSuccessfull": true,
-                        "column": 43,
-                        "durationMicroseconds": 73,
+                        "durationMicroseconds": 84,
                         "errorMessage": "",
                         "functionName": "fill",
                         "line": 1550
-                    },
-                    {
-                        "codegenSuccessfull": true,
-                        "column": 32,
-                        "durationMicroseconds": 375,
-                        "errorMessage": "",
-                        "functionName": "color",
-                        "line": 1559
-                    },
-                    {
-                        "codegenSuccessfull": true,
-                        "column": 47,
-                        "durationMicroseconds": 93,
-                        "errorMessage": "",
-                        "functionName": "centerIn",
-                        "line": 1563
-                    },
-                    {
-                        "codegenSuccessfull": true,
-                        "column": 42,
-                        "durationMicroseconds": 155,
-                        "errorMessage": "",
-                        "functionName": "cursorShape",
-                        "line": 1575
-                    },
-                    {
-                        "codegenSuccessfull": false,
-                        "column": 40,
-                        "durationMicroseconds": 640,
-                        "errorMessage": "Cannot access value for name localLibrary",
-                        "functionName": "onClicked",
-                        "line": 1576
-                    },
-                    {
-                        "codegenSuccessfull": true,
-                        "column": 43,
-                        "durationMicroseconds": 119,
-                        "errorMessage": "",
-                        "functionName": "fill",
-                        "line": 1573
-                    },
-                    {
-                        "codegenSuccessfull": true,
-                        "column": 17,
-                        "durationMicroseconds": 218,
-                        "errorMessage": "",
-                        "functionName": "height",
-                        "line": 1594
-                    },
-                    {
-                        "codegenSuccessfull": true,
-                        "column": 24,
-                        "durationMicroseconds": 149,
-                        "errorMessage": "",
-                        "functionName": "right",
-                        "line": 1601
-                    },
-                    {
-                        "codegenSuccessfull": true,
-                        "column": 22,
-                        "durationMicroseconds": 111,
-                        "errorMessage": "",
-                        "functionName": "top",
-                        "line": 1602
-                    },
-                    {
-                        "codegenSuccessfull": true,
-                        "column": 76,
-                        "durationMicroseconds": 193,
-                        "errorMessage": "",
-                        "functionName": "type",
-                        "line": 1606
-                    },
-                    {
-                        "codegenSuccessfull": true,
-                        "column": 27,
-                        "durationMicroseconds": 87,
-                        "errorMessage": "",
-                        "functionName": "fill",
-                        "line": 1609
-                    },
-                    {
-                        "codegenSuccessfull": true,
-                        "column": 24,
-                        "durationMicroseconds": 319,
-                        "errorMessage": "",
-                        "functionName": "color",
-                        "line": 1616
-                    },
-                    {
-                        "codegenSuccessfull": true,
-                        "column": 35,
-                        "durationMicroseconds": 125,
-                        "errorMessage": "",
-                        "functionName": "fill",
-                        "line": 1620
-                    },
-                    {
-                        "codegenSuccessfull": false,
-                        "column": 32,
-                        "durationMicroseconds": 590,
-                        "errorMessage": "Cannot access value for name localLibrary",
-                        "functionName": "color",
-                        "line": 1629
-                    },
-                    {
-                        "codegenSuccessfull": false,
-                        "column": 32,
-                        "durationMicroseconds": 540,
-                        "errorMessage": "Cannot access value for name localLibrary",
-                        "functionName": "color",
-                        "line": 1636
-                    },
-                    {
-                        "codegenSuccessfull": true,
-                        "column": 34,
-                        "durationMicroseconds": 125,
-                        "errorMessage": "",
-                        "functionName": "cursorShape",
-                        "line": 1645
-                    },
-                    {
-                        "codegenSuccessfull": false,
-                        "column": 32,
-                        "durationMicroseconds": 442,
-                        "errorMessage": "Cannot access value for name localLibrary",
-                        "functionName": "onClicked",
-                        "line": 1646
-                    },
-                    {
-                        "codegenSuccessfull": true,
-                        "column": 35,
-                        "durationMicroseconds": 80,
-                        "errorMessage": "",
-                        "functionName": "fill",
-                        "line": 1643
-                    },
-                    {
-                        "codegenSuccessfull": true,
-                        "column": 24,
-                        "durationMicroseconds": 341,
-                        "errorMessage": "",
-                        "functionName": "color",
-                        "line": 1656
-                    },
-                    {
-                        "codegenSuccessfull": true,
-                        "column": 35,
-                        "durationMicroseconds": 85,
-                        "errorMessage": "",
-                        "functionName": "fill",
-                        "line": 1660
-                    },
-                    {
-                        "codegenSuccessfull": false,
-                        "column": 32,
-                        "durationMicroseconds": 617,
-                        "errorMessage": "Cannot access value for name localLibrary",
-                        "functionName": "color",
-                        "line": 1669
-                    },
-                    {
-                        "codegenSuccessfull": false,
-                        "column": 32,
-                        "durationMicroseconds": 639,
-                        "errorMessage": "Cannot access value for name localLibrary",
-                        "functionName": "color",
-                        "line": 1676
-                    },
-                    {
-                        "codegenSuccessfull": true,
-                        "column": 34,
-                        "durationMicroseconds": 172,
-                        "errorMessage": "",
-                        "functionName": "cursorShape",
-                        "line": 1685
-                    },
-                    {
-                        "codegenSuccessfull": false,
-                        "column": 32,
-                        "durationMicroseconds": 448,
-                        "errorMessage": "Cannot access value for name localLibrary",
-                        "functionName": "onClicked",
-                        "line": 1686
-                    },
-                    {
-                        "codegenSuccessfull": true,
-                        "column": 35,
-                        "durationMicroseconds": 85,
-                        "errorMessage": "",
-                        "functionName": "fill",
-                        "line": 1683
-                    },
-                    {
-                        "codegenSuccessfull": true,
-                        "column": 24,
-                        "durationMicroseconds": 408,
-                        "errorMessage": "",
-                        "functionName": "color",
-                        "line": 1696
-                    },
-                    {
-                        "codegenSuccessfull": true,
-                        "column": 35,
-                        "durationMicroseconds": 135,
-                        "errorMessage": "",
-                        "functionName": "fill",
-                        "line": 1700
-                    },
-                    {
-                        "codegenSuccessfull": false,
-                        "column": 32,
-                        "durationMicroseconds": 721,
-                        "errorMessage": "Cannot access value for name localLibrary",
-                        "functionName": "color",
-                        "line": 1709
-                    },
-                    {
-                        "codegenSuccessfull": false,
-                        "column": 32,
-                        "durationMicroseconds": 637,
-                        "errorMessage": "Cannot access value for name localLibrary",
-                        "functionName": "color",
-                        "line": 1716
-                    },
-                    {
-                        "codegenSuccessfull": true,
-                        "column": 34,
-                        "durationMicroseconds": 192,
-                        "errorMessage": "",
-                        "functionName": "cursorShape",
-                        "line": 1725
-                    },
-                    {
-                        "codegenSuccessfull": false,
-                        "column": 32,
-                        "durationMicroseconds": 513,
-                        "errorMessage": "Cannot access value for name localLibrary",
-                        "functionName": "onClicked",
-                        "line": 1726
-                    },
-                    {
-                        "codegenSuccessfull": true,
-                        "column": 35,
-                        "durationMicroseconds": 98,
-                        "errorMessage": "",
-                        "functionName": "fill",
-                        "line": 1723
-                    },
-                    {
-                        "codegenSuccessfull": true,
-                        "column": 23,
-                        "durationMicroseconds": 183,
-                        "errorMessage": "",
-                        "functionName": "fill",
-                        "line": 1738
-                    },
-                    {
-                        "codegenSuccessfull": true,
-                        "column": 24,
-                        "durationMicroseconds": 192,
-                        "errorMessage": "",
-                        "functionName": "onClicked",
-                        "line": 1747
-                    },
-                    {
-                        "codegenSuccessfull": true,
-                        "column": 27,
-                        "durationMicroseconds": 91,
-                        "errorMessage": "",
-                        "functionName": "fill",
-                        "line": 1746
-                    },
-                    {
-                        "codegenSuccessfull": true,
-                        "column": 31,
-                        "durationMicroseconds": 140,
-                        "errorMessage": "",
-                        "functionName": "centerIn",
-                        "line": 1757
-                    },
-                    {
-                        "codegenSuccessfull": true,
-                        "column": 39,
-                        "durationMicroseconds": 92,
-                        "errorMessage": "",
-                        "functionName": "fill",
-                        "line": 1759
-                    },
-                    {
-                        "codegenSuccessfull": true,
-                        "column": 31,
-                        "durationMicroseconds": 85,
-                        "errorMessage": "",
-                        "functionName": "fill",
-                        "line": 1762
-                    },
-                    {
-                        "codegenSuccessfull": false,
-                        "column": 27,
-                        "durationMicroseconds": 68,
-                        "errorMessage": "Cannot load property title from (component in C:/Users/elias/Desktop/GITHUB/wallify/resources/qml/LibraryView.qml)::trackData with type QVariant.",
-                        "functionName": "text",
-                        "line": 1776
-                    },
-                    {
-                        "codegenSuccessfull": true,
-                        "column": 28,
-                        "durationMicroseconds": 119,
-                        "errorMessage": "",
-                        "functionName": "elide",
-                        "line": 1780
                     },
                     {
                         "codegenSuccessfull": true,
@@ -2537,55 +2217,423 @@
                         "durationMicroseconds": 488,
                         "errorMessage": "",
                         "functionName": "color",
-                        "line": 1791
+                        "line": 1569
                     },
                     {
                         "codegenSuccessfull": false,
                         "column": 43,
-                        "durationMicroseconds": 1113,
+                        "durationMicroseconds": 1280,
                         "errorMessage": "Cannot access value for name localLibrary",
                         "functionName": "onReturnPressed",
-                        "line": 1795
+                        "line": 1573
                     },
                     {
                         "codegenSuccessfull": true,
                         "column": 39,
-                        "durationMicroseconds": 131,
+                        "durationMicroseconds": 286,
                         "errorMessage": "",
                         "functionName": "alignment",
-                        "line": 1805
+                        "line": 1583
                     },
                     {
                         "codegenSuccessfull": true,
                         "column": 47,
-                        "durationMicroseconds": 81,
+                        "durationMicroseconds": 154,
                         "errorMessage": "",
                         "functionName": "centerIn",
-                        "line": 1817
+                        "line": 1595
                     },
                     {
                         "codegenSuccessfull": true,
                         "column": 42,
-                        "durationMicroseconds": 113,
+                        "durationMicroseconds": 233,
                         "errorMessage": "",
                         "functionName": "cursorShape",
-                        "line": 1827
+                        "line": 1605
                     },
                     {
                         "codegenSuccessfull": true,
                         "column": 40,
-                        "durationMicroseconds": 297,
+                        "durationMicroseconds": 227,
                         "errorMessage": "",
                         "functionName": "onClicked",
-                        "line": 1828
+                        "line": 1606
                     },
                     {
                         "codegenSuccessfull": true,
                         "column": 43,
-                        "durationMicroseconds": 141,
+                        "durationMicroseconds": 286,
                         "errorMessage": "",
                         "functionName": "fill",
-                        "line": 1826
+                        "line": 1604
+                    },
+                    {
+                        "codegenSuccessfull": true,
+                        "column": 32,
+                        "durationMicroseconds": 445,
+                        "errorMessage": "",
+                        "functionName": "color",
+                        "line": 1613
+                    },
+                    {
+                        "codegenSuccessfull": true,
+                        "column": 47,
+                        "durationMicroseconds": 157,
+                        "errorMessage": "",
+                        "functionName": "centerIn",
+                        "line": 1617
+                    },
+                    {
+                        "codegenSuccessfull": true,
+                        "column": 42,
+                        "durationMicroseconds": 767,
+                        "errorMessage": "",
+                        "functionName": "cursorShape",
+                        "line": 1629
+                    },
+                    {
+                        "codegenSuccessfull": false,
+                        "column": 40,
+                        "durationMicroseconds": 892,
+                        "errorMessage": "Cannot access value for name localLibrary",
+                        "functionName": "onClicked",
+                        "line": 1630
+                    },
+                    {
+                        "codegenSuccessfull": true,
+                        "column": 43,
+                        "durationMicroseconds": 161,
+                        "errorMessage": "",
+                        "functionName": "fill",
+                        "line": 1627
+                    },
+                    {
+                        "codegenSuccessfull": true,
+                        "column": 17,
+                        "durationMicroseconds": 222,
+                        "errorMessage": "",
+                        "functionName": "height",
+                        "line": 1648
+                    },
+                    {
+                        "codegenSuccessfull": true,
+                        "column": 24,
+                        "durationMicroseconds": 205,
+                        "errorMessage": "",
+                        "functionName": "right",
+                        "line": 1655
+                    },
+                    {
+                        "codegenSuccessfull": true,
+                        "column": 22,
+                        "durationMicroseconds": 157,
+                        "errorMessage": "",
+                        "functionName": "top",
+                        "line": 1656
+                    },
+                    {
+                        "codegenSuccessfull": true,
+                        "column": 76,
+                        "durationMicroseconds": 117,
+                        "errorMessage": "",
+                        "functionName": "type",
+                        "line": 1660
+                    },
+                    {
+                        "codegenSuccessfull": true,
+                        "column": 27,
+                        "durationMicroseconds": 90,
+                        "errorMessage": "",
+                        "functionName": "fill",
+                        "line": 1663
+                    },
+                    {
+                        "codegenSuccessfull": true,
+                        "column": 24,
+                        "durationMicroseconds": 341,
+                        "errorMessage": "",
+                        "functionName": "color",
+                        "line": 1670
+                    },
+                    {
+                        "codegenSuccessfull": true,
+                        "column": 35,
+                        "durationMicroseconds": 80,
+                        "errorMessage": "",
+                        "functionName": "fill",
+                        "line": 1674
+                    },
+                    {
+                        "codegenSuccessfull": false,
+                        "column": 32,
+                        "durationMicroseconds": 608,
+                        "errorMessage": "Cannot access value for name localLibrary",
+                        "functionName": "color",
+                        "line": 1683
+                    },
+                    {
+                        "codegenSuccessfull": false,
+                        "column": 32,
+                        "durationMicroseconds": 707,
+                        "errorMessage": "Cannot access value for name localLibrary",
+                        "functionName": "color",
+                        "line": 1690
+                    },
+                    {
+                        "codegenSuccessfull": true,
+                        "column": 34,
+                        "durationMicroseconds": 280,
+                        "errorMessage": "",
+                        "functionName": "cursorShape",
+                        "line": 1699
+                    },
+                    {
+                        "codegenSuccessfull": false,
+                        "column": 32,
+                        "durationMicroseconds": 706,
+                        "errorMessage": "Cannot access value for name localLibrary",
+                        "functionName": "onClicked",
+                        "line": 1700
+                    },
+                    {
+                        "codegenSuccessfull": true,
+                        "column": 35,
+                        "durationMicroseconds": 130,
+                        "errorMessage": "",
+                        "functionName": "fill",
+                        "line": 1697
+                    },
+                    {
+                        "codegenSuccessfull": true,
+                        "column": 24,
+                        "durationMicroseconds": 616,
+                        "errorMessage": "",
+                        "functionName": "color",
+                        "line": 1710
+                    },
+                    {
+                        "codegenSuccessfull": true,
+                        "column": 35,
+                        "durationMicroseconds": 212,
+                        "errorMessage": "",
+                        "functionName": "fill",
+                        "line": 1714
+                    },
+                    {
+                        "codegenSuccessfull": false,
+                        "column": 32,
+                        "durationMicroseconds": 714,
+                        "errorMessage": "Cannot access value for name localLibrary",
+                        "functionName": "color",
+                        "line": 1723
+                    },
+                    {
+                        "codegenSuccessfull": false,
+                        "column": 32,
+                        "durationMicroseconds": 608,
+                        "errorMessage": "Cannot access value for name localLibrary",
+                        "functionName": "color",
+                        "line": 1730
+                    },
+                    {
+                        "codegenSuccessfull": true,
+                        "column": 34,
+                        "durationMicroseconds": 252,
+                        "errorMessage": "",
+                        "functionName": "cursorShape",
+                        "line": 1739
+                    },
+                    {
+                        "codegenSuccessfull": false,
+                        "column": 32,
+                        "durationMicroseconds": 570,
+                        "errorMessage": "Cannot access value for name localLibrary",
+                        "functionName": "onClicked",
+                        "line": 1740
+                    },
+                    {
+                        "codegenSuccessfull": true,
+                        "column": 35,
+                        "durationMicroseconds": 139,
+                        "errorMessage": "",
+                        "functionName": "fill",
+                        "line": 1737
+                    },
+                    {
+                        "codegenSuccessfull": true,
+                        "column": 24,
+                        "durationMicroseconds": 427,
+                        "errorMessage": "",
+                        "functionName": "color",
+                        "line": 1750
+                    },
+                    {
+                        "codegenSuccessfull": true,
+                        "column": 35,
+                        "durationMicroseconds": 123,
+                        "errorMessage": "",
+                        "functionName": "fill",
+                        "line": 1754
+                    },
+                    {
+                        "codegenSuccessfull": false,
+                        "column": 32,
+                        "durationMicroseconds": 646,
+                        "errorMessage": "Cannot access value for name localLibrary",
+                        "functionName": "color",
+                        "line": 1763
+                    },
+                    {
+                        "codegenSuccessfull": false,
+                        "column": 32,
+                        "durationMicroseconds": 2783,
+                        "errorMessage": "Cannot access value for name localLibrary",
+                        "functionName": "color",
+                        "line": 1770
+                    },
+                    {
+                        "codegenSuccessfull": true,
+                        "column": 34,
+                        "durationMicroseconds": 344,
+                        "errorMessage": "",
+                        "functionName": "cursorShape",
+                        "line": 1779
+                    },
+                    {
+                        "codegenSuccessfull": false,
+                        "column": 32,
+                        "durationMicroseconds": 949,
+                        "errorMessage": "Cannot access value for name localLibrary",
+                        "functionName": "onClicked",
+                        "line": 1780
+                    },
+                    {
+                        "codegenSuccessfull": true,
+                        "column": 35,
+                        "durationMicroseconds": 260,
+                        "errorMessage": "",
+                        "functionName": "fill",
+                        "line": 1777
+                    },
+                    {
+                        "codegenSuccessfull": true,
+                        "column": 23,
+                        "durationMicroseconds": 142,
+                        "errorMessage": "",
+                        "functionName": "fill",
+                        "line": 1792
+                    },
+                    {
+                        "codegenSuccessfull": true,
+                        "column": 24,
+                        "durationMicroseconds": 203,
+                        "errorMessage": "",
+                        "functionName": "onClicked",
+                        "line": 1801
+                    },
+                    {
+                        "codegenSuccessfull": true,
+                        "column": 27,
+                        "durationMicroseconds": 103,
+                        "errorMessage": "",
+                        "functionName": "fill",
+                        "line": 1800
+                    },
+                    {
+                        "codegenSuccessfull": true,
+                        "column": 31,
+                        "durationMicroseconds": 93,
+                        "errorMessage": "",
+                        "functionName": "centerIn",
+                        "line": 1811
+                    },
+                    {
+                        "codegenSuccessfull": true,
+                        "column": 39,
+                        "durationMicroseconds": 82,
+                        "errorMessage": "",
+                        "functionName": "fill",
+                        "line": 1813
+                    },
+                    {
+                        "codegenSuccessfull": true,
+                        "column": 31,
+                        "durationMicroseconds": 83,
+                        "errorMessage": "",
+                        "functionName": "fill",
+                        "line": 1816
+                    },
+                    {
+                        "codegenSuccessfull": false,
+                        "column": 27,
+                        "durationMicroseconds": 83,
+                        "errorMessage": "Cannot load property title from (component in C:/Users/elias/Desktop/GITHUB/wallify/resources/qml/LibraryView.qml)::trackData with type QVariant.",
+                        "functionName": "text",
+                        "line": 1830
+                    },
+                    {
+                        "codegenSuccessfull": true,
+                        "column": 28,
+                        "durationMicroseconds": 126,
+                        "errorMessage": "",
+                        "functionName": "elide",
+                        "line": 1834
+                    },
+                    {
+                        "codegenSuccessfull": true,
+                        "column": 39,
+                        "durationMicroseconds": 397,
+                        "errorMessage": "",
+                        "functionName": "color",
+                        "line": 1845
+                    },
+                    {
+                        "codegenSuccessfull": false,
+                        "column": 43,
+                        "durationMicroseconds": 1034,
+                        "errorMessage": "Cannot access value for name localLibrary",
+                        "functionName": "onReturnPressed",
+                        "line": 1849
+                    },
+                    {
+                        "codegenSuccessfull": true,
+                        "column": 39,
+                        "durationMicroseconds": 250,
+                        "errorMessage": "",
+                        "functionName": "alignment",
+                        "line": 1859
+                    },
+                    {
+                        "codegenSuccessfull": true,
+                        "column": 47,
+                        "durationMicroseconds": 99,
+                        "errorMessage": "",
+                        "functionName": "centerIn",
+                        "line": 1871
+                    },
+                    {
+                        "codegenSuccessfull": true,
+                        "column": 42,
+                        "durationMicroseconds": 148,
+                        "errorMessage": "",
+                        "functionName": "cursorShape",
+                        "line": 1881
+                    },
+                    {
+                        "codegenSuccessfull": true,
+                        "column": 40,
+                        "durationMicroseconds": 199,
+                        "errorMessage": "",
+                        "functionName": "onClicked",
+                        "line": 1882
+                    },
+                    {
+                        "codegenSuccessfull": true,
+                        "column": 43,
+                        "durationMicroseconds": 92,
+                        "errorMessage": "",
+                        "functionName": "fill",
+                        "line": 1880
                     },
                     {
                         "codegenSuccessfull": true,
@@ -2593,39 +2641,39 @@
                         "durationMicroseconds": 370,
                         "errorMessage": "",
                         "functionName": "color",
-                        "line": 1835
+                        "line": 1889
                     },
                     {
                         "codegenSuccessfull": true,
                         "column": 47,
-                        "durationMicroseconds": 87,
+                        "durationMicroseconds": 84,
                         "errorMessage": "",
                         "functionName": "centerIn",
-                        "line": 1839
+                        "line": 1893
                     },
                     {
                         "codegenSuccessfull": true,
                         "column": 42,
-                        "durationMicroseconds": 163,
+                        "durationMicroseconds": 130,
                         "errorMessage": "",
                         "functionName": "cursorShape",
-                        "line": 1851
+                        "line": 1905
                     },
                     {
                         "codegenSuccessfull": false,
                         "column": 40,
-                        "durationMicroseconds": 642,
+                        "durationMicroseconds": 616,
                         "errorMessage": "Cannot access value for name localLibrary",
                         "functionName": "onClicked",
-                        "line": 1852
+                        "line": 1906
                     },
                     {
                         "codegenSuccessfull": true,
                         "column": 43,
-                        "durationMicroseconds": 93,
+                        "durationMicroseconds": 97,
                         "errorMessage": "",
                         "functionName": "fill",
-                        "line": 1849
+                        "line": 1903
                     }
                 ],
                 "filepath": "C:/Users/elias/Desktop/GITHUB/wallify/resources/qml/LibraryView.qml"

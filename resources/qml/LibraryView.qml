@@ -953,7 +953,7 @@ Item {
 
                                             Text {
                                                 anchors.centerIn: parent
-                                                anchors.horizontalCenterOffset: 2
+                                                anchors.horizontalCenterOffset: 3
                                                 text: ""
                                                 font.family: "Segoe MDL2 Assets"
                                                 font.pixelSize: 16
@@ -1085,7 +1085,7 @@ Item {
     Rectangle {
         id: customTrackContextMenu
         width: 190
-        height: visible ? (menuItemRemove.visible ? 136 : 102) : 0
+        height: visible ? (menuItemRemove.visible ? 198 : 166) : 0
         color: "#1e1e28"
         border.color: "#3f3f52"
         border.width: 1
@@ -1299,7 +1299,7 @@ Item {
                     spacing: 10
 
                     Text {
-                        text: ""
+                        text: ""
                         font.family: "Segoe MDL2 Assets"
                         font.pixelSize: 11
                         color: "#ff5555"
@@ -1323,6 +1323,60 @@ Item {
                         if (customTrackContextMenu.trackData && selectedPlaylist) {
                             localLibrary.removeTrackFromPlaylist(selectedPlaylist.id, customTrackContextMenu.trackData.filePath)
                             refreshSelectedPlaylist()
+                        }
+                        customTrackContextMenu.visible = false
+                    }
+                }
+            }
+
+            // Separator before destructive delete action
+            Rectangle {
+                Layout.fillWidth: true
+                height: 1
+                color: "#2a2a35"
+                Layout.leftMargin: 8
+                Layout.rightMargin: 8
+            }
+
+            Rectangle {
+                id: menuItemDelete
+                Layout.fillWidth: true
+                height: 30
+                color: deleteSongMouse.containsMouse ? "#3d1515" : "transparent"
+                radius: 4
+
+                property bool containsMouse: deleteSongMouse.containsMouse
+
+                RowLayout {
+                    anchors.fill: parent
+                    anchors.leftMargin: 12
+                    anchors.rightMargin: 12
+                    spacing: 10
+
+                    Text {
+                        text: ""
+                        font.family: "Segoe MDL2 Assets"
+                        font.pixelSize: 11
+                        color: "#ff5555"
+                    }
+
+                    Text {
+                        text: "Delete Song"
+                        font.family: "Roboto"
+                        font.pixelSize: 13
+                        color: "#ff5555"
+                        Layout.fillWidth: true
+                    }
+                }
+
+                MouseArea {
+                    id: deleteSongMouse
+                    anchors.fill: parent
+                    hoverEnabled: true
+                    cursorShape: Qt.PointingHandCursor
+                    onClicked: {
+                        if (customTrackContextMenu.trackData) {
+                            localLibrary.deleteTrack(customTrackContextMenu.trackData.filePath)
                         }
                         customTrackContextMenu.visible = false
                     }

@@ -6,7 +6,7 @@
                     {
                         "codegenSuccessfull": false,
                         "column": 24,
-                        "durationMicroseconds": 345,
+                        "durationMicroseconds": 358,
                         "errorMessage": "Cannot access value for name appSettings",
                         "functionName": "currentFolder",
                         "line": 12
@@ -14,7 +14,7 @@
                     {
                         "codegenSuccessfull": false,
                         "column": 21,
-                        "durationMicroseconds": 178,
+                        "durationMicroseconds": 182,
                         "errorMessage": "Cannot access value for name appSettings",
                         "functionName": "onAccepted",
                         "line": 13
@@ -22,7 +22,7 @@
                     {
                         "codegenSuccessfull": true,
                         "column": 16,
-                        "durationMicroseconds": 473,
+                        "durationMicroseconds": 482,
                         "errorMessage": "",
                         "functionName": "width",
                         "line": 20
@@ -30,7 +30,7 @@
                     {
                         "codegenSuccessfull": true,
                         "column": 27,
-                        "durationMicroseconds": 129,
+                        "durationMicroseconds": 97,
                         "errorMessage": "",
                         "functionName": "centerIn",
                         "line": 19
@@ -38,7 +38,7 @@
                     {
                         "codegenSuccessfull": true,
                         "column": 31,
-                        "durationMicroseconds": 158,
+                        "durationMicroseconds": 151,
                         "errorMessage": "",
                         "functionName": "alignment",
                         "line": 29
@@ -46,7 +46,7 @@
                     {
                         "codegenSuccessfull": true,
                         "column": 31,
-                        "durationMicroseconds": 108,
+                        "durationMicroseconds": 106,
                         "errorMessage": "",
                         "functionName": "fill",
                         "line": 41
@@ -54,7 +54,7 @@
                     {
                         "codegenSuccessfull": false,
                         "column": 39,
-                        "durationMicroseconds": 801,
+                        "durationMicroseconds": 794,
                         "errorMessage": "Cannot access value for name discordRPC",
                         "functionName": "onCheckedChanged",
                         "line": 66
@@ -62,7 +62,7 @@
                     {
                         "codegenSuccessfull": true,
                         "column": 31,
-                        "durationMicroseconds": 109,
+                        "durationMicroseconds": 111,
                         "errorMessage": "",
                         "functionName": "fill",
                         "line": 86
@@ -70,7 +70,7 @@
                     {
                         "codegenSuccessfull": false,
                         "column": 30,
-                        "durationMicroseconds": 901,
+                        "durationMicroseconds": 841,
                         "errorMessage": "Cannot access value for name appSettings",
                         "functionName": "checked",
                         "line": 110
@@ -78,7 +78,7 @@
                     {
                         "codegenSuccessfull": false,
                         "column": 39,
-                        "durationMicroseconds": 737,
+                        "durationMicroseconds": 829,
                         "errorMessage": "Cannot access value for name appSettings",
                         "functionName": "onCheckedChanged",
                         "line": 111
@@ -86,7 +86,7 @@
                     {
                         "codegenSuccessfull": true,
                         "column": 35,
-                        "durationMicroseconds": 132,
+                        "durationMicroseconds": 246,
                         "errorMessage": "",
                         "functionName": "centerIn",
                         "line": 125
@@ -94,7 +94,7 @@
                     {
                         "codegenSuccessfull": true,
                         "column": 39,
-                        "durationMicroseconds": 164,
+                        "durationMicroseconds": 299,
                         "errorMessage": "",
                         "functionName": "alignment",
                         "line": 133
@@ -102,7 +102,7 @@
                     {
                         "codegenSuccessfull": true,
                         "column": 39,
-                        "durationMicroseconds": 152,
+                        "durationMicroseconds": 188,
                         "errorMessage": "",
                         "functionName": "alignment",
                         "line": 137
@@ -110,7 +110,7 @@
                     {
                         "codegenSuccessfull": true,
                         "column": 43,
-                        "durationMicroseconds": 91,
+                        "durationMicroseconds": 123,
                         "errorMessage": "",
                         "functionName": "centerIn",
                         "line": 144
@@ -118,7 +118,7 @@
                     {
                         "codegenSuccessfull": true,
                         "column": 38,
-                        "durationMicroseconds": 160,
+                        "durationMicroseconds": 185,
                         "errorMessage": "",
                         "functionName": "cursorShape",
                         "line": 154
@@ -126,7 +126,7 @@
                     {
                         "codegenSuccessfull": false,
                         "column": 36,
-                        "durationMicroseconds": 475,
+                        "durationMicroseconds": 702,
                         "errorMessage": "Cannot access value for name appSettings",
                         "functionName": "onClicked",
                         "line": 155
@@ -134,7 +134,7 @@
                     {
                         "codegenSuccessfull": true,
                         "column": 39,
-                        "durationMicroseconds": 110,
+                        "durationMicroseconds": 184,
                         "errorMessage": "",
                         "functionName": "fill",
                         "line": 153
@@ -142,7 +142,7 @@
                     {
                         "codegenSuccessfull": true,
                         "column": 44,
-                        "durationMicroseconds": 132,
+                        "durationMicroseconds": 143,
                         "errorMessage": "",
                         "functionName": "verticalAlignment",
                         "line": 201
@@ -150,7 +150,7 @@
                     {
                         "codegenSuccessfull": false,
                         "column": 31,
-                        "durationMicroseconds": 568,
+                        "durationMicroseconds": 624,
                         "errorMessage": "Cannot access value for name appSettings",
                         "functionName": "text",
                         "line": 202
@@ -158,7 +158,7 @@
                     {
                         "codegenSuccessfull": true,
                         "column": 32,
-                        "durationMicroseconds": 111,
+                        "durationMicroseconds": 127,
                         "errorMessage": "",
                         "functionName": "elide",
                         "line": 206
@@ -166,7 +166,7 @@
                     {
                         "codegenSuccessfull": true,
                         "column": 39,
-                        "durationMicroseconds": 81,
+                        "durationMicroseconds": 174,
                         "errorMessage": "",
                         "functionName": "fill",
                         "line": 199
@@ -174,7 +174,7 @@
                     {
                         "codegenSuccessfull": true,
                         "column": 43,
-                        "durationMicroseconds": 64,
+                        "durationMicroseconds": 168,
                         "errorMessage": "",
                         "functionName": "centerIn",
                         "line": 217
@@ -182,7 +182,7 @@
                     {
                         "codegenSuccessfull": true,
                         "column": 38,
-                        "durationMicroseconds": 109,
+                        "durationMicroseconds": 219,
                         "errorMessage": "",
                         "functionName": "cursorShape",
                         "line": 228
@@ -190,7 +190,7 @@
                     {
                         "codegenSuccessfull": true,
                         "column": 36,
-                        "durationMicroseconds": 183,
+                        "durationMicroseconds": 232,
                         "errorMessage": "",
                         "functionName": "onClicked",
                         "line": 229
@@ -198,7 +198,7 @@
                     {
                         "codegenSuccessfull": true,
                         "column": 39,
-                        "durationMicroseconds": 99,
+                        "durationMicroseconds": 89,
                         "errorMessage": "",
                         "functionName": "fill",
                         "line": 227

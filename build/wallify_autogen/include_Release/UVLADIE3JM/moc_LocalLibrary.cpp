@@ -57,6 +57,8 @@ static constexpr auto qt_meta_stringdata_ZN12LocalLibraryE = QtMocHelpers::strin
     "removeTrackFromPlaylist",
     "renameTrack",
     "newTitle",
+    "changeCover",
+    "imagePath",
     "setSortMode",
     "mode",
     "tracks",
@@ -75,30 +77,31 @@ Q_CONSTINIT static const uint qt_meta_data_ZN12LocalLibraryE[] = {
       12,       // revision
        0,       // classname
        0,    0, // classinfo
-      14,   14, // methods
-       4,  142, // properties
+      15,   14, // methods
+       4,  153, // properties
        0,    0, // enums/sets
        0,    0, // constructors
        0,       // flags
        4,       // signalCount
 
  // signals: name, argc, parameters, tag, flags, initial metatype offsets
-       1,    0,   98,    2, 0x06,    5 /* Public */,
-       3,    0,   99,    2, 0x06,    6 /* Public */,
-       4,    0,  100,    2, 0x06,    7 /* Public */,
-       5,    0,  101,    2, 0x06,    8 /* Public */,
+       1,    0,  104,    2, 0x06,    5 /* Public */,
+       3,    0,  105,    2, 0x06,    6 /* Public */,
+       4,    0,  106,    2, 0x06,    7 /* Public */,
+       5,    0,  107,    2, 0x06,    8 /* Public */,
 
  // methods: name, argc, parameters, tag, flags, initial metatype offsets
-       6,    0,  102,    2, 0x02,    9 /* Public */,
-       7,    2,  103,    2, 0x02,   10 /* Public */,
-       7,    1,  108,    2, 0x22,   13 /* Public | MethodCloned */,
-      10,    1,  111,    2, 0x02,   15 /* Public */,
-      12,    2,  114,    2, 0x02,   17 /* Public */,
-      13,    2,  119,    2, 0x02,   20 /* Public */,
-      14,    2,  124,    2, 0x02,   23 /* Public */,
-      17,    2,  129,    2, 0x02,   26 /* Public */,
-      18,    2,  134,    2, 0x02,   29 /* Public */,
-      20,    1,  139,    2, 0x02,   32 /* Public */,
+       6,    0,  108,    2, 0x02,    9 /* Public */,
+       7,    2,  109,    2, 0x02,   10 /* Public */,
+       7,    1,  114,    2, 0x22,   13 /* Public | MethodCloned */,
+      10,    1,  117,    2, 0x02,   15 /* Public */,
+      12,    2,  120,    2, 0x02,   17 /* Public */,
+      13,    2,  125,    2, 0x02,   20 /* Public */,
+      14,    2,  130,    2, 0x02,   23 /* Public */,
+      17,    2,  135,    2, 0x02,   26 /* Public */,
+      18,    2,  140,    2, 0x02,   29 /* Public */,
+      20,    2,  145,    2, 0x02,   32 /* Public */,
+      22,    1,  150,    2, 0x02,   35 /* Public */,
 
  // signals: parameters
     QMetaType::Void,
@@ -116,13 +119,14 @@ Q_CONSTINIT static const uint qt_meta_data_ZN12LocalLibraryE[] = {
     QMetaType::Void, QMetaType::QString, QMetaType::QString,   15,   16,
     QMetaType::Void, QMetaType::QString, QMetaType::QString,   15,   16,
     QMetaType::Void, QMetaType::QString, QMetaType::QString,   16,   19,
-    QMetaType::Void, QMetaType::Int,   21,
+    QMetaType::Void, QMetaType::QString, QMetaType::QString,   16,   21,
+    QMetaType::Void, QMetaType::Int,   23,
 
  // properties: name, type, flags, notifyId, revision
-      22, 0x80000000 | 23, 0x00015009, uint(0), 0,
-      24, QMetaType::QString, 0x00015103, uint(1), 0,
-      25, 0x80000000 | 23, 0x00015009, uint(2), 0,
-      26, QMetaType::Int, 0x00015103, uint(3), 0,
+      24, 0x80000000 | 25, 0x00015009, uint(0), 0,
+      26, QMetaType::QString, 0x00015103, uint(1), 0,
+      27, 0x80000000 | 25, 0x00015009, uint(2), 0,
+      28, QMetaType::Int, 0x00015103, uint(3), 0,
 
        0        // eod
 };
@@ -184,6 +188,10 @@ Q_CONSTINIT const QMetaObject LocalLibrary::staticMetaObject = { {
         QtPrivate::TypeAndForceComplete<void, std::false_type>,
         QtPrivate::TypeAndForceComplete<const QString &, std::false_type>,
         QtPrivate::TypeAndForceComplete<const QString &, std::false_type>,
+        // method 'changeCover'
+        QtPrivate::TypeAndForceComplete<void, std::false_type>,
+        QtPrivate::TypeAndForceComplete<const QString &, std::false_type>,
+        QtPrivate::TypeAndForceComplete<const QString &, std::false_type>,
         // method 'setSortMode'
         QtPrivate::TypeAndForceComplete<void, std::false_type>,
         QtPrivate::TypeAndForceComplete<int, std::false_type>
@@ -209,7 +217,8 @@ void LocalLibrary::qt_static_metacall(QObject *_o, QMetaObject::Call _c, int _id
         case 10: _t->addTrackToPlaylist((*reinterpret_cast< std::add_pointer_t<QString>>(_a[1])),(*reinterpret_cast< std::add_pointer_t<QString>>(_a[2]))); break;
         case 11: _t->removeTrackFromPlaylist((*reinterpret_cast< std::add_pointer_t<QString>>(_a[1])),(*reinterpret_cast< std::add_pointer_t<QString>>(_a[2]))); break;
         case 12: _t->renameTrack((*reinterpret_cast< std::add_pointer_t<QString>>(_a[1])),(*reinterpret_cast< std::add_pointer_t<QString>>(_a[2]))); break;
-        case 13: _t->setSortMode((*reinterpret_cast< std::add_pointer_t<int>>(_a[1]))); break;
+        case 13: _t->changeCover((*reinterpret_cast< std::add_pointer_t<QString>>(_a[1])),(*reinterpret_cast< std::add_pointer_t<QString>>(_a[2]))); break;
+        case 14: _t->setSortMode((*reinterpret_cast< std::add_pointer_t<int>>(_a[1]))); break;
         default: ;
         }
     }
@@ -283,14 +292,14 @@ int LocalLibrary::qt_metacall(QMetaObject::Call _c, int _id, void **_a)
     if (_id < 0)
         return _id;
     if (_c == QMetaObject::InvokeMetaMethod) {
-        if (_id < 14)
+        if (_id < 15)
             qt_static_metacall(this, _c, _id, _a);
-        _id -= 14;
+        _id -= 15;
     }
     if (_c == QMetaObject::RegisterMethodArgumentMetaType) {
-        if (_id < 14)
+        if (_id < 15)
             *reinterpret_cast<QMetaType *>(_a[0]) = QMetaType();
-        _id -= 14;
+        _id -= 15;
     }
     if (_c == QMetaObject::ReadProperty || _c == QMetaObject::WriteProperty
             || _c == QMetaObject::ResetProperty || _c == QMetaObject::BindableProperty

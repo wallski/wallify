@@ -16,7 +16,7 @@ SoundCloudMigrator::SoundCloudMigrator(LocalLibrary* library, QObject* parent)
 
     m_appDataDir = QStandardPaths::writableLocation(QStandardPaths::AppDataLocation);
     QDir().mkpath(m_appDataDir);
-    m_scDlPath = m_appDataDir + "/scdl.exe";
+    m_scDlPath = m_appDataDir + "/yt-dlp.exe";
 
     QSettings settings("Wallski", "Wallify");
     m_musicDir = settings.value("libraryPath", QStandardPaths::writableLocation(QStandardPaths::MusicLocation) + "/Wallify").toString();
@@ -97,18 +97,30 @@ void SoundCloudMigrator::startMigration(const QString& url)
 void SoundCloudMigrator::prepareEnvironmentAndRun(const QString& url)
 {
     if (!QFile::exists(m_scDlPath)) {
-        setStatus("Downloading scdl...");
-        m_process->start("curl.exe", QStringList() << "-L" << "https://github.com/flyingrub/scdl/releases/latest/download/scdl.exe" << "-o" << m_scDlPath);
+        setStatus("Downloading yt-dlp...");
+        m_process->start("curl.exe", QStringList() << "-L" << "https://github.com/yt-dlp/yt-dlp/releases/latest/download/yt-dlp.exe" << "-o" << m_scDlPath);
         return;
     }
 
     setStatus("Downloading from SoundCloud...");
     m_process->setWorkingDirectory(m_musicDir);
 
+    QString ffmpegPath = m_appDataDir + "/ffmpeg.exe";
+    if (!QFile::exists(ffmpegPath)) {
+        QString spotdlFfmpeg = QDir::homePath() + "/.spotdl/ffmpeg.exe";
+        if (QFile::exists(spotdlFfmpeg)) {
+            QFile::copy(spotdlFfmpeg, ffmpegPath);
+        }
+    }
+
     QStringList args;
-    args << "-l" << url;
-    args << "--path" << m_musicDir;
-    args << "--onlymp3";
+    args << "-x" << "--audio-format" << "mp3" << "--audio-quality" << "0";
+    args << "--embed-thumbnail" << "--add-metadata";
+    if (QFile::exists(ffmpegPath)) {
+        args << "--ffmpeg-location" << ffmpegPath;
+    }
+    args << "--output" << "%(title)s - %(uploader)s.%(ext)s";
+    args << url;
 
     m_process->start(m_scDlPath, args);
 }
@@ -123,16 +135,19 @@ void SoundCloudMigrator::processOutput()
 
     appendLog(text);
     emit logMessage(text);
-    qDebug().noquote() << "[scdl Output]:" << text;
+    qDebug().noquote() << "[yt-dlp SC Output]:" << text;
 
-    QRegularExpression progressRe("(\\d+)%");
+    QRegularExpression progressRe("\\[download\\]\\s+(\\d+\\.\\d+)%");
     QRegularExpressionMatch match = progressRe.match(text);
     if (match.hasMatch()) {
-        setProgress(match.captured(1).toInt());
+        setProgress(static_cast<int>(match.captured(1).toDouble()));
     }
 
-    if (text.contains("Downloading")) {
-        setStatus(text.trimmed());
+    if (text.contains("Destination:")) {
+        QStringList parts = text.split("Destination:");
+        if (parts.size() > 1) {
+            setStatus("Downloading: " + parts.last().trimmed());
+        }
     }
 
     if (text.contains("playlist")) {
@@ -143,18 +158,34 @@ void SoundCloudMigrator::processOutput()
         }
     }
 
-    // Parse track titles/permalinks processed
     QStringList lines = text.split('\n');
     for (const QString& line : lines) {
         QString trimmed = line.trimmed();
         if (trimmed.isEmpty()) continue;
 
-        if (trimmed.contains("Downloading", Qt::CaseInsensitive)) {
-            int idx = trimmed.indexOf("Downloading", 0, Qt::CaseInsensitive);
-            if (idx != -1) {
-                QString trackName = trimmed.mid(idx + 11).trimmed();
-                if (!trackName.isEmpty()) {
-                    m_playlistFiles.append(trackName);
+        if (trimmed.contains("has already been downloaded")) {
+            QRegularExpression re("\\[download\\]\\s+(.+?)\\s+has already been downloaded");
+            QRegularExpressionMatch match = re.match(trimmed);
+            if (match.hasMatch()) {
+                QString file = match.captured(1).trimmed();
+                if (!file.endsWith(".mp3", Qt::CaseInsensitive)) file += ".mp3";
+                QString fullPath = QDir(m_musicDir).absoluteFilePath(file);
+                fullPath = QDir::cleanPath(fullPath);
+                if (!m_playlistFiles.contains(fullPath)) {
+                    m_playlistFiles.append(fullPath);
+                    appendLog("Skipping (already downloaded): " + file);
+                }
+            }
+        }
+        else if (trimmed.contains("Destination:")) {
+            QRegularExpression re("Destination:\\s+(.+?\\.mp3)");
+            QRegularExpressionMatch match = re.match(trimmed);
+            if (match.hasMatch()) {
+                QString file = match.captured(1).trimmed();
+                QString fullPath = QDir(m_musicDir).absoluteFilePath(file);
+                fullPath = QDir::cleanPath(fullPath);
+                if (!m_playlistFiles.contains(fullPath)) {
+                    m_playlistFiles.append(fullPath);
                 }
             }
         }
@@ -175,9 +206,9 @@ void SoundCloudMigrator::processFinished(int exitCode, QProcess::ExitStatus exit
             prepareEnvironmentAndRun(m_currentUrl);
         }
         else {
-            setStatus("Failed to download scdl.");
+            setStatus("Failed to download yt-dlp.");
             setWorking(false);
-            emit migrationFailed("Failed to download scdl.");
+            emit migrationFailed("Failed to download yt-dlp.");
         }
         return;
     }
@@ -191,22 +222,16 @@ void SoundCloudMigrator::processFinished(int exitCode, QProcess::ExitStatus exit
     QStringList playlistTracks;
     QStringList filesOnDisk = scanFiles();
 
-    for (const QString& trackName : m_playlistFiles) {
-        QString cleanTrack = trackName.toLower();
-        cleanTrack.replace("-", " ").replace("_", " ");
-        
+    for (const QString& file : m_playlistFiles) {
+        QString cleanPath = QDir::cleanPath(file);
         for (const QString& diskFile : filesOnDisk) {
-            QString fileName = QFileInfo(diskFile).completeBaseName().toLower();
-            fileName.replace("-", " ").replace("_", " ");
-            
-            if (fileName.contains(cleanTrack) || cleanTrack.contains(fileName)) {
+            if (QDir::cleanPath(diskFile).toLower() == cleanPath.toLower()) {
                 playlistTracks.append(diskFile);
                 break;
             }
         }
     }
 
-    // Fallback: If we couldn't parse individual tracks, use clean file differences
     if (playlistTracks.isEmpty()) {
         for (const QString& file : filesOnDisk) {
             QString cleanFile = QDir::cleanPath(file);

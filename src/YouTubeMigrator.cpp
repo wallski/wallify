@@ -105,9 +105,20 @@ void YouTubeMigrator::prepareEnvironmentAndRun(const QString& url)
     setStatus("Downloading from YouTube...");
     m_process->setWorkingDirectory(m_musicDir);
 
+    QString ffmpegPath = m_appDataDir + "/ffmpeg.exe";
+    if (!QFile::exists(ffmpegPath)) {
+        QString spotdlFfmpeg = QDir::homePath() + "/.spotdl/ffmpeg.exe";
+        if (QFile::exists(spotdlFfmpeg)) {
+            QFile::copy(spotdlFfmpeg, ffmpegPath);
+        }
+    }
+
     QStringList args;
     args << "-x" << "--audio-format" << "mp3" << "--audio-quality" << "0";
     args << "--embed-thumbnail" << "--add-metadata";
+    if (QFile::exists(ffmpegPath)) {
+        args << "--ffmpeg-location" << ffmpegPath;
+    }
     args << "--output" << "%(title)s - %(uploader)s.%(ext)s";
     args << url;
 
@@ -159,10 +170,12 @@ void YouTubeMigrator::processOutput()
             QRegularExpressionMatch match = re.match(trimmed);
             if (match.hasMatch()) {
                 QString file = match.captured(1).trimmed();
+                if (!file.endsWith(".mp3", Qt::CaseInsensitive)) file += ".mp3";
                 QString fullPath = QDir(m_musicDir).absoluteFilePath(file);
                 fullPath = QDir::cleanPath(fullPath);
                 if (!m_playlistFiles.contains(fullPath)) {
                     m_playlistFiles.append(fullPath);
+                    appendLog("Skipping (already downloaded): " + file);
                 }
             }
         }

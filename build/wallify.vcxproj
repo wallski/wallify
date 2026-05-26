@@ -125,6 +125,18 @@
       <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
       <ProxyFileName>%(Filename)_p.c</ProxyFileName>
     </Midl>
+    <PostBuildEvent>
+      <Message>Running windeployqt...</Message>
+      <Command>setlocal
+C:\Users\elias\Desktop\GITHUB\wallify\deps\6.8.2\msvc2022_64\bin\windeployqt.exe C:/Users/elias/Desktop/GITHUB/wallify/build/Debug/wallify.exe --qmldir C:/Users/elias/Desktop/GITHUB/wallify/resources/qml
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+    </PostBuildEvent>
     <Link>
       <AdditionalDependencies>C:\Users\elias\Desktop\GITHUB\wallify\src\discord-rpc\lib\discord-rpc.lib;C:\Users\elias\Desktop\GITHUB\wallify\deps\6.8.2\msvc2022_64\lib\Qt6Quickd.lib;C:\Users\elias\Desktop\GITHUB\wallify\deps\6.8.2\msvc2022_64\lib\Qt6Multimediad.lib;C:\Users\elias\Desktop\GITHUB\wallify\deps\6.8.2\msvc2022_64\lib\Qt6QmlMetad.lib;C:\Users\elias\Desktop\GITHUB\wallify\deps\6.8.2\msvc2022_64\lib\Qt6QmlWorkerScriptd.lib;C:\Users\elias\Desktop\GITHUB\wallify\deps\6.8.2\msvc2022_64\lib\Qt6QmlModelsd.lib;C:\Users\elias\Desktop\GITHUB\wallify\deps\6.8.2\msvc2022_64\lib\Qt6Qmld.lib;C:\Users\elias\Desktop\GITHUB\wallify\deps\6.8.2\msvc2022_64\lib\Qt6OpenGLd.lib;user32.lib;C:\Users\elias\Desktop\GITHUB\wallify\deps\6.8.2\msvc2022_64\lib\Qt6Guid.lib;d3d11.lib;dxgi.lib;dxguid.lib;d3d12.lib;C:\Users\elias\Desktop\GITHUB\wallify\deps\6.8.2\msvc2022_64\lib\Qt6Networkd.lib;C:\Users\elias\Desktop\GITHUB\wallify\deps\6.8.2\msvc2022_64\lib\Qt6Cored.lib;mpr.lib;userenv.lib;C:\Users\elias\Desktop\GITHUB\wallify\deps\6.8.2\msvc2022_64\lib\Qt6EntryPointd.lib;shell32.lib;ws2_32.lib;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib</AdditionalDependencies>
       <AdditionalLibraryDirectories>%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
@@ -185,6 +197,18 @@
       <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
       <ProxyFileName>%(Filename)_p.c</ProxyFileName>
     </Midl>
+    <PostBuildEvent>
+      <Message>Running windeployqt...</Message>
+      <Command>setlocal
+C:\Users\elias\Desktop\GITHUB\wallify\deps\6.8.2\msvc2022_64\bin\windeployqt.exe C:/Users/elias/Desktop/GITHUB/wallify/build/Release/wallify.exe --qmldir C:/Users/elias/Desktop/GITHUB/wallify/resources/qml
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+    </PostBuildEvent>
     <Link>
       <AdditionalDependencies>C:\Users\elias\Desktop\GITHUB\wallify\src\discord-rpc\lib\discord-rpc.lib;C:\Users\elias\Desktop\GITHUB\wallify\deps\6.8.2\msvc2022_64\lib\Qt6Quick.lib;C:\Users\elias\Desktop\GITHUB\wallify\deps\6.8.2\msvc2022_64\lib\Qt6Multimedia.lib;C:\Users\elias\Desktop\GITHUB\wallify\deps\6.8.2\msvc2022_64\lib\Qt6QmlMeta.lib;C:\Users\elias\Desktop\GITHUB\wallify\deps\6.8.2\msvc2022_64\lib\Qt6QmlWorkerScript.lib;C:\Users\elias\Desktop\GITHUB\wallify\deps\6.8.2\msvc2022_64\lib\Qt6QmlModels.lib;C:\Users\elias\Desktop\GITHUB\wallify\deps\6.8.2\msvc2022_64\lib\Qt6Qml.lib;C:\Users\elias\Desktop\GITHUB\wallify\deps\6.8.2\msvc2022_64\lib\Qt6OpenGL.lib;user32.lib;C:\Users\elias\Desktop\GITHUB\wallify\deps\6.8.2\msvc2022_64\lib\Qt6Gui.lib;d3d11.lib;dxgi.lib;dxguid.lib;d3d12.lib;C:\Users\elias\Desktop\GITHUB\wallify\deps\6.8.2\msvc2022_64\lib\Qt6Network.lib;C:\Users\elias\Desktop\GITHUB\wallify\deps\6.8.2\msvc2022_64\lib\Qt6Core.lib;mpr.lib;userenv.lib;C:\Users\elias\Desktop\GITHUB\wallify\deps\6.8.2\msvc2022_64\lib\Qt6EntryPoint.lib;shell32.lib;ws2_32.lib;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib</AdditionalDependencies>
       <AdditionalLibraryDirectories>%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
@@ -245,6 +269,18 @@
       <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
       <ProxyFileName>%(Filename)_p.c</ProxyFileName>
     </Midl>
+    <PostBuildEvent>
+      <Message>Running windeployqt...</Message>
+      <Command>setlocal
+C:\Users\elias\Desktop\GITHUB\wallify\deps\6.8.2\msvc2022_64\bin\windeployqt.exe C:/Users/elias/Desktop/GITHUB/wallify/build/MinSizeRel/wallify.exe --qmldir C:/Users/elias/Desktop/GITHUB/wallify/resources/qml
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+    </PostBuildEvent>
     <Link>
       <AdditionalDependencies>C:\Users\elias\Desktop\GITHUB\wallify\src\discord-rpc\lib\discord-rpc.lib;C:\Users\elias\Desktop\GITHUB\wallify\deps\6.8.2\msvc2022_64\lib\Qt6Quick.lib;C:\Users\elias\Desktop\GITHUB\wallify\deps\6.8.2\msvc2022_64\lib\Qt6Multimedia.lib;C:\Users\elias\Desktop\GITHUB\wallify\deps\6.8.2\msvc2022_64\lib\Qt6QmlMeta.lib;C:\Users\elias\Desktop\GITHUB\wallify\deps\6.8.2\msvc2022_64\lib\Qt6QmlWorkerScript.lib;C:\Users\elias\Desktop\GITHUB\wallify\deps\6.8.2\msvc2022_64\lib\Qt6QmlModels.lib;C:\Users\elias\Desktop\GITHUB\wallify\deps\6.8.2\msvc2022_64\lib\Qt6Qml.lib;C:\Users\elias\Desktop\GITHUB\wallify\deps\6.8.2\msvc2022_64\lib\Qt6OpenGL.lib;user32.lib;C:\Users\elias\Desktop\GITHUB\wallify\deps\6.8.2\msvc2022_64\lib\Qt6Gui.lib;d3d11.lib;dxgi.lib;dxguid.lib;d3d12.lib;C:\Users\elias\Desktop\GITHUB\wallify\deps\6.8.2\msvc2022_64\lib\Qt6Network.lib;C:\Users\elias\Desktop\GITHUB\wallify\deps\6.8.2\msvc2022_64\lib\Qt6Core.lib;mpr.lib;userenv.lib;C:\Users\elias\Desktop\GITHUB\wallify\deps\6.8.2\msvc2022_64\lib\Qt6EntryPoint.lib;shell32.lib;ws2_32.lib;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib</AdditionalDependencies>
       <AdditionalLibraryDirectories>%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
@@ -304,6 +340,18 @@
       <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
       <ProxyFileName>%(Filename)_p.c</ProxyFileName>
     </Midl>
+    <PostBuildEvent>
+      <Message>Running windeployqt...</Message>
+      <Command>setlocal
+C:\Users\elias\Desktop\GITHUB\wallify\deps\6.8.2\msvc2022_64\bin\windeployqt.exe C:/Users/elias/Desktop/GITHUB/wallify/build/RelWithDebInfo/wallify.exe --qmldir C:/Users/elias/Desktop/GITHUB/wallify/resources/qml
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+    </PostBuildEvent>
     <Link>
       <AdditionalDependencies>C:\Users\elias\Desktop\GITHUB\wallify\src\discord-rpc\lib\discord-rpc.lib;C:\Users\elias\Desktop\GITHUB\wallify\deps\6.8.2\msvc2022_64\lib\Qt6Quick.lib;C:\Users\elias\Desktop\GITHUB\wallify\deps\6.8.2\msvc2022_64\lib\Qt6Multimedia.lib;C:\Users\elias\Desktop\GITHUB\wallify\deps\6.8.2\msvc2022_64\lib\Qt6QmlMeta.lib;C:\Users\elias\Desktop\GITHUB\wallify\deps\6.8.2\msvc2022_64\lib\Qt6QmlWorkerScript.lib;C:\Users\elias\Desktop\GITHUB\wallify\deps\6.8.2\msvc2022_64\lib\Qt6QmlModels.lib;C:\Users\elias\Desktop\GITHUB\wallify\deps\6.8.2\msvc2022_64\lib\Qt6Qml.lib;C:\Users\elias\Desktop\GITHUB\wallify\deps\6.8.2\msvc2022_64\lib\Qt6OpenGL.lib;user32.lib;C:\Users\elias\Desktop\GITHUB\wallify\deps\6.8.2\msvc2022_64\lib\Qt6Gui.lib;d3d11.lib;dxgi.lib;dxguid.lib;d3d12.lib;C:\Users\elias\Desktop\GITHUB\wallify\deps\6.8.2\msvc2022_64\lib\Qt6Network.lib;C:\Users\elias\Desktop\GITHUB\wallify\deps\6.8.2\msvc2022_64\lib\Qt6Core.lib;mpr.lib;userenv.lib;C:\Users\elias\Desktop\GITHUB\wallify\deps\6.8.2\msvc2022_64\lib\Qt6EntryPoint.lib;shell32.lib;ws2_32.lib;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib</AdditionalDependencies>
       <AdditionalLibraryDirectories>%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>

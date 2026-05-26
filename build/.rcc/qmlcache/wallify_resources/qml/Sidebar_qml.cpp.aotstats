@@ -6,7 +6,7 @@
                     {
                         "codegenSuccessfull": true,
                         "column": 23,
-                        "durationMicroseconds": 519,
+                        "durationMicroseconds": 319,
                         "errorMessage": "",
                         "functionName": "fill",
                         "line": 15
@@ -14,7 +14,7 @@
                     {
                         "codegenSuccessfull": true,
                         "column": 24,
-                        "durationMicroseconds": 914,
+                        "durationMicroseconds": 651,
                         "errorMessage": "",
                         "functionName": "color",
                         "line": 37
@@ -22,7 +22,7 @@
                     {
                         "codegenSuccessfull": true,
                         "column": 41,
-                        "durationMicroseconds": 277,
+                        "durationMicroseconds": 178,
                         "errorMessage": "",
                         "functionName": "verticalCenter",
                         "line": 33
@@ -30,7 +30,7 @@
                     {
                         "codegenSuccessfull": true,
                         "column": 31,
-                        "durationMicroseconds": 226,
+                        "durationMicroseconds": 261,
                         "errorMessage": "",
                         "functionName": "left",
                         "line": 34
@@ -38,7 +38,7 @@
                     {
                         "codegenSuccessfull": true,
                         "column": 28,
-                        "durationMicroseconds": 337,
+                        "durationMicroseconds": 257,
                         "errorMessage": "",
                         "functionName": "bold",
                         "line": 40
@@ -46,7 +46,7 @@
                     {
                         "codegenSuccessfull": true,
                         "column": 30,
-                        "durationMicroseconds": 193,
+                        "durationMicroseconds": 140,
                         "errorMessage": "",
                         "functionName": "cursorShape",
                         "line": 45
@@ -54,7 +54,7 @@
                     {
                         "codegenSuccessfull": false,
                         "column": 28,
-                        "durationMicroseconds": 78,
+                        "durationMicroseconds": 48,
                         "errorMessage": "Type (component in C:/Users/elias/Desktop/GITHUB/wallify/resources/qml/Sidebar.qml)::parent with type QQuickItem does not have a property color for writing",
                         "functionName": "onEntered",
                         "line": 47
@@ -62,7 +62,7 @@
                     {
                         "codegenSuccessfull": false,
                         "column": 27,
-                        "durationMicroseconds": 43,
+                        "durationMicroseconds": 24,
                         "errorMessage": "Type (component in C:/Users/elias/Desktop/GITHUB/wallify/resources/qml/Sidebar.qml)::parent with type QQuickItem does not have a property color for writing",
                         "functionName": "onExited",
                         "line": 48
@@ -70,7 +70,7 @@
                     {
                         "codegenSuccessfull": true,
                         "column": 28,
-                        "durationMicroseconds": 284,
+                        "durationMicroseconds": 188,
                         "errorMessage": "",
                         "functionName": "onClicked",
                         "line": 49
@@ -78,7 +78,7 @@
                     {
                         "codegenSuccessfull": true,
                         "column": 31,
-                        "durationMicroseconds": 126,
+                        "durationMicroseconds": 79,
                         "errorMessage": "",
                         "functionName": "fill",
                         "line": 44
@@ -86,7 +86,7 @@
                     {
                         "codegenSuccessfull": true,
                         "column": 24,
-                        "durationMicroseconds": 842,
+                        "durationMicroseconds": 491,
                         "errorMessage": "",
                         "functionName": "color",
                         "line": 64
@@ -94,7 +94,7 @@
                     {
                         "codegenSuccessfull": true,
                         "column": 41,
-                        "durationMicroseconds": 237,
+                        "durationMicroseconds": 143,
                         "errorMessage": "",
                         "functionName": "verticalCenter",
                         "line": 60
@@ -102,7 +102,7 @@
                     {
                         "codegenSuccessfull": true,
                         "column": 31,
-                        "durationMicroseconds": 221,
+                        "durationMicroseconds": 165,
                         "errorMessage": "",
                         "functionName": "left",
                         "line": 61
@@ -110,7 +110,7 @@
                     {
                         "codegenSuccessfull": true,
                         "column": 28,
-                        "durationMicroseconds": 263,
+                        "durationMicroseconds": 187,
                         "errorMessage": "",
                         "functionName": "bold",
                         "line": 67
@@ -118,7 +118,7 @@
                     {
                         "codegenSuccessfull": true,
                         "column": 30,
-                        "durationMicroseconds": 189,
+                        "durationMicroseconds": 285,
                         "errorMessage": "",
                         "functionName": "cursorShape",
                         "line": 72
@@ -126,7 +126,7 @@
                     {
                         "codegenSuccessfull": false,
                         "column": 28,
-                        "durationMicroseconds": 50,
+                        "durationMicroseconds": 34,
                         "errorMessage": "Type (component in C:/Users/elias/Desktop/GITHUB/wallify/resources/qml/Sidebar.qml)::parent with type QQuickItem does not have a property color for writing",
                         "functionName": "onEntered",
                         "line": 74
@@ -134,7 +134,7 @@
                     {
                         "codegenSuccessfull": false,
                         "column": 27,
-                        "durationMicroseconds": 41,
+                        "durationMicroseconds": 24,
                         "errorMessage": "Type (component in C:/Users/elias/Desktop/GITHUB/wallify/resources/qml/Sidebar.qml)::parent with type QQuickItem does not have a property color for writing",
                         "functionName": "onExited",
                         "line": 75
@@ -142,7 +142,7 @@
                     {
                         "codegenSuccessfull": true,
                         "column": 28,
-                        "durationMicroseconds": 284,
+                        "durationMicroseconds": 171,
                         "errorMessage": "",
                         "functionName": "onClicked",
                         "line": 76
@@ -150,7 +150,7 @@
                     {
                         "codegenSuccessfull": true,
                         "column": 31,
-                        "durationMicroseconds": 146,
+                        "durationMicroseconds": 73,
                         "errorMessage": "",
                         "functionName": "fill",
                         "line": 71
@@ -158,7 +158,7 @@
                     {
                         "codegenSuccessfull": true,
                         "column": 24,
-                        "durationMicroseconds": 630,
+                        "durationMicroseconds": 409,
                         "errorMessage": "",
                         "functionName": "color",
                         "line": 91
@@ -166,7 +166,7 @@
                     {
                         "codegenSuccessfull": true,
                         "column": 41,
-                        "durationMicroseconds": 192,
+                        "durationMicroseconds": 130,
                         "errorMessage": "",
                         "functionName": "verticalCenter",
                         "line": 87
@@ -174,7 +174,7 @@
                     {
                         "codegenSuccessfull": true,
                         "column": 31,
-                        "durationMicroseconds": 174,
+                        "durationMicroseconds": 131,
                         "errorMessage": "",
                         "functionName": "left",
                         "line": 88
@@ -182,7 +182,7 @@
                     {
                         "codegenSuccessfull": true,
                         "column": 28,
-                        "durationMicroseconds": 242,
+                        "durationMicroseconds": 145,
                         "errorMessage": "",
                         "functionName": "bold",
                         "line": 94
@@ -190,7 +190,7 @@
                     {
                         "codegenSuccessfull": true,
                         "column": 30,
-                        "durationMicroseconds": 153,
+                        "durationMicroseconds": 136,
                         "errorMessage": "",
                         "functionName": "cursorShape",
                         "line": 99
@@ -198,7 +198,7 @@
                     {
                         "codegenSuccessfull": false,
                         "column": 28,
-                        "durationMicroseconds": 32,
+                        "durationMicroseconds": 27,
                         "errorMessage": "Type (component in C:/Users/elias/Desktop/GITHUB/wallify/resources/qml/Sidebar.qml)::parent with type QQuickItem does not have a property color for writing",
                         "functionName": "onEntered",
                         "line": 101
@@ -206,7 +206,7 @@
                     {
                         "codegenSuccessfull": false,
                         "column": 27,
-                        "durationMicroseconds": 20,
+                        "durationMicroseconds": 19,
                         "errorMessage": "Type (component in C:/Users/elias/Desktop/GITHUB/wallify/resources/qml/Sidebar.qml)::parent with type QQuickItem does not have a property color for writing",
                         "functionName": "onExited",
                         "line": 102
@@ -214,7 +214,7 @@
                     {
                         "codegenSuccessfull": true,
                         "column": 28,
-                        "durationMicroseconds": 147,
+                        "durationMicroseconds": 161,
                         "errorMessage": "",
                         "functionName": "onClicked",
                         "line": 103
@@ -222,7 +222,7 @@
                     {
                         "codegenSuccessfull": true,
                         "column": 31,
-                        "durationMicroseconds": 74,
+                        "durationMicroseconds": 72,
                         "errorMessage": "",
                         "functionName": "fill",
                         "line": 98

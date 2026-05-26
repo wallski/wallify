@@ -48,6 +48,17 @@ Item {
         }
     }
 
+    FileDialog {
+        id: trackCoverFileDialog
+        title: "Select Song Cover Image"
+        nameFilters: ["Image files (*.png *.jpg *.jpeg)"]
+        onAccepted: {
+            if (customTrackContextMenu.trackData) {
+                localLibrary.changeCover(customTrackContextMenu.trackData.filePath, selectedFile.toString())
+            }
+        }
+    }
+
     ColumnLayout {
         anchors.fill: parent
         anchors.margins: 30
@@ -427,49 +438,6 @@ Item {
                         onClicked: {
                             if (selectedPlaylist && selectedPlaylist.tracks && selectedPlaylist.tracks.length > 0) {
                                 audioPlayer.playPlaylist(selectedPlaylist.tracks, false)
-                            }
-                        }
-                    }
-                }
-
-                Rectangle {
-                    width: 120
-                    height: 36
-                    color: shuffleAllMouse.containsMouse ? "#ab7fe6" : "#2a2a35"
-                    border.color: "#bd93f9"
-                    border.width: 1
-                    radius: 18
-
-                    Behavior on color { ColorAnimation { duration: 150 } }
-
-                    RowLayout {
-                        anchors.centerIn: parent
-                        spacing: 6
-
-                        Text {
-                            text: ""
-                            font.family: "Segoe MDL2 Assets"
-                            font.pixelSize: 14
-                            color: "#bd93f9"
-                        }
-
-                        Text {
-                            text: "SHUFFLE"
-                            font.family: "Roboto"
-                            font.pixelSize: 12
-                            font.bold: true
-                            color: "#bd93f9"
-                        }
-                    }
-
-                    MouseArea {
-                        id: shuffleAllMouse
-                        anchors.fill: parent
-                        hoverEnabled: true
-                        cursorShape: Qt.PointingHandCursor
-                        onClicked: {
-                            if (selectedPlaylist && selectedPlaylist.tracks && selectedPlaylist.tracks.length > 0) {
-                                audioPlayer.playPlaylist(selectedPlaylist.tracks, true)
                             }
                         }
                     }
@@ -1266,6 +1234,49 @@ Item {
                             renameDialog.trackData = customTrackContextMenu.trackData
                             renameDialog.visible = true
                         }
+                        customTrackContextMenu.visible = false
+                    }
+                }
+            }
+
+            Rectangle {
+                id: menuItemChangeCover
+                Layout.fillWidth: true
+                height: 30
+                color: changeCoverMouse.containsMouse ? "#2a2a35" : "transparent"
+                radius: 4
+
+                property bool containsMouse: changeCoverMouse.containsMouse
+
+                RowLayout {
+                    anchors.fill: parent
+                    anchors.leftMargin: 12
+                    anchors.rightMargin: 12
+                    spacing: 10
+
+                    Text {
+                        text: ""
+                        font.family: "Segoe MDL2 Assets"
+                        font.pixelSize: 13
+                        color: changeCoverMouse.containsMouse ? "#bd93f9" : "#89899f"
+                    }
+
+                    Text {
+                        text: "Change Cover"
+                        font.family: "Roboto"
+                        font.pixelSize: 13
+                        color: changeCoverMouse.containsMouse ? "#bd93f9" : "#e2e2e2"
+                        Layout.fillWidth: true
+                    }
+                }
+
+                MouseArea {
+                    id: changeCoverMouse
+                    anchors.fill: parent
+                    hoverEnabled: true
+                    cursorShape: Qt.PointingHandCursor
+                    onClicked: {
+                        trackCoverFileDialog.open()
                         customTrackContextMenu.visible = false
                     }
                 }

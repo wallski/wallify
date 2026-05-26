@@ -86,3 +86,15 @@ set_target_properties(wallify PROPERTIES
 
 qt_import_qml_plugins(wallify)
 qt_finalize_executable(wallify)
+
+# --- Post-build: auto-deploy Qt DLLs with windeployqt ---
+set(WINDEPLOYQT_EXE "${CMAKE_CURRENT_SOURCE_DIR}/deps/6.8.2/msvc2022_64/bin/windeployqt.exe")
+set(QML_DIR "${CMAKE_CURRENT_SOURCE_DIR}/resources/qml")
+
+add_custom_command(TARGET wallify POST_BUILD
+    COMMAND "${WINDEPLOYQT_EXE}"
+            "$<TARGET_FILE:wallify>"
+            --qmldir "${QML_DIR}"
+    COMMENT "Running windeployqt..."
+    VERBATIM
+)

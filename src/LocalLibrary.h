@@ -55,6 +55,7 @@ public:
     void createPlaylistFromMigration(const QString &playlistName, const QStringList &filePaths);
 
     Q_INVOKABLE void renameTrack(const QString &filePath, const QString &newTitle);
+    Q_INVOKABLE void changeCover(const QString &filePath, const QString &imagePath);
 
     int sortMode() const;
     Q_INVOKABLE void setSortMode(int mode);
@@ -69,7 +70,7 @@ private:
     void scanDirectory();
     Track parseMp3Metadata(const QString &filePath);
     QString parseId3String(const char *data, int size);
-    void writeId3Tag(const QString &filePath, const QString &title, const QString &artist, const QString &album);
+    void writeId3Tag(const QString &filePath, const QString &title, const QString &artist, const QString &album, const QByteArray &newCoverData = QByteArray());
 
     void loadPlaylists();
     void savePlaylists();

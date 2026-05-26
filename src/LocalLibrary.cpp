@@ -419,7 +419,7 @@ QString LocalLibrary::parseId3String(const char *data, int size)
     return QString::fromLatin1(textData, textSize).trimmed();
 }
 
-void LocalLibrary::writeId3Tag(const QString &filePath, const QString &title, const QString &artist, const QString &album)
+void LocalLibrary::writeId3Tag(const QString &filePath, const QString &title, const QString &artist, const QString &album, const QByteArray &newCoverData)
 {
     QFile file(filePath);
     if (!file.open(QIODevice::ReadOnly)) return;
@@ -429,7 +429,7 @@ void LocalLibrary::writeId3Tag(const QString &filePath, const QString &title, co
 
     QByteArray newTag;
     newTag.append("ID3");
-    newTag.append(char(4));
+    newTag.append(char(3)); // use ID3v2.3
     newTag.append(char(0));
     newTag.append(char(0));
 
@@ -444,7 +444,7 @@ void LocalLibrary::writeId3Tag(const QString &filePath, const QString &title, co
         frames.append(char((size >> 8) & 0xFF));
         frames.append(char(size & 0xFF));
         frames.append(QByteArray(2, 0));
-        frames.append(char(3));
+        frames.append(char(3)); // UTF-8
         frames.append(textData);
         frames.append(char(0));
     };
@@ -452,6 +452,80 @@ void LocalLibrary::writeId3Tag(const QString &filePath, const QString &title, co
     if (!title.isEmpty()) writeTextFrame("TIT2", title);
     if (!artist.isEmpty()) writeTextFrame("TPE1", artist);
     if (!album.isEmpty()) writeTextFrame("TALB", album);
+
+    if (!newCoverData.isEmpty()) {
+        frames.append("APIC");
+        QByteArray mimeType = "image/jpeg";
+        quint32 size = 1 + mimeType.size() + 1 + 1 + 1 + newCoverData.size();
+        frames.append(char((size >> 24) & 0xFF));
+        frames.append(char((size >> 16) & 0xFF));
+        frames.append(char((size >> 8) & 0xFF));
+        frames.append(char(size & 0xFF));
+        frames.append(QByteArray(2, 0));
+        frames.append(char(0)); // ISO-8859-1 for mime string
+        frames.append(mimeType);
+        frames.append(char(0));
+        frames.append(char(3)); // Cover (front)
+        frames.append(char(0)); // Description empty
+        frames.append(newCoverData);
+    }
+
+    QByteArray oldAudioData = fileData;
+    if (fileData.size() > 10 && strncmp(fileData.constData(), "ID3", 3) == 0) {
+        int majorVersion = fileData[3];
+        quint32 oldTagSize = ((fileData[6] & 0x7F) << 21) |
+                             ((fileData[7] & 0x7F) << 14) |
+                             ((fileData[8] & 0x7F) << 7)  |
+                             (fileData[9] & 0x7F);
+        
+        QByteArray tagData = fileData.mid(10, oldTagSize);
+        oldAudioData = fileData.mid(10 + oldTagSize);
+
+        int offset = 0;
+        // Un-synch logic skipped for simplicity, most modern tags don't use it or we just copy raw bytes safely
+        while (offset + (majorVersion == 2 ? 6 : 10) < tagData.size()) {
+            const char *frameHeader = tagData.constData() + offset;
+            QByteArray frameId;
+            quint32 frameSize = 0;
+            int headerSize = 0;
+
+            if (majorVersion == 2) {
+                frameId = QByteArray(frameHeader, 3);
+                frameSize = (static_cast<uchar>(frameHeader[3]) << 16) |
+                            (static_cast<uchar>(frameHeader[4]) << 8)  |
+                            static_cast<uchar>(frameHeader[5]);
+                headerSize = 6;
+            } else {
+                frameId = QByteArray(frameHeader, 4);
+                if (majorVersion == 4) {
+                    frameSize = ((frameHeader[4] & 0x7F) << 21) |
+                                ((frameHeader[5] & 0x7F) << 14) |
+                                ((frameHeader[6] & 0x7F) << 7)  |
+                                (frameHeader[7] & 0x7F);
+                } else {
+                    frameSize = (static_cast<uchar>(frameHeader[4]) << 24) |
+                                (static_cast<uchar>(frameHeader[5]) << 16) |
+                                (static_cast<uchar>(frameHeader[6]) << 8)  |
+                                static_cast<uchar>(frameHeader[7]);
+                }
+                headerSize = 10;
+            }
+
+            if (frameSize == 0 || offset + headerSize + frameSize > tagData.size()) break;
+
+            if (frameId != "TIT2" && frameId != "TPE1" && frameId != "TALB" &&
+                frameId != "TT2" && frameId != "TP1" && frameId != "TAL") {
+                if (newCoverData.isEmpty() || (frameId != "APIC" && frameId != "PIC")) {
+                    // Re-encode frame header to v2.3 to be safe, or just raw copy
+                    if (majorVersion == 3 || majorVersion == 4) {
+                        // Raw copy works mostly between 3 and 4
+                        frames.append(tagData.mid(offset, headerSize + frameSize));
+                    }
+                }
+            }
+            offset += headerSize + frameSize;
+        }
+    }
 
     quint32 tagSize = frames.size();
     quint32 synchSize = ((tagSize & 0xFE00000) >> 21) |
@@ -464,17 +538,6 @@ void LocalLibrary::writeId3Tag(const QString &filePath, const QString &title, co
     newTag.append(char((synchSize >> 7) & 0x7F));
     newTag.append(char(synchSize & 0x7F));
     newTag.append(frames);
-
-    QByteArray oldAudioData;
-    if (fileData.size() > 10 && strncmp(fileData.constData(), "ID3", 3) == 0) {
-        quint32 oldTagSize = ((fileData[6] & 0x7F) << 21) |
-                             ((fileData[7] & 0x7F) << 14) |
-                             ((fileData[8] & 0x7F) << 7)  |
-                             (fileData[9] & 0x7F);
-        oldAudioData = fileData.mid(10 + oldTagSize);
-    } else {
-        oldAudioData = fileData;
-    }
 
     if (!file.open(QIODevice::WriteOnly)) return;
     file.write(newTag);
@@ -521,16 +584,36 @@ void LocalLibrary::renameTrack(const QString &filePath, const QString &newTitle)
                         }
                     }
                 }
-                if (playlistChanged) {
-                    savePlaylists();
-                }
+                if (playlistChanged) savePlaylists();
             }
+            emit libraryChanged();
             break;
         }
     }
-    emit libraryChanged();
-    emit playlistsChanged();
 }
+
+void LocalLibrary::changeCover(const QString &filePath, const QString &imagePath)
+{
+    QString cleanPath = imagePath;
+    if (cleanPath.startsWith("file:///")) {
+        cleanPath = cleanPath.mid(8);
+    }
+
+    QFile imgFile(cleanPath);
+    if (!imgFile.open(QIODevice::ReadOnly)) return;
+    QByteArray imgData = imgFile.readAll();
+    imgFile.close();
+
+    for (int i = 0; i < m_tracks.size(); ++i) {
+        if (m_tracks[i].filePath == filePath) {
+            writeId3Tag(filePath, m_tracks[i].title, m_tracks[i].artist, m_tracks[i].album, imgData);
+            m_tracks[i].hasCover = true;
+            emit libraryChanged();
+            break;
+        }
+    }
+}
+
 
 QByteArray LocalLibrary::getCoverData(const QString &filePath)
 {

@@ -35,7 +35,7 @@ Item {
                 id: contentStack
                 Layout.fillWidth: true
                 Layout.fillHeight: true
-                currentIndex: 1
+                currentIndex: 0
 
                 LibraryView {
                     Layout.fillWidth: true

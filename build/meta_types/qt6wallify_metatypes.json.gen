@@ -701,11 +701,27 @@
                         "access": "public",
                         "arguments": [
                             {
+                                "name": "filePath",
+                                "type": "QString"
+                            },
+                            {
+                                "name": "imagePath",
+                                "type": "QString"
+                            }
+                        ],
+                        "index": 13,
+                        "name": "changeCover",
+                        "returnType": "void"
+                    },
+                    {
+                        "access": "public",
+                        "arguments": [
+                            {
                                 "name": "mode",
                                 "type": "int"
                             }
                         ],
-                        "index": 13,
+                        "index": 14,
                         "name": "setSortMode",
                         "returnType": "void"
                     }

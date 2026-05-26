@@ -35,8 +35,6 @@ events:
     found: "C:/Program Files/CMake/share/cmake-4.3/Modules/CMakeCXXCompilerId.cpp.in"
     search_context:
       ENV{PATH}:
-        - "C:/Users/elias/.gemini/antigravity/bin"
-        - "C:\\Users\\elias\\AppData\\Roaming\\Antigravity\\bin"
         - "C:\\Program Files\\Eclipse Adoptium\\jdk-25.0.2.10-hotspot\\bin"
         - "C:\\WINDOWS\\system32"
         - "C:\\WINDOWS"
@@ -78,7 +76,7 @@ events:
       The output was:
       0
       MSBuild version 18.6.3+84d3e95b4 for .NET Framework
-      Build started 5/24/2026 3:52:04 PM.
+      Build started 5/26/2026 8:41:07 AM.
       
       Project "C:\\Users\\elias\\Desktop\\GITHUB\\wallify\\build\\CMakeFiles\\4.3.2\\CompilerIdCXX\\CompilerIdCXX.vcxproj" on node 1 (default targets).
       PrepareForBuild:
@@ -107,7 +105,7 @@ events:
           0 Warning(s)
           0 Error(s)
       
-      Time Elapsed 00:00:00.79
+      Time Elapsed 00:00:00.69
       
       
       Compilation of the CXX compiler identification source "CMakeCXXCompilerId.cpp" produced "CompilerIdCXX.exe"
@@ -140,8 +138,6 @@ events:
       - "link"
     candidate_directories:
       - "C:/Program Files/Microsoft Visual Studio/18/Community/VC/Tools/MSVC/14.51.36231/bin/Hostx64/x64/"
-      - "C:/Users/elias/.gemini/antigravity/bin/"
-      - "C:/Users/elias/AppData/Roaming/Antigravity/bin/"
       - "C:/Program Files/Eclipse Adoptium/jdk-25.0.2.10-hotspot/bin/"
       - "C:/Windows/System32/"
       - "C:/Windows/"
@@ -172,8 +168,6 @@ events:
     found: "C:/Program Files/Microsoft Visual Studio/18/Community/VC/Tools/MSVC/14.51.36231/bin/Hostx64/x64/link.exe"
     search_context:
       ENV{PATH}:
-        - "C:/Users/elias/.gemini/antigravity/bin"
-        - "C:\\Users\\elias\\AppData\\Roaming\\Antigravity\\bin"
         - "C:\\Program Files\\Eclipse Adoptium\\jdk-25.0.2.10-hotspot\\bin"
         - "C:\\WINDOWS\\system32"
         - "C:\\WINDOWS"
@@ -222,8 +216,6 @@ events:
       - "lld-link"
     candidate_directories:
       - "C:/Program Files/Microsoft Visual Studio/18/Community/VC/Tools/MSVC/14.51.36231/bin/Hostx64/x64/"
-      - "C:/Users/elias/.gemini/antigravity/bin/"
-      - "C:/Users/elias/AppData/Roaming/Antigravity/bin/"
       - "C:/Program Files/Eclipse Adoptium/jdk-25.0.2.10-hotspot/bin/"
       - "C:/Windows/System32/"
       - "C:/Windows/"
@@ -253,12 +245,6 @@ events:
       - "C:/Program Files/Microsoft Visual Studio/18/Community/VC/Tools/MSVC/14.51.36231/bin/Hostx64/x64/lld-link.com"
       - "C:/Program Files/Microsoft Visual Studio/18/Community/VC/Tools/MSVC/14.51.36231/bin/Hostx64/x64/lld-link.exe"
       - "C:/Program Files/Microsoft Visual Studio/18/Community/VC/Tools/MSVC/14.51.36231/bin/Hostx64/x64/lld-link"
-      - "C:/Users/elias/.gemini/antigravity/bin/lld-link.com"
-      - "C:/Users/elias/.gemini/antigravity/bin/lld-link.exe"
-      - "C:/Users/elias/.gemini/antigravity/bin/lld-link"
-      - "C:/Users/elias/AppData/Roaming/Antigravity/bin/lld-link.com"
-      - "C:/Users/elias/AppData/Roaming/Antigravity/bin/lld-link.exe"
-      - "C:/Users/elias/AppData/Roaming/Antigravity/bin/lld-link"
       - "C:/Program Files/Eclipse Adoptium/jdk-25.0.2.10-hotspot/bin/lld-link.com"
       - "C:/Program Files/Eclipse Adoptium/jdk-25.0.2.10-hotspot/bin/lld-link.exe"
       - "C:/Program Files/Eclipse Adoptium/jdk-25.0.2.10-hotspot/bin/lld-link"
@@ -337,8 +323,6 @@ events:
     found: false
     search_context:
       ENV{PATH}:
-        - "C:/Users/elias/.gemini/antigravity/bin"
-        - "C:\\Users\\elias\\AppData\\Roaming\\Antigravity\\bin"
         - "C:\\Program Files\\Eclipse Adoptium\\jdk-25.0.2.10-hotspot\\bin"
         - "C:\\WINDOWS\\system32"
         - "C:\\WINDOWS"
@@ -385,8 +369,6 @@ events:
       - "link"
     candidate_directories:
       - "C:/Program Files/Microsoft Visual Studio/18/Community/VC/Tools/MSVC/14.51.36231/bin/Hostx64/x64/"
-      - "C:/Users/elias/.gemini/antigravity/bin/"
-      - "C:/Users/elias/AppData/Roaming/Antigravity/bin/"
       - "C:/Program Files/Eclipse Adoptium/jdk-25.0.2.10-hotspot/bin/"
       - "C:/Windows/System32/"
       - "C:/Windows/"
@@ -417,8 +399,6 @@ events:
     found: "C:/Program Files/Microsoft Visual Studio/18/Community/VC/Tools/MSVC/14.51.36231/bin/Hostx64/x64/link.exe"
     search_context:
       ENV{PATH}:
-        - "C:/Users/elias/.gemini/antigravity/bin"
-        - "C:\\Users\\elias\\AppData\\Roaming\\Antigravity\\bin"
         - "C:\\Program Files\\Eclipse Adoptium\\jdk-25.0.2.10-hotspot\\bin"
         - "C:\\WINDOWS\\system32"
         - "C:\\WINDOWS"
@@ -465,8 +445,6 @@ events:
       - "mt"
     candidate_directories:
       - "C:/Program Files/Microsoft Visual Studio/18/Community/VC/Tools/MSVC/14.51.36231/bin/Hostx64/x64/"
-      - "C:/Users/elias/.gemini/antigravity/bin/"
-      - "C:/Users/elias/AppData/Roaming/Antigravity/bin/"
       - "C:/Program Files/Eclipse Adoptium/jdk-25.0.2.10-hotspot/bin/"
       - "C:/Windows/System32/"
       - "C:/Windows/"
@@ -496,12 +474,6 @@ events:
       - "C:/Program Files/Microsoft Visual Studio/18/Community/VC/Tools/MSVC/14.51.36231/bin/Hostx64/x64/mt.com"
       - "C:/Program Files/Microsoft Visual Studio/18/Community/VC/Tools/MSVC/14.51.36231/bin/Hostx64/x64/mt.exe"
       - "C:/Program Files/Microsoft Visual Studio/18/Community/VC/Tools/MSVC/14.51.36231/bin/Hostx64/x64/mt"
-      - "C:/Users/elias/.gemini/antigravity/bin/mt.com"
-      - "C:/Users/elias/.gemini/antigravity/bin/mt.exe"
-      - "C:/Users/elias/.gemini/antigravity/bin/mt"
-      - "C:/Users/elias/AppData/Roaming/Antigravity/bin/mt.com"
-      - "C:/Users/elias/AppData/Roaming/Antigravity/bin/mt.exe"
-      - "C:/Users/elias/AppData/Roaming/Antigravity/bin/mt"
       - "C:/Program Files/Eclipse Adoptium/jdk-25.0.2.10-hotspot/bin/mt.com"
       - "C:/Program Files/Eclipse Adoptium/jdk-25.0.2.10-hotspot/bin/mt.exe"
       - "C:/Program Files/Eclipse Adoptium/jdk-25.0.2.10-hotspot/bin/mt"
@@ -580,8 +552,6 @@ events:
     found: false
     search_context:
       ENV{PATH}:
-        - "C:/Users/elias/.gemini/antigravity/bin"
-        - "C:\\Users\\elias\\AppData\\Roaming\\Antigravity\\bin"
         - "C:\\Program Files\\Eclipse Adoptium\\jdk-25.0.2.10-hotspot\\bin"
         - "C:\\WINDOWS\\system32"
         - "C:\\WINDOWS"
@@ -628,8 +598,6 @@ events:
       - "lib"
     candidate_directories:
       - "C:/Program Files/Microsoft Visual Studio/18/Community/VC/Tools/MSVC/14.51.36231/bin/Hostx64/x64/"
-      - "C:/Users/elias/.gemini/antigravity/bin/"
-      - "C:/Users/elias/AppData/Roaming/Antigravity/bin/"
       - "C:/Program Files/Eclipse Adoptium/jdk-25.0.2.10-hotspot/bin/"
       - "C:/Windows/System32/"
       - "C:/Windows/"
@@ -660,8 +628,6 @@ events:
     found: "C:/Program Files/Microsoft Visual Studio/18/Community/VC/Tools/MSVC/14.51.36231/bin/Hostx64/x64/lib.exe"
     search_context:
       ENV{PATH}:
-        - "C:/Users/elias/.gemini/antigravity/bin"
-        - "C:\\Users\\elias\\AppData\\Roaming\\Antigravity\\bin"
         - "C:\\Program Files\\Eclipse Adoptium\\jdk-25.0.2.10-hotspot\\bin"
         - "C:\\WINDOWS\\system32"
         - "C:\\WINDOWS"
@@ -710,8 +676,6 @@ events:
     names:
       - "rc"
     candidate_directories:
-      - "C:/Users/elias/.gemini/antigravity/bin/"
-      - "C:/Users/elias/AppData/Roaming/Antigravity/bin/"
       - "C:/Program Files/Eclipse Adoptium/jdk-25.0.2.10-hotspot/bin/"
       - "C:/Windows/System32/"
       - "C:/Windows/"
@@ -750,12 +714,6 @@ events:
       - "C:/Program Files/wallify/sbin/"
       - "C:/Program Files/wallify/"
     searched_directories:
-      - "C:/Users/elias/.gemini/antigravity/bin/rc.com"
-      - "C:/Users/elias/.gemini/antigravity/bin/rc.exe"
-      - "C:/Users/elias/.gemini/antigravity/bin/rc"
-      - "C:/Users/elias/AppData/Roaming/Antigravity/bin/rc.com"
-      - "C:/Users/elias/AppData/Roaming/Antigravity/bin/rc.exe"
-      - "C:/Users/elias/AppData/Roaming/Antigravity/bin/rc"
       - "C:/Program Files/Eclipse Adoptium/jdk-25.0.2.10-hotspot/bin/rc.com"
       - "C:/Program Files/Eclipse Adoptium/jdk-25.0.2.10-hotspot/bin/rc.exe"
       - "C:/Program Files/Eclipse Adoptium/jdk-25.0.2.10-hotspot/bin/rc"
@@ -870,8 +828,6 @@ events:
     found: false
     search_context:
       ENV{PATH}:
-        - "C:/Users/elias/.gemini/antigravity/bin"
-        - "C:\\Users\\elias\\AppData\\Roaming\\Antigravity\\bin"
         - "C:\\Program Files\\Eclipse Adoptium\\jdk-25.0.2.10-hotspot\\bin"
         - "C:\\WINDOWS\\system32"
         - "C:\\WINDOWS"
@@ -912,8 +868,8 @@ events:
     checks:
       - "Detecting CXX compiler ABI info"
     directories:
-      source: "C:/Users/elias/Desktop/GITHUB/wallify/build/CMakeFiles/CMakeScratch/TryCompile-5kxk41"
-      binary: "C:/Users/elias/Desktop/GITHUB/wallify/build/CMakeFiles/CMakeScratch/TryCompile-5kxk41"
+      source: "C:/Users/elias/Desktop/GITHUB/wallify/build/CMakeFiles/CMakeScratch/TryCompile-3go6y9"
+      binary: "C:/Users/elias/Desktop/GITHUB/wallify/build/CMakeFiles/CMakeScratch/TryCompile-3go6y9"
     cmakeVariables:
       CMAKE_CXX_FLAGS: "/DWIN32 /D_WINDOWS /GR /EHsc"
       CMAKE_CXX_FLAGS_DEBUG: "/Zi /Ob0 /Od /RTC1"
@@ -924,39 +880,39 @@ events:
       variable: "CMAKE_CXX_ABI_COMPILED"
       cached: true
       stdout: |
-        Change Dir: 'C:/Users/elias/Desktop/GITHUB/wallify/build/CMakeFiles/CMakeScratch/TryCompile-5kxk41'
+        Change Dir: 'C:/Users/elias/Desktop/GITHUB/wallify/build/CMakeFiles/CMakeScratch/TryCompile-3go6y9'
         
-        Run Build Command(s): "C:/Program Files/Microsoft Visual Studio/18/Community/MSBuild/Current/Bin/amd64/MSBuild.exe" cmTC_d5f73.vcxproj /p:Configuration=Debug /p:Platform=x64 /p:VisualStudioVersion=18.0 /v:n
+        Run Build Command(s): "C:/Program Files/Microsoft Visual Studio/18/Community/MSBuild/Current/Bin/amd64/MSBuild.exe" cmTC_346f8.vcxproj /p:Configuration=Debug /p:Platform=x64 /p:VisualStudioVersion=18.0 /v:n
         MSBuild version 18.6.3+84d3e95b4 for .NET Framework
-        Build started 5/24/2026 3:52:05 PM.
+        Build started 5/26/2026 8:41:08 AM.
         
-        Project "C:\\Users\\elias\\Desktop\\GITHUB\\wallify\\build\\CMakeFiles\\CMakeScratch\\TryCompile-5kxk41\\cmTC_d5f73.vcxproj" on node 1 (default targets).
+        Project "C:\\Users\\elias\\Desktop\\GITHUB\\wallify\\build\\CMakeFiles\\CMakeScratch\\TryCompile-3go6y9\\cmTC_346f8.vcxproj" on node 1 (default targets).
         PrepareForBuild:
           Structured output is enabled. The formatting of compiler diagnostics will reflect the error hierarchy. See https://aka.ms/cpp/structured-output for more details.
-          Creating directory "C:\\Users\\elias\\Desktop\\GITHUB\\wallify\\build\\CMakeFiles\\CMakeScratch\\TryCompile-5kxk41\\Debug\\".
-          Creating directory "cmTC_d5f73.dir\\Debug\\cmTC_d5f73.tlog\\".
+          Creating directory "C:\\Users\\elias\\Desktop\\GITHUB\\wallify\\build\\CMakeFiles\\CMakeScratch\\TryCompile-3go6y9\\Debug\\".
+          Creating directory "cmTC_346f8.dir\\Debug\\cmTC_346f8.tlog\\".
         InitializeBuildStatus:
-          Creating "cmTC_d5f73.dir\\Debug\\cmTC_d5f73.tlog\\unsuccessfulbuild" because "AlwaysCreate" was specified.
-          Touching "cmTC_d5f73.dir\\Debug\\cmTC_d5f73.tlog\\unsuccessfulbuild".
+          Creating "cmTC_346f8.dir\\Debug\\cmTC_346f8.tlog\\unsuccessfulbuild" because "AlwaysCreate" was specified.
+          Touching "cmTC_346f8.dir\\Debug\\cmTC_346f8.tlog\\unsuccessfulbuild".
         ClCompile:
-          C:\\Program Files\\Microsoft Visual Studio\\18\\Community\\VC\\Tools\\MSVC\\14.51.36231\\bin\\HostX64\\x64\\CL.exe /c /Zi /W1 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D _MBCS /D "CMAKE_INTDIR=\\"Debug\\"" /EHsc /RTC1 /MDd /GR /Fo"cmTC_d5f73.dir\\Debug\\\\" /Fd"cmTC_d5f73.dir\\Debug\\vc145.pdb" /external:W1 /TP /errorReport:queue "C:\\Program Files\\CMake\\share\\cmake-4.3\\Modules\\CMakeCXXCompilerABI.cpp"
+          C:\\Program Files\\Microsoft Visual Studio\\18\\Community\\VC\\Tools\\MSVC\\14.51.36231\\bin\\HostX64\\x64\\CL.exe /c /Zi /W1 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D _MBCS /D "CMAKE_INTDIR=\\"Debug\\"" /EHsc /RTC1 /MDd /GR /Fo"cmTC_346f8.dir\\Debug\\\\" /Fd"cmTC_346f8.dir\\Debug\\vc145.pdb" /external:W1 /TP /errorReport:queue "C:\\Program Files\\CMake\\share\\cmake-4.3\\Modules\\CMakeCXXCompilerABI.cpp"
           Microsoft (R) C/C++ Optimizing Compiler Version 19.51.36244 for x64
           Copyright (C) Microsoft Corporation.  All rights reserved.
-          cl /c /Zi /W1 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D _MBCS /D "CMAKE_INTDIR=\\"Debug\\"" /EHsc /RTC1 /MDd /GR /Fo"cmTC_d5f73.dir\\Debug\\\\" /Fd"cmTC_d5f73.dir\\Debug\\vc145.pdb" /external:W1 /TP /errorReport:queue "C:\\Program Files\\CMake\\share\\cmake-4.3\\Modules\\CMakeCXXCompilerABI.cpp"
+          cl /c /Zi /W1 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D _MBCS /D "CMAKE_INTDIR=\\"Debug\\"" /EHsc /RTC1 /MDd /GR /Fo"cmTC_346f8.dir\\Debug\\\\" /Fd"cmTC_346f8.dir\\Debug\\vc145.pdb" /external:W1 /TP /errorReport:queue "C:\\Program Files\\CMake\\share\\cmake-4.3\\Modules\\CMakeCXXCompilerABI.cpp"
           CMakeCXXCompilerABI.cpp
         Link:
-          C:\\Program Files\\Microsoft Visual Studio\\18\\Community\\VC\\Tools\\MSVC\\14.51.36231\\bin\\HostX64\\x64\\link.exe /OUT:"C:\\Users\\elias\\Desktop\\GITHUB\\wallify\\build\\CMakeFiles\\CMakeScratch\\TryCompile-5kxk41\\Debug\\cmTC_d5f73.exe" /INCREMENTAL /ILK:"cmTC_d5f73.dir\\Debug\\cmTC_d5f73.ilk" /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"C:/Users/elias/Desktop/GITHUB/wallify/build/CMakeFiles/CMakeScratch/TryCompile-5kxk41/Debug/cmTC_d5f73.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /IMPLIB:"C:/Users/elias/Desktop/GITHUB/wallify/build/CMakeFiles/CMakeScratch/TryCompile-5kxk41/Debug/cmTC_d5f73.lib" /MACHINE:X64  /machine:x64 cmTC_d5f73.dir\\Debug\\CMakeCXXCompilerABI.obj
-          cmTC_d5f73.vcxproj -> C:\\Users\\elias\\Desktop\\GITHUB\\wallify\\build\\CMakeFiles\\CMakeScratch\\TryCompile-5kxk41\\Debug\\cmTC_d5f73.exe
+          C:\\Program Files\\Microsoft Visual Studio\\18\\Community\\VC\\Tools\\MSVC\\14.51.36231\\bin\\HostX64\\x64\\link.exe /OUT:"C:\\Users\\elias\\Desktop\\GITHUB\\wallify\\build\\CMakeFiles\\CMakeScratch\\TryCompile-3go6y9\\Debug\\cmTC_346f8.exe" /INCREMENTAL /ILK:"cmTC_346f8.dir\\Debug\\cmTC_346f8.ilk" /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"C:/Users/elias/Desktop/GITHUB/wallify/build/CMakeFiles/CMakeScratch/TryCompile-3go6y9/Debug/cmTC_346f8.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /IMPLIB:"C:/Users/elias/Desktop/GITHUB/wallify/build/CMakeFiles/CMakeScratch/TryCompile-3go6y9/Debug/cmTC_346f8.lib" /MACHINE:X64  /machine:x64 cmTC_346f8.dir\\Debug\\CMakeCXXCompilerABI.obj
+          cmTC_346f8.vcxproj -> C:\\Users\\elias\\Desktop\\GITHUB\\wallify\\build\\CMakeFiles\\CMakeScratch\\TryCompile-3go6y9\\Debug\\cmTC_346f8.exe
         FinalizeBuildStatus:
-          Deleting file "cmTC_d5f73.dir\\Debug\\cmTC_d5f73.tlog\\unsuccessfulbuild".
-          Touching "cmTC_d5f73.dir\\Debug\\cmTC_d5f73.tlog\\cmTC_d5f73.lastbuildstate".
-        Done Building Project "C:\\Users\\elias\\Desktop\\GITHUB\\wallify\\build\\CMakeFiles\\CMakeScratch\\TryCompile-5kxk41\\cmTC_d5f73.vcxproj" (default targets).
+          Deleting file "cmTC_346f8.dir\\Debug\\cmTC_346f8.tlog\\unsuccessfulbuild".
+          Touching "cmTC_346f8.dir\\Debug\\cmTC_346f8.tlog\\cmTC_346f8.lastbuildstate".
+        Done Building Project "C:\\Users\\elias\\Desktop\\GITHUB\\wallify\\build\\CMakeFiles\\CMakeScratch\\TryCompile-3go6y9\\cmTC_346f8.vcxproj" (default targets).
         
         Build succeeded.
             0 Warning(s)
             0 Error(s)
         
-        Time Elapsed 00:00:00.72
+        Time Elapsed 00:00:00.65
         
       exitCode: 0
   -
@@ -1003,8 +959,8 @@ events:
     checks:
       - "Performing Test CMAKE_HAVE_LIBC_PTHREAD"
     directories:
-      source: "C:/Users/elias/Desktop/GITHUB/wallify/build/CMakeFiles/CMakeScratch/TryCompile-je0ujo"
-      binary: "C:/Users/elias/Desktop/GITHUB/wallify/build/CMakeFiles/CMakeScratch/TryCompile-je0ujo"
+      source: "C:/Users/elias/Desktop/GITHUB/wallify/build/CMakeFiles/CMakeScratch/TryCompile-2vlqth"
+      binary: "C:/Users/elias/Desktop/GITHUB/wallify/build/CMakeFiles/CMakeScratch/TryCompile-2vlqth"
     cmakeVariables:
       CMAKE_CXX_FLAGS: "/DWIN32 /D_WINDOWS /GR /EHsc"
       CMAKE_CXX_FLAGS_DEBUG: "/Zi /Ob0 /Od /RTC1"
@@ -1015,47 +971,47 @@ events:
       variable: "CMAKE_HAVE_LIBC_PTHREAD"
       cached: true
       stdout: |
-        Change Dir: 'C:/Users/elias/Desktop/GITHUB/wallify/build/CMakeFiles/CMakeScratch/TryCompile-je0ujo'
+        Change Dir: 'C:/Users/elias/Desktop/GITHUB/wallify/build/CMakeFiles/CMakeScratch/TryCompile-2vlqth'
         
-        Run Build Command(s): "C:/Program Files/Microsoft Visual Studio/18/Community/MSBuild/Current/Bin/amd64/MSBuild.exe" cmTC_85827.vcxproj /p:Configuration=Debug /p:Platform=x64 /p:VisualStudioVersion=18.0 /v:n
+        Run Build Command(s): "C:/Program Files/Microsoft Visual Studio/18/Community/MSBuild/Current/Bin/amd64/MSBuild.exe" cmTC_282f7.vcxproj /p:Configuration=Debug /p:Platform=x64 /p:VisualStudioVersion=18.0 /v:n
         MSBuild version 18.6.3+84d3e95b4 for .NET Framework
-        Build started 5/24/2026 3:52:06 PM.
+        Build started 5/26/2026 8:41:09 AM.
         
-        Project "C:\\Users\\elias\\Desktop\\GITHUB\\wallify\\build\\CMakeFiles\\CMakeScratch\\TryCompile-je0ujo\\cmTC_85827.vcxproj" on node 1 (default targets).
+        Project "C:\\Users\\elias\\Desktop\\GITHUB\\wallify\\build\\CMakeFiles\\CMakeScratch\\TryCompile-2vlqth\\cmTC_282f7.vcxproj" on node 1 (default targets).
         PrepareForBuild:
           Structured output is enabled. The formatting of compiler diagnostics will reflect the error hierarchy. See https://aka.ms/cpp/structured-output for more details.
-          Creating directory "C:\\Users\\elias\\Desktop\\GITHUB\\wallify\\build\\CMakeFiles\\CMakeScratch\\TryCompile-je0ujo\\Debug\\".
-          Creating directory "cmTC_85827.dir\\Debug\\cmTC_85827.tlog\\".
+          Creating directory "C:\\Users\\elias\\Desktop\\GITHUB\\wallify\\build\\CMakeFiles\\CMakeScratch\\TryCompile-2vlqth\\Debug\\".
+          Creating directory "cmTC_282f7.dir\\Debug\\cmTC_282f7.tlog\\".
         InitializeBuildStatus:
-          Creating "cmTC_85827.dir\\Debug\\cmTC_85827.tlog\\unsuccessfulbuild" because "AlwaysCreate" was specified.
-          Touching "cmTC_85827.dir\\Debug\\cmTC_85827.tlog\\unsuccessfulbuild".
+          Creating "cmTC_282f7.dir\\Debug\\cmTC_282f7.tlog\\unsuccessfulbuild" because "AlwaysCreate" was specified.
+          Touching "cmTC_282f7.dir\\Debug\\cmTC_282f7.tlog\\unsuccessfulbuild".
         ComputeStdModulesCompileInputs:
           Reading library manifest file 'C:\\Program Files\\Microsoft Visual Studio\\18\\Community\\VC\\Tools\\MSVC\\14.51.36231\\modules\\modules.json' which provides data for library 'microsoft/STL'.
           Adding module source 'C:\\Program Files\\Microsoft Visual Studio\\18\\Community\\VC\\Tools\\MSVC\\14.51.36231\\modules\\std.ixx' from library 'microsoft/STL' to be built with this project.
           Adding module source 'C:\\Program Files\\Microsoft Visual Studio\\18\\Community\\VC\\Tools\\MSVC\\14.51.36231\\modules\\std.compat.ixx' from library 'microsoft/STL' to be built with this project.
         MakeDirsForCl:
-          Creating directory "C:\\Users\\elias\\Desktop\\GITHUB\\wallify\\build\\CMakeFiles\\CMakeScratch\\TryCompile-je0ujo\\cmTC_85827.dir\\Debug\\microsoft\\STL".
+          Creating directory "C:\\Users\\elias\\Desktop\\GITHUB\\wallify\\build\\CMakeFiles\\CMakeScratch\\TryCompile-2vlqth\\cmTC_282f7.dir\\Debug\\microsoft\\STL".
         SetModuleDependencies:
-          Creating directory "cmTC_85827.dir\\Debug\\cmTC_85827_MD.tlog\\".
+          Creating directory "cmTC_282f7.dir\\Debug\\cmTC_282f7_MD.tlog\\".
         ClCompile:
-          C:\\Program Files\\Microsoft Visual Studio\\18\\Community\\VC\\Tools\\MSVC\\14.51.36231\\bin\\HostX64\\x64\\CL.exe /c /Zi /W1 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D CMAKE_HAVE_LIBC_PTHREAD /D _MBCS /D "CMAKE_INTDIR=\\"Debug\\"" /EHsc /RTC1 /MDd /GR /std:c++20 /Fo"cmTC_85827.dir\\Debug\\\\" /Fd"cmTC_85827.dir\\Debug\\vc145.pdb" /external:W1 /TP /errorReport:queue "C:\\Users\\elias\\Desktop\\GITHUB\\wallify\\build\\CMakeFiles\\CMakeScratch\\TryCompile-je0ujo\\src.cxx"
+          C:\\Program Files\\Microsoft Visual Studio\\18\\Community\\VC\\Tools\\MSVC\\14.51.36231\\bin\\HostX64\\x64\\CL.exe /c /Zi /W1 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D CMAKE_HAVE_LIBC_PTHREAD /D _MBCS /D "CMAKE_INTDIR=\\"Debug\\"" /EHsc /RTC1 /MDd /GR /std:c++20 /Fo"cmTC_282f7.dir\\Debug\\\\" /Fd"cmTC_282f7.dir\\Debug\\vc145.pdb" /external:W1 /TP /errorReport:queue "C:\\Users\\elias\\Desktop\\GITHUB\\wallify\\build\\CMakeFiles\\CMakeScratch\\TryCompile-2vlqth\\src.cxx"
           Microsoft (R) C/C++ Optimizing Compiler Version 19.51.36244 for x64
           Copyright (C) Microsoft Corporation.  All rights reserved.
-          cl /c /Zi /W1 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D CMAKE_HAVE_LIBC_PTHREAD /D _MBCS /D "CMAKE_INTDIR=\\"Debug\\"" /EHsc /RTC1 /MDd /GR /std:c++20 /Fo"cmTC_85827.dir\\Debug\\\\" /Fd"cmTC_85827.dir\\Debug\\vc145.pdb" /external:W1 /TP /errorReport:queue "C:\\Users\\elias\\Desktop\\GITHUB\\wallify\\build\\CMakeFiles\\CMakeScratch\\TryCompile-je0ujo\\src.cxx"
+          cl /c /Zi /W1 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D CMAKE_HAVE_LIBC_PTHREAD /D _MBCS /D "CMAKE_INTDIR=\\"Debug\\"" /EHsc /RTC1 /MDd /GR /std:c++20 /Fo"cmTC_282f7.dir\\Debug\\\\" /Fd"cmTC_282f7.dir\\Debug\\vc145.pdb" /external:W1 /TP /errorReport:queue "C:\\Users\\elias\\Desktop\\GITHUB\\wallify\\build\\CMakeFiles\\CMakeScratch\\TryCompile-2vlqth\\src.cxx"
           src.cxx
-        C:\\Users\\elias\\Desktop\\GITHUB\\wallify\\build\\CMakeFiles\\CMakeScratch\\TryCompile-je0ujo\\src.cxx(1,10): error C1083: Cannot open include file: 'pthread.h': No such file or directory [C:\\Users\\elias\\Desktop\\GITHUB\\wallify\\build\\CMakeFiles\\CMakeScratch\\TryCompile-je0ujo\\cmTC_85827.vcxproj]
-        Done Building Project "C:\\Users\\elias\\Desktop\\GITHUB\\wallify\\build\\CMakeFiles\\CMakeScratch\\TryCompile-je0ujo\\cmTC_85827.vcxproj" (default targets) -- FAILED.
+        C:\\Users\\elias\\Desktop\\GITHUB\\wallify\\build\\CMakeFiles\\CMakeScratch\\TryCompile-2vlqth\\src.cxx(1,10): error C1083: Cannot open include file: 'pthread.h': No such file or directory [C:\\Users\\elias\\Desktop\\GITHUB\\wallify\\build\\CMakeFiles\\CMakeScratch\\TryCompile-2vlqth\\cmTC_282f7.vcxproj]
+        Done Building Project "C:\\Users\\elias\\Desktop\\GITHUB\\wallify\\build\\CMakeFiles\\CMakeScratch\\TryCompile-2vlqth\\cmTC_282f7.vcxproj" (default targets) -- FAILED.
         
         Build FAILED.
         
-        "C:\\Users\\elias\\Desktop\\GITHUB\\wallify\\build\\CMakeFiles\\CMakeScratch\\TryCompile-je0ujo\\cmTC_85827.vcxproj" (default target) (1) ->
+        "C:\\Users\\elias\\Desktop\\GITHUB\\wallify\\build\\CMakeFiles\\CMakeScratch\\TryCompile-2vlqth\\cmTC_282f7.vcxproj" (default target) (1) ->
         (ClCompile target) -> 
-          C:\\Users\\elias\\Desktop\\GITHUB\\wallify\\build\\CMakeFiles\\CMakeScratch\\TryCompile-je0ujo\\src.cxx(1,10): error C1083: Cannot open include file: 'pthread.h': No such file or directory [C:\\Users\\elias\\Desktop\\GITHUB\\wallify\\build\\CMakeFiles\\CMakeScratch\\TryCompile-je0ujo\\cmTC_85827.vcxproj]
+          C:\\Users\\elias\\Desktop\\GITHUB\\wallify\\build\\CMakeFiles\\CMakeScratch\\TryCompile-2vlqth\\src.cxx(1,10): error C1083: Cannot open include file: 'pthread.h': No such file or directory [C:\\Users\\elias\\Desktop\\GITHUB\\wallify\\build\\CMakeFiles\\CMakeScratch\\TryCompile-2vlqth\\cmTC_282f7.vcxproj]
         
             0 Warning(s)
             1 Error(s)
         
-        Time Elapsed 00:00:00.51
+        Time Elapsed 00:00:00.46
         
       exitCode: 1
   -
@@ -1073,8 +1029,8 @@ events:
     checks:
       - "Looking for pthread_create in pthreads"
     directories:
-      source: "C:/Users/elias/Desktop/GITHUB/wallify/build/CMakeFiles/CMakeScratch/TryCompile-1y88rs"
-      binary: "C:/Users/elias/Desktop/GITHUB/wallify/build/CMakeFiles/CMakeScratch/TryCompile-1y88rs"
+      source: "C:/Users/elias/Desktop/GITHUB/wallify/build/CMakeFiles/CMakeScratch/TryCompile-borun7"
+      binary: "C:/Users/elias/Desktop/GITHUB/wallify/build/CMakeFiles/CMakeScratch/TryCompile-borun7"
     cmakeVariables:
       CMAKE_CXX_FLAGS: "/DWIN32 /D_WINDOWS /GR /EHsc"
       CMAKE_CXX_FLAGS_DEBUG: "/Zi /Ob0 /Od /RTC1"
@@ -1085,49 +1041,49 @@ events:
       variable: "CMAKE_HAVE_PTHREADS_CREATE"
       cached: true
       stdout: |
-        Change Dir: 'C:/Users/elias/Desktop/GITHUB/wallify/build/CMakeFiles/CMakeScratch/TryCompile-1y88rs'
+        Change Dir: 'C:/Users/elias/Desktop/GITHUB/wallify/build/CMakeFiles/CMakeScratch/TryCompile-borun7'
         
-        Run Build Command(s): "C:/Program Files/Microsoft Visual Studio/18/Community/MSBuild/Current/Bin/amd64/MSBuild.exe" cmTC_e88a4.vcxproj /p:Configuration=Debug /p:Platform=x64 /p:VisualStudioVersion=18.0 /v:n
+        Run Build Command(s): "C:/Program Files/Microsoft Visual Studio/18/Community/MSBuild/Current/Bin/amd64/MSBuild.exe" cmTC_96130.vcxproj /p:Configuration=Debug /p:Platform=x64 /p:VisualStudioVersion=18.0 /v:n
         MSBuild version 18.6.3+84d3e95b4 for .NET Framework
-        Build started 5/24/2026 3:52:07 PM.
+        Build started 5/26/2026 8:41:10 AM.
         
-        Project "C:\\Users\\elias\\Desktop\\GITHUB\\wallify\\build\\CMakeFiles\\CMakeScratch\\TryCompile-1y88rs\\cmTC_e88a4.vcxproj" on node 1 (default targets).
+        Project "C:\\Users\\elias\\Desktop\\GITHUB\\wallify\\build\\CMakeFiles\\CMakeScratch\\TryCompile-borun7\\cmTC_96130.vcxproj" on node 1 (default targets).
         PrepareForBuild:
           Structured output is enabled. The formatting of compiler diagnostics will reflect the error hierarchy. See https://aka.ms/cpp/structured-output for more details.
-          Creating directory "C:\\Users\\elias\\Desktop\\GITHUB\\wallify\\build\\CMakeFiles\\CMakeScratch\\TryCompile-1y88rs\\Debug\\".
-          Creating directory "cmTC_e88a4.dir\\Debug\\cmTC_e88a4.tlog\\".
+          Creating directory "C:\\Users\\elias\\Desktop\\GITHUB\\wallify\\build\\CMakeFiles\\CMakeScratch\\TryCompile-borun7\\Debug\\".
+          Creating directory "cmTC_96130.dir\\Debug\\cmTC_96130.tlog\\".
         InitializeBuildStatus:
-          Creating "cmTC_e88a4.dir\\Debug\\cmTC_e88a4.tlog\\unsuccessfulbuild" because "AlwaysCreate" was specified.
-          Touching "cmTC_e88a4.dir\\Debug\\cmTC_e88a4.tlog\\unsuccessfulbuild".
+          Creating "cmTC_96130.dir\\Debug\\cmTC_96130.tlog\\unsuccessfulbuild" because "AlwaysCreate" was specified.
+          Touching "cmTC_96130.dir\\Debug\\cmTC_96130.tlog\\unsuccessfulbuild".
         ComputeStdModulesCompileInputs:
           Reading library manifest file 'C:\\Program Files\\Microsoft Visual Studio\\18\\Community\\VC\\Tools\\MSVC\\14.51.36231\\modules\\modules.json' which provides data for library 'microsoft/STL'.
           Adding module source 'C:\\Program Files\\Microsoft Visual Studio\\18\\Community\\VC\\Tools\\MSVC\\14.51.36231\\modules\\std.ixx' from library 'microsoft/STL' to be built with this project.
           Adding module source 'C:\\Program Files\\Microsoft Visual Studio\\18\\Community\\VC\\Tools\\MSVC\\14.51.36231\\modules\\std.compat.ixx' from library 'microsoft/STL' to be built with this project.
         MakeDirsForCl:
-          Creating directory "C:\\Users\\elias\\Desktop\\GITHUB\\wallify\\build\\CMakeFiles\\CMakeScratch\\TryCompile-1y88rs\\cmTC_e88a4.dir\\Debug\\microsoft\\STL".
+          Creating directory "C:\\Users\\elias\\Desktop\\GITHUB\\wallify\\build\\CMakeFiles\\CMakeScratch\\TryCompile-borun7\\cmTC_96130.dir\\Debug\\microsoft\\STL".
         SetModuleDependencies:
-          Creating directory "cmTC_e88a4.dir\\Debug\\cmTC_e88a4_MD.tlog\\".
+          Creating directory "cmTC_96130.dir\\Debug\\cmTC_96130_MD.tlog\\".
         ClCompile:
-          C:\\Program Files\\Microsoft Visual Studio\\18\\Community\\VC\\Tools\\MSVC\\14.51.36231\\bin\\HostX64\\x64\\CL.exe /c /Zi /W1 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D CHECK_FUNCTION_EXISTS=pthread_create /D _MBCS /D "CMAKE_INTDIR=\\"Debug\\"" /EHsc /RTC1 /MDd /GR /std:c++20 /Fo"cmTC_e88a4.dir\\Debug\\\\" /Fd"cmTC_e88a4.dir\\Debug\\vc145.pdb" /external:W1 /TP /errorReport:queue "C:\\Users\\elias\\Desktop\\GITHUB\\wallify\\build\\CMakeFiles\\CMakeScratch\\TryCompile-1y88rs\\CheckFunctionExists.cxx"
+          C:\\Program Files\\Microsoft Visual Studio\\18\\Community\\VC\\Tools\\MSVC\\14.51.36231\\bin\\HostX64\\x64\\CL.exe /c /Zi /W1 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D CHECK_FUNCTION_EXISTS=pthread_create /D _MBCS /D "CMAKE_INTDIR=\\"Debug\\"" /EHsc /RTC1 /MDd /GR /std:c++20 /Fo"cmTC_96130.dir\\Debug\\\\" /Fd"cmTC_96130.dir\\Debug\\vc145.pdb" /external:W1 /TP /errorReport:queue "C:\\Users\\elias\\Desktop\\GITHUB\\wallify\\build\\CMakeFiles\\CMakeScratch\\TryCompile-borun7\\CheckFunctionExists.cxx"
           Microsoft (R) C/C++ Optimizing Compiler Version 19.51.36244 for x64
           Copyright (C) Microsoft Corporation.  All rights reserved.
-          cl /c /Zi /W1 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D CHECK_FUNCTION_EXISTS=pthread_create /D _MBCS /D "CMAKE_INTDIR=\\"Debug\\"" /EHsc /RTC1 /MDd /GR /std:c++20 /Fo"cmTC_e88a4.dir\\Debug\\\\" /Fd"cmTC_e88a4.dir\\Debug\\vc145.pdb" /external:W1 /TP /errorReport:queue "C:\\Users\\elias\\Desktop\\GITHUB\\wallify\\build\\CMakeFiles\\CMakeScratch\\TryCompile-1y88rs\\CheckFunctionExists.cxx"
+          cl /c /Zi /W1 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D CHECK_FUNCTION_EXISTS=pthread_create /D _MBCS /D "CMAKE_INTDIR=\\"Debug\\"" /EHsc /RTC1 /MDd /GR /std:c++20 /Fo"cmTC_96130.dir\\Debug\\\\" /Fd"cmTC_96130.dir\\Debug\\vc145.pdb" /external:W1 /TP /errorReport:queue "C:\\Users\\elias\\Desktop\\GITHUB\\wallify\\build\\CMakeFiles\\CMakeScratch\\TryCompile-borun7\\CheckFunctionExists.cxx"
           CheckFunctionExists.cxx
         Link:
-          C:\\Program Files\\Microsoft Visual Studio\\18\\Community\\VC\\Tools\\MSVC\\14.51.36231\\bin\\HostX64\\x64\\link.exe /OUT:"C:\\Users\\elias\\Desktop\\GITHUB\\wallify\\build\\CMakeFiles\\CMakeScratch\\TryCompile-1y88rs\\Debug\\cmTC_e88a4.exe" /INCREMENTAL /ILK:"cmTC_e88a4.dir\\Debug\\cmTC_e88a4.ilk" /NOLOGO pthreads.lib kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"C:/Users/elias/Desktop/GITHUB/wallify/build/CMakeFiles/CMakeScratch/TryCompile-1y88rs/Debug/cmTC_e88a4.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /IMPLIB:"C:/Users/elias/Desktop/GITHUB/wallify/build/CMakeFiles/CMakeScratch/TryCompile-1y88rs/Debug/cmTC_e88a4.lib" /MACHINE:X64  /machine:x64 cmTC_e88a4.dir\\Debug\\CheckFunctionExists.obj
-        LINK : fatal error LNK1104: cannot open file 'pthreads.lib' [C:\\Users\\elias\\Desktop\\GITHUB\\wallify\\build\\CMakeFiles\\CMakeScratch\\TryCompile-1y88rs\\cmTC_e88a4.vcxproj]
-        Done Building Project "C:\\Users\\elias\\Desktop\\GITHUB\\wallify\\build\\CMakeFiles\\CMakeScratch\\TryCompile-1y88rs\\cmTC_e88a4.vcxproj" (default targets) -- FAILED.
+          C:\\Program Files\\Microsoft Visual Studio\\18\\Community\\VC\\Tools\\MSVC\\14.51.36231\\bin\\HostX64\\x64\\link.exe /OUT:"C:\\Users\\elias\\Desktop\\GITHUB\\wallify\\build\\CMakeFiles\\CMakeScratch\\TryCompile-borun7\\Debug\\cmTC_96130.exe" /INCREMENTAL /ILK:"cmTC_96130.dir\\Debug\\cmTC_96130.ilk" /NOLOGO pthreads.lib kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"C:/Users/elias/Desktop/GITHUB/wallify/build/CMakeFiles/CMakeScratch/TryCompile-borun7/Debug/cmTC_96130.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /IMPLIB:"C:/Users/elias/Desktop/GITHUB/wallify/build/CMakeFiles/CMakeScratch/TryCompile-borun7/Debug/cmTC_96130.lib" /MACHINE:X64  /machine:x64 cmTC_96130.dir\\Debug\\CheckFunctionExists.obj
+        LINK : fatal error LNK1104: cannot open file 'pthreads.lib' [C:\\Users\\elias\\Desktop\\GITHUB\\wallify\\build\\CMakeFiles\\CMakeScratch\\TryCompile-borun7\\cmTC_96130.vcxproj]
+        Done Building Project "C:\\Users\\elias\\Desktop\\GITHUB\\wallify\\build\\CMakeFiles\\CMakeScratch\\TryCompile-borun7\\cmTC_96130.vcxproj" (default targets) -- FAILED.
         
         Build FAILED.
         
-        "C:\\Users\\elias\\Desktop\\GITHUB\\wallify\\build\\CMakeFiles\\CMakeScratch\\TryCompile-1y88rs\\cmTC_e88a4.vcxproj" (default target) (1) ->
+        "C:\\Users\\elias\\Desktop\\GITHUB\\wallify\\build\\CMakeFiles\\CMakeScratch\\TryCompile-borun7\\cmTC_96130.vcxproj" (default target) (1) ->
         (Link target) -> 
-          LINK : fatal error LNK1104: cannot open file 'pthreads.lib' [C:\\Users\\elias\\Desktop\\GITHUB\\wallify\\build\\CMakeFiles\\CMakeScratch\\TryCompile-1y88rs\\cmTC_e88a4.vcxproj]
+          LINK : fatal error LNK1104: cannot open file 'pthreads.lib' [C:\\Users\\elias\\Desktop\\GITHUB\\wallify\\build\\CMakeFiles\\CMakeScratch\\TryCompile-borun7\\cmTC_96130.vcxproj]
         
             0 Warning(s)
             1 Error(s)
         
-        Time Elapsed 00:00:00.61
+        Time Elapsed 00:00:00.60
         
       exitCode: 1
   -
@@ -1145,8 +1101,8 @@ events:
     checks:
       - "Looking for pthread_create in pthread"
     directories:
-      source: "C:/Users/elias/Desktop/GITHUB/wallify/build/CMakeFiles/CMakeScratch/TryCompile-cjcvum"
-      binary: "C:/Users/elias/Desktop/GITHUB/wallify/build/CMakeFiles/CMakeScratch/TryCompile-cjcvum"
+      source: "C:/Users/elias/Desktop/GITHUB/wallify/build/CMakeFiles/CMakeScratch/TryCompile-1udbzc"
+      binary: "C:/Users/elias/Desktop/GITHUB/wallify/build/CMakeFiles/CMakeScratch/TryCompile-1udbzc"
     cmakeVariables:
       CMAKE_CXX_FLAGS: "/DWIN32 /D_WINDOWS /GR /EHsc"
       CMAKE_CXX_FLAGS_DEBUG: "/Zi /Ob0 /Od /RTC1"
@@ -1157,49 +1113,49 @@ events:
       variable: "CMAKE_HAVE_PTHREAD_CREATE"
       cached: true
       stdout: |
-        Change Dir: 'C:/Users/elias/Desktop/GITHUB/wallify/build/CMakeFiles/CMakeScratch/TryCompile-cjcvum'
+        Change Dir: 'C:/Users/elias/Desktop/GITHUB/wallify/build/CMakeFiles/CMakeScratch/TryCompile-1udbzc'
         
-        Run Build Command(s): "C:/Program Files/Microsoft Visual Studio/18/Community/MSBuild/Current/Bin/amd64/MSBuild.exe" cmTC_ae3c2.vcxproj /p:Configuration=Debug /p:Platform=x64 /p:VisualStudioVersion=18.0 /v:n
+        Run Build Command(s): "C:/Program Files/Microsoft Visual Studio/18/Community/MSBuild/Current/Bin/amd64/MSBuild.exe" cmTC_03d78.vcxproj /p:Configuration=Debug /p:Platform=x64 /p:VisualStudioVersion=18.0 /v:n
         MSBuild version 18.6.3+84d3e95b4 for .NET Framework
-        Build started 5/24/2026 3:52:08 PM.
+        Build started 5/26/2026 8:41:11 AM.
         
-        Project "C:\\Users\\elias\\Desktop\\GITHUB\\wallify\\build\\CMakeFiles\\CMakeScratch\\TryCompile-cjcvum\\cmTC_ae3c2.vcxproj" on node 1 (default targets).
+        Project "C:\\Users\\elias\\Desktop\\GITHUB\\wallify\\build\\CMakeFiles\\CMakeScratch\\TryCompile-1udbzc\\cmTC_03d78.vcxproj" on node 1 (default targets).
         PrepareForBuild:
           Structured output is enabled. The formatting of compiler diagnostics will reflect the error hierarchy. See https://aka.ms/cpp/structured-output for more details.
-          Creating directory "C:\\Users\\elias\\Desktop\\GITHUB\\wallify\\build\\CMakeFiles\\CMakeScratch\\TryCompile-cjcvum\\Debug\\".
-          Creating directory "cmTC_ae3c2.dir\\Debug\\cmTC_ae3c2.tlog\\".
+          Creating directory "C:\\Users\\elias\\Desktop\\GITHUB\\wallify\\build\\CMakeFiles\\CMakeScratch\\TryCompile-1udbzc\\Debug\\".
+          Creating directory "cmTC_03d78.dir\\Debug\\cmTC_03d78.tlog\\".
         InitializeBuildStatus:
-          Creating "cmTC_ae3c2.dir\\Debug\\cmTC_ae3c2.tlog\\unsuccessfulbuild" because "AlwaysCreate" was specified.
-          Touching "cmTC_ae3c2.dir\\Debug\\cmTC_ae3c2.tlog\\unsuccessfulbuild".
+          Creating "cmTC_03d78.dir\\Debug\\cmTC_03d78.tlog\\unsuccessfulbuild" because "AlwaysCreate" was specified.
+          Touching "cmTC_03d78.dir\\Debug\\cmTC_03d78.tlog\\unsuccessfulbuild".
         ComputeStdModulesCompileInputs:
           Reading library manifest file 'C:\\Program Files\\Microsoft Visual Studio\\18\\Community\\VC\\Tools\\MSVC\\14.51.36231\\modules\\modules.json' which provides data for library 'microsoft/STL'.
           Adding module source 'C:\\Program Files\\Microsoft Visual Studio\\18\\Community\\VC\\Tools\\MSVC\\14.51.36231\\modules\\std.ixx' from library 'microsoft/STL' to be built with this project.
           Adding module source 'C:\\Program Files\\Microsoft Visual Studio\\18\\Community\\VC\\Tools\\MSVC\\14.51.36231\\modules\\std.compat.ixx' from library 'microsoft/STL' to be built with this project.
         MakeDirsForCl:
-          Creating directory "C:\\Users\\elias\\Desktop\\GITHUB\\wallify\\build\\CMakeFiles\\CMakeScratch\\TryCompile-cjcvum\\cmTC_ae3c2.dir\\Debug\\microsoft\\STL".
+          Creating directory "C:\\Users\\elias\\Desktop\\GITHUB\\wallify\\build\\CMakeFiles\\CMakeScratch\\TryCompile-1udbzc\\cmTC_03d78.dir\\Debug\\microsoft\\STL".
         SetModuleDependencies:
-          Creating directory "cmTC_ae3c2.dir\\Debug\\cmTC_ae3c2_MD.tlog\\".
+          Creating directory "cmTC_03d78.dir\\Debug\\cmTC_03d78_MD.tlog\\".
         ClCompile:
-          C:\\Program Files\\Microsoft Visual Studio\\18\\Community\\VC\\Tools\\MSVC\\14.51.36231\\bin\\HostX64\\x64\\CL.exe /c /Zi /W1 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D CHECK_FUNCTION_EXISTS=pthread_create /D _MBCS /D "CMAKE_INTDIR=\\"Debug\\"" /EHsc /RTC1 /MDd /GR /std:c++20 /Fo"cmTC_ae3c2.dir\\Debug\\\\" /Fd"cmTC_ae3c2.dir\\Debug\\vc145.pdb" /external:W1 /TP /errorReport:queue "C:\\Users\\elias\\Desktop\\GITHUB\\wallify\\build\\CMakeFiles\\CMakeScratch\\TryCompile-cjcvum\\CheckFunctionExists.cxx"
+          C:\\Program Files\\Microsoft Visual Studio\\18\\Community\\VC\\Tools\\MSVC\\14.51.36231\\bin\\HostX64\\x64\\CL.exe /c /Zi /W1 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D CHECK_FUNCTION_EXISTS=pthread_create /D _MBCS /D "CMAKE_INTDIR=\\"Debug\\"" /EHsc /RTC1 /MDd /GR /std:c++20 /Fo"cmTC_03d78.dir\\Debug\\\\" /Fd"cmTC_03d78.dir\\Debug\\vc145.pdb" /external:W1 /TP /errorReport:queue "C:\\Users\\elias\\Desktop\\GITHUB\\wallify\\build\\CMakeFiles\\CMakeScratch\\TryCompile-1udbzc\\CheckFunctionExists.cxx"
           Microsoft (R) C/C++ Optimizing Compiler Version 19.51.36244 for x64
           Copyright (C) Microsoft Corporation.  All rights reserved.
-          cl /c /Zi /W1 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D CHECK_FUNCTION_EXISTS=pthread_create /D _MBCS /D "CMAKE_INTDIR=\\"Debug\\"" /EHsc /RTC1 /MDd /GR /std:c++20 /Fo"cmTC_ae3c2.dir\\Debug\\\\" /Fd"cmTC_ae3c2.dir\\Debug\\vc145.pdb" /external:W1 /TP /errorReport:queue "C:\\Users\\elias\\Desktop\\GITHUB\\wallify\\build\\CMakeFiles\\CMakeScratch\\TryCompile-cjcvum\\CheckFunctionExists.cxx"
+          cl /c /Zi /W1 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D CHECK_FUNCTION_EXISTS=pthread_create /D _MBCS /D "CMAKE_INTDIR=\\"Debug\\"" /EHsc /RTC1 /MDd /GR /std:c++20 /Fo"cmTC_03d78.dir\\Debug\\\\" /Fd"cmTC_03d78.dir\\Debug\\vc145.pdb" /external:W1 /TP /errorReport:queue "C:\\Users\\elias\\Desktop\\GITHUB\\wallify\\build\\CMakeFiles\\CMakeScratch\\TryCompile-1udbzc\\CheckFunctionExists.cxx"
           CheckFunctionExists.cxx
         Link:
-          C:\\Program Files\\Microsoft Visual Studio\\18\\Community\\VC\\Tools\\MSVC\\14.51.36231\\bin\\HostX64\\x64\\link.exe /OUT:"C:\\Users\\elias\\Desktop\\GITHUB\\wallify\\build\\CMakeFiles\\CMakeScratch\\TryCompile-cjcvum\\Debug\\cmTC_ae3c2.exe" /INCREMENTAL /ILK:"cmTC_ae3c2.dir\\Debug\\cmTC_ae3c2.ilk" /NOLOGO pthread.lib kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"C:/Users/elias/Desktop/GITHUB/wallify/build/CMakeFiles/CMakeScratch/TryCompile-cjcvum/Debug/cmTC_ae3c2.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /IMPLIB:"C:/Users/elias/Desktop/GITHUB/wallify/build/CMakeFiles/CMakeScratch/TryCompile-cjcvum/Debug/cmTC_ae3c2.lib" /MACHINE:X64  /machine:x64 cmTC_ae3c2.dir\\Debug\\CheckFunctionExists.obj
-        LINK : fatal error LNK1104: cannot open file 'pthread.lib' [C:\\Users\\elias\\Desktop\\GITHUB\\wallify\\build\\CMakeFiles\\CMakeScratch\\TryCompile-cjcvum\\cmTC_ae3c2.vcxproj]
-        Done Building Project "C:\\Users\\elias\\Desktop\\GITHUB\\wallify\\build\\CMakeFiles\\CMakeScratch\\TryCompile-cjcvum\\cmTC_ae3c2.vcxproj" (default targets) -- FAILED.
+          C:\\Program Files\\Microsoft Visual Studio\\18\\Community\\VC\\Tools\\MSVC\\14.51.36231\\bin\\HostX64\\x64\\link.exe /OUT:"C:\\Users\\elias\\Desktop\\GITHUB\\wallify\\build\\CMakeFiles\\CMakeScratch\\TryCompile-1udbzc\\Debug\\cmTC_03d78.exe" /INCREMENTAL /ILK:"cmTC_03d78.dir\\Debug\\cmTC_03d78.ilk" /NOLOGO pthread.lib kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"C:/Users/elias/Desktop/GITHUB/wallify/build/CMakeFiles/CMakeScratch/TryCompile-1udbzc/Debug/cmTC_03d78.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /IMPLIB:"C:/Users/elias/Desktop/GITHUB/wallify/build/CMakeFiles/CMakeScratch/TryCompile-1udbzc/Debug/cmTC_03d78.lib" /MACHINE:X64  /machine:x64 cmTC_03d78.dir\\Debug\\CheckFunctionExists.obj
+        LINK : fatal error LNK1104: cannot open file 'pthread.lib' [C:\\Users\\elias\\Desktop\\GITHUB\\wallify\\build\\CMakeFiles\\CMakeScratch\\TryCompile-1udbzc\\cmTC_03d78.vcxproj]
+        Done Building Project "C:\\Users\\elias\\Desktop\\GITHUB\\wallify\\build\\CMakeFiles\\CMakeScratch\\TryCompile-1udbzc\\cmTC_03d78.vcxproj" (default targets) -- FAILED.
         
         Build FAILED.
         
-        "C:\\Users\\elias\\Desktop\\GITHUB\\wallify\\build\\CMakeFiles\\CMakeScratch\\TryCompile-cjcvum\\cmTC_ae3c2.vcxproj" (default target) (1) ->
+        "C:\\Users\\elias\\Desktop\\GITHUB\\wallify\\build\\CMakeFiles\\CMakeScratch\\TryCompile-1udbzc\\cmTC_03d78.vcxproj" (default target) (1) ->
         (Link target) -> 
-          LINK : fatal error LNK1104: cannot open file 'pthread.lib' [C:\\Users\\elias\\Desktop\\GITHUB\\wallify\\build\\CMakeFiles\\CMakeScratch\\TryCompile-cjcvum\\cmTC_ae3c2.vcxproj]
+          LINK : fatal error LNK1104: cannot open file 'pthread.lib' [C:\\Users\\elias\\Desktop\\GITHUB\\wallify\\build\\CMakeFiles\\CMakeScratch\\TryCompile-1udbzc\\cmTC_03d78.vcxproj]
         
             0 Warning(s)
             1 Error(s)
         
-        Time Elapsed 00:00:00.62
+        Time Elapsed 00:00:00.57
         
       exitCode: 1
   -
@@ -1218,8 +1174,8 @@ events:
     checks:
       - "Performing Test HAVE_STDATOMIC"
     directories:
-      source: "C:/Users/elias/Desktop/GITHUB/wallify/build/CMakeFiles/CMakeScratch/TryCompile-7azx1a"
-      binary: "C:/Users/elias/Desktop/GITHUB/wallify/build/CMakeFiles/CMakeScratch/TryCompile-7azx1a"
+      source: "C:/Users/elias/Desktop/GITHUB/wallify/build/CMakeFiles/CMakeScratch/TryCompile-akf7ab"
+      binary: "C:/Users/elias/Desktop/GITHUB/wallify/build/CMakeFiles/CMakeScratch/TryCompile-akf7ab"
     cmakeVariables:
       CMAKE_CXX_FLAGS: "/DWIN32 /D_WINDOWS /GR /EHsc"
       CMAKE_CXX_FLAGS_DEBUG: "/Zi /Ob0 /Od /RTC1"
@@ -1230,47 +1186,47 @@ events:
       variable: "HAVE_STDATOMIC"
       cached: true
       stdout: |
-        Change Dir: 'C:/Users/elias/Desktop/GITHUB/wallify/build/CMakeFiles/CMakeScratch/TryCompile-7azx1a'
+        Change Dir: 'C:/Users/elias/Desktop/GITHUB/wallify/build/CMakeFiles/CMakeScratch/TryCompile-akf7ab'
         
-        Run Build Command(s): "C:/Program Files/Microsoft Visual Studio/18/Community/MSBuild/Current/Bin/amd64/MSBuild.exe" cmTC_57dc1.vcxproj /p:Configuration=Debug /p:Platform=x64 /p:VisualStudioVersion=18.0 /v:n
+        Run Build Command(s): "C:/Program Files/Microsoft Visual Studio/18/Community/MSBuild/Current/Bin/amd64/MSBuild.exe" cmTC_2acf2.vcxproj /p:Configuration=Debug /p:Platform=x64 /p:VisualStudioVersion=18.0 /v:n
         MSBuild version 18.6.3+84d3e95b4 for .NET Framework
-        Build started 5/24/2026 3:52:09 PM.
+        Build started 5/26/2026 8:41:12 AM.
         
-        Project "C:\\Users\\elias\\Desktop\\GITHUB\\wallify\\build\\CMakeFiles\\CMakeScratch\\TryCompile-7azx1a\\cmTC_57dc1.vcxproj" on node 1 (default targets).
+        Project "C:\\Users\\elias\\Desktop\\GITHUB\\wallify\\build\\CMakeFiles\\CMakeScratch\\TryCompile-akf7ab\\cmTC_2acf2.vcxproj" on node 1 (default targets).
         PrepareForBuild:
           Structured output is enabled. The formatting of compiler diagnostics will reflect the error hierarchy. See https://aka.ms/cpp/structured-output for more details.
-          Creating directory "C:\\Users\\elias\\Desktop\\GITHUB\\wallify\\build\\CMakeFiles\\CMakeScratch\\TryCompile-7azx1a\\Debug\\".
-          Creating directory "cmTC_57dc1.dir\\Debug\\cmTC_57dc1.tlog\\".
+          Creating directory "C:\\Users\\elias\\Desktop\\GITHUB\\wallify\\build\\CMakeFiles\\CMakeScratch\\TryCompile-akf7ab\\Debug\\".
+          Creating directory "cmTC_2acf2.dir\\Debug\\cmTC_2acf2.tlog\\".
         InitializeBuildStatus:
-          Creating "cmTC_57dc1.dir\\Debug\\cmTC_57dc1.tlog\\unsuccessfulbuild" because "AlwaysCreate" was specified.
-          Touching "cmTC_57dc1.dir\\Debug\\cmTC_57dc1.tlog\\unsuccessfulbuild".
+          Creating "cmTC_2acf2.dir\\Debug\\cmTC_2acf2.tlog\\unsuccessfulbuild" because "AlwaysCreate" was specified.
+          Touching "cmTC_2acf2.dir\\Debug\\cmTC_2acf2.tlog\\unsuccessfulbuild".
         ComputeStdModulesCompileInputs:
           Reading library manifest file 'C:\\Program Files\\Microsoft Visual Studio\\18\\Community\\VC\\Tools\\MSVC\\14.51.36231\\modules\\modules.json' which provides data for library 'microsoft/STL'.
           Adding module source 'C:\\Program Files\\Microsoft Visual Studio\\18\\Community\\VC\\Tools\\MSVC\\14.51.36231\\modules\\std.ixx' from library 'microsoft/STL' to be built with this project.
           Adding module source 'C:\\Program Files\\Microsoft Visual Studio\\18\\Community\\VC\\Tools\\MSVC\\14.51.36231\\modules\\std.compat.ixx' from library 'microsoft/STL' to be built with this project.
         MakeDirsForCl:
-          Creating directory "C:\\Users\\elias\\Desktop\\GITHUB\\wallify\\build\\CMakeFiles\\CMakeScratch\\TryCompile-7azx1a\\cmTC_57dc1.dir\\Debug\\microsoft\\STL".
+          Creating directory "C:\\Users\\elias\\Desktop\\GITHUB\\wallify\\build\\CMakeFiles\\CMakeScratch\\TryCompile-akf7ab\\cmTC_2acf2.dir\\Debug\\microsoft\\STL".
         SetModuleDependencies:
-          Creating directory "cmTC_57dc1.dir\\Debug\\cmTC_57dc1_MD.tlog\\".
+          Creating directory "cmTC_2acf2.dir\\Debug\\cmTC_2acf2_MD.tlog\\".
         ClCompile:
-          C:\\Program Files\\Microsoft Visual Studio\\18\\Community\\VC\\Tools\\MSVC\\14.51.36231\\bin\\HostX64\\x64\\CL.exe /c /Zi /W1 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D HAVE_STDATOMIC /D _MBCS /D "CMAKE_INTDIR=\\"Debug\\"" /EHsc /RTC1 /MDd /GR /std:c++20 /Fo"cmTC_57dc1.dir\\Debug\\\\" /Fd"cmTC_57dc1.dir\\Debug\\vc145.pdb" /external:W1 /TP /errorReport:queue "C:\\Users\\elias\\Desktop\\GITHUB\\wallify\\build\\CMakeFiles\\CMakeScratch\\TryCompile-7azx1a\\src.cxx"
+          C:\\Program Files\\Microsoft Visual Studio\\18\\Community\\VC\\Tools\\MSVC\\14.51.36231\\bin\\HostX64\\x64\\CL.exe /c /Zi /W1 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D HAVE_STDATOMIC /D _MBCS /D "CMAKE_INTDIR=\\"Debug\\"" /EHsc /RTC1 /MDd /GR /std:c++20 /Fo"cmTC_2acf2.dir\\Debug\\\\" /Fd"cmTC_2acf2.dir\\Debug\\vc145.pdb" /external:W1 /TP /errorReport:queue "C:\\Users\\elias\\Desktop\\GITHUB\\wallify\\build\\CMakeFiles\\CMakeScratch\\TryCompile-akf7ab\\src.cxx"
           Microsoft (R) C/C++ Optimizing Compiler Version 19.51.36244 for x64
           Copyright (C) Microsoft Corporation.  All rights reserved.
-          cl /c /Zi /W1 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D HAVE_STDATOMIC /D _MBCS /D "CMAKE_INTDIR=\\"Debug\\"" /EHsc /RTC1 /MDd /GR /std:c++20 /Fo"cmTC_57dc1.dir\\Debug\\\\" /Fd"cmTC_57dc1.dir\\Debug\\vc145.pdb" /external:W1 /TP /errorReport:queue "C:\\Users\\elias\\Desktop\\GITHUB\\wallify\\build\\CMakeFiles\\CMakeScratch\\TryCompile-7azx1a\\src.cxx"
+          cl /c /Zi /W1 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D HAVE_STDATOMIC /D _MBCS /D "CMAKE_INTDIR=\\"Debug\\"" /EHsc /RTC1 /MDd /GR /std:c++20 /Fo"cmTC_2acf2.dir\\Debug\\\\" /Fd"cmTC_2acf2.dir\\Debug\\vc145.pdb" /external:W1 /TP /errorReport:queue "C:\\Users\\elias\\Desktop\\GITHUB\\wallify\\build\\CMakeFiles\\CMakeScratch\\TryCompile-akf7ab\\src.cxx"
           src.cxx
         Link:
-          C:\\Program Files\\Microsoft Visual Studio\\18\\Community\\VC\\Tools\\MSVC\\14.51.36231\\bin\\HostX64\\x64\\link.exe /OUT:"C:\\Users\\elias\\Desktop\\GITHUB\\wallify\\build\\CMakeFiles\\CMakeScratch\\TryCompile-7azx1a\\Debug\\cmTC_57dc1.exe" /INCREMENTAL /ILK:"cmTC_57dc1.dir\\Debug\\cmTC_57dc1.ilk" /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"C:/Users/elias/Desktop/GITHUB/wallify/build/CMakeFiles/CMakeScratch/TryCompile-7azx1a/Debug/cmTC_57dc1.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /IMPLIB:"C:/Users/elias/Desktop/GITHUB/wallify/build/CMakeFiles/CMakeScratch/TryCompile-7azx1a/Debug/cmTC_57dc1.lib" /MACHINE:X64  /machine:x64 cmTC_57dc1.dir\\Debug\\src.obj
-          cmTC_57dc1.vcxproj -> C:\\Users\\elias\\Desktop\\GITHUB\\wallify\\build\\CMakeFiles\\CMakeScratch\\TryCompile-7azx1a\\Debug\\cmTC_57dc1.exe
+          C:\\Program Files\\Microsoft Visual Studio\\18\\Community\\VC\\Tools\\MSVC\\14.51.36231\\bin\\HostX64\\x64\\link.exe /OUT:"C:\\Users\\elias\\Desktop\\GITHUB\\wallify\\build\\CMakeFiles\\CMakeScratch\\TryCompile-akf7ab\\Debug\\cmTC_2acf2.exe" /INCREMENTAL /ILK:"cmTC_2acf2.dir\\Debug\\cmTC_2acf2.ilk" /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"C:/Users/elias/Desktop/GITHUB/wallify/build/CMakeFiles/CMakeScratch/TryCompile-akf7ab/Debug/cmTC_2acf2.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /IMPLIB:"C:/Users/elias/Desktop/GITHUB/wallify/build/CMakeFiles/CMakeScratch/TryCompile-akf7ab/Debug/cmTC_2acf2.lib" /MACHINE:X64  /machine:x64 cmTC_2acf2.dir\\Debug\\src.obj
+          cmTC_2acf2.vcxproj -> C:\\Users\\elias\\Desktop\\GITHUB\\wallify\\build\\CMakeFiles\\CMakeScratch\\TryCompile-akf7ab\\Debug\\cmTC_2acf2.exe
         FinalizeBuildStatus:
-          Deleting file "cmTC_57dc1.dir\\Debug\\cmTC_57dc1.tlog\\unsuccessfulbuild".
-          Touching "cmTC_57dc1.dir\\Debug\\cmTC_57dc1.tlog\\cmTC_57dc1.lastbuildstate".
-        Done Building Project "C:\\Users\\elias\\Desktop\\GITHUB\\wallify\\build\\CMakeFiles\\CMakeScratch\\TryCompile-7azx1a\\cmTC_57dc1.vcxproj" (default targets).
+          Deleting file "cmTC_2acf2.dir\\Debug\\cmTC_2acf2.tlog\\unsuccessfulbuild".
+          Touching "cmTC_2acf2.dir\\Debug\\cmTC_2acf2.tlog\\cmTC_2acf2.lastbuildstate".
+        Done Building Project "C:\\Users\\elias\\Desktop\\GITHUB\\wallify\\build\\CMakeFiles\\CMakeScratch\\TryCompile-akf7ab\\cmTC_2acf2.vcxproj" (default targets).
         
         Build succeeded.
             0 Warning(s)
             0 Error(s)
         
-        Time Elapsed 00:00:00.90
+        Time Elapsed 00:00:00.85
         
       exitCode: 0
   -
@@ -1379,8 +1335,6 @@ events:
       CMAKE_PREFIX_PATH:
         - "C:/Users/elias/Desktop/GITHUB/wallify/deps/6.8.2/msvc2022_64"
       ENV{PATH}:
-        - "C:/Users/elias/.gemini/antigravity/bin"
-        - "C:\\Users\\elias\\AppData\\Roaming\\Antigravity\\bin"
         - "C:\\Program Files\\Eclipse Adoptium\\jdk-25.0.2.10-hotspot\\bin"
         - "C:\\WINDOWS\\system32"
         - "C:\\WINDOWS"
@@ -1557,8 +1511,6 @@ events:
       CMAKE_PREFIX_PATH:
         - "C:/Users/elias/Desktop/GITHUB/wallify/deps/6.8.2/msvc2022_64"
       ENV{PATH}:
-        - "C:/Users/elias/.gemini/antigravity/bin"
-        - "C:\\Users\\elias\\AppData\\Roaming\\Antigravity\\bin"
         - "C:\\Program Files\\Eclipse Adoptium\\jdk-25.0.2.10-hotspot\\bin"
         - "C:\\WINDOWS\\system32"
         - "C:\\WINDOWS"
@@ -1735,8 +1687,6 @@ events:
       CMAKE_PREFIX_PATH:
         - "C:/Users/elias/Desktop/GITHUB/wallify/deps/6.8.2/msvc2022_64"
       ENV{PATH}:
-        - "C:/Users/elias/.gemini/antigravity/bin"
-        - "C:\\Users\\elias\\AppData\\Roaming\\Antigravity\\bin"
         - "C:\\Program Files\\Eclipse Adoptium\\jdk-25.0.2.10-hotspot\\bin"
         - "C:\\WINDOWS\\system32"
         - "C:\\WINDOWS"
@@ -1794,8 +1744,6 @@ events:
       - "C:/Users/elias/Desktop/GITHUB/wallify/deps/6.8.2/msvc2022_64/sbin/"
       - "C:/Users/elias/Desktop/GITHUB/wallify/deps/6.8.2/msvc2022_64/"
       - "C:/Users/elias/Desktop/GITHUB/wallify/deps/6.8.2/msvc2022_64/bin/"
-      - "C:/Users/elias/.gemini/antigravity/bin/"
-      - "C:/Users/elias/AppData/Roaming/Antigravity/bin/"
       - "C:/Program Files/Eclipse Adoptium/jdk-25.0.2.10-hotspot/bin/"
       - "C:/Windows/System32/"
       - "C:/Windows/"
@@ -1840,8 +1788,6 @@ events:
       CMAKE_PREFIX_PATH:
         - "C:/Users/elias/Desktop/GITHUB/wallify/deps/6.8.2/msvc2022_64"
       ENV{PATH}:
-        - "C:/Users/elias/.gemini/antigravity/bin"
-        - "C:\\Users\\elias\\AppData\\Roaming\\Antigravity\\bin"
         - "C:\\Program Files\\Eclipse Adoptium\\jdk-25.0.2.10-hotspot\\bin"
         - "C:\\WINDOWS\\system32"
         - "C:\\WINDOWS"
@@ -1965,8 +1911,6 @@ events:
       CMAKE_PREFIX_PATH:
         - "C:/Users/elias/Desktop/GITHUB/wallify/deps/6.8.2/msvc2022_64"
       ENV{PATH}:
-        - "C:/Users/elias/.gemini/antigravity/bin"
-        - "C:\\Users\\elias\\AppData\\Roaming\\Antigravity\\bin"
         - "C:\\Program Files\\Eclipse Adoptium\\jdk-25.0.2.10-hotspot\\bin"
         - "C:\\WINDOWS\\system32"
         - "C:\\WINDOWS"
@@ -2024,8 +1968,6 @@ events:
     candidate_directories:
       - "C:/Users/elias/Desktop/GITHUB/wallify/deps/6.8.2/msvc2022_64/include/"
       - "C:/Users/elias/Desktop/GITHUB/wallify/deps/6.8.2/msvc2022_64/"
-      - "C:/Users/elias/.gemini/antigravity/bin/"
-      - "C:/Users/elias/AppData/Roaming/Antigravity/bin/"
       - "C:/Program Files/Eclipse Adoptium/jdk-25.0.2.10-hotspot/bin/"
       - "C:/Windows/System32/"
       - "C:/Windows/"
@@ -2062,8 +2004,6 @@ events:
     searched_directories:
       - "C:/Users/elias/Desktop/GITHUB/wallify/deps/6.8.2/msvc2022_64/include/vulkan/vulkan.h"
       - "C:/Users/elias/Desktop/GITHUB/wallify/deps/6.8.2/msvc2022_64/vulkan/vulkan.h"
-      - "C:/Users/elias/.gemini/antigravity/bin/vulkan/vulkan.h"
-      - "C:/Users/elias/AppData/Roaming/Antigravity/bin/vulkan/vulkan.h"
       - "C:/Program Files/Eclipse Adoptium/jdk-25.0.2.10-hotspot/bin/vulkan/vulkan.h"
       - "C:/Windows/System32/vulkan/vulkan.h"
       - "C:/Windows/vulkan/vulkan.h"
@@ -2102,8 +2042,6 @@ events:
       CMAKE_PREFIX_PATH:
         - "C:/Users/elias/Desktop/GITHUB/wallify/deps/6.8.2/msvc2022_64"
       ENV{PATH}:
-        - "C:/Users/elias/.gemini/antigravity/bin"
-        - "C:\\Users\\elias\\AppData\\Roaming\\Antigravity\\bin"
         - "C:\\Program Files\\Eclipse Adoptium\\jdk-25.0.2.10-hotspot\\bin"
         - "C:\\WINDOWS\\system32"
         - "C:\\WINDOWS"
@@ -2161,8 +2099,6 @@ events:
     candidate_directories:
       - "C:/Users/elias/Desktop/GITHUB/wallify/deps/6.8.2/msvc2022_64/lib/"
       - "C:/Users/elias/Desktop/GITHUB/wallify/deps/6.8.2/msvc2022_64/"
-      - "C:/Users/elias/.gemini/antigravity/bin/"
-      - "C:/Users/elias/AppData/Roaming/Antigravity/bin/"
       - "C:/Program Files/Eclipse Adoptium/jdk-25.0.2.10-hotspot/bin/"
       - "C:/Windows/System32/"
       - "C:/Windows/"
@@ -2201,8 +2137,6 @@ events:
     searched_directories:
       - "C:/Users/elias/Desktop/GITHUB/wallify/deps/6.8.2/msvc2022_64/lib/"
       - "C:/Users/elias/Desktop/GITHUB/wallify/deps/6.8.2/msvc2022_64/"
-      - "C:/Users/elias/.gemini/antigravity/bin/"
-      - "C:/Users/elias/AppData/Roaming/Antigravity/bin/"
       - "C:/Program Files/Eclipse Adoptium/jdk-25.0.2.10-hotspot/bin/"
       - "C:/Windows/System32/"
       - "C:/Windows/"
@@ -2243,8 +2177,6 @@ events:
       CMAKE_PREFIX_PATH:
         - "C:/Users/elias/Desktop/GITHUB/wallify/deps/6.8.2/msvc2022_64"
       ENV{PATH}:
-        - "C:/Users/elias/.gemini/antigravity/bin"
-        - "C:\\Users\\elias\\AppData\\Roaming\\Antigravity\\bin"
         - "C:\\Program Files\\Eclipse Adoptium\\jdk-25.0.2.10-hotspot\\bin"
         - "C:\\WINDOWS\\system32"
         - "C:\\WINDOWS"
@@ -2307,8 +2239,6 @@ events:
       - "C:/Users/elias/Desktop/GITHUB/wallify/deps/6.8.2/msvc2022_64/bin/"
       - "C:/Users/elias/Desktop/GITHUB/wallify/deps/6.8.2/msvc2022_64/sbin/"
       - "C:/Users/elias/Desktop/GITHUB/wallify/deps/6.8.2/msvc2022_64/"
-      - "C:/Users/elias/.gemini/antigravity/bin/"
-      - "C:/Users/elias/AppData/Roaming/Antigravity/bin/"
       - "C:/Program Files/Eclipse Adoptium/jdk-25.0.2.10-hotspot/bin/"
       - "C:/Windows/System32/"
       - "C:/Windows/"
@@ -2356,12 +2286,6 @@ events:
       - "C:/Users/elias/Desktop/GITHUB/wallify/deps/6.8.2/msvc2022_64/glslc.com"
       - "C:/Users/elias/Desktop/GITHUB/wallify/deps/6.8.2/msvc2022_64/glslc.exe"
       - "C:/Users/elias/Desktop/GITHUB/wallify/deps/6.8.2/msvc2022_64/glslc"
-      - "C:/Users/elias/.gemini/antigravity/bin/glslc.com"
-      - "C:/Users/elias/.gemini/antigravity/bin/glslc.exe"
-      - "C:/Users/elias/.gemini/antigravity/bin/glslc"
-      - "C:/Users/elias/AppData/Roaming/Antigravity/bin/glslc.com"
-      - "C:/Users/elias/AppData/Roaming/Antigravity/bin/glslc.exe"
-      - "C:/Users/elias/AppData/Roaming/Antigravity/bin/glslc"
       - "C:/Program Files/Eclipse Adoptium/jdk-25.0.2.10-hotspot/bin/glslc.com"
       - "C:/Program Files/Eclipse Adoptium/jdk-25.0.2.10-hotspot/bin/glslc.exe"
       - "C:/Program Files/Eclipse Adoptium/jdk-25.0.2.10-hotspot/bin/glslc"
@@ -2478,8 +2402,6 @@ events:
       CMAKE_PREFIX_PATH:
         - "C:/Users/elias/Desktop/GITHUB/wallify/deps/6.8.2/msvc2022_64"
       ENV{PATH}:
-        - "C:/Users/elias/.gemini/antigravity/bin"
-        - "C:\\Users\\elias\\AppData\\Roaming\\Antigravity\\bin"
         - "C:\\Program Files\\Eclipse Adoptium\\jdk-25.0.2.10-hotspot\\bin"
         - "C:\\WINDOWS\\system32"
         - "C:\\WINDOWS"
@@ -2538,8 +2460,6 @@ events:
       - "C:/Users/elias/Desktop/GITHUB/wallify/deps/6.8.2/msvc2022_64/bin/"
       - "C:/Users/elias/Desktop/GITHUB/wallify/deps/6.8.2/msvc2022_64/sbin/"
       - "C:/Users/elias/Desktop/GITHUB/wallify/deps/6.8.2/msvc2022_64/"
-      - "C:/Users/elias/.gemini/antigravity/bin/"
-      - "C:/Users/elias/AppData/Roaming/Antigravity/bin/"
       - "C:/Program Files/Eclipse Adoptium/jdk-25.0.2.10-hotspot/bin/"
       - "C:/Windows/System32/"
       - "C:/Windows/"
@@ -2587,12 +2507,6 @@ events:
       - "C:/Users/elias/Desktop/GITHUB/wallify/deps/6.8.2/msvc2022_64/glslangValidator.com"
       - "C:/Users/elias/Desktop/GITHUB/wallify/deps/6.8.2/msvc2022_64/glslangValidator.exe"
       - "C:/Users/elias/Desktop/GITHUB/wallify/deps/6.8.2/msvc2022_64/glslangValidator"
-      - "C:/Users/elias/.gemini/antigravity/bin/glslangValidator.com"
-      - "C:/Users/elias/.gemini/antigravity/bin/glslangValidator.exe"
-      - "C:/Users/elias/.gemini/antigravity/bin/glslangValidator"
-      - "C:/Users/elias/AppData/Roaming/Antigravity/bin/glslangValidator.com"
-      - "C:/Users/elias/AppData/Roaming/Antigravity/bin/glslangValidator.exe"
-      - "C:/Users/elias/AppData/Roaming/Antigravity/bin/glslangValidator"
       - "C:/Program Files/Eclipse Adoptium/jdk-25.0.2.10-hotspot/bin/glslangValidator.com"
       - "C:/Program Files/Eclipse Adoptium/jdk-25.0.2.10-hotspot/bin/glslangValidator.exe"
       - "C:/Program Files/Eclipse Adoptium/jdk-25.0.2.10-hotspot/bin/glslangValidator"
@@ -2709,8 +2623,6 @@ events:
       CMAKE_PREFIX_PATH:
         - "C:/Users/elias/Desktop/GITHUB/wallify/deps/6.8.2/msvc2022_64"
       ENV{PATH}:
-        - "C:/Users/elias/.gemini/antigravity/bin"
-        - "C:\\Users\\elias\\AppData\\Roaming\\Antigravity\\bin"
         - "C:\\Program Files\\Eclipse Adoptium\\jdk-25.0.2.10-hotspot\\bin"
         - "C:\\WINDOWS\\system32"
         - "C:\\WINDOWS"
@@ -2848,8 +2760,6 @@ events:
       CMAKE_PREFIX_PATH:
         - "C:/Users/elias/Desktop/GITHUB/wallify/deps/6.8.2/msvc2022_64"
       ENV{PATH}:
-        - "C:/Users/elias/.gemini/antigravity/bin"
-        - "C:\\Users\\elias\\AppData\\Roaming\\Antigravity\\bin"
         - "C:\\Program Files\\Eclipse Adoptium\\jdk-25.0.2.10-hotspot\\bin"
         - "C:\\WINDOWS\\system32"
         - "C:\\WINDOWS"
@@ -2973,8 +2883,6 @@ events:
       CMAKE_PREFIX_PATH:
         - "C:/Users/elias/Desktop/GITHUB/wallify/deps/6.8.2/msvc2022_64"
       ENV{PATH}:
-        - "C:/Users/elias/.gemini/antigravity/bin"
-        - "C:\\Users\\elias\\AppData\\Roaming\\Antigravity\\bin"
         - "C:\\Program Files\\Eclipse Adoptium\\jdk-25.0.2.10-hotspot\\bin"
         - "C:\\WINDOWS\\system32"
         - "C:\\WINDOWS"
@@ -3112,8 +3020,6 @@ events:
       CMAKE_PREFIX_PATH:
         - "C:/Users/elias/Desktop/GITHUB/wallify/deps/6.8.2/msvc2022_64"
       ENV{PATH}:
-        - "C:/Users/elias/.gemini/antigravity/bin"
-        - "C:\\Users\\elias\\AppData\\Roaming\\Antigravity\\bin"
         - "C:\\Program Files\\Eclipse Adoptium\\jdk-25.0.2.10-hotspot\\bin"
         - "C:\\WINDOWS\\system32"
         - "C:\\WINDOWS"
@@ -3237,8 +3143,6 @@ events:
       CMAKE_PREFIX_PATH:
         - "C:/Users/elias/Desktop/GITHUB/wallify/deps/6.8.2/msvc2022_64"
       ENV{PATH}:
-        - "C:/Users/elias/.gemini/antigravity/bin"
-        - "C:\\Users\\elias\\AppData\\Roaming\\Antigravity\\bin"
         - "C:\\Program Files\\Eclipse Adoptium\\jdk-25.0.2.10-hotspot\\bin"
         - "C:\\WINDOWS\\system32"
         - "C:\\WINDOWS"
@@ -3362,8 +3266,6 @@ events:
       CMAKE_PREFIX_PATH:
         - "C:/Users/elias/Desktop/GITHUB/wallify/deps/6.8.2/msvc2022_64"
       ENV{PATH}:
-        - "C:/Users/elias/.gemini/antigravity/bin"
-        - "C:\\Users\\elias\\AppData\\Roaming\\Antigravity\\bin"
         - "C:\\Program Files\\Eclipse Adoptium\\jdk-25.0.2.10-hotspot\\bin"
         - "C:\\WINDOWS\\system32"
         - "C:\\WINDOWS"
@@ -3487,54 +3389,6 @@ events:
         reason: "no_exist"
       -
         path: "C:/Users/elias/Desktop/GITHUB/wallify/deps/6.8.2/msvc2022_64/share/cps/qt6qmlcompilerplusprivatetools.cps"
-        mode: "cps"
-        reason: "no_exist"
-      -
-        path: "C:/Users/elias/.gemini/antigravity/Qt6QmlCompilerPlusPrivateToolsConfig.cmake"
-        mode: "config"
-        reason: "no_exist"
-      -
-        path: "C:/Users/elias/.gemini/antigravity/qt6qmlcompilerplusprivatetools-config.cmake"
-        mode: "config"
-        reason: "no_exist"
-      -
-        path: "C:/Users/elias/.gemini/antigravity/lib/cps/Qt6QmlCompilerPlusPrivateTools.cps"
-        mode: "cps"
-        reason: "no_exist"
-      -
-        path: "C:/Users/elias/.gemini/antigravity/lib/cps/qt6qmlcompilerplusprivatetools.cps"
-        mode: "cps"
-        reason: "no_exist"
-      -
-        path: "C:/Users/elias/.gemini/antigravity/share/cps/Qt6QmlCompilerPlusPrivateTools.cps"
-        mode: "cps"
-        reason: "no_exist"
-      -
-        path: "C:/Users/elias/.gemini/antigravity/share/cps/qt6qmlcompilerplusprivatetools.cps"
-        mode: "cps"
-        reason: "no_exist"
-      -
-        path: "C:/Users/elias/AppData/Roaming/Antigravity/Qt6QmlCompilerPlusPrivateToolsConfig.cmake"
-        mode: "config"
-        reason: "no_exist"
-      -
-        path: "C:/Users/elias/AppData/Roaming/Antigravity/qt6qmlcompilerplusprivatetools-config.cmake"
-        mode: "config"
-        reason: "no_exist"
-      -
-        path: "C:/Users/elias/AppData/Roaming/Antigravity/lib/cps/Qt6QmlCompilerPlusPrivateTools.cps"
-        mode: "cps"
-        reason: "no_exist"
-      -
-        path: "C:/Users/elias/AppData/Roaming/Antigravity/lib/cps/qt6qmlcompilerplusprivatetools.cps"
-        mode: "cps"
-        reason: "no_exist"
-      -
-        path: "C:/Users/elias/AppData/Roaming/Antigravity/share/cps/Qt6QmlCompilerPlusPrivateTools.cps"
-        mode: "cps"
-        reason: "no_exist"
-      -
-        path: "C:/Users/elias/AppData/Roaming/Antigravity/share/cps/qt6qmlcompilerplusprivatetools.cps"
         mode: "cps"
         reason: "no_exist"
       -
@@ -4174,8 +4028,6 @@ events:
       CMAKE_PREFIX_PATH:
         - "C:/Users/elias/Desktop/GITHUB/wallify/deps/6.8.2/msvc2022_64"
       ENV{PATH}:
-        - "C:/Users/elias/.gemini/antigravity/bin"
-        - "C:\\Users\\elias\\AppData\\Roaming\\Antigravity\\bin"
         - "C:\\Program Files\\Eclipse Adoptium\\jdk-25.0.2.10-hotspot\\bin"
         - "C:\\WINDOWS\\system32"
         - "C:\\WINDOWS"
@@ -4311,8 +4163,6 @@ events:
       CMAKE_PREFIX_PATH:
         - "C:/Users/elias/Desktop/GITHUB/wallify/deps/6.8.2/msvc2022_64"
       ENV{PATH}:
-        - "C:/Users/elias/.gemini/antigravity/bin"
-        - "C:\\Users\\elias\\AppData\\Roaming\\Antigravity\\bin"
         - "C:\\Program Files\\Eclipse Adoptium\\jdk-25.0.2.10-hotspot\\bin"
         - "C:\\WINDOWS\\system32"
         - "C:\\WINDOWS"
@@ -4496,8 +4346,6 @@ events:
       CMAKE_PREFIX_PATH:
         - "C:/Users/elias/Desktop/GITHUB/wallify/deps/6.8.2/msvc2022_64"
       ENV{PATH}:
-        - "C:/Users/elias/.gemini/antigravity/bin"
-        - "C:\\Users\\elias\\AppData\\Roaming\\Antigravity\\bin"
         - "C:\\Program Files\\Eclipse Adoptium\\jdk-25.0.2.10-hotspot\\bin"
         - "C:\\WINDOWS\\system32"
         - "C:\\WINDOWS"
@@ -4623,8 +4471,6 @@ events:
       CMAKE_PREFIX_PATH:
         - "C:/Users/elias/Desktop/GITHUB/wallify/deps/6.8.2/msvc2022_64"
       ENV{PATH}:
-        - "C:/Users/elias/.gemini/antigravity/bin"
-        - "C:\\Users\\elias\\AppData\\Roaming\\Antigravity\\bin"
         - "C:\\Program Files\\Eclipse Adoptium\\jdk-25.0.2.10-hotspot\\bin"
         - "C:\\WINDOWS\\system32"
         - "C:\\WINDOWS"
@@ -4876,8 +4722,6 @@ events:
       CMAKE_PREFIX_PATH:
         - "C:/Users/elias/Desktop/GITHUB/wallify/deps/6.8.2/msvc2022_64"
       ENV{PATH}:
-        - "C:/Users/elias/.gemini/antigravity/bin"
-        - "C:\\Users\\elias\\AppData\\Roaming\\Antigravity\\bin"
         - "C:\\Program Files\\Eclipse Adoptium\\jdk-25.0.2.10-hotspot\\bin"
         - "C:\\WINDOWS\\system32"
         - "C:\\WINDOWS"
@@ -5015,8 +4859,6 @@ events:
       CMAKE_PREFIX_PATH:
         - "C:/Users/elias/Desktop/GITHUB/wallify/deps/6.8.2/msvc2022_64"
       ENV{PATH}:
-        - "C:/Users/elias/.gemini/antigravity/bin"
-        - "C:\\Users\\elias\\AppData\\Roaming\\Antigravity\\bin"
         - "C:\\Program Files\\Eclipse Adoptium\\jdk-25.0.2.10-hotspot\\bin"
         - "C:\\WINDOWS\\system32"
         - "C:\\WINDOWS"
@@ -5145,8 +4987,6 @@ events:
       CMAKE_PREFIX_PATH:
         - "C:/Users/elias/Desktop/GITHUB/wallify/deps/6.8.2/msvc2022_64"
       ENV{PATH}:
-        - "C:/Users/elias/.gemini/antigravity/bin"
-        - "C:\\Users\\elias\\AppData\\Roaming\\Antigravity\\bin"
         - "C:\\Program Files\\Eclipse Adoptium\\jdk-25.0.2.10-hotspot\\bin"
         - "C:\\WINDOWS\\system32"
         - "C:\\WINDOWS"
@@ -5275,8 +5115,6 @@ events:
       CMAKE_PREFIX_PATH:
         - "C:/Users/elias/Desktop/GITHUB/wallify/deps/6.8.2/msvc2022_64"
       ENV{PATH}:
-        - "C:/Users/elias/.gemini/antigravity/bin"
-        - "C:\\Users\\elias\\AppData\\Roaming\\Antigravity\\bin"
         - "C:\\Program Files\\Eclipse Adoptium\\jdk-25.0.2.10-hotspot\\bin"
         - "C:\\WINDOWS\\system32"
         - "C:\\WINDOWS"
@@ -5400,8 +5238,6 @@ events:
       CMAKE_PREFIX_PATH:
         - "C:/Users/elias/Desktop/GITHUB/wallify/deps/6.8.2/msvc2022_64"
       ENV{PATH}:
-        - "C:/Users/elias/.gemini/antigravity/bin"
-        - "C:\\Users\\elias\\AppData\\Roaming\\Antigravity\\bin"
         - "C:\\Program Files\\Eclipse Adoptium\\jdk-25.0.2.10-hotspot\\bin"
         - "C:\\WINDOWS\\system32"
         - "C:\\WINDOWS"
@@ -5533,8 +5369,6 @@ events:
       CMAKE_PREFIX_PATH:
         - "C:/Users/elias/Desktop/GITHUB/wallify/deps/6.8.2/msvc2022_64"
       ENV{PATH}:
-        - "C:/Users/elias/.gemini/antigravity/bin"
-        - "C:\\Users\\elias\\AppData\\Roaming\\Antigravity\\bin"
         - "C:\\Program Files\\Eclipse Adoptium\\jdk-25.0.2.10-hotspot\\bin"
         - "C:\\WINDOWS\\system32"
         - "C:\\WINDOWS"
@@ -5890,8 +5724,6 @@ events:
       CMAKE_PREFIX_PATH:
         - "C:/Users/elias/Desktop/GITHUB/wallify/deps/6.8.2/msvc2022_64"
       ENV{PATH}:
-        - "C:/Users/elias/.gemini/antigravity/bin"
-        - "C:\\Users\\elias\\AppData\\Roaming\\Antigravity\\bin"
         - "C:\\Program Files\\Eclipse Adoptium\\jdk-25.0.2.10-hotspot\\bin"
         - "C:\\WINDOWS\\system32"
         - "C:\\WINDOWS"
@@ -6031,8 +5863,6 @@ events:
       CMAKE_PREFIX_PATH:
         - "C:/Users/elias/Desktop/GITHUB/wallify/deps/6.8.2/msvc2022_64"
       ENV{PATH}:
-        - "C:/Users/elias/.gemini/antigravity/bin"
-        - "C:\\Users\\elias\\AppData\\Roaming\\Antigravity\\bin"
         - "C:\\Program Files\\Eclipse Adoptium\\jdk-25.0.2.10-hotspot\\bin"
         - "C:\\WINDOWS\\system32"
         - "C:\\WINDOWS"
@@ -7046,8 +6876,6 @@ events:
       CMAKE_PREFIX_PATH:
         - "C:/Users/elias/Desktop/GITHUB/wallify/deps/6.8.2/msvc2022_64"
       ENV{PATH}:
-        - "C:/Users/elias/.gemini/antigravity/bin"
-        - "C:\\Users\\elias\\AppData\\Roaming\\Antigravity\\bin"
         - "C:\\Program Files\\Eclipse Adoptium\\jdk-25.0.2.10-hotspot\\bin"
         - "C:\\WINDOWS\\system32"
         - "C:\\WINDOWS"
